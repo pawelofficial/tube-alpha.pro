@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+
+{% block title %}Home — YT Investor{% endblock %}
+
+{% block extra_head %}
+<style>
+  /* ── Page layout ── */
+  .home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+  }
+  .home-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+  }
+  .home-meta {
+    font-size: .8rem;
+    color: var(--text-secondary);
+  }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  .filter-bar select,
+  .filter-bar input[type="text"] {
+    padding: .35rem .7rem;
+    border: 1px solid var(--text-light);
+    border-radius: var(--radius-md);
+    font-size: .85rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color .2s;
+  }
+  .filter-bar select:focus,
+  .filter-bar input[type="text"]:focus {
+    border-color: var(--primary-color);
+  }
+  .filter-label {
+    font-size: .8rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+
+  /* ── Tile grid ── */
+  .asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+  }
+
+  /* ── Individual tile ── */
+  .asset-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--text-light);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .asset-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .asset-card.bull  { border-left-color: #2dce89; }
+  .asset-card.bear  { border-left-color: #f5365c; }
+  .asset-card.neut  { border-left-color: #adb5bd; }
+
+  .asset-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .85rem 1rem;
+    gap: .5rem;
+  }
+  .asset-name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-primary);
+  }
+  .asset-sub {
+    font-size: .75rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+
+  .score-badge {
+    flex-shrink: 0;
+    font-size: .78rem;
+    font-weight: 600;
+    padding: .28rem .65rem;
+    border-radius: 999px;
+    border: 1.5px solid currentColor;
+    white-space: nowrap;
+  }
+  .score-badge.bull { color: #2dce89; }
+  .score-badge.bear { color: #f5365c; }
+  .score-badge.neut { color: #adb5bd; }
+
+  /* ── Expandable detail panel ── */
+  .asset-details {
+    display: none;
+    border-top: 1px dashed var(--text-light);
+    padding: .7rem 1rem 1rem;
+    font-size: .85rem;
+  }
+  .asset-card.open .asset-details { display: block; }
+
+  .detail-label {
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--text-light);
+    margin: .6rem 0 .25rem;
+  }
+  .sentiment-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: .25rem;
+  }
+  .chip {
+    font-size: .72rem;
+    padding: .15rem .45rem;
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--text-light);
+  }
+
+  .quotes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .quotes-list li {
+    padding: .3rem 0;
+    border-bottom: 1px solid var(--bg-secondary);
+    line-height: 1.4;
+    color: var(--text-secondary);
+  }
+  .quotes-list li:last-child { border-bottom: none; }
+  .quotes-list li::before {
+    content: '"';
+    color: var(--primary-light);
+    font-size: 1.1em;
+    margin-right: 2px;
+  }
+
+  .guests-row { color: var(--text-secondary); }
+  .guest-link {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline dotted;
+  }
+  .guest-link:hover { color: var(--primary-dark); }
+
+  /* ── States ── */
+  .state-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: var(--text-secondary);
+    gap: .5rem;
+    font-size: .95rem;
+  }
+  .state-box .icon { font-size: 2.5rem; }
+
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--bg-secondary);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Last-updated timestamp ── */
+  .ts-tag {
+    font-size: .7rem;
+    color: var(--text-light);
+    margin-top: 3px;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+
+    <div class="home-header">
+      <div>
+        <h2>📊 Latest Sentiment</h2>
+        <div class="home-meta" id="meta-row">Loading…</div>
+      </div>
+      <button class="btn btn-outline btn-sm" onclick="loadTiles()">↺ Refresh</button>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <input type="text" id="search-input" placeholder="Asset name…" oninput="renderGrid()" />
+      <select id="sentiment-filter" onchange="renderGrid()">
+        <option value="">All sentiments</option>
+        <option value="bull">Bullish</option>
+        <option value="bear">Bearish</option>
+        <option value="neut">Neutral</option>
+      </select>
+      <span class="filter-label">Sort:</span>
+      <select id="sort-select" onchange="renderGrid()">
+        <option value="score-desc">Score ↓</option>
+        <option value="score-asc">Score ↑</option>
+        <option value="name-asc">Name A–Z</option>
+        <option value="mentions-desc">Mentions ↓</option>
+      </select>
+    </div>
+
+    <!-- Grid / states -->
+    <div id="grid-wrap">
+      <div class="state-box">
+        <div class="spinner"></div>
+        <span>Fetching data…</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  let _tiles = [];
+
+  /* ── helpers ── */
+  const cls  = s => s > 0.05 ? 'bull' : (s < -0.05 ? 'bear' : 'neut');
+  const label = s => s > 0.05 ? 'Bullish' : (s < -0.05 ? 'Bearish' : 'Neutral');
+  const fmt  = n => (Math.round(n * 100) / 100).toFixed(2);
+  const esc  = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  function fmtTs(ts) {
+    if (!ts) return '';
+    try {
+      const d = new Date(ts.replace(' ', 'T'));
+      return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+    } catch { return ts; }
+  }
+
+  /* ── fetch ── */
+  async function loadTiles() {
+    const wrap = document.getElementById('grid-wrap');
+    wrap.innerHTML = `<div class="state-box"><div class="spinner"></div><span>Fetching data…</span></div>`;
+    document.getElementById('meta-row').textContent = 'Loading…';
+
+    try {
+      const r = await fetch('/api/v1/data/latest?limit=200');
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const data = await r.json();
+      _tiles = data.tiles || [];
+      document.getElementById('meta-row').textContent =
+        `${_tiles.length} asset${_tiles.length !== 1 ? 's' : ''} · ${data.total_rows} data point${data.total_rows !== 1 ? 's' : ''}`;
+      renderGrid();
+    } catch (err) {
+      wrap.innerHTML = `<div class="state-box"><span class="icon">⚠️</span><span>Could not load data — ${esc(err.message)}</span></div>`;
+    }
+  }
+
+  /* ── render ── */
+  function renderGrid() {
+    const wrap     = document.getElementById('grid-wrap');
+    const search   = document.getElementById('search-input').value.trim().toLowerCase();
+    const sentFilt = document.getElementById('sentiment-filter').value;
+    const sort     = document.getElementById('sort-select').value;
+
+    let tiles = _tiles.filter(t => {
+      if (search && !t.asset.toLowerCase().includes(search)) return false;
+      if (sentFilt && cls(t.avg_score) !== sentFilt) return false;
+      return true;
+    });
+
+    tiles.sort((a, b) => {
+      if (sort === 'score-asc')     return a.avg_score - b.avg_score;
+      if (sort === 'name-asc')      return a.asset.localeCompare(b.asset);
+      if (sort === 'mentions-desc') return (b.videos?.length ?? 0) - (a.videos?.length ?? 0);
+      return b.avg_score - a.avg_score; // score-desc default
+    });
+
+    if (tiles.length === 0) {
+      wrap.innerHTML = `<div class="state-box"><span class="icon">🔍</span><span>No assets match your filters.</span></div>`;
+      return;
+    }
+
+    const html = tiles.map(t => {
+      const c = cls(t.avg_score);
+
+      const chips = (t.sentiments || [])
+        .map(s => `<span class="chip">${esc(s)}</span>`)
+        .join('');
+
+      const quoteItems = (t.quotes || []).slice(0, 8)
+        .map(q => `<li>${esc(q)}</li>`)
+        .join('');
+
+      const guestHtml = (t.guests || []).length
+        ? (t.guests || []).map(g =>
+            `<span class="guest-link" onclick="event.stopPropagation();window.location='/api/v1/data/guest/${encodeURIComponent(g)}'">
+              ${esc(g)}
+            </span>`
+          ).join(', ')
+        : '<span style="color:var(--text-light)">—</span>';
+
+      const videoCount = (t.videos || []).length;
+
+      return `
+        <div class="asset-card ${c}" data-asset="${esc(t.asset)}">
+          <div class="asset-head">
+            <div>
+              <div class="asset-name">${esc(t.asset)}</div>
+              <div class="asset-sub">
+                ${videoCount} video${videoCount !== 1 ? 's' : ''}
+                <span class="ts-tag">· ${fmtTs(t.last_ts)}</span>
+              </div>
+            </div>
+            <span class="score-badge ${c}">${label(t.avg_score)} ${fmt(t.avg_score)}</span>
+          </div>
+          <div class="asset-details">
+            ${chips ? `<div class="detail-label">Sentiments</div><div class="sentiment-chips">${chips}</div>` : ''}
+            <div class="detail-label">Guests</div>
+            <div class="guests-row">${guestHtml}</div>
+            ${quoteItems ? `
+              <div class="detail-label">Top Quotes</div>
+              <ul class="quotes-list">${quoteItems}</ul>
+            ` : ''}
+          </div>
+        </div>`;
+    }).join('');
+
+    wrap.innerHTML = `<div class="asset-grid">${html}</div>`;
+
+    /* Toggle expand/collapse */
+    wrap.querySelectorAll('.asset-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('open'));
+    });
+  }
+
+  loadTiles();
+</script>
+{% endblock %}

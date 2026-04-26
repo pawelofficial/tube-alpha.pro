@@ -1,0 +1,807 @@
+{"text": "To what extent do you think Donald Trump", "start": 0.08, "duration": 3.359}
+{"text": "is going to be involved in the next two", "start": 1.839, "duration": 2.161}
+{"text": "years?", "start": 3.439, "duration": 3.681}
+{"text": "That is the absolutely most critical", "start": 4.0, "duration": 6.08}
+{"text": "question. The Chinese are going to play", "start": 7.12, "duration": 5.2}
+{"text": "it very carefully. They have had", "start": 10.08, "duration": 4.24}
+{"text": "tremendous discipline not getting", "start": 12.32, "duration": 4.48}
+{"text": "themselves dragged in to conflicts in", "start": 14.32, "duration": 3.92}
+{"text": "the Middle East. They want to trade with", "start": 16.8, "duration": 2.399}
+{"text": "everyone. They want to have good", "start": 18.24, "duration": 2.72}
+{"text": "relations with everyone. And they want", "start": 19.199, "duration": 4.24}
+{"text": "to stay out of their fights. I wish the", "start": 20.96, "duration": 4.399}
+{"text": "United States had much more of a policy", "start": 23.439, "duration": 3.68}
+{"text": "that resembled that of the Chinese cuz", "start": 25.359, "duration": 3.361}
+{"text": "we tend to do the opposite. we get", "start": 27.119, "duration": 3.521}
+{"text": "ourselves unnecessarily involved in too", "start": 28.72, "duration": 2.959}
+{"text": "many different things.", "start": 30.64, "duration": 3.2}
+{"text": "Israel killed Yemen's Houthi prime", "start": 31.679, "duration": 4.001}
+{"text": "minister and defense minister in air", "start": 33.84, "duration": 4.559}
+{"text": "strikes uh earlier this week, escalating", "start": 35.68, "duration": 4.24}
+{"text": "tensions in the Middle East. Meanwhile,", "start": 38.399, "duration": 4.241}
+{"text": "Europeans have placed a snapback", "start": 39.92, "duration": 4.799}
+{"text": "sanction against Iran, automatically", "start": 42.64, "duration": 4.88}
+{"text": "restoring UN sanctions uh lifted under", "start": 44.719, "duration": 5.84}
+{"text": "the 2015 nuclear deal. So we're talking", "start": 47.52, "duration": 5.359}
+{"text": "about the escalating tensions in the", "start": 50.559, "duration": 4.401}
+{"text": "Middle East. What this means for the", "start": 52.879, "duration": 5.2}
+{"text": "entire region and for global economies.", "start": 54.96, "duration": 5.52}
+{"text": "Trari joins us once more. He is the", "start": 58.079, "duration": 4.241}
+{"text": "executive vice president of the Quincy", "start": 60.48, "duration": 4.88}
+{"text": "Institute. He is an expert on Middle", "start": 62.32, "duration": 5.119}
+{"text": "East geopolitics. Welcome back to the", "start": 65.36, "duration": 4.16}
+{"text": "show, Trida. Good to see you.", "start": 67.439, "duration": 3.68}
+{"text": "Thank you so much for having me.", "start": 69.52, "duration": 4.16}
+{"text": "Let's start with uh the Israeli air", "start": 71.119, "duration": 5.201}
+{"text": "strike on Yemen yesterday. This is from", "start": 73.68, "duration": 4.32}
+{"text": "the Times of Israel. The prime minister", "start": 76.32, "duration": 3.28}
+{"text": "of the Iranbacked Houthi group in Yemen", "start": 78.0, "duration": 4.0}
+{"text": "was reportedly killed during Israel's", "start": 79.6, "duration": 4.0}
+{"text": "air strikes on Thursday in the capital", "start": 82.0, "duration": 5.92}
+{"text": "city of Sai. Yemen's aljira channel and", "start": 83.6, "duration": 6.72}
+{"text": "the Aiden Algad newspaper reported that", "start": 87.92, "duration": 5.68}
+{"text": "Houthi Prime Minister Akmed Al Rawi was", "start": 90.32, "duration": 5.92}
+{"text": "killed in an Israeli attack on an", "start": 93.6, "duration": 4.72}
+{"text": "apartment with the latter reporting that", "start": 96.24, "duration": 3.839}
+{"text": "several of his companions were killed as", "start": 98.32, "duration": 3.439}
+{"text": "well. What's your immediate reaction to", "start": 100.079, "duration": 3.121}
+{"text": "the story and then we'll get into the uh", "start": 101.759, "duration": 2.881}
+{"text": "broader ramifications. Well, the", "start": 103.2, "duration": 3.84}
+{"text": "Israelis are continuing their strategy", "start": 104.64, "duration": 4.96}
+{"text": "of trying to decapitate all kinds of", "start": 107.04, "duration": 4.88}
+{"text": "movements or governments in the region", "start": 109.6, "duration": 4.72}
+{"text": "that they believe are challenging", "start": 111.92, "duration": 6.159}
+{"text": "Israel's domination um and uh uh role in", "start": 114.32, "duration": 5.759}
+{"text": "the region. So, uh we see that that's", "start": 118.079, "duration": 4.4}
+{"text": "what they did with Hezbollah. Uh we see", "start": 120.079, "duration": 4.561}
+{"text": "that they tried to do that with Iran but", "start": 122.479, "duration": 4.24}
+{"text": "failed. Uh and they are in the process", "start": 124.64, "duration": 4.399}
+{"text": "of doing it with the Houthis. The hooded", "start": 126.719, "duration": 4.561}
+{"text": "of course have been attacking Israel on", "start": 129.039, "duration": 4.241}
+{"text": "a few occasions successfully with", "start": 131.28, "duration": 3.92}
+{"text": "ballistic missiles which they say that", "start": 133.28, "duration": 3.52}
+{"text": "they're doing in order to pressure", "start": 135.2, "duration": 4.0}
+{"text": "Israel to stop what a majority of", "start": 136.8, "duration": 4.799}
+{"text": "Americans now believe is a genocide in", "start": 139.2, "duration": 5.52}
+{"text": "Gaza. Uh as well as as we know that they", "start": 141.599, "duration": 5.761}
+{"text": "have been shooting at ships uh that have", "start": 144.72, "duration": 5.599}
+{"text": "been trading with uh Israel as a way of", "start": 147.36, "duration": 5.12}
+{"text": "putting a pressure on the Israelis to", "start": 150.319, "duration": 3.681}
+{"text": "stop the attacks in Gaza. At least", "start": 152.48, "duration": 3.44}
+{"text": "that's what they state is the purpose of", "start": 154.0, "duration": 3.44}
+{"text": "their attack. So, we're seeing an", "start": 155.92, "duration": 3.599}
+{"text": "escalation here. Uh, of course, these", "start": 157.44, "duration": 3.6}
+{"text": "countries are far away from each other,", "start": 159.519, "duration": 3.121}
+{"text": "so we're not talking about land troops", "start": 161.04, "duration": 4.16}
+{"text": "or anything like that, but all of this", "start": 162.64, "duration": 5.28}
+{"text": "can lead to a much larger confrontation,", "start": 165.2, "duration": 5.039}
+{"text": "particularly if it uh leads to the", "start": 167.92, "duration": 4.16}
+{"text": "Houthis and the Saudis beginning to", "start": 170.239, "duration": 3.521}
+{"text": "shoot at at each other again. As you", "start": 172.08, "duration": 3.04}
+{"text": "know, there's been a war between Saudi", "start": 173.76, "duration": 2.96}
+{"text": "Arabia and Yemen for several years that", "start": 175.12, "duration": 3.28}
+{"text": "was very, very devastating.", "start": 176.72, "duration": 3.36}
+{"text": "So, we're speaking today on the 29th of", "start": 178.4, "duration": 3.36}
+{"text": "August, Friday, the day after the", "start": 180.08, "duration": 4.159}
+{"text": "attacks. What can we expect from the", "start": 181.76, "duration": 4.8}
+{"text": "Houthis as an immediate retaliation if", "start": 184.239, "duration": 2.881}
+{"text": "anything?", "start": 186.56, "duration": 2.56}
+{"text": "I think uh the Houthi playbook is quite", "start": 187.12, "duration": 3.52}
+{"text": "clear at this point. They have the", "start": 189.12, "duration": 3.52}
+{"text": "ability to strike at Israel using", "start": 190.64, "duration": 3.84}
+{"text": "ballistic missiles. They do not have the", "start": 192.64, "duration": 3.92}
+{"text": "ability, at least not yet, to be able to", "start": 194.48, "duration": 4.72}
+{"text": "shoot a large barrage of missiles. But", "start": 196.56, "duration": 4.16}
+{"text": "some of the missiles that they have been", "start": 199.2, "duration": 3.52}
+{"text": "shooting have managed to get through all", "start": 200.72, "duration": 3.76}
+{"text": "layers of Israel's air defense systems.", "start": 202.72, "duration": 3.599}
+{"text": "One of them hit uh right outside of", "start": 204.48, "duration": 3.6}
+{"text": "Benuron airport which is quite", "start": 206.319, "duration": 3.2}
+{"text": "concerning for the Israelis mindful of", "start": 208.08, "duration": 3.12}
+{"text": "the fact that they have the most uh", "start": 209.519, "duration": 3.521}
+{"text": "elaborate and extensive air defense", "start": 211.2, "duration": 3.28}
+{"text": "system several different layers. Of", "start": 213.04, "duration": 3.52}
+{"text": "course the US is paying for the uh most", "start": 214.48, "duration": 4.64}
+{"text": "of it um uh but nevertheless it meant", "start": 216.56, "duration": 4.399}
+{"text": "that a movement such as the Houthis had", "start": 219.12, "duration": 3.839}
+{"text": "the capacity of breaking through. What", "start": 220.959, "duration": 3.521}
+{"text": "about the uh closing of the street of", "start": 222.959, "duration": 3.92}
+{"text": "Hormuse? It's uh something that analysts", "start": 224.48, "duration": 3.759}
+{"text": "are concerned about. It's one of the", "start": 226.879, "duration": 3.761}
+{"text": "major choke points uh in the world and", "start": 228.239, "duration": 4.321}
+{"text": "one of the major distribution channels", "start": 230.64, "duration": 3.679}
+{"text": "of oil in the world. If that street", "start": 232.56, "duration": 3.92}
+{"text": "closes, we could be looking at major", "start": 234.319, "duration": 3.84}
+{"text": "shocks to the oil supply globally.", "start": 236.48, "duration": 3.119}
+{"text": "Absolutely. And this is a threat that", "start": 238.159, "duration": 3.041}
+{"text": "constantly has been in the background,", "start": 239.599, "duration": 3.28}
+{"text": "particularly in moments in which", "start": 241.2, "duration": 3.36}
+{"text": "tensions between the United States and", "start": 242.879, "duration": 4.56}
+{"text": "Iran have increased or moments where the", "start": 244.56, "duration": 4.56}
+{"text": "US was trying to choke the Iranian", "start": 247.439, "duration": 4.08}
+{"text": "economy and prevent its oil sales. The", "start": 249.12, "duration": 3.839}
+{"text": "Iranians have made threats. They're", "start": 251.519, "duration": 3.28}
+{"text": "their essentially their doctrine is", "start": 252.959, "duration": 4.8}
+{"text": "either everyone can trade through the", "start": 254.799, "duration": 4.481}
+{"text": "straight of Hormuz and and sell their", "start": 257.759, "duration": 3.841}
+{"text": "oil or no one can. So if they're not", "start": 259.28, "duration": 3.84}
+{"text": "allowed to do so, they will prevent", "start": 261.6, "duration": 3.36}
+{"text": "everyone else from doing so as well.", "start": 263.12, "duration": 3.6}
+{"text": "That is nevertheless uh what is", "start": 264.96, "duration": 4.239}
+{"text": "considered to be a suicidal move because", "start": 266.72, "duration": 4.4}
+{"text": "doing something like that would most", "start": 269.199, "duration": 4.241}
+{"text": "likely automatically lead to a major", "start": 271.12, "duration": 4.24}
+{"text": "confrontation between the US and Iran", "start": 273.44, "duration": 4.16}
+{"text": "that would try to keep the straight open", "start": 275.36, "duration": 3.839}
+{"text": "because of its significance to", "start": 277.6, "duration": 4.24}
+{"text": "international trade. We saw some signs", "start": 279.199, "duration": 4.641}
+{"text": "that during the 12-day war and", "start": 281.84, "duration": 3.76}
+{"text": "particularly once the US got involved in", "start": 283.84, "duration": 3.76}
+{"text": "that war that the Iranians were making", "start": 285.6, "duration": 4.56}
+{"text": "some movements that could have led to uh", "start": 287.6, "duration": 4.24}
+{"text": "closing the straits. That may have been", "start": 290.16, "duration": 4.72}
+{"text": "a factor as to why uh Trump pushed to", "start": 291.84, "duration": 5.68}
+{"text": "end the conflict after 12 days. Uh it's", "start": 294.88, "duration": 5.12}
+{"text": "not entirely clear but that risk I think", "start": 297.52, "duration": 5.44}
+{"text": "is very real because the risk of war is", "start": 300.0, "duration": 5.28}
+{"text": "very real. If war is already happening,", "start": 302.96, "duration": 4.72}
+{"text": "then the idea that straight closing the", "start": 305.28, "duration": 4.0}
+{"text": "straight would be suicidal is is", "start": 307.68, "duration": 3.28}
+{"text": "essentially moot because war is already", "start": 309.28, "duration": 4.8}
+{"text": "happening. So um uh in some ways I'm a", "start": 310.96, "duration": 4.64}
+{"text": "bit surprised to see that the markets", "start": 314.08, "duration": 3.92}
+{"text": "have not uh factored in the significant", "start": 315.6, "duration": 4.72}
+{"text": "risk as much as I think they should.", "start": 318.0, "duration": 4.16}
+{"text": "Yeah, right now the uh oil price", "start": 320.32, "duration": 5.28}
+{"text": "actually is down almost 1% uh the day", "start": 322.16, "duration": 5.36}
+{"text": "after the strike. So no one at least in", "start": 325.6, "duration": 3.36}
+{"text": "the oil market is expecting that", "start": 327.52, "duration": 3.04}
+{"text": "particular outcome. So what is probably", "start": 328.96, "duration": 3.12}
+{"text": "the most likely outcome going forward?", "start": 330.56, "duration": 3.04}
+{"text": "Do you think the Houthis will", "start": 332.08, "duration": 3.52}
+{"text": "collaborate or I not collaborate is the", "start": 333.6, "duration": 4.0}
+{"text": "wrong word but uh uh do you think that", "start": 335.6, "duration": 3.2}
+{"text": "there's going to be a coalition between", "start": 337.6, "duration": 4.96}
+{"text": "the Houthis and uh other nations uh to", "start": 338.8, "duration": 5.36}
+{"text": "uh retaliate or do you think the", "start": 342.56, "duration": 3.52}
+{"text": "retaliation against Israel will be", "start": 344.16, "duration": 4.08}
+{"text": "somewhat localized in nature?", "start": 346.08, "duration": 3.76}
+{"text": "No, I I think what you're seeing here is", "start": 348.24, "duration": 2.959}
+{"text": "that the strike by the Israelis", "start": 349.84, "duration": 3.12}
+{"text": "obviously was an escalation in the sense", "start": 351.199, "duration": 3.601}
+{"text": "of managing to take out some of their", "start": 352.96, "duration": 3.76}
+{"text": "leadership and going for this type of a", "start": 354.8, "duration": 3.92}
+{"text": "decapitation strategy which was not what", "start": 356.72, "duration": 4.72}
+{"text": "the Saudis were doing. uh but", "start": 358.72, "duration": 4.56}
+{"text": "nevertheless it is happening within the", "start": 361.44, "duration": 3.52}
+{"text": "context in which the Houthis and the", "start": 363.28, "duration": 3.12}
+{"text": "Israelis have been shooting at each", "start": 364.96, "duration": 2.959}
+{"text": "other for some time and just last week", "start": 366.4, "duration": 3.359}
+{"text": "there was another major attack by the", "start": 367.919, "duration": 4.881}
+{"text": "Israelis uh on Yemen as well. So I think", "start": 369.759, "duration": 5.041}
+{"text": "to a certain extent there is a", "start": 372.8, "duration": 4.8}
+{"text": "perception that that will be kept under", "start": 374.8, "duration": 5.36}
+{"text": "lid. It may flare up but it will not", "start": 377.6, "duration": 5.36}
+{"text": "have this kind of spillover effect.", "start": 380.16, "duration": 5.68}
+{"text": "The real risk of spillover is if the", "start": 382.96, "duration": 5.76}
+{"text": "Israelis restart the war with Iran. And", "start": 385.84, "duration": 4.799}
+{"text": "if that war becomes much bigger than it", "start": 388.72, "duration": 3.44}
+{"text": "was last time, then then you can", "start": 390.639, "duration": 4.321}
+{"text": "definitely see not only uh and further", "start": 392.16, "duration": 5.52}
+{"text": "activation of the Saudi of the Israeli", "start": 394.96, "duration": 6.72}
+{"text": "Yemeni um uh confrontation, but also", "start": 397.68, "duration": 7.28}
+{"text": "between Lebanon and Israel uh between", "start": 401.68, "duration": 5.68}
+{"text": "Iraqi militias and Israel and", "start": 404.96, "duration": 4.32}
+{"text": "potentially between Iraqi militias and", "start": 407.36, "duration": 4.8}
+{"text": "the US as well. uh that's not where I", "start": 409.28, "duration": 5.6}
+{"text": "think people think the Yemen conflict in", "start": 412.16, "duration": 5.12}
+{"text": "itself will go. But if we have a restart", "start": 414.88, "duration": 4.159}
+{"text": "of the war with Iran, then that's a", "start": 417.28, "duration": 2.96}
+{"text": "completely different ballgame.", "start": 419.039, "duration": 3.201}
+{"text": "This leads to me uh this leads me rather", "start": 420.24, "duration": 4.079}
+{"text": "to my next question about your piece", "start": 422.24, "duration": 4.16}
+{"text": "that you wrote in foreign policy", "start": 424.319, "duration": 4.401}
+{"text": "magazine, the next Israel Iran war is", "start": 426.4, "duration": 4.639}
+{"text": "coming. Israel is likely to launch", "start": 428.72, "duration": 4.0}
+{"text": "another war with Iran before December,", "start": 431.039, "duration": 4.0}
+{"text": "perhaps even as early as late August. Uh", "start": 432.72, "duration": 4.0}
+{"text": "you wrote this a few months ago. Uh", "start": 435.039, "duration": 3.6}
+{"text": "actually, no, sorry, a few weeks ago.", "start": 436.72, "duration": 4.72}
+{"text": "Early August. Uh Iran is expecting and", "start": 438.639, "duration": 4.0}
+{"text": "preparing for the attack in the next", "start": 441.44, "duration": 2.8}
+{"text": "round. However, Iran is likely to strike", "start": 442.639, "duration": 3.761}
+{"text": "decisively from the outset, aiming to", "start": 444.24, "duration": 4.239}
+{"text": "dispel any notion that it can be subdued", "start": 446.4, "duration": 4.16}
+{"text": "under Israeli military military", "start": 448.479, "duration": 4.081}
+{"text": "dominance. As a result, the coming war", "start": 450.56, "duration": 4.079}
+{"text": "will likely be far bloodier than the", "start": 452.56, "duration": 4.16}
+{"text": "first. Israel's June war was never", "start": 454.639, "duration": 3.761}
+{"text": "solely about Iran's nuclear program.", "start": 456.72, "duration": 2.72}
+{"text": "Rather, it was about shifting the", "start": 458.4, "duration": 2.239}
+{"text": "balance of power in the Middle East.", "start": 459.44, "duration": 4.24}
+{"text": "Tell us what's coming up next, Trida.", "start": 460.639, "duration": 4.641}
+{"text": "So, I think the Israelis had three", "start": 463.68, "duration": 4.079}
+{"text": "objectives with their uh war with Iran", "start": 465.28, "duration": 4.8}
+{"text": "in June. The first one was to get the US", "start": 467.759, "duration": 3.921}
+{"text": "into the war, which is something the", "start": 470.08, "duration": 3.28}
+{"text": "Israelis had pushed for for more than 20", "start": 471.68, "duration": 3.68}
+{"text": "years, and they finally succeeded. They", "start": 473.36, "duration": 3.519}
+{"text": "had hoped that, of course, Trump would", "start": 475.36, "duration": 3.76}
+{"text": "go into the war for the long haul rather", "start": 476.879, "duration": 4.081}
+{"text": "than just a one-off, but nevertheless,", "start": 479.12, "duration": 3.84}
+{"text": "they managed to get that direct US Iran", "start": 480.96, "duration": 4.32}
+{"text": "confrontation. The two other objectives,", "start": 482.96, "duration": 5.04}
+{"text": "however, were not achieved. one uh the", "start": 485.28, "duration": 4.8}
+{"text": "second one was to decapitate the regime", "start": 488.0, "duration": 3.759}
+{"text": "and although they had significant", "start": 490.08, "duration": 3.839}
+{"text": "success in the first 24 hours taking out", "start": 491.759, "duration": 4.961}
+{"text": "a large number of uh military leaders,", "start": 493.919, "duration": 4.56}
+{"text": "they never managed to disrupt the", "start": 496.72, "duration": 3.759}
+{"text": "Iranian command and control for a long", "start": 498.479, "duration": 3.521}
+{"text": "period of time and the Iranians starting", "start": 500.479, "duration": 4.56}
+{"text": "to shoot back within 24 hours and and", "start": 502.0, "duration": 4.56}
+{"text": "replaced all of those different military", "start": 505.039, "duration": 3.761}
+{"text": "commanders. The third objective, which", "start": 506.56, "duration": 5.359}
+{"text": "is the most important one, is to reduce", "start": 508.8, "duration": 6.96}
+{"text": "Iran into another Lebanon or Syria, a", "start": 511.919, "duration": 6.641}
+{"text": "country that Israel can bomb at will", "start": 515.76, "duration": 6.24}
+{"text": "with impunity, but without any US", "start": 518.56, "duration": 5.52}
+{"text": "involvement. That is something I think", "start": 522.0, "duration": 3.76}
+{"text": "the Israelis did not believe that they", "start": 524.08, "duration": 3.199}
+{"text": "were going to be able to achieve in the", "start": 525.76, "duration": 3.12}
+{"text": "first round, and it probably will take", "start": 527.279, "duration": 3.761}
+{"text": "several, but I think they believe that", "start": 528.88, "duration": 4.079}
+{"text": "they would have been able to go further", "start": 531.04, "duration": 4.4}
+{"text": "in the first round than they did. And", "start": 532.959, "duration": 4.081}
+{"text": "this is again because of the fact that", "start": 535.44, "duration": 3.36}
+{"text": "the Iranian missile strikes in Israel", "start": 537.04, "duration": 3.919}
+{"text": "were far more affected than has been", "start": 538.8, "duration": 4.96}
+{"text": "reported. Uh and occasionally you saw US", "start": 540.959, "duration": 4.32}
+{"text": "officials actually making that clear", "start": 543.76, "duration": 4.4}
+{"text": "including Donald Trump himself in the", "start": 545.279, "duration": 4.641}
+{"text": "but because they have now started this", "start": 548.16, "duration": 3.76}
+{"text": "effort to try to reduce Iran into", "start": 549.92, "duration": 4.32}
+{"text": "another Syria. They cannot stop from", "start": 551.92, "duration": 4.16}
+{"text": "their standpoint because if they give", "start": 554.24, "duration": 3.68}
+{"text": "the Iranians too much time, the Iranians", "start": 556.08, "duration": 3.36}
+{"text": "are going to rebuild their air defenses.", "start": 557.92, "duration": 2.56}
+{"text": "is they're going to rebuild their", "start": 559.44, "duration": 2.959}
+{"text": "stockpile of missiles and their", "start": 560.48, "duration": 4.16}
+{"text": "deterrence will be restored and the", "start": 562.399, "duration": 4.0}
+{"text": "Israeli would essentially be starting", "start": 564.64, "duration": 3.68}
+{"text": "from scratch. So, they have to do", "start": 566.399, "duration": 3.681}
+{"text": "something and I think the time frame", "start": 568.32, "duration": 4.0}
+{"text": "before December is critical because", "start": 570.08, "duration": 4.8}
+{"text": "after that you're entering the American", "start": 572.32, "duration": 4.48}
+{"text": "um political season with the midterm", "start": 574.88, "duration": 3.6}
+{"text": "elections and it's not a prohibitive", "start": 576.8, "duration": 3.68}
+{"text": "thing but it will make things more", "start": 578.48, "duration": 3.68}
+{"text": "complicated for the Israelis. This is", "start": 580.48, "duration": 3.44}
+{"text": "why I think that this is quite likely to", "start": 582.16, "duration": 5.119}
+{"text": "happen relatively soon. Uh, and in that", "start": 583.92, "duration": 6.16}
+{"text": "context, if this happens, since the", "start": 587.279, "duration": 4.961}
+{"text": "Iranians will do everything they can to", "start": 590.08, "duration": 4.64}
+{"text": "dispel the Israelis, that that type of a", "start": 592.24, "duration": 4.56}
+{"text": "strategy, which the Israelis call mowing", "start": 594.72, "duration": 4.799}
+{"text": "the grass, is possible with Iran, I", "start": 596.8, "duration": 4.159}
+{"text": "think this time around they will strike", "start": 599.519, "duration": 3.281}
+{"text": "back hard right away instead of playing", "start": 600.959, "duration": 4.401}
+{"text": "the long game. And that could mean the", "start": 602.8, "duration": 4.479}
+{"text": "activation of other fronts such as", "start": 605.36, "duration": 4.32}
+{"text": "Hezbollah, such as Iraqi, Middleas, and", "start": 607.279, "duration": 3.441}
+{"text": "of course the Houthis.", "start": 609.68, "duration": 2.719}
+{"text": "Let's just talk about objectives one and", "start": 610.72, "duration": 3.84}
+{"text": "two uh before moving into a broader", "start": 612.399, "duration": 4.481}
+{"text": "context here. Objective one, uh, get the", "start": 614.56, "duration": 6.56}
+{"text": "US involved in a conflict. Okay. To what", "start": 616.88, "duration": 5.76}
+{"text": "extent do you think Donald Trump is", "start": 621.12, "duration": 2.959}
+{"text": "going to be involved in the next two", "start": 622.64, "duration": 4.48}
+{"text": "years? That is the absolutely most", "start": 624.079, "duration": 5.921}
+{"text": "critical question because if Trump", "start": 627.12, "duration": 5.52}
+{"text": "decides not to be involved, the Israeli", "start": 630.0, "duration": 5.36}
+{"text": "maneuverability is extremely limited.", "start": 632.64, "duration": 5.04}
+{"text": "Um, the US can choose to be involved", "start": 635.36, "duration": 5.28}
+{"text": "offensively or do what Trump has done in", "start": 637.68, "duration": 4.64}
+{"text": "the past and what Biden did, which was", "start": 640.64, "duration": 3.759}
+{"text": "to be involved defensively, which means", "start": 642.32, "duration": 3.84}
+{"text": "that they were helping the Israelis", "start": 644.399, "duration": 4.961}
+{"text": "shoot down Iranian missiles and drones.", "start": 646.16, "duration": 6.239}
+{"text": "If the US chooses not to even do that,", "start": 649.36, "duration": 4.56}
+{"text": "then the Israelis have no military", "start": 652.399, "duration": 3.761}
+{"text": "option because they cannot take on Iran", "start": 653.92, "duration": 3.76}
+{"text": "and they cannot defend themselves", "start": 656.16, "duration": 3.44}
+{"text": "against the barrage of missiles that", "start": 657.68, "duration": 3.92}
+{"text": "will be incoming without the support of", "start": 659.6, "duration": 4.16}
+{"text": "the United States. In fact, the US had", "start": 661.6, "duration": 5.679}
+{"text": "to put uh two THAD batteries in Israel", "start": 663.76, "duration": 5.28}
+{"text": "in order to shoot down these missiles.", "start": 667.279, "duration": 5.441}
+{"text": "And the US consumed 25% of its entire", "start": 669.04, "duration": 6.16}
+{"text": "stockpile of THAAD interceptors will", "start": 672.72, "duration": 4.96}
+{"text": "take the US 3 to 5 years to rebuild it.", "start": 675.2, "duration": 4.24}
+{"text": "So there is despite the fact that Israel", "start": 677.68, "duration": 3.44}
+{"text": "is a much more powerful military than", "start": 679.44, "duration": 3.92}
+{"text": "Iran, there is a huge vulnerability on", "start": 681.12, "duration": 4.159}
+{"text": "that front and the Iranians have a huge", "start": 683.36, "duration": 4.56}
+{"text": "asset in their missile program. If the", "start": 685.279, "duration": 4.161}
+{"text": "US then chooses to be involved", "start": 687.92, "duration": 3.2}
+{"text": "defensively, the Israelis can attack,", "start": 689.44, "duration": 3.68}
+{"text": "but they will take a lot of hits, what", "start": 691.12, "duration": 4.399}
+{"text": "the Israelis really want is to bring the", "start": 693.12, "duration": 4.64}
+{"text": "full force of America's military might", "start": 695.519, "duration": 4.241}
+{"text": "into the war, cuz that would be a", "start": 697.76, "duration": 4.319}
+{"text": "completely different proposition. But it", "start": 699.76, "duration": 4.639}
+{"text": "would also mean that the Iranians would", "start": 702.079, "duration": 4.641}
+{"text": "at that point start attacking US", "start": 704.399, "duration": 4.721}
+{"text": "targets, bases, troops, perhaps even", "start": 706.72, "duration": 4.48}
+{"text": "embassies, etc. And that would be a much", "start": 709.12, "duration": 4.56}
+{"text": "much bigger word than what we saw. If", "start": 711.2, "duration": 4.4}
+{"text": "I'm talking about the last part of your", "start": 713.68, "duration": 5.04}
+{"text": "answer, the final uh part where we have", "start": 715.6, "duration": 4.72}
+{"text": "a scenario where the US military is", "start": 718.72, "duration": 3.119}
+{"text": "involved in full power, what even would", "start": 720.32, "duration": 3.84}
+{"text": "be the justification for the American", "start": 721.839, "duration": 3.921}
+{"text": "people for that kind of involvement, for", "start": 724.16, "duration": 3.52}
+{"text": "that level of involvement? Benjamin", "start": 725.76, "duration": 4.079}
+{"text": "Netanyahu, prime minister of Israel, has", "start": 727.68, "duration": 4.56}
+{"text": "repeatedly over the last many years", "start": 729.839, "duration": 5.12}
+{"text": "cited that is Iran's nuclear program is", "start": 732.24, "duration": 5.279}
+{"text": "a threat to all global stability.", "start": 734.959, "duration": 3.841}
+{"text": "Critics have pointed out that he's been", "start": 737.519, "duration": 3.601}
+{"text": "saying this for 20 years. So what would", "start": 738.8, "duration": 5.12}
+{"text": "the Trump administration even use as", "start": 741.12, "duration": 3.44}
+{"text": "rationale?", "start": 743.92, "duration": 4.479}
+{"text": "So there frankly is no legitimate uh um", "start": 744.56, "duration": 5.44}
+{"text": "rationale for this and there wasn't for", "start": 748.399, "duration": 3.12}
+{"text": "the previous one either. The one that", "start": 750.0, "duration": 3.68}
+{"text": "they used is something that really has", "start": 751.519, "duration": 4.801}
+{"text": "no basis in reality which is that the", "start": 753.68, "duration": 5.279}
+{"text": "Iranians were weeks away from having a", "start": 756.32, "duration": 4.16}
+{"text": "nuclear weapon. This is what Trump is", "start": 758.959, "duration": 2.961}
+{"text": "saying because he knows that he needs to", "start": 760.48, "duration": 3.2}
+{"text": "have some sort of rationale. but it was", "start": 761.92, "duration": 5.44}
+{"text": "never um uh verified by these US", "start": 763.68, "duration": 6.399}
+{"text": "intelligence services or by the IAEA. So", "start": 767.36, "duration": 4.32}
+{"text": "this is something that was done because", "start": 770.079, "duration": 3.44}
+{"text": "the Israelis had the opportunity. The", "start": 771.68, "duration": 3.36}
+{"text": "Iranians were in a weaker position", "start": 773.519, "duration": 3.521}
+{"text": "because of the losses of Hezbollah", "start": 775.04, "duration": 3.84}
+{"text": "because of their air defense systems not", "start": 777.04, "duration": 3.76}
+{"text": "having been repaired since the October", "start": 778.88, "duration": 4.0}
+{"text": "attack. Um and they wanted to do it", "start": 780.8, "duration": 4.8}
+{"text": "before um uh the political climate in", "start": 782.88, "duration": 4.8}
+{"text": "Washington changed. If Trump goes along", "start": 785.6, "duration": 3.44}
+{"text": "with this again, he's going to have to", "start": 787.68, "duration": 3.76}
+{"text": "do some uh political acrobatics. Now, of", "start": 789.04, "duration": 3.68}
+{"text": "course, he's the master of doing that,", "start": 791.44, "duration": 3.12}
+{"text": "but he will have to do so because he's", "start": 792.72, "duration": 3.52}
+{"text": "claimed that he's already obliterated", "start": 794.56, "duration": 3.279}
+{"text": "the Iranian nuclear program. So, if it's", "start": 796.24, "duration": 3.68}
+{"text": "an obliterated, why does he have to step", "start": 797.839, "duration": 4.481}
+{"text": "in again? Uh, moreover, what's the", "start": 799.92, "duration": 3.76}
+{"text": "pretext for him? What is the threat to", "start": 802.32, "duration": 2.88}
+{"text": "the United States? If the Israelis", "start": 803.68, "duration": 3.52}
+{"text": "perceive a threat, that's one thing. But", "start": 805.2, "duration": 3.6}
+{"text": "that is not a justification for the", "start": 807.2, "duration": 3.28}
+{"text": "United States to enter into a war.", "start": 808.8, "duration": 3.2}
+{"text": "Particularly not if your name is Donald", "start": 810.48, "duration": 4.799}
+{"text": "Trump and you have made uh opposition to", "start": 812.0, "duration": 4.959}
+{"text": "war in the Middle East, opposition to", "start": 815.279, "duration": 4.641}
+{"text": "forever wars a very critical element of", "start": 816.959, "duration": 4.961}
+{"text": "your platform. So I think it will be", "start": 819.92, "duration": 3.44}
+{"text": "challenging for him. But at the same", "start": 821.92, "duration": 4.24}
+{"text": "time, we should be under no illusion. He", "start": 823.36, "duration": 5.52}
+{"text": "will be under tremendous pressure from", "start": 826.16, "duration": 4.64}
+{"text": "the Israelis to join the war. And even", "start": 828.88, "duration": 4.079}
+{"text": "if he doesn't do so at the outset, once", "start": 830.8, "duration": 4.4}
+{"text": "the Israelis start taking massive hits,", "start": 832.959, "duration": 4.161}
+{"text": "then the pressure will be overwhelming,", "start": 835.2, "duration": 3.28}
+{"text": "not just from the Israelis, but from", "start": 837.12, "duration": 2.719}
+{"text": "supporters of Israel and the United", "start": 838.48, "duration": 3.84}
+{"text": "States. TRA, you say that the US was", "start": 839.839, "duration": 4.401}
+{"text": "finally involved now, but haven't they", "start": 842.32, "duration": 3.6}
+{"text": "already have hasn't the US military", "start": 844.24, "duration": 3.279}
+{"text": "already been involved for several years", "start": 845.92, "duration": 3.68}
+{"text": "now. You know, just as an example, in", "start": 847.519, "duration": 4.641}
+{"text": "2020, uh Trump in his first term ordered", "start": 849.6, "duration": 4.88}
+{"text": "the assassination of uh General Kasam", "start": 852.16, "duration": 4.96}
+{"text": "Salmani, an Iranian general near the", "start": 854.48, "duration": 5.919}
+{"text": "Baghdad airport. So one could interpret", "start": 857.12, "duration": 5.279}
+{"text": "all these events as just a series of", "start": 860.399, "duration": 3.361}
+{"text": "escalations after that.", "start": 862.399, "duration": 4.081}
+{"text": "One, one certainly can. But in that um", "start": 863.76, "duration": 4.72}
+{"text": "um progression, one would have to", "start": 866.48, "duration": 5.2}
+{"text": "recognize that as much as that is a", "start": 868.48, "duration": 5.359}
+{"text": "major escalation and it almost led to a", "start": 871.68, "duration": 4.48}
+{"text": "full-scale war that was an attack on an", "start": 873.839, "duration": 3.921}
+{"text": "Iranian general, the most important one", "start": 876.16, "duration": 3.84}
+{"text": "they had, but it was on Iraqi sword.", "start": 877.76, "duration": 4.639}
+{"text": "What you saw here was actual American", "start": 880.0, "duration": 4.639}
+{"text": "airplanes flying over Iranian airspace,", "start": 882.399, "duration": 5.361}
+{"text": "bombing Iranian territory. that had not", "start": 884.639, "duration": 5.601}
+{"text": "happened before. So that is a massive", "start": 887.76, "duration": 5.12}
+{"text": "step up on the escalation ladder. Uh and", "start": 890.24, "duration": 7.52}
+{"text": "again um a bit of a mystery and perhaps", "start": 892.88, "duration": 7.04}
+{"text": "a miracle that it did not lead to a", "start": 897.76, "duration": 3.6}
+{"text": "major war. And I think to a large extent", "start": 899.92, "duration": 2.88}
+{"text": "there is because the Iranians don't want", "start": 901.36, "duration": 3.36}
+{"text": "to have a major confrontation with the", "start": 902.8, "duration": 4.479}
+{"text": "United States. However, if they're", "start": 904.72, "duration": 4.64}
+{"text": "pushed into a corner and they have no", "start": 907.279, "duration": 4.321}
+{"text": "choice but to have a confrontation with", "start": 909.36, "duration": 3.76}
+{"text": "the United States, no choice but to", "start": 911.6, "duration": 2.96}
+{"text": "fight back, then that is of course a", "start": 913.12, "duration": 3.519}
+{"text": "very different scenario. Is it fair to", "start": 914.56, "duration": 4.399}
+{"text": "say that uh both sides have shown", "start": 916.639, "duration": 5.121}
+{"text": "restraint this summer post June? The", "start": 918.959, "duration": 4.161}
+{"text": "Americans could have done more and", "start": 921.76, "duration": 2.4}
+{"text": "certainly the Iranians could have", "start": 923.12, "duration": 2.32}
+{"text": "retaliated harder.", "start": 924.16, "duration": 3.119}
+{"text": "Yeah. No, I think both the United States", "start": 925.44, "duration": 3.68}
+{"text": "and Iran have shown a tremendous amount", "start": 927.279, "duration": 5.041}
+{"text": "of restraints. Um Trump less so than", "start": 929.12, "duration": 5.519}
+{"text": "previous presidents. Uh but he's also", "start": 932.32, "duration": 4.879}
+{"text": "been more willing to explore diplomacy", "start": 934.639, "duration": 6.081}
+{"text": "than Biden was. Um but uh the Israelis", "start": 937.199, "duration": 5.041}
+{"text": "not at all. And I think we see that", "start": 940.72, "duration": 3.2}
+{"text": "constantly, whether it's in Syria,", "start": 942.24, "duration": 3.2}
+{"text": "whether it's in Lebanon, whether it's in", "start": 943.92, "duration": 4.56}
+{"text": "Yemen, whether it's in Gaza. I mean, it", "start": 945.44, "duration": 4.639}
+{"text": "was just a blip in the news, but they", "start": 948.48, "duration": 3.599}
+{"text": "also bombed the presidential palace in", "start": 950.079, "duration": 4.56}
+{"text": "Damascus. Now, I'm not a fan in any way,", "start": 952.079, "duration": 4.0}
+{"text": "shape, or form of the new guy in", "start": 954.639, "duration": 4.401}
+{"text": "Damascus. I have huge um hesitations", "start": 956.079, "duration": 6.961}
+{"text": "given his deep past in al-Qaeda, but uh", "start": 959.04, "duration": 6.0}
+{"text": "he has bent over backwards to try to", "start": 963.04, "duration": 3.599}
+{"text": "appease the Israelis, and the Israelis", "start": 965.04, "duration": 3.44}
+{"text": "have nevertheless taken Syrian territory", "start": 966.639, "duration": 4.0}
+{"text": "and then also attacked Syria. uh", "start": 968.48, "duration": 4.64}
+{"text": "Damascus uh and striking his own palace.", "start": 970.639, "duration": 4.961}
+{"text": "So I think we have in in Israel", "start": 973.12, "duration": 5.2}
+{"text": "particularly after October 7th uh a very", "start": 975.6, "duration": 5.28}
+{"text": "unhinged actor but the others are by and", "start": 978.32, "duration": 4.8}
+{"text": "large showing restraints uh but that", "start": 980.88, "duration": 4.24}
+{"text": "equation can change particularly if it", "start": 983.12, "duration": 4.24}
+{"text": "it reaches some sort of a climax. So per", "start": 985.12, "duration": 5.12}
+{"text": "your words uh Iran if Iran were to be", "start": 987.36, "duration": 5.44}
+{"text": "forced to launch a full-scale war first", "start": 990.24, "duration": 3.92}
+{"text": "of all before we talk about what that", "start": 992.8, "duration": 3.44}
+{"text": "would look like under what condition", "start": 994.16, "duration": 4.32}
+{"text": "would they feel forced to do so Truda", "start": 996.24, "duration": 3.76}
+{"text": "I think if there's a competition between", "start": 998.48, "duration": 3.52}
+{"text": "the Israelis and the Iranians even if", "start": 1000.0, "duration": 3.839}
+{"text": "it's a smaller one I suspect that the", "start": 1002.0, "duration": 3.519}
+{"text": "Iranian will strike back very hard", "start": 1003.839, "duration": 3.601}
+{"text": "because that's where they have the", "start": 1005.519, "duration": 6.0}
+{"text": "ability to dispel any notion in Israel", "start": 1007.44, "duration": 6.16}
+{"text": "that mowing the grass which what Israel", "start": 1011.519, "duration": 4.56}
+{"text": "is doing is in in Syria in Lebanon in", "start": 1013.6, "duration": 4.64}
+{"text": "the West bank is not something they can", "start": 1016.079, "duration": 4.241}
+{"text": "do with Iran. And that is crucial for", "start": 1018.24, "duration": 3.36}
+{"text": "them because they're not going to be", "start": 1020.32, "duration": 4.8}
+{"text": "able to um um have a political situation", "start": 1021.6, "duration": 5.359}
+{"text": "in Iran in which the Israelis are", "start": 1025.12, "duration": 4.719}
+{"text": "bombing Iran uh even the capital every", "start": 1026.959, "duration": 5.36}
+{"text": "four or 5 months. Um that is going to", "start": 1029.839, "duration": 4.561}
+{"text": "create massive problems internally. So", "start": 1032.319, "duration": 4.561}
+{"text": "that I think is an existential pers uh", "start": 1034.4, "duration": 4.639}
+{"text": "matter for them. When it comes to the", "start": 1036.88, "duration": 4.0}
+{"text": "US, I think the Iranians are going to do", "start": 1039.039, "duration": 4.721}
+{"text": "everything they can to avoid a fullblown", "start": 1040.88, "duration": 6.159}
+{"text": "confrontation with the US. um uh and go", "start": 1043.76, "duration": 4.96}
+{"text": "to full extent to try to avoid it. In", "start": 1047.039, "duration": 4.0}
+{"text": "fact, in many ways, they already have.", "start": 1048.72, "duration": 4.56}
+{"text": "They could have struck back much harder", "start": 1051.039, "duration": 3.921}
+{"text": "after they were uh their nuclear", "start": 1053.28, "duration": 4.08}
+{"text": "facilities were uh attacked, but they", "start": 1054.96, "duration": 4.16}
+{"text": "didn't. And they telegraphed it. It was", "start": 1057.36, "duration": 3.04}
+{"text": "all of these different things, very", "start": 1059.12, "duration": 3.6}
+{"text": "theatrical, aimed at showing that they", "start": 1060.4, "duration": 3.68}
+{"text": "were fighting back, but doing everything", "start": 1062.72, "duration": 3.44}
+{"text": "they can to avoid escalation. If,", "start": 1064.08, "duration": 3.839}
+{"text": "however, the United States enters the", "start": 1066.16, "duration": 3.6}
+{"text": "war fully on Israel's side, then I think", "start": 1067.919, "duration": 3.361}
+{"text": "all bets are off. I've heard the", "start": 1069.76, "duration": 4.72}
+{"text": "viewpoint that the US probably cannot", "start": 1071.28, "duration": 7.2}
+{"text": "win a war in Iran with Iran very easily", "start": 1074.48, "duration": 6.24}
+{"text": "if at all. Uh Iran is not Iraq. It's", "start": 1078.48, "duration": 4.319}
+{"text": "almost double the size of Iraq's", "start": 1080.72, "duration": 4.72}
+{"text": "population. Uh the region itself is very", "start": 1082.799, "duration": 5.041}
+{"text": "mountainous. Uh air strikes alone would", "start": 1085.44, "duration": 4.64}
+{"text": "not be sufficient to crumble. Iran's", "start": 1087.84, "duration": 4.24}
+{"text": "military and especially a lot of their", "start": 1090.08, "duration": 4.8}
+{"text": "uh underground bunkered assets. And so a", "start": 1092.08, "duration": 5.28}
+{"text": "land scale or sorry a land invasion at", "start": 1094.88, "duration": 4.64}
+{"text": "the scale at which is required would", "start": 1097.36, "duration": 4.08}
+{"text": "really hurt the US military. That's not", "start": 1099.52, "duration": 3.76}
+{"text": "something that Donald Trump wants to", "start": 1101.44, "duration": 3.04}
+{"text": "consider. Is that correct?", "start": 1103.28, "duration": 2.88}
+{"text": "Not only that, I think we have to", "start": 1104.48, "duration": 4.88}
+{"text": "recognize that Trump seems to have an", "start": 1106.16, "duration": 6.24}
+{"text": "infatuation with military strikes but", "start": 1109.36, "duration": 4.72}
+{"text": "absor", "start": 1112.4, "duration": 3.04}
+{"text": "and and in his mind there's a", "start": 1114.08, "duration": 3.04}
+{"text": "differentiation. In others people's", "start": 1115.44, "duration": 3.599}
+{"text": "minds perhaps there isn't. but something", "start": 1117.12, "duration": 4.64}
+{"text": "that is quick, timelmited, and enables", "start": 1119.039, "duration": 4.961}
+{"text": "him to be tough, enables him to show the", "start": 1121.76, "duration": 4.159}
+{"text": "massive superior military strength of", "start": 1124.0, "duration": 4.0}
+{"text": "the United States, he seems to be quite", "start": 1125.919, "duration": 4.161}
+{"text": "inclined, uh more so than previous", "start": 1128.0, "duration": 4.0}
+{"text": "presidents. But then going into a", "start": 1130.08, "duration": 4.479}
+{"text": "full-scale war with no clear path out,", "start": 1132.0, "duration": 5.44}
+{"text": "no clear exit, no clear objectives, uh", "start": 1134.559, "duration": 4.961}
+{"text": "doesn't know how it will end, will", "start": 1137.44, "duration": 4.239}
+{"text": "quickly lose control over events. He", "start": 1139.52, "duration": 4.32}
+{"text": "seems to be extremely cautious about", "start": 1141.679, "duration": 3.841}
+{"text": "going down that path, having learned the", "start": 1143.84, "duration": 4.0}
+{"text": "mistakes of Afghanistan, Iraq, and other", "start": 1145.52, "duration": 4.88}
+{"text": "examples. With Iran, it seems not", "start": 1147.84, "duration": 5.52}
+{"text": "possible to just do these strikes um and", "start": 1150.4, "duration": 6.08}
+{"text": "obtain significant political objectives.", "start": 1153.36, "duration": 5.28}
+{"text": "And on the other hand, as you correctly", "start": 1156.48, "duration": 3.36}
+{"text": "pointed out, if there's going to be a", "start": 1158.64, "duration": 3.52}
+{"text": "full-scale war, the US ultimately would", "start": 1159.84, "duration": 4.079}
+{"text": "probably win it, but it would come at", "start": 1162.16, "duration": 4.24}
+{"text": "such a high cost that it would", "start": 1163.919, "duration": 4.241}
+{"text": "absolutely not be worth it, and it would", "start": 1166.4, "duration": 3.92}
+{"text": "put the US in a very very vulnerable", "start": 1168.16, "duration": 4.639}
+{"text": "position uh geopolitically given all", "start": 1170.32, "duration": 4.239}
+{"text": "other types of challenges that it faces", "start": 1172.799, "duration": 4.961}
+{"text": "elsewhere, particularly in um uh in East", "start": 1174.559, "duration": 5.201}
+{"text": "Asia. on the second objective of Israel", "start": 1177.76, "duration": 4.159}
+{"text": "that you talked about earlier, the", "start": 1179.76, "duration": 5.52}
+{"text": "changing of the regime of Iran. Uh well,", "start": 1181.919, "duration": 5.441}
+{"text": "Trump has actually verbally, well,", "start": 1185.28, "duration": 4.56}
+{"text": "publicly said that he doesn't want that.", "start": 1187.36, "duration": 4.0}
+{"text": "I don't want it. I like to see", "start": 1189.84, "duration": 2.959}
+{"text": "everything calm down as quickly as", "start": 1191.36, "duration": 4.0}
+{"text": "possible. Uh Trump said to reporters Air", "start": 1192.799, "duration": 5.361}
+{"text": "Force One, this was way back in June, uh", "start": 1195.36, "duration": 5.12}
+{"text": "in regards to a possible regime change.", "start": 1198.16, "duration": 4.8}
+{"text": "Um, I've I've spoken to several Iranians", "start": 1200.48, "duration": 3.92}
+{"text": "actually and they they don't like the", "start": 1202.96, "duration": 4.0}
+{"text": "current regime. So I I don't know to", "start": 1204.4, "duration": 4.399}
+{"text": "what extent would a regime change", "start": 1206.96, "duration": 4.8}
+{"text": "actually be stabilizing for the region.", "start": 1208.799, "duration": 3.76}
+{"text": "What's your comment there?", "start": 1211.76, "duration": 2.72}
+{"text": "Well, first of all, we have no examples", "start": 1212.559, "duration": 5.12}
+{"text": "of a regime change uh operation being", "start": 1214.48, "duration": 5.68}
+{"text": "successful from the air. And with regime", "start": 1217.679, "duration": 3.921}
+{"text": "change, that means that you're not just", "start": 1220.16, "duration": 3.28}
+{"text": "taking out the previous regime, you are", "start": 1221.6, "duration": 4.0}
+{"text": "installing a different regime. This is", "start": 1223.44, "duration": 3.68}
+{"text": "what happened in Iraq, for instance,", "start": 1225.6, "duration": 3.6}
+{"text": "full-scale invasion and installing a", "start": 1227.12, "duration": 4.96}
+{"text": "different regime. I don't think Trump", "start": 1229.2, "duration": 5.04}
+{"text": "would at all go down the path of regime", "start": 1232.08, "duration": 3.92}
+{"text": "change. That is not, however, what the", "start": 1234.24, "duration": 4.24}
+{"text": "Israelis were seeking to do. It was not", "start": 1236.0, "duration": 4.799}
+{"text": "regime change. It was regime collapse.", "start": 1238.48, "duration": 4.24}
+{"text": "The difference meaning that you just", "start": 1240.799, "duration": 4.0}
+{"text": "take out the existing regime, but you're", "start": 1242.72, "duration": 3.76}
+{"text": "not involving yourself and you're not", "start": 1244.799, "duration": 4.401}
+{"text": "taking responsibility for what happens", "start": 1246.48, "duration": 4.48}
+{"text": "afterwards. In fact, you could be", "start": 1249.2, "duration": 4.08}
+{"text": "totally fine with there being massive", "start": 1250.96, "duration": 4.32}
+{"text": "chaos in the country that fers and", "start": 1253.28, "duration": 4.72}
+{"text": "consumes the nation's power. Um, and the", "start": 1255.28, "duration": 4.0}
+{"text": "Israelis certainly don't have the", "start": 1258.0, "duration": 2.64}
+{"text": "capability of going in with ground", "start": 1259.28, "duration": 2.72}
+{"text": "troops and installing a different", "start": 1260.64, "duration": 3.279}
+{"text": "regime. So, and I think Trump", "start": 1262.0, "duration": 3.36}
+{"text": "understands this and that's why he at", "start": 1263.919, "duration": 2.561}
+{"text": "one point said it would be too", "start": 1265.36, "duration": 2.88}
+{"text": "destabilizing because he knows that it", "start": 1266.48, "duration": 3.36}
+{"text": "wasn't really regime change. It was just", "start": 1268.24, "duration": 3.76}
+{"text": "regime collapse which for the region is", "start": 1269.84, "duration": 3.76}
+{"text": "tremendously destabilized.", "start": 1272.0, "duration": 3.679}
+{"text": "Okay. So there's no possibility of,", "start": 1273.6, "duration": 4.319}
+{"text": "let's say, a covert strike on Iranian", "start": 1275.679, "duration": 3.761}
+{"text": "leadership, leaving the country in", "start": 1277.919, "duration": 3.441}
+{"text": "chaos, and then immediately having the", "start": 1279.44, "duration": 3.52}
+{"text": "country itself just figure out who will", "start": 1281.36, "duration": 2.559}
+{"text": "be the next leader.", "start": 1282.96, "duration": 2.88}
+{"text": "Oh, that could certainly happen. Um, and", "start": 1283.919, "duration": 3.281}
+{"text": "that would be a regime collapse", "start": 1285.84, "duration": 3.36}
+{"text": "strategy, but the US or Israel wouldn't", "start": 1287.2, "duration": 4.4}
+{"text": "be directly uh involved or leading", "start": 1289.2, "duration": 3.76}
+{"text": "efforts to see what would come", "start": 1291.6, "duration": 3.199}
+{"text": "afterwards. And even if it may look", "start": 1292.96, "duration": 3.599}
+{"text": "easy, the bottom line is every time the", "start": 1294.799, "duration": 4.081}
+{"text": "US has done so, something has gone wrong", "start": 1296.559, "duration": 5.521}
+{"text": "and it's ends up backfiring. But the", "start": 1298.88, "duration": 5.2}
+{"text": "most likely scenario if that were to", "start": 1302.08, "duration": 4.0}
+{"text": "take place is that the elements that", "start": 1304.08, "duration": 4.32}
+{"text": "would take over the country are not some", "start": 1306.08, "duration": 4.32}
+{"text": "tree huggers and human rights defenders,", "start": 1308.4, "duration": 4.159}
+{"text": "but it is the most hardline elements in", "start": 1310.4, "duration": 4.32}
+{"text": "the Iranian IRGC, the revolutionary", "start": 1312.559, "duration": 4.081}
+{"text": "guards. They're the ones with the guns.", "start": 1314.72, "duration": 3.439}
+{"text": "They're the ones with the training.", "start": 1316.64, "duration": 3.36}
+{"text": "They're the ones that have shown the the", "start": 1318.159, "duration": 4.481}
+{"text": "the ability and the willingness to use", "start": 1320.0, "duration": 4.799}
+{"text": "it. So, in that type of a chaotic", "start": 1322.64, "duration": 4.24}
+{"text": "situation, it's not the Democrats and", "start": 1324.799, "duration": 3.841}
+{"text": "liberal-minded people that tend to win", "start": 1326.88, "duration": 3.919}
+{"text": "over uh win out. it is the people who", "start": 1328.64, "duration": 4.0}
+{"text": "have the guns. And that's exactly also", "start": 1330.799, "duration": 3.601}
+{"text": "what happened in the Iranian revolution", "start": 1332.64, "duration": 4.88}
+{"text": "1979. That was a revolution that was led", "start": 1334.4, "duration": 5.84}
+{"text": "by the people with several different um", "start": 1337.52, "duration": 4.56}
+{"text": "coalitions and groups and many of them", "start": 1340.24, "duration": 4.72}
+{"text": "very secular. But once the chaos spread", "start": 1342.08, "duration": 4.959}
+{"text": "and it came down to who had the guns, it", "start": 1344.96, "duration": 3.36}
+{"text": "was not the liberals. It was not the", "start": 1347.039, "duration": 2.401}
+{"text": "Democrats that won out.", "start": 1348.32, "duration": 3.52}
+{"text": "To what extent would China and Russia be", "start": 1349.44, "duration": 4.16}
+{"text": "involved in the long protracted war if", "start": 1351.84, "duration": 2.8}
+{"text": "it were to happen?", "start": 1353.6, "duration": 3.92}
+{"text": "So I think the Chinese are going to play", "start": 1354.64, "duration": 5.2}
+{"text": "it very carefully. They have had", "start": 1357.52, "duration": 4.32}
+{"text": "tremendous discipline not getting", "start": 1359.84, "duration": 4.48}
+{"text": "themselves dragged in to conflicts in", "start": 1361.84, "duration": 3.92}
+{"text": "the Middle East. They want to trade with", "start": 1364.32, "duration": 2.4}
+{"text": "everyone. They want to have good", "start": 1365.76, "duration": 2.72}
+{"text": "relations with everyone. And they want", "start": 1366.72, "duration": 4.24}
+{"text": "to stay out of their fights. I wish the", "start": 1368.48, "duration": 4.4}
+{"text": "United States had much more of a policy", "start": 1370.96, "duration": 3.52}
+{"text": "that resembled that of the Chinese", "start": 1372.88, "duration": 3.2}
+{"text": "because we tend to do the opposite. We", "start": 1374.48, "duration": 3.439}
+{"text": "get ourselves unnecessarily involved in", "start": 1376.08, "duration": 4.4}
+{"text": "too many different things. But at some", "start": 1377.919, "duration": 4.321}
+{"text": "point, this can end up becoming quite", "start": 1380.48, "duration": 3.36}
+{"text": "costly for the Chinese as well. They're", "start": 1382.24, "duration": 3.919}
+{"text": "getting a lot of their oil uh from Iran", "start": 1383.84, "duration": 4.319}
+{"text": "at a massive discount because of the", "start": 1386.159, "duration": 3.681}
+{"text": "sanctions that the US has imposed on", "start": 1388.159, "duration": 4.64}
+{"text": "Iran. Um and of course they do not want", "start": 1389.84, "duration": 6.079}
+{"text": "to see a situation in which the tide in", "start": 1392.799, "duration": 5.12}
+{"text": "the region entirely turns against China", "start": 1395.919, "duration": 3.601}
+{"text": "in favor of the United States even", "start": 1397.919, "duration": 2.961}
+{"text": "though they don't want to actively fight", "start": 1399.52, "duration": 3.76}
+{"text": "anything like that on from the Russians.", "start": 1400.88, "duration": 5.84}
+{"text": "I think the bar is a little bit lower in", "start": 1403.28, "duration": 4.879}
+{"text": "the sense that not that they would", "start": 1406.72, "duration": 3.04}
+{"text": "directly get themselves involved but", "start": 1408.159, "duration": 3.52}
+{"text": "they will probably provide more military", "start": 1409.76, "duration": 4.48}
+{"text": "assistance. um and and trade with Iran.", "start": 1411.679, "duration": 4.48}
+{"text": "They already have agreements around", "start": 1414.24, "duration": 4.64}
+{"text": "those uh type of things. But what's most", "start": 1416.159, "duration": 4.561}
+{"text": "important for Russia ultimately is to", "start": 1418.88, "duration": 3.2}
+{"text": "rebuild this relationship with the", "start": 1420.72, "duration": 3.6}
+{"text": "United States, resolve the problem with", "start": 1422.08, "duration": 3.68}
+{"text": "Ukraine, and essentially go over the", "start": 1424.32, "duration": 3.2}
+{"text": "head of the Europeans. It's not going to", "start": 1425.76, "duration": 3.12}
+{"text": "sacrifice that for Iran.", "start": 1427.52, "duration": 3.519}
+{"text": "So basically, Iran is not a priority for", "start": 1428.88, "duration": 4.64}
+{"text": "neither China nor Iran.", "start": 1431.039, "duration": 4.64}
+{"text": "Sorry, I think Iran is Russia. Yeah,", "start": 1433.52, "duration": 4.72}
+{"text": "Iran is very strategically lonely. It", "start": 1435.679, "duration": 5.281}
+{"text": "does have uh some relations and some", "start": 1438.24, "duration": 5.28}
+{"text": "elements of support, but none of these", "start": 1440.96, "duration": 5.199}
+{"text": "countries are looking to join into a war", "start": 1443.52, "duration": 4.08}
+{"text": "with the United States on behalf of", "start": 1446.159, "duration": 2.4}
+{"text": "Iran.", "start": 1447.6, "duration": 3.04}
+{"text": "Well, let's take a look at uh this. This", "start": 1448.559, "duration": 3.921}
+{"text": "leads me to the next piece of news and", "start": 1450.64, "duration": 3.2}
+{"text": "the final uh piece of news we'll be", "start": 1452.48, "duration": 3.28}
+{"text": "covering today. Uh France, Germany, and", "start": 1453.84, "duration": 3.439}
+{"text": "the UK sent a letter Thursday morning to", "start": 1455.76, "duration": 3.2}
+{"text": "members of the UN Security Council", "start": 1457.279, "duration": 2.88}
+{"text": "announcing they are triggering the", "start": 1458.96, "duration": 4.16}
+{"text": "snapback mechanism to reimpose US", "start": 1460.159, "duration": 5.12}
+{"text": "sanctions on Iran, which have been", "start": 1463.12, "duration": 4.72}
+{"text": "suspended under the 2015 nuclear deal.", "start": 1465.279, "duration": 4.081}
+{"text": "Why it matters? In the letter, the three", "start": 1467.84, "duration": 2.959}
+{"text": "European powers emphasized that during", "start": 1469.36, "duration": 2.88}
+{"text": "the next 30 days before the sanctions", "start": 1470.799, "duration": 2.48}
+{"text": "take effect, they are open to", "start": 1472.24, "duration": 3.28}
+{"text": "negotiations with Iran on a nuclear", "start": 1473.279, "duration": 4.4}
+{"text": "agreement that could hold the process. I", "start": 1475.52, "duration": 4.159}
+{"text": "mean, isn't this basically just inviting", "start": 1477.679, "duration": 3.921}
+{"text": "Russia to protect Iran?", "start": 1479.679, "duration": 4.641}
+{"text": "It is escalatory. Um, I do not believe", "start": 1481.6, "duration": 4.72}
+{"text": "the Europeans believe themselves that", "start": 1484.32, "duration": 4.8}
+{"text": "this is going to help diplomacy. To push", "start": 1486.32, "duration": 4.56}
+{"text": "for diplomacy with this tight deadline", "start": 1489.12, "duration": 3.679}
+{"text": "when the two sides are so far away from", "start": 1490.88, "duration": 4.48}
+{"text": "each other, um, is not conducive to", "start": 1492.799, "duration": 3.841}
+{"text": "success. And I think they fully", "start": 1495.36, "duration": 3.199}
+{"text": "understand that. In fact, I think their", "start": 1496.64, "duration": 4.639}
+{"text": "calculation behind this is that Iran is", "start": 1498.559, "duration": 5.041}
+{"text": "no longer important for Europe. Years of", "start": 1501.279, "duration": 4.081}
+{"text": "sanctions have killed whatever trade", "start": 1503.6, "duration": 3.439}
+{"text": "existed. Europeans are not relying on", "start": 1505.36, "duration": 3.6}
+{"text": "Iranian oil any longer. They're not", "start": 1507.039, "duration": 4.321}
+{"text": "going to go back to Iranian oil. So Iran", "start": 1508.96, "duration": 4.319}
+{"text": "is not a relevant player for them. But", "start": 1511.36, "duration": 4.16}
+{"text": "Iran has emerged as an actual threat to", "start": 1513.279, "duration": 3.76}
+{"text": "Europe from the European standpoint", "start": 1515.52, "duration": 3.12}
+{"text": "because of its support for Russia and", "start": 1517.039, "duration": 3.841}
+{"text": "Ukraine. So there's a desire to punish", "start": 1518.64, "duration": 4.88}
+{"text": "Iran because of its support for Russia.", "start": 1520.88, "duration": 5.039}
+{"text": "And there's also a desire to see if they", "start": 1523.52, "duration": 4.48}
+{"text": "can align themselves with the more", "start": 1525.919, "duration": 3.681}
+{"text": "hawkish elements in the Trump", "start": 1528.0, "duration": 4.64}
+{"text": "administration and use by essentially", "start": 1529.6, "duration": 5.12}
+{"text": "aligning themselves on Iran and then use", "start": 1532.64, "duration": 4.56}
+{"text": "that in order to lessen tensions", "start": 1534.72, "duration": 4.559}
+{"text": "elsewhere in the transatlantic", "start": 1537.2, "duration": 4.24}
+{"text": "relationship which is of such importance", "start": 1539.279, "duration": 5.041}
+{"text": "to the Europeans. Um and for that", "start": 1541.44, "duration": 4.64}
+{"text": "sacrificing Iran or even getting an", "start": 1544.32, "duration": 4.64}
+{"text": "escalation with Iran is not any longer", "start": 1546.08, "duration": 4.719}
+{"text": "apparently a problem. And and again", "start": 1548.96, "duration": 3.199}
+{"text": "don't take it from me. Take it from what", "start": 1550.799, "duration": 2.961}
+{"text": "the German chancellor himself said when", "start": 1552.159, "duration": 4.081}
+{"text": "the Israelis started this war when he", "start": 1553.76, "duration": 5.36}
+{"text": "said Israel is doing Europe's dirty work", "start": 1556.24, "duration": 6.08}
+{"text": "for it. That was a direct endorsement of", "start": 1559.12, "duration": 5.2}
+{"text": "the Israelis using military force which", "start": 1562.32, "duration": 5.12}
+{"text": "is a 180 degree different position for", "start": 1564.32, "duration": 4.64}
+{"text": "the Germans than what they have had up", "start": 1567.44, "duration": 4.16}
+{"text": "until 2022 at least when they have stood", "start": 1568.96, "duration": 4.88}
+{"text": "very firmly and done quite a lot and and", "start": 1571.6, "duration": 4.319}
+{"text": "and I would commend them for a lot of", "start": 1573.84, "duration": 3.92}
+{"text": "the efforts they did to try to avoid a", "start": 1575.919, "duration": 2.801}
+{"text": "larger Middle East war.", "start": 1577.76, "duration": 2.32}
+{"text": "Okay. My final question before we go,", "start": 1578.72, "duration": 3.439}
+{"text": "Truda, you wrote uh in the uh foreign", "start": 1580.08, "duration": 3.68}
+{"text": "policy piece that Israel is likely to", "start": 1582.159, "duration": 3.041}
+{"text": "launch another war with Iran before", "start": 1583.76, "duration": 2.64}
+{"text": "December. We've already talked about", "start": 1585.2, "duration": 2.8}
+{"text": "that. Is that still your view before", "start": 1586.4, "duration": 3.36}
+{"text": "December? Is that still your timeline?", "start": 1588.0, "duration": 3.919}
+{"text": "And if so, what are some of the key de", "start": 1589.76, "duration": 4.56}
+{"text": "developments or potential events leading", "start": 1591.919, "duration": 4.321}
+{"text": "up to that that we should be watching", "start": 1594.32, "duration": 2.32}
+{"text": "for?", "start": 1596.24, "duration": 2.08}
+{"text": "I think the time frame up until December", "start": 1596.64, "duration": 3.519}
+{"text": "is the most likely one. And again, it's", "start": 1598.32, "duration": 5.28}
+{"text": "primarily driven uh by the political", "start": 1600.159, "duration": 7.201}
+{"text": "clock in Washington. Once you enter the", "start": 1603.6, "duration": 5.36}
+{"text": "midterm elections, I think it will just", "start": 1607.36, "duration": 3.52}
+{"text": "get a little bit too messy and more", "start": 1608.96, "duration": 3.92}
+{"text": "difficult for them to be able to get", "start": 1610.88, "duration": 4.399}
+{"text": "Trump on board. But between then and", "start": 1612.88, "duration": 4.88}
+{"text": "now, I think it will primarily be driven", "start": 1615.279, "duration": 5.441}
+{"text": "by Israel's own readiness uh in terms of", "start": 1617.76, "duration": 4.799}
+{"text": "having rebuilt its stockpile of", "start": 1620.72, "duration": 3.52}
+{"text": "interceptors, learned as much as", "start": 1622.559, "duration": 4.321}
+{"text": "possible from the previous war. whatever", "start": 1624.24, "duration": 4.0}
+{"text": "they are trying to do on the", "start": 1626.88, "duration": 2.96}
+{"text": "intelligence front because they did an", "start": 1628.24, "duration": 3.12}
+{"text": "intelligence coup in the beginning of", "start": 1629.84, "duration": 4.64}
+{"text": "the previous war. Can they um uh strike", "start": 1631.36, "duration": 5.36}
+{"text": "again in that uh sense or not? I think", "start": 1634.48, "duration": 3.76}
+{"text": "factors of that kind will make the", "start": 1636.72, "duration": 3.199}
+{"text": "determination when within this time", "start": 1638.24, "duration": 3.76}
+{"text": "frame it will happen. And and things", "start": 1639.919, "duration": 4.081}
+{"text": "such as snapback can potentially provide", "start": 1642.0, "duration": 3.44}
+{"text": "a political lubricant, but I don't think", "start": 1644.0, "duration": 3.279}
+{"text": "the Israelis need it. Uh and they they", "start": 1645.44, "duration": 3.2}
+{"text": "didn't need it last time either. They", "start": 1647.279, "duration": 3.121}
+{"text": "were actually pushing to have an attack", "start": 1648.64, "duration": 4.32}
+{"text": "back in February uh of this year and", "start": 1650.4, "duration": 4.56}
+{"text": "Trump said no to them at that time but", "start": 1652.96, "duration": 3.599}
+{"text": "then apparently said yes sometime", "start": 1654.96, "duration": 2.8}
+{"text": "towards the end of May.", "start": 1656.559, "duration": 2.48}
+{"text": "Excellent. Thank you very much for your", "start": 1657.76, "duration": 3.68}
+{"text": "analysis. Uh very timely update. Where", "start": 1659.039, "duration": 3.681}
+{"text": "can we follow you and learn more about", "start": 1661.44, "duration": 2.239}
+{"text": "you?", "start": 1662.72, "duration": 3.28}
+{"text": "You can go to Twitter on X. I'm at", "start": 1663.679, "duration": 5.041}
+{"text": "Tarsy. Uh and you can go to the Quincy", "start": 1666.0, "duration": 4.08}
+{"text": "Institute's website which is", "start": 1668.72, "duration": 4.16}
+{"text": "quincyst.org.", "start": 1670.08, "duration": 3.839}
+{"text": "Okay. We'll put the links down below.", "start": 1672.88, "duration": 3.039}
+{"text": "So, make sure to follow Trida and the", "start": 1673.919, "duration": 4.24}
+{"text": "Quincy Institute in the description", "start": 1675.919, "duration": 3.681}
+{"text": "links down there. Thank you very much,", "start": 1678.159, "duration": 3.12}
+{"text": "Trida. Thank you so much for having us", "start": 1679.6, "duration": 2.319}
+{"text": "summer.", "start": 1681.279, "duration": 1.52}
+{"text": "Thank you for watching.", "start": 1681.919, "duration": 1.76}
+{"text": "Thank you.", "start": 1682.799, "duration": 1.921}
+{"text": "Thank you. And thank you for watching.", "start": 1683.679, "duration": 4.761}
+{"text": "Don't forget to like and subscribe.", "start": 1684.72, "duration": 3.72}

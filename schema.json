@@ -1,0 +1,112 @@
+{
+  "tables": [
+    {
+      "name": "users",
+      "db_type":"admin",
+      "drop_backup": "drop table if exists users_bu_;",
+      "create_backup":"create table users_bu_ as select * from users;",
+      "drop_table": "drop table if exists users;",
+      "create_table": "create table users(no int, email varchar, pro_active boolean, start_pro timestamp, end_pro timestamp);",
+      "columns": [
+        {"name": "no", "type": "int"},
+        {"name": "email", "type": "varchar"},
+        {"name": "pro_active", "type": "boolean"},
+        {"name": "start_pro", "type": "timestamp"},
+        {"name": "end_pro", "type": "timestamp"}
+      ],
+      "primary_key": [],
+      "foreign_keys": []
+    },
+    {
+      "name": "channels",
+      "db_type":"data",
+      "drop_backup": "drop table if exists channels_bu_;",
+      "create_backup":"create table channels_bu_ as select * from channels;",
+      "drop_table": "drop table if exists channels;",
+      "create_table": "create table channels(name varchar, video_id varchar unique, transcript_downloaded boolean, transcript_parsed boolean, ts datetime default current_timestamp, video_date timestamp, guest varchar, description_summary varchar, valid bool, primary key (name, video_id));",
+      "columns": [
+        {"name": "name", "type": "varchar"},
+        {"name": "video_id", "type": "varchar", "unique": true},
+        {"name": "transcript_downloaded", "type": "boolean"},
+        {"name": "transcript_parsed", "type": "boolean"},
+        {"name": "ts", "type": "datetime", "default": "current_timestamp"},
+        {"name": "video_date", "type": "timestamp"},
+        {"name": "guest", "type": "varchar"},
+        {"name": "description_summary", "type": "varchar"},
+        {"name": "valid", "type": "bool"}
+      ],
+      "primary_key": ["name", "video_id"],
+      "foreign_keys": []
+    },
+    {
+      "name": "answers",
+      "db_type":"data",
+      "drop_backup": "drop table if exists answers_bu_;",
+      "create_backup":"create table answers_bu_ as select * from answers;",
+      "drop_table": "drop table if exists answers;",
+      "create_table": "create table answers(no int, video_id varchar, text varchar, asset varchar, sentiment varchar, quotes varchar, ts datetime default current_timestamp, primary key (video_id, no), foreign key (video_id) references channels(video_id));",
+      "columns": [
+        {"name": "no", "type": "int"},
+        {"name": "video_id", "type": "varchar"},
+        {"name": "text", "type": "varchar"},
+        {"name": "asset", "type": "varchar"},
+        {"name": "sentiment", "type": "varchar"},
+        {"name": "quotes", "type": "varchar"},
+        {"name": "ts", "type": "datetime", "default": "current_timestamp"}
+      ],
+      "primary_key": ["video_id", "no"],
+      "foreign_keys": [
+        {
+          "column": "video_id",
+          "references_table": "channels",
+          "references_column": "video_id"
+        }
+      ]
+    },
+    {
+      "name": "raw_answers",
+      "db_type":"data",
+      "drop_backup": "drop table if exists raw_answers_bu_;",
+      "create_backup":"create table raw_answers_bu_ as select * from raw_answers;",
+      "drop_table": "drop table if exists raw_answers;",
+      "create_table": "create table raw_answers(video_id varchar, text varchar, ts datetime default current_timestamp, primary key (video_id, text));",
+      "columns": [
+        {"name": "video_id", "type": "varchar"},
+        {"name": "text", "type": "varchar"},
+        {"name": "ts", "type": "datetime", "default": "current_timestamp"}
+      ],
+      "primary_key": ["video_id", "text"],
+      "foreign_keys": [
+        {
+          "column": "video_id",
+          "references_table": "channels",
+          "references_column": "video_id"
+        }
+      ]
+    },
+    {
+      "name": "transcripts",
+      "db_type":"data",
+      "drop_backup": "drop table if exists transcripts_bu_;",
+      "create_backup":"create table transcripts_bu_ as select * from transcripts;",
+      "drop_table": "drop table if exists transcripts;",
+      "create_table": "create table transcripts(no int, video_id varchar, text varchar, start number, duration number, ts datetime default current_timestamp, primary key (video_id, text, start), foreign key (video_id) references channels(video_id));",
+      "columns": [
+        {"name": "no", "type": "int"},
+        {"name": "video_id", "type": "varchar"},
+        {"name": "text", "type": "varchar"},
+        {"name": "start", "type": "number"},
+        {"name": "duration", "type": "number"},
+        {"name": "ts", "type": "datetime", "default": "current_timestamp"}
+      ],
+      "primary_key": ["video_id", "text", "start"],
+      "foreign_keys": [
+        {
+          "column": "video_id",
+          "references_table": "channels",
+          "references_column": "video_id"
+        }
+      ]
+    }
+  ]
+}

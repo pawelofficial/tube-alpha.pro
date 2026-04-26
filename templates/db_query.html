@@ -1,0 +1,297 @@
+{% extends "base.html" %}
+
+{% block title %}Query Tool - Youtube Investor{% endblock %}
+
+{% block extra_head %}
+<style>
+    .query-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .query-editor {
+        position: relative;
+    }
+    
+    .query-textarea {
+        width: 100%;
+        min-height: 150px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #f8f9fa;
+        resize: vertical;
+    }
+    
+    .query-textarea:focus {
+        outline: none;
+        border-color: #4CAF50;
+        background: #fff;
+    }
+    
+    .results-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    .results-table th {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: left;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .results-table td {
+        border: 1px solid #ddd;
+        padding: 8px 12px;
+    }
+    
+    .results-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    .results-table tr:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .table-container {
+        max-height: 500px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+    
+    .example-queries {
+        background: #f8f9fa;
+        border-radius: 6px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .example-query-item {
+        cursor: pointer;
+        padding: 8px 12px;
+        margin: 4px 0;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        transition: all 0.2s;
+    }
+    
+    .example-query-item:hover {
+        background: #e3f2fd;
+        border-color: #2196F3;
+    }
+    
+    .example-query-title {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 4px;
+    }
+    
+    .example-query-sql {
+        font-family: monospace;
+        font-size: 12px;
+        color: #666;
+        white-space: pre-wrap;
+    }
+    
+    .stats-bar {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        border-radius: 4px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    
+    .alert {
+        padding: 12px 20px;
+        border-radius: 6px;
+        margin: 20px 0;
+    }
+    
+    .alert-error {
+        background: #ffebee;
+        color: #c62828;
+        border: 1px solid #ffcdd2;
+    }
+    
+    .alert-success {
+        background: #e8f5e9;
+        color: #2e7d32;
+        border: 1px solid #c8e6c9;
+    }
+    
+    .query-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .btn-group {
+        display: flex;
+        gap: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="section">
+    <div class="container query-container">
+
+{% if example_queries %}
+<div class="example-queries">
+    <h3 onclick="toggleExamples()" style="cursor: pointer; user-select: none; margin: 0;">
+        <span id="exampleArrow" style="display: inline-block; transition: transform 0.3s;">▶</span> 📚 Example Queries
+    </h3>
+    <div class="example-queries-list" id="examplesList" style="display: none; margin-top: 15px;">
+        {% for query in example_queries %}
+        <div class="example-query-item" onclick="setQuery('{{ query.sql|replace("'", "\\'") }}')">
+            <div class="example-query-title">{{ query.title }}</div>
+            <div class="example-query-sql">{{ query.sql }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+function toggleExamples() {
+    const list = document.getElementById('examplesList');
+    const arrow = document.getElementById('exampleArrow');
+    
+    if (list.style.display === 'none' || list.style.display === '') {
+        list.style.display = 'block';
+        arrow.style.transform = 'rotate(90deg)';
+    } else {
+        list.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
+</script>
+{% endif %}
+
+        <div class="card">
+            <div class="card-body">
+                <h2>SQL Query Editor</h2>
+                
+                <form method="post" action="/db">
+                    <div class="query-editor">
+                        <textarea 
+                            name="sql_query" 
+                            class="query-textarea" 
+                            placeholder="Enter your SQL query here... (Only SELECT queries are allowed)"
+                            required>{{ query if query else '' }}</textarea>
+                    </div>
+                    
+                    <div class="query-controls">
+                        <div class="btn-group">
+                            <button type="submit" class="btn btn-primary">
+                                ▶️ Execute Query
+                            </button>
+                            <button type="button" class="btn btn-outline" onclick="clearQuery()">
+                                🗑️ Clear
+                            </button>
+                        </div>
+                        <div>
+                            <small class="text-muted">
+                                💡 Tip: Only SELECT statements are allowed for security
+                            </small>
+                        </div>
+                    </div>
+                </form>
+
+                {% if error_message %}
+                <div class="alert alert-error">
+                    ⚠️ <strong>Error:</strong> {{ error_message }}
+                </div>
+                {% endif %}
+
+                {% if results is not none %}
+                    {% if results|length > 0 %}
+                    <div class="alert alert-success">
+                        ✅ Query executed successfully
+                    </div>
+                    
+                    <div class="stats-bar">
+                        <span>📊 <strong>Rows returned:</strong> {{ results|length }}</span>
+                        <span>📋 <strong>Columns:</strong> {{ columns|length }}</span>
+                    </div>
+
+                    <div class="table-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    {% for column in columns %}
+                                    <th>{{ column }}</th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in results %}
+                                <tr>
+                                    {% for value in row %}
+                                    <td>{{ value if value is not none else 'NULL' }}</td>
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="alert alert-success">
+                        ✅ Query executed successfully - No rows returned
+                    </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="mt-lg text-center">
+            <p class="text-muted">
+                <strong>Database:</strong> mydb.sqlite | 
+                <strong>User:</strong> {{ user_email if user_email else 'Not authenticated' }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+function setQuery(sql) {
+    const textarea = document.querySelector('.query-textarea');
+    textarea.value = sql;
+    textarea.focus();
+}
+
+function clearQuery() {
+    const textarea = document.querySelector('.query-textarea');
+    textarea.value = '';
+    textarea.focus();
+}
+
+// Add keyboard shortcut for executing query (Ctrl/Cmd + Enter)
+document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.querySelector('.query-textarea');
+    const form = document.querySelector('form');
+    
+    textarea.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+            e.preventDefault();
+            form.submit();
+        }
+    });
+});
+</script>
+{% endblock %}

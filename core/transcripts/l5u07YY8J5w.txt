@@ -1,0 +1,1395 @@
+{"text": "Economists keep saying, \"Oh, inflation", "start": 0.08, "duration": 4.719}
+{"text": "is a rate of change.\" So, if you have", "start": 2.48, "duration": 4.879}
+{"text": "this oneoff thing and there's no more", "start": 4.799, "duration": 4.321}
+{"text": "knock-on effects, then there's no", "start": 7.359, "duration": 4.001}
+{"text": "inflation. It's done.", "start": 9.12, "duration": 4.0}
+{"text": "But that's not what the consumer cares", "start": 11.36, "duration": 3.12}
+{"text": "about. They don't care about whether the", "start": 13.12, "duration": 3.04}
+{"text": "rate of change is done or not. They care", "start": 14.48, "duration": 3.04}
+{"text": "that their prices went up and they're", "start": 16.16, "duration": 2.879}
+{"text": "not going down. How long will this", "start": 17.52, "duration": 2.88}
+{"text": "process take, by the way?", "start": 19.039, "duration": 3.521}
+{"text": ">> Years. Global Tra of the Independent", "start": 20.4, "duration": 4.08}
+{"text": "Speculator joins us once more. He will", "start": 22.56, "duration": 4.16}
+{"text": "be talking to us about his outlook on", "start": 24.48, "duration": 4.32}
+{"text": "monetary policy, global economic growth,", "start": 26.72, "duration": 4.879}
+{"text": "and the resource sector, which are the", "start": 28.8, "duration": 4.88}
+{"text": "commodities that global likes the best.", "start": 31.599, "duration": 4.401}
+{"text": "What will the Fed do next? What's going", "start": 33.68, "duration": 4.16}
+{"text": "to happen to gold after it's been", "start": 36.0, "duration": 3.6}
+{"text": "plateauing for quite some time? Is it", "start": 37.84, "duration": 3.76}
+{"text": "too late to get in gold? Should gold", "start": 39.6, "duration": 3.68}
+{"text": "investors take profits? These are all", "start": 41.6, "duration": 3.84}
+{"text": "questions we'll be addressing with Lobo", "start": 43.28, "duration": 4.959}
+{"text": "today. So, very exciting episode up", "start": 45.44, "duration": 4.88}
+{"text": "ahead. I'll be attending the Precious", "start": 48.239, "duration": 5.521}
+{"text": "Metals Summit in Beaver Creek, Colorado.", "start": 50.32, "duration": 5.68}
+{"text": "uh in a few weeks, September 9th to 12th", "start": 53.76, "duration": 4.08}
+{"text": "to be exact, and I'll be covering the", "start": 56.0, "duration": 4.0}
+{"text": "conference by interviewing some of the", "start": 57.84, "duration": 4.08}
+{"text": "uh most prominent thought leaders in the", "start": 60.0, "duration": 3.76}
+{"text": "resource sector. They have a great", "start": 61.92, "duration": 4.48}
+{"text": "lineup of keynote speakers this year, as", "start": 63.76, "duration": 5.039}
+{"text": "they always do in prior years. Also be", "start": 66.4, "duration": 5.039}
+{"text": "interviewing key CEOs of the resource", "start": 68.799, "duration": 5.281}
+{"text": "sector, bringing you insights from the", "start": 71.439, "duration": 5.281}
+{"text": "ground that you've never seen before.", "start": 74.08, "duration": 4.16}
+{"text": "And I'll be airing these episodes", "start": 76.72, "duration": 3.12}
+{"text": "shortly after the conference, so stay", "start": 78.24, "duration": 3.36}
+{"text": "tuned. It'll be sponsored and brought to", "start": 79.84, "duration": 4.8}
+{"text": "you by Tutor Gold. Back to Lobo. Thanks", "start": 81.6, "duration": 4.64}
+{"text": "for being here, Lobo. Good to see you as", "start": 84.64, "duration": 2.4}
+{"text": "always.", "start": 86.24, "duration": 2.16}
+{"text": ">> Always glad to be on the show with you,", "start": 87.04, "duration": 1.84}
+{"text": "David.", "start": 88.4, "duration": 2.0}
+{"text": ">> What's going on in the world, Lobo?", "start": 88.88, "duration": 3.76}
+{"text": "We've caught up a couple months ago. Uh", "start": 90.4, "duration": 5.359}
+{"text": "what do you think has transpired", "start": 92.64, "duration": 5.36}
+{"text": "globally that has caught your eye? How", "start": 95.759, "duration": 5.521}
+{"text": "do you see the planet uh of humans uh", "start": 98.0, "duration": 5.68}
+{"text": "evolving over the next couple of months?", "start": 101.28, "duration": 4.479}
+{"text": "Uh I'll leave it very broad for the", "start": 103.68, "duration": 5.28}
+{"text": "first question. Sure, there's a lot we", "start": 105.759, "duration": 5.201}
+{"text": "could say there, but I I think there is", "start": 108.96, "duration": 4.32}
+{"text": "one important central theme. This is not", "start": 110.96, "duration": 5.519}
+{"text": "entirely new, but maybe it's", "start": 113.28, "duration": 6.24}
+{"text": "more important, more urgent than ever.", "start": 116.479, "duration": 5.841}
+{"text": "And this isn't just a loboism, but", "start": 119.52, "duration": 5.68}
+{"text": "complacency. Complacency on Wall Street.", "start": 122.32, "duration": 4.32}
+{"text": "And I'm not just talking about new", "start": 125.2, "duration": 3.279}
+{"text": "all-time highs every week in the S&P", "start": 126.64, "duration": 4.88}
+{"text": "500, though that's part of it. It just", "start": 128.479, "duration": 5.281}
+{"text": "there's a there's a growing drum beat in", "start": 131.52, "duration": 4.48}
+{"text": "the narrative that the worst of Trump", "start": 133.76, "duration": 5.28}
+{"text": "shock is behind us. You know, ever since", "start": 136.0, "duration": 5.12}
+{"text": "so-called liberation day, it's been", "start": 139.04, "duration": 3.68}
+{"text": "every you know, that was the worst and", "start": 141.12, "duration": 3.28}
+{"text": "that's behind us. Everything's getting", "start": 142.72, "duration": 3.76}
+{"text": "better.", "start": 144.4, "duration": 4.559}
+{"text": "And I just don't think that's true.", "start": 146.48, "duration": 4.16}
+{"text": "Maybe the the most shocking", "start": 148.959, "duration": 3.681}
+{"text": "announcements are behind us, but as we", "start": 150.64, "duration": 3.92}
+{"text": "see right now, we've got Trump just", "start": 152.64, "duration": 4.239}
+{"text": "smacking India with a 50% tariff because", "start": 154.56, "duration": 4.959}
+{"text": "they're buying Russian oil. I don't see", "start": 156.879, "duration": 4.961}
+{"text": "them stopping to buy Russian oil. I", "start": 159.519, "duration": 3.761}
+{"text": "think it's optimistic to think that", "start": 161.84, "duration": 2.96}
+{"text": "suddenly peace will break out. I'm not", "start": 163.28, "duration": 4.16}
+{"text": "sure how that one plays out. But it's", "start": 164.8, "duration": 5.92}
+{"text": "just one example of how,", "start": 167.44, "duration": 4.56}
+{"text": "you know, the shocks are not done", "start": 170.72, "duration": 3.599}
+{"text": "coming. But that aside, let's let's say", "start": 172.0, "duration": 4.239}
+{"text": "that Trump's done. No more new tariffs.", "start": 174.319, "duration": 4.081}
+{"text": "It is what it is. You know, the deals", "start": 176.239, "duration": 3.601}
+{"text": "are what they are. The letters have gone", "start": 178.4, "duration": 3.04}
+{"text": "out, right? It's done. No more no more", "start": 179.84, "duration": 4.399}
+{"text": "shocking new announcements. Well, fine.", "start": 181.44, "duration": 4.56}
+{"text": "That's the deals. That's the", "start": 184.239, "duration": 4.0}
+{"text": "announcements. That's the letters. What", "start": 186.0, "duration": 3.92}
+{"text": "about the impact of these things on the", "start": 188.239, "duration": 3.841}
+{"text": "real economy that is still in front of", "start": 189.92, "duration": 3.76}
+{"text": "us?", "start": 192.08, "duration": 4.239}
+{"text": "And so", "start": 193.68, "duration": 4.559}
+{"text": "I come back to my initial point. I I", "start": 196.319, "duration": 4.161}
+{"text": "really think that it is a mistake and", "start": 198.239, "duration": 4.321}
+{"text": "it's surprising to me that such", "start": 200.48, "duration": 4.24}
+{"text": "experienced investors on Wall Street,", "start": 202.56, "duration": 4.0}
+{"text": "people with, you know, giant buildings", "start": 204.72, "duration": 3.84}
+{"text": "full of supercomputers", "start": 206.56, "duration": 3.759}
+{"text": "are are making what looked to me to be", "start": 208.56, "duration": 4.56}
+{"text": "like such a rookie mistake. The Piper", "start": 210.319, "duration": 4.801}
+{"text": "has not been paid for what's being done", "start": 213.12, "duration": 5.039}
+{"text": "right now, let alone anything else.", "start": 215.12, "duration": 6.96}
+{"text": "And that has consequences. And I I I do", "start": 218.159, "duration": 5.521}
+{"text": "expect to see the boat rocked. I'm not", "start": 222.08, "duration": 3.12}
+{"text": "saying the market's about to crash or", "start": 223.68, "duration": 2.8}
+{"text": "anything dramatic, though that could", "start": 225.2, "duration": 3.92}
+{"text": "happen. I'm just saying Trump shock", "start": 226.48, "duration": 4.399}
+{"text": "ain't done yet. It's got to work its way", "start": 229.12, "duration": 4.16}
+{"text": "through the real economy and that will", "start": 230.879, "duration": 4.401}
+{"text": "impact our investments and investors", "start": 233.28, "duration": 3.44}
+{"text": "abroad and in general.", "start": 235.28, "duration": 2.879}
+{"text": ">> Well, as we speak today on Wednesday,", "start": 236.72, "duration": 3.599}
+{"text": "Trump just slapped a 50% tariff over", "start": 238.159, "duration": 4.881}
+{"text": "India uh on the news that they bought", "start": 240.319, "duration": 5.041}
+{"text": "Russian oil. steep US tariffs on a range", "start": 243.04, "duration": 3.759}
+{"text": "of Indian products have taken effect,", "start": 245.36, "duration": 3.04}
+{"text": "threatening a serious blow to India's", "start": 246.799, "duration": 3.921}
+{"text": "overseas trade in its largest export", "start": 248.4, "duration": 4.16}
+{"text": "market. This is one of the highest", "start": 250.72, "duration": 4.239}
+{"text": "tariffs imposed on any country to date.", "start": 252.56, "duration": 4.32}
+{"text": "Markets actually are kind of unmoved", "start": 254.959, "duration": 4.081}
+{"text": "today on the news. Uh crude oil is up", "start": 256.88, "duration": 4.8}
+{"text": "1%. That's the big mover. Um Treasury", "start": 259.04, "duration": 7.439}
+{"text": "yields are uh uh uh slightly up. Now I I", "start": 261.68, "duration": 6.16}
+{"text": "just to illustrate your point. So", "start": 266.479, "duration": 3.121}
+{"text": "tariffs aren't over. What are these", "start": 267.84, "duration": 4.88}
+{"text": "consequences you you're talking about?", "start": 269.6, "duration": 4.56}
+{"text": "Uh, Lobo, you're not calling for a", "start": 272.72, "duration": 2.8}
+{"text": "market crash right now, but what do", "start": 274.16, "duration": 3.36}
+{"text": "these consequences of Trump's quote", "start": 275.52, "duration": 3.76}
+{"text": "unquote rookie mistake? What do they", "start": 277.52, "duration": 2.32}
+{"text": "look like?", "start": 279.28, "duration": 2.639}
+{"text": ">> Uh, well, no, I didn't say Trump made", "start": 279.84, "duration": 3.76}
+{"text": "the rookie mistake. And whether or not", "start": 281.919, "duration": 3.361}
+{"text": "you agree with Trump's agenda or not is", "start": 283.6, "duration": 4.879}
+{"text": "is a whole separate kettle of fish. I", "start": 285.28, "duration": 5.04}
+{"text": "think Trump has an agenda. And I think", "start": 288.479, "duration": 3.44}
+{"text": "what he's doing is consistent with that", "start": 290.32, "duration": 2.879}
+{"text": "agenda. And again, whether you agree", "start": 291.919, "duration": 3.521}
+{"text": "with it or not, I actually don't think", "start": 293.199, "duration": 4.72}
+{"text": "Trump is being stupid or crazy in terms", "start": 295.44, "duration": 4.8}
+{"text": "of him pursuing his agenda. Now, whether", "start": 297.919, "duration": 3.361}
+{"text": "you agree with the agenda, that's a", "start": 300.24, "duration": 2.64}
+{"text": "separate question. I was saying the Wall", "start": 301.28, "duration": 3.52}
+{"text": "Street guys, the fat cats with the big", "start": 302.88, "duration": 2.72}
+{"text": "investment firms,", "start": 304.8, "duration": 1.28}
+{"text": ">> okay?", "start": 305.6, "duration": 1.76}
+{"text": ">> They're the ones who are drinking the", "start": 306.08, "duration": 2.88}
+{"text": "Kool-Aid and thinking, \"Oh, everything's", "start": 307.36, "duration": 3.44}
+{"text": "fine. Everything's fine. Nothing to", "start": 308.96, "duration": 3.519}
+{"text": "worry about here. Move along.\" These", "start": 310.8, "duration": 4.56}
+{"text": "aren't the droids you're looking for,", "start": 312.479, "duration": 5.841}
+{"text": "right? Um, so as far as the", "start": 315.36, "duration": 5.679}
+{"text": "consequences, even even the mainstream,", "start": 318.32, "duration": 4.159}
+{"text": "like you listen to the debate about", "start": 321.039, "duration": 3.841}
+{"text": "tariff inflation and so on, the debate", "start": 322.479, "duration": 4.16}
+{"text": "is not about whether or not prices are", "start": 324.88, "duration": 4.08}
+{"text": "going to go up. Like even though Trump", "start": 326.639, "duration": 3.601}
+{"text": "keeps saying the Chinese are going to", "start": 328.96, "duration": 2.64}
+{"text": "pay the tariffs or whoever the", "start": 330.24, "duration": 3.04}
+{"text": "foreigners are going to pay the tariffs,", "start": 331.6, "duration": 3.52}
+{"text": "I think pretty much everybody besides", "start": 333.28, "duration": 5.759}
+{"text": "Trump is acknowledging that US consumers", "start": 335.12, "duration": 7.04}
+{"text": "are going to pay at least some of higher", "start": 339.039, "duration": 5.521}
+{"text": "price as a result. The argument isn't", "start": 342.16, "duration": 3.599}
+{"text": "about whether that's going to happen or", "start": 344.56, "duration": 3.44}
+{"text": "not. Like leftwing, right-wing, red,", "start": 345.759, "duration": 4.401}
+{"text": "blue, doesn't matter. Everybody sees", "start": 348.0, "duration": 4.24}
+{"text": "this coming. What the debate is about is", "start": 350.16, "duration": 3.759}
+{"text": "whether it's going to be they don't they", "start": 352.24, "duration": 2.799}
+{"text": "don't want to use the word, but", "start": 353.919, "duration": 2.881}
+{"text": "transitory, right? It's oneoff. you", "start": 355.039, "duration": 3.041}
+{"text": "know, you have these higher tariffs or", "start": 356.8, "duration": 3.2}
+{"text": "there's a one-off adjustment and then", "start": 358.08, "duration": 3.36}
+{"text": "there's no more inflation because it", "start": 360.0, "duration": 4.72}
+{"text": "it's been paid for. That's one argument.", "start": 361.44, "duration": 4.72}
+{"text": "And other people say, well, no, that", "start": 364.72, "duration": 3.599}
+{"text": "doesn't take into account the knock-on", "start": 366.16, "duration": 4.479}
+{"text": "effects, retaliations,", "start": 368.319, "duration": 4.72}
+{"text": "or you know, one of the big factors", "start": 370.639, "duration": 5.201}
+{"text": "right now is all the not just companies", "start": 373.039, "duration": 4.801}
+{"text": "that front ran the tariffs and ordered a", "start": 375.84, "duration": 3.52}
+{"text": "bunch of things from abroad before the", "start": 377.84, "duration": 3.44}
+{"text": "tariffs went in, but the consumers who", "start": 379.36, "duration": 3.92}
+{"text": "stocked up on things before the tariffs", "start": 381.28, "duration": 4.96}
+{"text": "went into effect. So as that cushion,", "start": 383.28, "duration": 5.52}
+{"text": "that safety margin", "start": 386.24, "duration": 4.88}
+{"text": "gets consumed, then you start seeing", "start": 388.8, "duration": 4.32}
+{"text": "more of the tariffs impact both the", "start": 391.12, "duration": 4.079}
+{"text": "consumer and the producers in terms of", "start": 393.12, "duration": 6.639}
+{"text": "their their stocks. So I think it's a", "start": 395.199, "duration": 6.56}
+{"text": "mistake to just dismiss the tariffs and", "start": 399.759, "duration": 4.16}
+{"text": "say, \"Oh, there's no inflation's only", "start": 401.759, "duration": 5.681}
+{"text": "3%.\" That's fine. Uh the impact of", "start": 403.919, "duration": 4.961}
+{"text": "what's been done and what's being done", "start": 407.44, "duration": 2.879}
+{"text": "right now is still to work its way", "start": 408.88, "duration": 3.039}
+{"text": "through the real economy. That's point", "start": 410.319, "duration": 4.401}
+{"text": "number one. Two, there are the knock-on", "start": 411.919, "duration": 4.881}
+{"text": "effects. So, there could be more price", "start": 414.72, "duration": 3.84}
+{"text": "inflation. It may not be a one-off", "start": 416.8, "duration": 3.839}
+{"text": "thing. And then three, the big one is", "start": 418.56, "duration": 4.24}
+{"text": "that economists keep saying, \"Oh,", "start": 420.639, "duration": 4.801}
+{"text": "inflation is a rate of change.\" So, if", "start": 422.8, "duration": 4.64}
+{"text": "you have this oneoff thing and there's", "start": 425.44, "duration": 4.479}
+{"text": "no more knock-on effects, then there's", "start": 427.44, "duration": 5.44}
+{"text": "no inflation. It's done. But that's not", "start": 429.919, "duration": 4.641}
+{"text": "what the consumer cares about. They", "start": 432.88, "duration": 2.96}
+{"text": "don't care about whether the rate of", "start": 434.56, "duration": 2.8}
+{"text": "change is done or not. They care that", "start": 435.84, "duration": 2.799}
+{"text": "their prices went up and they're not", "start": 437.36, "duration": 4.64}
+{"text": "going down. So to to write to to ignore", "start": 438.639, "duration": 5.28}
+{"text": "the inflation impact of the tariffs by", "start": 442.0, "duration": 4.479}
+{"text": "saying it's one and done and we don't", "start": 443.919, "duration": 4.72}
+{"text": "have to worry about it anymore that", "start": 446.479, "duration": 3.601}
+{"text": "ignores the fact that prices are going", "start": 448.639, "duration": 3.761}
+{"text": "to go up significantly", "start": 450.08, "duration": 5.92}
+{"text": "as much as 50% for some products perhaps", "start": 452.4, "duration": 5.04}
+{"text": "and the consumers are not going to be", "start": 456.0, "duration": 2.72}
+{"text": "happy about that and by the way they", "start": 457.44, "duration": 5.199}
+{"text": "vote. So I I do see this as disruptive.", "start": 458.72, "duration": 5.44}
+{"text": "Even if it did turn out to be", "start": 462.639, "duration": 4.801}
+{"text": "transitory, it is significant now this", "start": 464.16, "duration": 5.439}
+{"text": "year and this is at a time where the", "start": 467.44, "duration": 5.12}
+{"text": "labor market is showing weakness. So you", "start": 469.599, "duration": 5.201}
+{"text": "got weakness in the economy and you got", "start": 472.56, "duration": 4.079}
+{"text": "higher prices in the economy. That's", "start": 474.8, "duration": 3.92}
+{"text": "stagflation. And we all know what", "start": 476.639, "duration": 4.481}
+{"text": "stagflation did uh for assets last time", "start": 478.72, "duration": 4.0}
+{"text": "around in the 1970s.", "start": 481.12, "duration": 4.799}
+{"text": ">> Assets being gold, silver, real estate,", "start": 482.72, "duration": 5.52}
+{"text": "hard assets, commodities. Is that what", "start": 485.919, "duration": 4.641}
+{"text": "you're referring to? Yes. Well, I mean,", "start": 488.24, "duration": 3.76}
+{"text": "you're you're naming the ones that did", "start": 490.56, "duration": 3.6}
+{"text": "better. Like real assets did better,", "start": 492.0, "duration": 4.479}
+{"text": "including real money, gold and silver.", "start": 494.16, "duration": 4.159}
+{"text": "Other assets, not so much.", "start": 496.479, "duration": 3.201}
+{"text": ">> You're not the first person to tell me", "start": 498.319, "duration": 2.641}
+{"text": "this week, by the way, I'm not talking", "start": 499.68, "duration": 2.56}
+{"text": "about this whole year. This week that", "start": 500.96, "duration": 3.12}
+{"text": "we're entering stagflation. What's the", "start": 502.24, "duration": 4.88}
+{"text": "Fed going to do about this?", "start": 504.08, "duration": 5.2}
+{"text": ">> Well, two things. One is we had a former", "start": 507.12, "duration": 4.0}
+{"text": "Fred president interviewed at Jackson", "start": 509.28, "duration": 3.999}
+{"text": "Hole saying, \"Gee, you know, I I'm not", "start": 511.12, "duration": 5.68}
+{"text": "saying it's going to be like the 1970s,", "start": 513.279, "duration": 5.521}
+{"text": "but it sure looks like stagflation.\" and", "start": 516.8, "duration": 4.719}
+{"text": "and to have a you know a a Fed or former", "start": 518.8, "duration": 5.28}
+{"text": "Fed official actually use the dreaded", "start": 521.519, "duration": 4.961}
+{"text": "sword is really quite striking. So this", "start": 524.08, "duration": 4.879}
+{"text": "isn't just tinfoil hat Lobo off in the", "start": 526.48, "duration": 4.24}
+{"text": "forests of Lithuania talking about", "start": 528.959, "duration": 4.0}
+{"text": "something crazy that'll never happen.", "start": 530.72, "duration": 4.0}
+{"text": "You know a former Fed president is", "start": 532.959, "duration": 4.641}
+{"text": "saying the economy right now looks like", "start": 534.72, "duration": 4.4}
+{"text": "stagflation.", "start": 537.6, "duration": 2.96}
+{"text": "And then the other, you know, the answer", "start": 539.12, "duration": 2.719}
+{"text": "to your question is, you know, what's", "start": 540.56, "duration": 2.56}
+{"text": "the Fed going to do about it? If you", "start": 541.839, "duration": 3.521}
+{"text": "remember when when a reporter that", "start": 543.12, "duration": 3.839}
+{"text": "reporter was probably never invited back", "start": 545.36, "duration": 3.919}
+{"text": "to a press conference by Powell, but a", "start": 546.959, "duration": 3.921}
+{"text": "reporter asked Pow, \"What is he going to", "start": 549.279, "duration": 3.921}
+{"text": "do if there's stagflation? What's your", "start": 550.88, "duration": 3.84}
+{"text": "plan for having for dealing with", "start": 553.2, "duration": 3.759}
+{"text": "stagflation?\" And Powell's plan was to", "start": 554.72, "duration": 5.36}
+{"text": "not let it happen. Well, guess what?", "start": 556.959, "duration": 4.961}
+{"text": "It's happening. So, where does that", "start": 560.08, "duration": 3.199}
+{"text": "leave? You have no plan. And and this", "start": 561.92, "duration": 3.44}
+{"text": "makes sense, David. You know, the the", "start": 563.279, "duration": 3.68}
+{"text": "toolbox of the Fed, they talk about all", "start": 565.36, "duration": 3.039}
+{"text": "these tools they have. There's there's", "start": 566.959, "duration": 4.961}
+{"text": "really one I mean one and a half maybe", "start": 568.399, "duration": 5.041}
+{"text": "they muck about with interest rates and", "start": 571.92, "duration": 5.039}
+{"text": "yes QE fiddles around on the side. Um", "start": 573.44, "duration": 6.32}
+{"text": "but if your tools are to throttle the", "start": 576.959, "duration": 5.121}
+{"text": "economy to to bring inflation down", "start": 579.76, "duration": 4.56}
+{"text": "because the economy is too hot you know", "start": 582.08, "duration": 3.84}
+{"text": "that doesn't work when the economy is", "start": 584.32, "duration": 2.959}
+{"text": "already weak and the labor market is", "start": 585.92, "duration": 3.84}
+{"text": "weakening. And if your tools on the you", "start": 587.279, "duration": 3.601}
+{"text": "know on the other hand is to stimulate", "start": 589.76, "duration": 2.72}
+{"text": "the economy to get it going because the", "start": 590.88, "duration": 3.68}
+{"text": "labor market's weak. That doesn't work", "start": 592.48, "duration": 3.68}
+{"text": "if inflation is already high because", "start": 594.56, "duration": 2.8}
+{"text": "your stimulation is going to make it", "start": 596.16, "duration": 3.92}
+{"text": "higher. So the Fed's tools are", "start": 597.36, "duration": 4.96}
+{"text": "completely inadequate to a", "start": 600.08, "duration": 4.4}
+{"text": "stagflationary environment. It's they're", "start": 602.32, "duration": 3.6}
+{"text": "damned if they do and they're damned if", "start": 604.48, "duration": 4.4}
+{"text": "they don't. So what do they do? I I", "start": 605.92, "duration": 6.4}
+{"text": "can't tell you what they will do. Uh I'm", "start": 608.88, "duration": 6.56}
+{"text": "guessing that they will probably heir on", "start": 612.32, "duration": 4.88}
+{"text": "the side of throwing the dollar under", "start": 615.44, "duration": 6.0}
+{"text": "the bus. that meaning loosen make easy", "start": 617.2, "duration": 6.879}
+{"text": "money easier to support the labor", "start": 621.44, "duration": 4.639}
+{"text": "market.", "start": 624.079, "duration": 5.841}
+{"text": "Um partly because", "start": 626.079, "duration": 5.681}
+{"text": "you know the the pain when it sets in", "start": 629.92, "duration": 3.2}
+{"text": "will just be really really hard to", "start": 631.76, "duration": 3.6}
+{"text": "ignore and partly because the United", "start": 633.12, "duration": 4.64}
+{"text": "States administration is firing Fed", "start": 635.36, "duration": 6.08}
+{"text": "officials and you know bringing serious", "start": 637.76, "duration": 5.68}
+{"text": "pressure to bear on the feds. So, I I'm", "start": 641.44, "duration": 4.959}
+{"text": "I'm", "start": 643.44, "duration": 5.839}
+{"text": "skeptical of how resistant the Fed will", "start": 646.399, "duration": 5.201}
+{"text": "be to pressure going forward. It seems", "start": 649.279, "duration": 4.641}
+{"text": "that Powell's speech at Jackson Hole has", "start": 651.6, "duration": 5.12}
+{"text": "already suggested that the that the Fed", "start": 653.92, "duration": 4.56}
+{"text": "is feeling the heat. I want to get you", "start": 656.72, "duration": 4.0}
+{"text": "to react to uh something uh Ray Delio", "start": 658.48, "duration": 5.2}
+{"text": "posted about uh well, I won't I won't I", "start": 660.72, "duration": 5.28}
+{"text": "won't ruin the surprise uh in just a", "start": 663.68, "duration": 3.599}
+{"text": "minute. Uh I think you'll have an", "start": 666.0, "duration": 3.44}
+{"text": "interesting reaction to this. But just", "start": 667.279, "duration": 4.161}
+{"text": "on the STflation front, Lobo, didn't we", "start": 669.44, "duration": 5.2}
+{"text": "already have stagflation in 2022 when uh", "start": 671.44, "duration": 4.88}
+{"text": "inflation was just coming off the heels", "start": 674.64, "duration": 4.72}
+{"text": "of 9.1% in the US and we had two", "start": 676.32, "duration": 4.72}
+{"text": "quarters of negative GDP. I mean, that", "start": 679.36, "duration": 3.2}
+{"text": "was a short-lived stagflation. People", "start": 681.04, "duration": 3.6}
+{"text": "say we we haven't had it since 1970s.", "start": 682.56, "duration": 3.6}
+{"text": "Well, we saw that what happened to", "start": 684.64, "duration": 3.12}
+{"text": "markets. Markets came down and then we", "start": 686.16, "duration": 4.16}
+{"text": "recovered. So, what could one make the", "start": 687.76, "duration": 4.56}
+{"text": "argument that's already come and gone?", "start": 690.32, "duration": 2.24}
+{"text": "And", "start": 692.32, "duration": 1.519}
+{"text": ">> you could, but that would be like a", "start": 692.56, "duration": 2.719}
+{"text": "textbook argument,", "start": 693.839, "duration": 3.601}
+{"text": ">> right? And and and this is part of my", "start": 695.279, "duration": 4.401}
+{"text": "whole thing and and even, you know,", "start": 697.44, "duration": 4.079}
+{"text": "Trump's administration has talked about", "start": 699.68, "duration": 3.44}
+{"text": "Main Street versus Wall Street. It's", "start": 701.519, "duration": 3.841}
+{"text": "Main Street's turn, right? On Main", "start": 703.12, "duration": 3.92}
+{"text": "Street, you know, a technical definition", "start": 705.36, "duration": 3.68}
+{"text": "of a recession or a technical definition", "start": 707.04, "duration": 4.08}
+{"text": "of a stagflation, that doesn't matter.", "start": 709.04, "duration": 4.16}
+{"text": "What matters is what am I experiencing?", "start": 711.12, "duration": 5.36}
+{"text": "And if I'm experiencing high prices,", "start": 713.2, "duration": 5.199}
+{"text": ">> and again, it's it's high prices, not", "start": 716.48, "duration": 4.08}
+{"text": "increasing like the increasing is worse,", "start": 718.399, "duration": 3.68}
+{"text": "but if they're just high, I'm not happy.", "start": 720.56, "duration": 3.519}
+{"text": "I don't care if the rate has gone down.", "start": 722.079, "duration": 3.76}
+{"text": "I care that the prices are high. I care", "start": 724.079, "duration": 3.921}
+{"text": "that my grocery bill is much higher than", "start": 725.839, "duration": 4.481}
+{"text": "it was last year. And the fact that it's", "start": 728.0, "duration": 5.04}
+{"text": "not still going up quite as fast.", "start": 730.32, "duration": 4.319}
+{"text": "Doesn't matter. It's still higher and", "start": 733.04, "duration": 3.44}
+{"text": "going higher. So you have that at the", "start": 734.639, "duration": 3.521}
+{"text": "same time that now where before I wasn't", "start": 736.48, "duration": 5.44}
+{"text": "worried about my job, but now I am.", "start": 738.16, "duration": 7.44}
+{"text": "Then I'm not happy. And and so, you", "start": 741.92, "duration": 5.599}
+{"text": "know, I'm not too concerned about", "start": 745.6, "duration": 4.08}
+{"text": "technical definitions. And as you know", "start": 747.519, "duration": 3.841}
+{"text": "very well the they're not going to", "start": 749.68, "duration": 3.92}
+{"text": "declare a recession until a year or two", "start": 751.36, "duration": 4.8}
+{"text": "after the fact. So I I think those kind", "start": 753.6, "duration": 4.64}
+{"text": "of you know technocratic ways of looking", "start": 756.16, "duration": 4.16}
+{"text": "at it are not very useful. It's more", "start": 758.24, "duration": 5.039}
+{"text": "useful to consider you know what's the", "start": 760.32, "duration": 4.4}
+{"text": "reality in the ground? How are people", "start": 763.279, "duration": 3.68}
+{"text": "going to react? What behaviors will", "start": 764.72, "duration": 4.4}
+{"text": "change? How will employers change their", "start": 766.959, "duration": 3.761}
+{"text": "behavior? How will employees change", "start": 769.12, "duration": 4.88}
+{"text": "their behavior? And what does that do in", "start": 770.72, "duration": 5.359}
+{"text": "my investable time frame? What would", "start": 774.0, "duration": 5.04}
+{"text": "this stagflation this time in 2025 or", "start": 776.079, "duration": 4.961}
+{"text": "2026 and beyond look like compared to", "start": 779.04, "duration": 4.479}
+{"text": "the 70s? The 70s were spurred partly by", "start": 781.04, "duration": 4.64}
+{"text": "an oil shock. Uh that's not what's", "start": 783.519, "duration": 4.401}
+{"text": "happening today. So I'm wondering how", "start": 785.68, "duration": 5.2}
+{"text": "the end result may compare. Yeah, I I", "start": 787.92, "duration": 4.64}
+{"text": "think that's a really good point and you", "start": 790.88, "duration": 3.12}
+{"text": "know I would agree with Harker who said", "start": 792.56, "duration": 3.519}
+{"text": "you know it's not going to be the 1970s", "start": 794.0, "duration": 4.72}
+{"text": "over again but even if it doesn't repeat", "start": 796.079, "duration": 5.361}
+{"text": "and it just rhymes I think that's still", "start": 798.72, "duration": 4.799}
+{"text": "if nothing else very bullish for gold", "start": 801.44, "duration": 4.399}
+{"text": "and silver because you know again what", "start": 803.519, "duration": 4.0}
+{"text": "what did really well in the last time", "start": 805.839, "duration": 3.361}
+{"text": "around if that's your only comparable", "start": 807.519, "duration": 4.0}
+{"text": "even if it's not a very good comparable", "start": 809.2, "duration": 4.0}
+{"text": "that's still the only comparable and I", "start": 811.519, "duration": 3.76}
+{"text": "think that adds to the tailwind wins for", "start": 813.2, "duration": 4.4}
+{"text": "gold and silver and the beauty of it is", "start": 815.279, "duration": 5.441}
+{"text": "if if they're already at 3500 40, you", "start": 817.6, "duration": 6.16}
+{"text": "know, or close to that. Um, and you're", "start": 820.72, "duration": 5.2}
+{"text": "looking at upside pressure. Uh, that's", "start": 823.76, "duration": 4.48}
+{"text": "very, very bullish. To answer the", "start": 825.92, "duration": 3.52}
+{"text": "question, of course, I don't have a", "start": 828.24, "duration": 3.2}
+{"text": "silver ball. Yes, many things are very", "start": 829.44, "duration": 4.639}
+{"text": "different. The the OPEC oil shock isn't", "start": 831.44, "duration": 4.88}
+{"text": "happening at the moment. On the other", "start": 834.079, "duration": 5.281}
+{"text": "hand, it seems like things have calmed", "start": 836.32, "duration": 4.959}
+{"text": "down in the Middle East with, you know,", "start": 839.36, "duration": 3.919}
+{"text": "Israel just deciding to pound another", "start": 841.279, "duration": 3.92}
+{"text": "piece of the Gaza Strip into dust as", "start": 843.279, "duration": 4.401}
+{"text": "opposed to bombing Iran. You know, it's", "start": 845.199, "duration": 4.801}
+{"text": "certainly less concerning. it from a", "start": 847.68, "duration": 5.04}
+{"text": "global geopolitical perspective, but it", "start": 850.0, "duration": 4.56}
+{"text": "could heat up again. So that whole oil", "start": 852.72, "duration": 4.08}
+{"text": "thing could come back into play and make", "start": 854.56, "duration": 4.959}
+{"text": "it rhyme more. But never mind, doesn't", "start": 856.8, "duration": 5.44}
+{"text": "have to happen. I I have a feeling that", "start": 859.519, "duration": 4.241}
+{"text": "actually", "start": 862.24, "duration": 3.76}
+{"text": "without anything new happening or change", "start": 863.76, "duration": 4.24}
+{"text": "in the geopolitical scale, I I think it", "start": 866.0, "duration": 4.48}
+{"text": "will not be that much like the 70s. I", "start": 868.0, "duration": 4.959}
+{"text": "think this time the powers that be,", "start": 870.48, "duration": 4.0}
+{"text": "whatever the Fed does, by the way,", "start": 872.959, "duration": 2.961}
+{"text": "remember there's not just monetary", "start": 874.48, "duration": 4.08}
+{"text": "policy, there's fiscal policy. And I", "start": 875.92, "duration": 4.8}
+{"text": "think Congress has no patience for", "start": 878.56, "duration": 4.079}
+{"text": "suffering voters out there. So I think", "start": 880.72, "duration": 4.88}
+{"text": "the money helicopters will just get, you", "start": 882.639, "duration": 5.2}
+{"text": "know, sent into overdrive. What I'm", "start": 885.6, "duration": 4.239}
+{"text": "saying is", "start": 887.839, "duration": 4.56}
+{"text": "the stag part, if it really starts to", "start": 889.839, "duration": 4.321}
+{"text": "hurt, I don't think we're going to get", "start": 892.399, "duration": 3.281}
+{"text": "anywhere near the protracted", "start": 894.16, "duration": 3.359}
+{"text": "stagflationary bout that we had in the", "start": 895.68, "duration": 4.24}
+{"text": "1970s. I think as soon as the stag part", "start": 897.519, "duration": 5.44}
+{"text": "is clear, the Fed is likely to jump in", "start": 899.92, "duration": 5.12}
+{"text": "to help. And whether they do or they", "start": 902.959, "duration": 4.401}
+{"text": "don't, I anticipate Congress will jump", "start": 905.04, "duration": 4.08}
+{"text": "in to help and the money helicopters", "start": 907.36, "duration": 4.08}
+{"text": "will fly and so we get a reflationary", "start": 909.12, "duration": 4.88}
+{"text": "boom. Uh I don't know the future, but", "start": 911.44, "duration": 4.56}
+{"text": "you're asking me for my my best guess.", "start": 914.0, "duration": 4.0}
+{"text": "My best guess is that the stag part will", "start": 916.0, "duration": 4.8}
+{"text": "be fleeting and we probably go quickly", "start": 918.0, "duration": 5.92}
+{"text": "into a more reflationary boom. And maybe", "start": 920.8, "duration": 5.44}
+{"text": "then the Fed says, \"Oh, you know, we", "start": 923.92, "duration": 4.32}
+{"text": "need to fight inflation again.\" But by", "start": 926.24, "duration": 4.08}
+{"text": "then it's too late. By then, Powell's", "start": 928.24, "duration": 3.839}
+{"text": "hopes of being remembered as a vulker", "start": 930.32, "duration": 2.959}
+{"text": "are out the window and he's going to be", "start": 932.079, "duration": 2.88}
+{"text": "remembered as another Arthur Burns.", "start": 933.279, "duration": 3.12}
+{"text": ">> Uh, you know what else happened in the", "start": 934.959, "duration": 3.841}
+{"text": "early 70s? Uh, the gold standard was", "start": 936.399, "duration": 5.68}
+{"text": "removed. And now we have Ray Dallio, one", "start": 938.8, "duration": 4.56}
+{"text": "of the thought leaders in the finance", "start": 942.079, "duration": 4.401}
+{"text": "space, CIO of Bridgewater,", "start": 943.36, "duration": 6.0}
+{"text": "uh, or former CIO, I think he's now uh,", "start": 946.48, "duration": 4.479}
+{"text": "no longer directly involved, but anyway,", "start": 949.36, "duration": 4.0}
+{"text": "he tweeted this. The US dollar used to", "start": 950.959, "duration": 4.32}
+{"text": "be backed by gold and it's not", "start": 953.36, "duration": 4.08}
+{"text": "far-fetched to think we may be headed", "start": 955.279, "duration": 4.401}
+{"text": "there again in the future. History shows", "start": 957.44, "duration": 4.399}
+{"text": "us that the same cycles repeat time and", "start": 959.68, "duration": 4.719}
+{"text": "time again. One such cycle is related to", "start": 961.839, "duration": 5.36}
+{"text": "currency devaluation. Uh once people", "start": 964.399, "duration": 4.401}
+{"text": "start to lose trust in the system, we", "start": 967.199, "duration": 3.76}
+{"text": "see specific cause and effect.", "start": 968.8, "duration": 3.44}
+{"text": "Governments print a lot of money. They", "start": 970.959, "duration": 3.041}
+{"text": "paid off the debt with the cheap money.", "start": 972.24, "duration": 3.2}
+{"text": "Nobody wants to hold the devalued", "start": 974.0, "duration": 3.44}
+{"text": "currency. Governments go back and link", "start": 975.44, "duration": 4.399}
+{"text": "money to gold. Will this pattern happen", "start": 977.44, "duration": 4.24}
+{"text": "again? It's hard to say and it wouldn't", "start": 979.839, "duration": 3.761}
+{"text": "be happen it wouldn't happen anytime", "start": 981.68, "duration": 4.56}
+{"text": "soon but it is conceivable. Okay. It", "start": 983.6, "duration": 4.56}
+{"text": "wouldn't happen anytime soon but a gold", "start": 986.24, "duration": 3.44}
+{"text": "standard a return to the gold standard", "start": 988.16, "duration": 3.2}
+{"text": "is conceivable. Do you agree?", "start": 989.68, "duration": 3.68}
+{"text": "Absolutely. Yes. The short version of", "start": 991.36, "duration": 4.159}
+{"text": "what Ry just said which I agree with is", "start": 993.36, "duration": 5.599}
+{"text": "that Gresham's law goes both ways.", "start": 995.519, "duration": 5.44}
+{"text": "And you know when crisis comes and and", "start": 998.959, "duration": 3.68}
+{"text": "the the confidence is lost, you know,", "start": 1000.959, "duration": 3.44}
+{"text": "even the Roman Empire, you know, they'd", "start": 1002.639, "duration": 3.44}
+{"text": "have to go back to finding a way to", "start": 1004.399, "duration": 3.44}
+{"text": "produce real silver coins again that", "start": 1006.079, "duration": 4.0}
+{"text": "weren't full of copper, right? Or", "start": 1007.839, "duration": 3.841}
+{"text": "ultimately just like copper instead of", "start": 1010.079, "duration": 4.481}
+{"text": "silver. Uh reality does matter in the", "start": 1011.68, "duration": 5.68}
+{"text": "end. Um but actually I want to rewind", "start": 1014.56, "duration": 4.719}
+{"text": "the conversation a little bit combining", "start": 1017.36, "duration": 3.68}
+{"text": "our previous point in this one. I think", "start": 1019.279, "duration": 3.12}
+{"text": "this is really interesting. This is one", "start": 1021.04, "duration": 3.759}
+{"text": "of the differences. the fact that the US", "start": 1022.399, "duration": 4.721}
+{"text": "abandoned the gold standard or the rest", "start": 1024.799, "duration": 5.12}
+{"text": "of the gold standard in 1971 when", "start": 1027.12, "duration": 5.12}
+{"text": "actually you know in August we're on the", "start": 1029.919, "duration": 6.4}
+{"text": "anniversary here um 54 years ago Tricky", "start": 1032.24, "duration": 6.799}
+{"text": "Dick Nixon took the US off the remnants", "start": 1036.319, "duration": 5.281}
+{"text": "of the gold standard slamming the gold", "start": 1039.039, "duration": 5.04}
+{"text": "window on Charles de Gaulle's fingers", "start": 1041.6, "duration": 4.479}
+{"text": "that had a coiled spring effect you know", "start": 1044.079, "duration": 4.24}
+{"text": "the US had already under Johnson you", "start": 1046.079, "duration": 3.84}
+{"text": "know guns and butter had been spending", "start": 1048.319, "duration": 4.561}
+{"text": "way beyond its means and this was you", "start": 1049.919, "duration": 4.401}
+{"text": "know why it happened. People didn't", "start": 1052.88, "duration": 3.28}
+{"text": "believe that the value of the dollar was", "start": 1054.32, "duration": 3.92}
+{"text": "what the stated relationship with gold", "start": 1056.16, "duration": 6.56}
+{"text": "was. Um so gold gold soarses when it's", "start": 1058.24, "duration": 6.559}
+{"text": "freed from the dollar and that coil", "start": 1062.72, "duration": 3.76}
+{"text": "spring effect you can't that's one of", "start": 1064.799, "duration": 3.201}
+{"text": "the differences between then and now", "start": 1066.48, "duration": 3.68}
+{"text": "like you asked about how will it be", "start": 1068.0, "duration": 3.84}
+{"text": "similar or different from the 1970s.", "start": 1070.16, "duration": 2.72}
+{"text": "This is one of those things that's", "start": 1071.84, "duration": 4.48}
+{"text": "different. Now, some people, a lot of,", "start": 1072.88, "duration": 5.2}
+{"text": "you know, diehard gold bugs will say,", "start": 1076.32, "duration": 3.92}
+{"text": "well, the gold and silver price has been", "start": 1078.08, "duration": 4.0}
+{"text": "manipulated for so long, it's been", "start": 1080.24, "duration": 4.24}
+{"text": "artificially suppressed. So, they might", "start": 1082.08, "duration": 3.68}
+{"text": "actually argue that this is a", "start": 1084.48, "duration": 4.0}
+{"text": "similarity, not a difference. Um, I", "start": 1085.76, "duration": 3.84}
+{"text": "don't know what the truth of the matter", "start": 1088.48, "duration": 2.72}
+{"text": "is. I don't know how manipulated the", "start": 1089.6, "duration": 3.439}
+{"text": "price of gold was, but I just think this", "start": 1091.2, "duration": 3.359}
+{"text": "is kind of interesting because on the", "start": 1093.039, "duration": 3.681}
+{"text": "face of it, this is a big difference.", "start": 1094.559, "duration": 4.321}
+{"text": "You know, there is no official peg or", "start": 1096.72, "duration": 4.64}
+{"text": "hasn't been one for 54 years between the", "start": 1098.88, "duration": 6.159}
+{"text": "dollar and gold. But if the people who", "start": 1101.36, "duration": 5.92}
+{"text": "have been, you know, arguing for the", "start": 1105.039, "duration": 4.64}
+{"text": "suppression of the price of gold, if", "start": 1107.28, "duration": 4.32}
+{"text": "they were right and suddenly that's over", "start": 1109.679, "duration": 4.0}
+{"text": "and gold goes shooting up to 3500, you", "start": 1111.6, "duration": 4.0}
+{"text": "know, who knows how much fire how much", "start": 1113.679, "duration": 4.481}
+{"text": "higher it'll go. That might actually be", "start": 1115.6, "duration": 4.64}
+{"text": "another tailwind for gold here. I want", "start": 1118.16, "duration": 3.759}
+{"text": "to be very careful. I'm not saying this", "start": 1120.24, "duration": 3.28}
+{"text": "is true. I'm not saying suddenly I've", "start": 1121.919, "duration": 2.961}
+{"text": "subscribed to all the conspiracy", "start": 1123.52, "duration": 4.56}
+{"text": "theories. Um, but I'm also not saying", "start": 1124.88, "duration": 5.039}
+{"text": "that they've been proven wrong. I I just", "start": 1128.08, "duration": 3.68}
+{"text": "think there's an interesting parallel", "start": 1129.919, "duration": 4.801}
+{"text": "here. Um, as far as Dalio goes, I think", "start": 1131.76, "duration": 5.12}
+{"text": "the way that happens, and it may happen", "start": 1134.72, "duration": 4.48}
+{"text": "sooner than he thinks, he's a student of", "start": 1136.88, "duration": 3.84}
+{"text": "history and he know that history takes", "start": 1139.2, "duration": 3.359}
+{"text": "all this time, you know, hundreds of", "start": 1140.72, "duration": 4.56}
+{"text": "years. The fall of Rome", "start": 1142.559, "duration": 6.721}
+{"text": "was a was like 300 years long, but now", "start": 1145.28, "duration": 6.0}
+{"text": "things happen faster. And I think the", "start": 1149.28, "duration": 4.48}
+{"text": "vector here is is I actually find some", "start": 1151.28, "duration": 4.72}
+{"text": "credibility to the idea that the bricks", "start": 1153.76, "duration": 5.12}
+{"text": "might introduce a goldback currency of", "start": 1156.0, "duration": 6.24}
+{"text": "some form. And you know, blockchain", "start": 1158.88, "duration": 6.24}
+{"text": "makes that easier. And well, why would", "start": 1162.24, "duration": 4.08}
+{"text": "they back it with gold? You know, why", "start": 1165.12, "duration": 3.6}
+{"text": "not Bitcoin or why not? You know, just", "start": 1166.32, "duration": 4.32}
+{"text": "make a, you know, a brick currency. And", "start": 1168.72, "duration": 4.72}
+{"text": "I think the reason for that is, you", "start": 1170.64, "duration": 5.279}
+{"text": "know, no offense to the Bitcoin crowd,", "start": 1173.44, "duration": 4.64}
+{"text": "gold is real. You can hold it in your", "start": 1175.919, "duration": 4.721}
+{"text": "hand. You can see if you're China and", "start": 1178.08, "duration": 3.599}
+{"text": "Russia says, you know, we're", "start": 1180.64, "duration": 3.12}
+{"text": "contributing this many tons of gold and", "start": 1181.679, "duration": 3.521}
+{"text": "China saying, we're contributing this", "start": 1183.76, "duration": 3.52}
+{"text": "many tons of gold and India says we're", "start": 1185.2, "duration": 3.599}
+{"text": "contributing this many tons of gold. you", "start": 1187.28, "duration": 2.88}
+{"text": "can send somebody to go look at the", "start": 1188.799, "duration": 4.161}
+{"text": "vault and see if it's actually there.", "start": 1190.16, "duration": 5.2}
+{"text": "And and there's not a whole lot of love", "start": 1192.96, "duration": 4.24}
+{"text": "to be lost between the Chinese and the", "start": 1195.36, "duration": 4.559}
+{"text": "Russians, for example. So, between these", "start": 1197.2, "duration": 4.56}
+{"text": "very different countries with very", "start": 1199.919, "duration": 3.76}
+{"text": "different cultures,", "start": 1201.76, "duration": 3.76}
+{"text": "I think that it actually makes sense to", "start": 1203.679, "duration": 4.401}
+{"text": "use something physical, visible,", "start": 1205.52, "duration": 5.36}
+{"text": "measurable, tangible to back such a", "start": 1208.08, "duration": 5.52}
+{"text": "currency because it it it enables trust", "start": 1210.88, "duration": 5.84}
+{"text": "and verification that nothing else does.", "start": 1213.6, "duration": 5.439}
+{"text": "So, who knows? I'm not saying this will", "start": 1216.72, "duration": 4.64}
+{"text": "happen tomorrow. I think something like", "start": 1219.039, "duration": 4.401}
+{"text": "that, even with a with a crypto system", "start": 1221.36, "duration": 5.04}
+{"text": "for delivering it worldwide outside of", "start": 1223.44, "duration": 5.599}
+{"text": "the Swift system, makes sense. That's", "start": 1226.4, "duration": 3.759}
+{"text": "not the sort of thing you can just", "start": 1229.039, "duration": 3.201}
+{"text": "launch overnight. So, I think we'll see", "start": 1230.159, "duration": 3.76}
+{"text": "it coming. We'll have plenty of warning.", "start": 1232.24, "duration": 3.2}
+{"text": "I think that will be an investable trend", "start": 1233.919, "duration": 5.12}
+{"text": "when it starts happening. Um, it's not", "start": 1235.44, "duration": 5.84}
+{"text": "happening today, but I I could see it", "start": 1239.039, "duration": 3.921}
+{"text": "happening. And then if it does, I can", "start": 1241.28, "duration": 4.24}
+{"text": "imagine everybody else following suit", "start": 1242.96, "duration": 4.64}
+{"text": "and it would be really", "start": 1245.52, "duration": 3.36}
+{"text": ">> Go ahead. Go ahead.", "start": 1247.6, "duration": 3.12}
+{"text": ">> Oh, I was going to add to that and maybe", "start": 1248.88, "duration": 4.64}
+{"text": "get you to uh respond to my theory here.", "start": 1250.72, "duration": 4.8}
+{"text": "In 1944,", "start": 1253.52, "duration": 6.399}
+{"text": "uh more than 40 allied nations uh met in", "start": 1255.52, "duration": 6.88}
+{"text": "uh in Breton Woods, New Hampshire uh", "start": 1259.919, "duration": 4.801}
+{"text": "hence the name Bretonwoods. And they", "start": 1262.4, "duration": 5.36}
+{"text": "decided to start a new monetary system.", "start": 1264.72, "duration": 6.88}
+{"text": "Uh and that lasted until 1971. as you", "start": 1267.76, "duration": 6.72}
+{"text": "know now what what could happen this", "start": 1271.6, "duration": 4.88}
+{"text": "time around if we were to revisit this", "start": 1274.48, "duration": 7.04}
+{"text": "idea perhaps we would have two axes here", "start": 1276.48, "duration": 7.6}
+{"text": "uh one from the bricks and one from the", "start": 1281.52, "duration": 6.0}
+{"text": "west and NATO NATO members uh I don't", "start": 1284.08, "duration": 6.24}
+{"text": "see a global cooperation between let's", "start": 1287.52, "duration": 6.639}
+{"text": "say China and the US deciding on a joint", "start": 1290.32, "duration": 7.12}
+{"text": "common global goldbacked standard", "start": 1294.159, "duration": 6.961}
+{"text": "currency um I don't uh you know the", "start": 1297.44, "duration": 5.599}
+{"text": "We've got too too many different", "start": 1301.12, "duration": 4.48}
+{"text": "ideologies going on right now. So that", "start": 1303.039, "duration": 4.64}
+{"text": "may be an impediment to returning to the", "start": 1305.6, "duration": 2.4}
+{"text": "gold.", "start": 1307.679, "duration": 1.921}
+{"text": ">> But that's the beauty of it, David.", "start": 1308.0, "duration": 3.12}
+{"text": "That's that's exactly why I'm saying", "start": 1309.6, "duration": 5.6}
+{"text": "that this may well involve like actual", "start": 1311.12, "duration": 6.0}
+{"text": "physical gold backing because that makes", "start": 1315.2, "duration": 4.8}
+{"text": "it possible for very different cultures,", "start": 1317.12, "duration": 5.039}
+{"text": "languages, you know, ways of thinking", "start": 1320.0, "duration": 4.64}
+{"text": "about business and money and everything.", "start": 1322.159, "duration": 5.52}
+{"text": "It it it is a that very thing that that", "start": 1324.64, "duration": 4.88}
+{"text": "Bitcoin people like to mock that that", "start": 1327.679, "duration": 3.281}
+{"text": "physical weight. You know, remember that", "start": 1329.52, "duration": 3.519}
+{"text": "drop gold campaign, those poor people in", "start": 1330.96, "duration": 3.28}
+{"text": "their business suits carrying these", "start": 1333.039, "duration": 3.921}
+{"text": "heavy bags of gold. Like that very thing", "start": 1334.24, "duration": 5.2}
+{"text": "is what makes gold a useful intermediary", "start": 1336.96, "duration": 3.52}
+{"text": "in this environment. And if you think", "start": 1339.44, "duration": 2.8}
+{"text": "about it, like this isn't some strange", "start": 1340.48, "duration": 3.28}
+{"text": "new invention. This is actually the way", "start": 1342.24, "duration": 3.2}
+{"text": "the world worked before. You think the", "start": 1343.76, "duration": 3.36}
+{"text": "French and the British loved each other", "start": 1345.44, "duration": 5.04}
+{"text": "in the 1700s? Of course not. Or the", "start": 1347.12, "duration": 4.799}
+{"text": "Spanish and the British, you know, a", "start": 1350.48, "duration": 3.199}
+{"text": "couple hundred years earlier. Of course", "start": 1351.919, "duration": 3.441}
+{"text": "not.", "start": 1353.679, "duration": 3.12}
+{"text": "And so are you going to trust each", "start": 1355.36, "duration": 3.76}
+{"text": "other's pieces of paper or even coinage", "start": 1356.799, "duration": 5.12}
+{"text": "with but like the metal inside had value", "start": 1359.12, "duration": 6.64}
+{"text": "that was objectively measurable", "start": 1361.919, "duration": 5.841}
+{"text": "and that allowed international commerce", "start": 1365.76, "duration": 4.88}
+{"text": "to happen even amongst enemies like", "start": 1367.76, "duration": 6.64}
+{"text": "actual waring enemies. So I I think it", "start": 1370.64, "duration": 6.72}
+{"text": "actually makes sense that if we're if if", "start": 1374.4, "duration": 4.88}
+{"text": "the fiat system as we know it breaks", "start": 1377.36, "duration": 4.16}
+{"text": "down and there's no confidence on any", "start": 1379.28, "duration": 4.8}
+{"text": "side and the parties don't trust each", "start": 1381.52, "duration": 5.44}
+{"text": "other, it makes perfect sense to me that", "start": 1384.08, "duration": 4.959}
+{"text": "something physical, measurable, me", "start": 1386.96, "duration": 3.599}
+{"text": "verifiable", "start": 1389.039, "duration": 3.76}
+{"text": "would step in to help smooth things", "start": 1390.559, "duration": 4.24}
+{"text": "over. And and that's that's why it was", "start": 1392.799, "duration": 3.841}
+{"text": "done before. International trade was not", "start": 1394.799, "duration": 4.481}
+{"text": "settled in dollars or franks or rubles.", "start": 1396.64, "duration": 5.919}
+{"text": "It was settled in gold. I want to point", "start": 1399.28, "duration": 5.2}
+{"text": "something out to you. We're talking", "start": 1402.559, "duration": 4.24}
+{"text": "about gold. This is the gold to oil", "start": 1404.48, "duration": 6.24}
+{"text": "ratio. Gold to oil historical chart.", "start": 1406.799, "duration": 6.0}
+{"text": "Now, every time it's spiked in the past,", "start": 1410.72, "duration": 4.24}
+{"text": "we've had a recession. 2020 something", "start": 1412.799, "duration": 4.561}
+{"text": "dramatic happened. As we know, COVID", "start": 1414.96, "duration": 4.719}
+{"text": "global economy shut down. Oil tanked,", "start": 1417.36, "duration": 4.799}
+{"text": "gold spiked, oil to gold rat, gold to", "start": 1419.679, "duration": 6.081}
+{"text": "oil ratio shot through the moon. 2008", "start": 1422.159, "duration": 6.321}
+{"text": "happened again. 2000 it happened. On and", "start": 1425.76, "duration": 4.24}
+{"text": "on and on. You see the pattern. I mean", "start": 1428.48, "duration": 3.439}
+{"text": "there's been exceptions of course but", "start": 1430.0, "duration": 4.799}
+{"text": "now we're seeing golden oil the gold oil", "start": 1431.919, "duration": 6.64}
+{"text": "ratio once again uh rally and this is", "start": 1434.799, "duration": 5.681}
+{"text": "sounding some alarm bells with some", "start": 1438.559, "duration": 3.761}
+{"text": "analysts who follow this trend. Uh", "start": 1440.48, "duration": 4.8}
+{"text": "what's your take on this? I think it's a", "start": 1442.32, "duration": 6.0}
+{"text": "very good thing to point out and", "start": 1445.28, "duration": 4.8}
+{"text": "it's maybe not as simple as one might", "start": 1448.32, "duration": 3.359}
+{"text": "think but just just on the face of it", "start": 1450.08, "duration": 3.76}
+{"text": "what what does this ratio tell us? If", "start": 1451.679, "duration": 4.401}
+{"text": "gold is up, that means safe haven demand", "start": 1453.84, "duration": 5.68}
+{"text": "is up, fear is up, and if oil is down,", "start": 1456.08, "duration": 5.599}
+{"text": "therefore the ratio goes up,", "start": 1459.52, "duration": 5.36}
+{"text": ">> then that means economic um energy is", "start": 1461.679, "duration": 5.281}
+{"text": "down, the the economy is looking weaker,", "start": 1464.88, "duration": 4.88}
+{"text": "weakening demand on the economic front,", "start": 1466.96, "duration": 6.4}
+{"text": "that's recession. So there are people,", "start": 1469.76, "duration": 5.2}
+{"text": "Peter Schiff, my fellow Puerto Rican", "start": 1473.36, "duration": 3.04}
+{"text": "among them, who argue that, you know,", "start": 1474.96, "duration": 3.12}
+{"text": "the are the US is already in a", "start": 1476.4, "duration": 4.159}
+{"text": "recession. I I think Danielle D. Martino", "start": 1478.08, "duration": 4.479}
+{"text": "Booth said it recently, too. um I don't", "start": 1480.559, "duration": 3.36}
+{"text": "know if you've interviewed her recently,", "start": 1482.559, "duration": 2.881}
+{"text": "but there are people out there saying in", "start": 1483.919, "duration": 3.12}
+{"text": "the US is in a recession. It just hasn't", "start": 1485.44, "duration": 3.28}
+{"text": "been recognized yet. And this chart", "start": 1487.039, "duration": 3.281}
+{"text": "would back that up.", "start": 1488.72, "duration": 3.839}
+{"text": ">> The the push back on that or maybe to", "start": 1490.32, "duration": 3.92}
+{"text": "steal man the other side as Lex", "start": 1492.559, "duration": 3.921}
+{"text": "Freiedman might say", "start": 1494.24, "duration": 3.76}
+{"text": "is that we are entering a different", "start": 1496.48, "duration": 3.199}
+{"text": "world. I mean I guess the other side", "start": 1498.0, "duration": 3.039}
+{"text": "would be Doomberg. you've interviewed", "start": 1499.679, "duration": 2.321}
+{"text": "him, right?", "start": 1501.039, "duration": 4.0}
+{"text": ">> And he's talked about how, you know,", "start": 1502.0, "duration": 5.279}
+{"text": "it's oil equivalents these days. And", "start": 1505.039, "duration": 4.401}
+{"text": "it's not just LG, but it's all kinds of", "start": 1507.279, "duration": 4.0}
+{"text": "things that are convertible. And so, you", "start": 1509.44, "duration": 5.2}
+{"text": "can't just look at oil by itself. And he", "start": 1511.279, "duration": 5.52}
+{"text": "he doesn't believe in peak oil at all.", "start": 1514.64, "duration": 4.0}
+{"text": "And he sees all these oil equivalents", "start": 1516.799, "duration": 3.681}
+{"text": "coming to market in increasing ways. So", "start": 1518.64, "duration": 5.279}
+{"text": "it it could be that we're looking at", "start": 1520.48, "duration": 7.12}
+{"text": "like the past range of the gold to or", "start": 1523.919, "duration": 6.481}
+{"text": "oil ratio that may change forever. It", "start": 1527.6, "duration": 5.04}
+{"text": "may never go back to its historic range", "start": 1530.4, "duration": 5.279}
+{"text": "if Bloomberg is right. And and that will", "start": 1532.64, "duration": 4.639}
+{"text": "be completely different from whether or", "start": 1535.679, "duration": 3.201}
+{"text": "not there's a recession. So like this", "start": 1537.279, "duration": 3.041}
+{"text": "spike that you're seeing on your chart", "start": 1538.88, "duration": 5.52}
+{"text": "right now that and really since 2008 the", "start": 1540.32, "duration": 6.32}
+{"text": "the upwards you know roughly speaking", "start": 1544.4, "duration": 5.2}
+{"text": "upward trend in that ratio that could be", "start": 1546.64, "duration": 4.639}
+{"text": "indicating what Bloomberg is saying", "start": 1549.6, "duration": 3.36}
+{"text": "rather than anything about the economy", "start": 1551.279, "duration": 3.921}
+{"text": "overall. What is the investment thesis", "start": 1552.96, "duration": 4.24}
+{"text": "for gold now that it's been trading", "start": 1555.2, "duration": 5.76}
+{"text": "rangebound around $3,200 to $3,400 for", "start": 1557.2, "duration": 5.44}
+{"text": "quite some time now. By quite some time", "start": 1560.96, "duration": 4.64}
+{"text": "I mean a few months. Somebody uh says to", "start": 1562.64, "duration": 5.039}
+{"text": "you Lobo, I missed the boat on gold and", "start": 1565.6, "duration": 3.439}
+{"text": "now it's just kind of hovering in a", "start": 1567.679, "duration": 3.521}
+{"text": "range. I don't know what to do.", "start": 1569.039, "duration": 4.081}
+{"text": ">> Somebody just asked me this at dinner", "start": 1571.2, "duration": 4.64}
+{"text": "and I and I told him normally, you know,", "start": 1573.12, "duration": 5.12}
+{"text": "before this year, if gold went up", "start": 1575.84, "duration": 5.12}
+{"text": "screaming up like it did to 3500, I'd be", "start": 1578.24, "duration": 4.319}
+{"text": "the guy getting rotten tomatoes thrown", "start": 1580.96, "duration": 3.199}
+{"text": "at me at the Vancouver conference or", "start": 1582.559, "duration": 2.881}
+{"text": "whatever for saying, you know, when", "start": 1584.159, "duration": 2.721}
+{"text": "something goes vertical, it's time to", "start": 1585.44, "duration": 4.0}
+{"text": "look for some correction.", "start": 1586.88, "duration": 4.399}
+{"text": "um you know, it's time to take some", "start": 1589.44, "duration": 4.0}
+{"text": "profits here and you know, this is not", "start": 1591.279, "duration": 4.081}
+{"text": "the time to chase anything, you know,", "start": 1593.44, "duration": 4.88}
+{"text": "and and remember that $3,500 high,", "start": 1595.36, "duration": 4.72}
+{"text": "that's just that's not just a nominal", "start": 1598.32, "duration": 3.599}
+{"text": "high. That's actually a high adjusted", "start": 1600.08, "duration": 4.56}
+{"text": "for CPI. So that is a that is a", "start": 1601.919, "duration": 5.76}
+{"text": "material. Yeah. That that's that is a", "start": 1604.64, "duration": 5.68}
+{"text": "striking chart. And and normally when a", "start": 1607.679, "duration": 5.201}
+{"text": "market goes screaming up like that, you", "start": 1610.32, "duration": 4.32}
+{"text": "you want to be thinking more in terms of", "start": 1612.88, "duration": 4.32}
+{"text": "taking profits than buying. But in this", "start": 1614.64, "duration": 4.56}
+{"text": "case, again, sort of like with the", "start": 1617.2, "duration": 4.0}
+{"text": "Bloomberg thing and the oil, I think we", "start": 1619.2, "duration": 4.88}
+{"text": "are looking at a changed game. The", "start": 1621.2, "duration": 4.64}
+{"text": "central bank's buying since the", "start": 1624.08, "duration": 4.0}
+{"text": "weaponization of the dollar, that is a", "start": 1625.84, "duration": 6.079}
+{"text": "one-way door. David, the the Chinese and", "start": 1628.08, "duration": 5.76}
+{"text": "the Indians, certainly not the Russians,", "start": 1631.919, "duration": 3.601}
+{"text": "they're not going to go back to trusting", "start": 1633.84, "duration": 3.28}
+{"text": "the United States dollar the way they", "start": 1635.52, "duration": 3.68}
+{"text": "did before the Russians were kicked out", "start": 1637.12, "duration": 3.6}
+{"text": "of the Swift system. That's just not", "start": 1639.2, "duration": 3.839}
+{"text": "going to happen. And and we see this", "start": 1640.72, "duration": 4.559}
+{"text": "there's been times of plenty this year", "start": 1643.039, "duration": 4.721}
+{"text": "when news that normally or not normally", "start": 1645.279, "duration": 4.161}
+{"text": "but like in the recent past would have", "start": 1647.76, "duration": 4.24}
+{"text": "been headwinds for gold and gold wiggles", "start": 1649.44, "duration": 3.599}
+{"text": "a little bit and it comes right back up", "start": 1652.0, "duration": 2.64}
+{"text": "again. And to me this is evidence of the", "start": 1653.039, "duration": 3.841}
+{"text": "central bank gold buying and the world", "start": 1654.64, "duration": 3.84}
+{"text": "gold council charts show that the", "start": 1656.88, "duration": 4.159}
+{"text": "central bank gold buying continues at a", "start": 1658.48, "duration": 4.799}
+{"text": "higher pace since 22 since the", "start": 1661.039, "duration": 4.88}
+{"text": "weaponization of the dollar. So what I'm", "start": 1663.279, "duration": 5.361}
+{"text": "saying is my normal caution about", "start": 1665.919, "duration": 4.321}
+{"text": "something that pulls a hockey stick like", "start": 1668.64, "duration": 4.48}
+{"text": "gold did recently", "start": 1670.24, "duration": 5.039}
+{"text": "um is ameliorated", "start": 1673.12, "duration": 5.439}
+{"text": "by this game-changing scenario where you", "start": 1675.279, "duration": 5.681}
+{"text": "have not just a new buyer here but like", "start": 1678.559, "duration": 4.881}
+{"text": "a a global set of new buyers who have", "start": 1680.96, "duration": 5.839}
+{"text": "very very deep pockets and and I really", "start": 1683.44, "duration": 5.44}
+{"text": "do think this is a one oneway door. I", "start": 1686.799, "duration": 4.081}
+{"text": "don't think the the governments and", "start": 1688.88, "duration": 3.6}
+{"text": "central banks around the world that are", "start": 1690.88, "duration": 4.0}
+{"text": "now hedging their exposure to the dollar", "start": 1692.48, "duration": 3.84}
+{"text": "are going to suddenly decide, oh, it's", "start": 1694.88, "duration": 3.44}
+{"text": "okay. We'll go back to how things were", "start": 1696.32, "duration": 3.839}
+{"text": "before. It's the the Chinese and the", "start": 1698.32, "duration": 3.04}
+{"text": "Russians certainly aren't going to do", "start": 1700.159, "duration": 6.64}
+{"text": "it. Um, so the answer to the question is", "start": 1701.36, "duration": 7.919}
+{"text": "is this I'm even uncomfortable saying", "start": 1706.799, "duration": 4.88}
+{"text": "it, David, because I it is so ingrained", "start": 1709.279, "duration": 4.241}
+{"text": "in me that when you see something go up,", "start": 1711.679, "duration": 4.161}
+{"text": "it's time to think about taking profits.", "start": 1713.52, "duration": 4.48}
+{"text": "But somebody doesn't, you know, they", "start": 1715.84, "duration": 3.36}
+{"text": "missed it. They don't have any gold.", "start": 1718.0, "duration": 3.44}
+{"text": "They haven't bought any gold stocks. I", "start": 1719.2, "duration": 4.32}
+{"text": "am right now, my guidance is yes, I", "start": 1721.44, "duration": 5.04}
+{"text": "would buy at these levels because I I", "start": 1723.52, "duration": 5.519}
+{"text": "think we have a floor here. I I see", "start": 1726.48, "duration": 4.799}
+{"text": "relatively little downside. And you ask", "start": 1729.039, "duration": 4.161}
+{"text": "what's the argument? The argument is", "start": 1731.279, "duration": 3.601}
+{"text": "everything that's happening under under", "start": 1733.2, "duration": 3.76}
+{"text": "Trump in the United States, everything", "start": 1734.88, "duration": 4.08}
+{"text": "that's happening in Europe with the", "start": 1736.96, "duration": 6.8}
+{"text": "remilitarization and um the uh", "start": 1738.96, "duration": 6.4}
+{"text": "deglobalization,", "start": 1743.76, "duration": 3.68}
+{"text": "the Chinese response, the Russian war", "start": 1745.36, "duration": 3.919}
+{"text": "machine, all of this stuff is", "start": 1747.44, "duration": 4.08}
+{"text": "inflationary. That is bullish for", "start": 1749.279, "duration": 3.841}
+{"text": "monetary metals, including gold and", "start": 1751.52, "duration": 6.32}
+{"text": "silver. So there's this m this big", "start": 1753.12, "duration": 7.279}
+{"text": "massive macro argument that is bullish", "start": 1757.84, "duration": 4.719}
+{"text": "for gold at a time where central bank", "start": 1760.399, "duration": 4.081}
+{"text": "gold buying has put something of a floor", "start": 1762.559, "duration": 3.84}
+{"text": "at a high level under there. That's what", "start": 1764.48, "duration": 4.559}
+{"text": "makes me comfortable saying yes even", "start": 1766.399, "duration": 5.441}
+{"text": "over 3,400 if I didn't own any gold I", "start": 1769.039, "duration": 4.721}
+{"text": "would buy some today and I would", "start": 1771.84, "duration": 3.36}
+{"text": "certainly look for the better gold", "start": 1773.76, "duration": 4.56}
+{"text": "stocks. And if just another point", "start": 1775.2, "duration": 4.88}
+{"text": "supporting your argument, if the entire", "start": 1778.32, "duration": 4.56}
+{"text": "gold market wanted to take profits,", "start": 1780.08, "duration": 4.959}
+{"text": "which they could have done since April,", "start": 1782.88, "duration": 3.76}
+{"text": "right? They had four and a half, three", "start": 1785.039, "duration": 3.36}
+{"text": "and a half months to take Yeah. to take", "start": 1786.64, "duration": 3.919}
+{"text": "profits, they would have. And there was", "start": 1788.399, "duration": 3.681}
+{"text": "some profit taking along the way when", "start": 1790.559, "duration": 3.36}
+{"text": "they reached new old the gold price", "start": 1792.08, "duration": 4.8}
+{"text": "reached new local highs. But overall,", "start": 1793.919, "duration": 4.24}
+{"text": "like you said, there was a floor", "start": 1796.88, "duration": 3.44}
+{"text": "established. The market did not tank.", "start": 1798.159, "duration": 3.921}
+{"text": "The market did not take huge profits", "start": 1800.32, "duration": 4.32}
+{"text": "like in 20 2011,", "start": 1802.08, "duration": 4.24}
+{"text": "right? This didn't happen.", "start": 1804.64, "duration": 2.32}
+{"text": ">> Yeah.", "start": 1806.32, "duration": 3.839}
+{"text": ">> Uh and it we saw that in 2020 as well.", "start": 1806.96, "duration": 4.88}
+{"text": "That didn't happen this time.", "start": 1810.159, "duration": 4.081}
+{"text": ">> What happened was just a stabilization", "start": 1811.84, "duration": 3.92}
+{"text": "of the price around new to all-time", "start": 1814.24, "duration": 2.559}
+{"text": "highs.", "start": 1815.76, "duration": 3.279}
+{"text": ">> Yep. Yep. And here's here's one more", "start": 1816.799, "duration": 5.201}
+{"text": "thing to think about, David. Uh you", "start": 1819.039, "duration": 6.321}
+{"text": "know, if gold dropped $1,000 an ounce", "start": 1822.0, "duration": 5.52}
+{"text": "from where it is today,", "start": 1825.36, "duration": 4.24}
+{"text": ">> take that exercise. Okay.", "start": 1827.52, "duration": 4.399}
+{"text": ">> I mean, $1,000 like wow, that's huge.", "start": 1829.6, "duration": 4.16}
+{"text": "$1,000 drop. I mean, it's not going to", "start": 1831.919, "duration": 2.961}
+{"text": "happen. I don't think they're certainly", "start": 1833.76, "duration": 3.36}
+{"text": "not all at once. But if it dropped a,000", "start": 1834.88, "duration": 4.08}
+{"text": "bucks an ounce, that would take us down", "start": 1837.12, "duration": 3.6}
+{"text": "to 2400.", "start": 1838.96, "duration": 3.52}
+{"text": "The mines that are in operation, the", "start": 1840.72, "duration": 4.16}
+{"text": "gold mines that are in operation today,", "start": 1842.48, "duration": 4.16}
+{"text": "they were built based on feasibility", "start": 1844.88, "duration": 4.88}
+{"text": "studies at like 1,700, 1,800. The better", "start": 1846.64, "duration": 6.72}
+{"text": "ones, 1300,400.", "start": 1849.76, "duration": 6.48}
+{"text": "So, gold could drop $1,000 an ounce and", "start": 1853.36, "duration": 5.52}
+{"text": "you'd still be looking at", "start": 1856.24, "duration": 4.799}
+{"text": "uh not maybe not obviously not as fat", "start": 1858.88, "duration": 3.679}
+{"text": "margins as we have today, but you would", "start": 1861.039, "duration": 4.24}
+{"text": "be looking at decent margins for all but", "start": 1862.559, "duration": 4.321}
+{"text": "the crappiest of the gold miners out", "start": 1865.279, "duration": 3.921}
+{"text": "there. So, you talk about a moat, you", "start": 1866.88, "duration": 3.919}
+{"text": "know, and if you want to be a, you know,", "start": 1869.2, "duration": 3.52}
+{"text": "a cautious Warren Buffett style person,", "start": 1870.799, "duration": 3.841}
+{"text": "okay, metal stocks, mining stocks are", "start": 1872.72, "duration": 3.439}
+{"text": "not going to be a Warren Buffett thing", "start": 1874.64, "duration": 4.0}
+{"text": "in large, but think about that business.", "start": 1876.159, "duration": 4.481}
+{"text": "It could drop a,000 bucks an ounce and", "start": 1878.64, "duration": 4.24}
+{"text": "you'd still be making money.", "start": 1880.64, "duration": 4.639}
+{"text": "So if there is a correction, my takeaway", "start": 1882.88, "duration": 5.12}
+{"text": "here is that if there is a correction, I", "start": 1885.279, "duration": 4.4}
+{"text": "think that would be a gift from the", "start": 1888.0, "duration": 3.279}
+{"text": "market, a buying opportunity to take", "start": 1889.679, "duration": 2.24}
+{"text": "advantage of.", "start": 1891.279, "duration": 2.481}
+{"text": ">> Are you this bullish on all the precious", "start": 1891.919, "duration": 3.441}
+{"text": "metals?", "start": 1893.76, "duration": 4.159}
+{"text": ">> Well, you I missed I missed the I missed", "start": 1895.36, "duration": 5.199}
+{"text": "Yeah, I I missed the bull run on silver,", "start": 1897.919, "duration": 5.921}
+{"text": ">> right? So I don't count uh I don't count", "start": 1900.559, "duration": 5.041}
+{"text": "platinum and palladium and those other", "start": 1903.84, "duration": 3.92}
+{"text": "expensive silvery industrial metals as", "start": 1905.6, "duration": 4.72}
+{"text": "monetary metals. I I don't like the term", "start": 1907.76, "duration": 4.32}
+{"text": "precious. It's either monetary or it's", "start": 1910.32, "duration": 3.199}
+{"text": "industrial. That's that's the way I look", "start": 1912.08, "duration": 2.079}
+{"text": "at these things.", "start": 1913.519, "duration": 1.201}
+{"text": ">> Okay.", "start": 1914.159, "duration": 3.201}
+{"text": ">> So, the answer to the question is", "start": 1914.72, "duration": 4.72}
+{"text": "yes and no. And silver bulls hate me", "start": 1917.36, "duration": 5.84}
+{"text": "when I say this, but you know, silver's", "start": 1919.44, "duration": 5.76}
+{"text": "relationship with gold has visibly", "start": 1923.2, "duration": 4.959}
+{"text": "changed recently as well. Now, it still", "start": 1925.2, "duration": 4.719}
+{"text": "acts as a monetary metal. There's days", "start": 1928.159, "duration": 3.601}
+{"text": "when, say, copper and other industrial", "start": 1929.919, "duration": 3.76}
+{"text": "metals go down, but silver goes up with", "start": 1931.76, "duration": 4.0}
+{"text": "gold. So, yes, silver is still a", "start": 1933.679, "duration": 4.48}
+{"text": "monetary metal and silver has not", "start": 1935.76, "duration": 4.32}
+{"text": "reached all-time highs. So that I I", "start": 1938.159, "duration": 4.561}
+{"text": "think that", "start": 1940.08, "duration": 5.839}
+{"text": "volatility aside that makes me confident", "start": 1942.72, "duration": 5.439}
+{"text": "actually in more upside in silver than", "start": 1945.919, "duration": 4.88}
+{"text": "gold. Let me repeat that. I see more", "start": 1948.159, "duration": 5.36}
+{"text": "upside in silver than gold right now.", "start": 1950.799, "duration": 4.0}
+{"text": "Now that doesn't mean it's going to go", "start": 1953.519, "duration": 2.64}
+{"text": "straight up. That's the that's the", "start": 1954.799, "duration": 4.081}
+{"text": "catch. You know, the industrial side of", "start": 1956.159, "duration": 5.52}
+{"text": "silver can be a tailwind or a headwind.", "start": 1958.88, "duration": 6.0}
+{"text": "And if I'm right about, you know, Trump", "start": 1961.679, "duration": 4.961}
+{"text": "shock working its way through the real", "start": 1964.88, "duration": 4.48}
+{"text": "economy in the months ahead, well,", "start": 1966.64, "duration": 4.8}
+{"text": "that's going to have an impact on", "start": 1969.36, "duration": 4.159}
+{"text": "industrial demand for silver. So there,", "start": 1971.44, "duration": 4.239}
+{"text": "so there could be a headwind in the near", "start": 1973.519, "duration": 4.4}
+{"text": "term for silver. If that happened, I'd", "start": 1975.679, "duration": 4.161}
+{"text": "probably just buy more. I longer term,", "start": 1977.919, "duration": 4.401}
+{"text": "I'm very very bullish. So all you silver", "start": 1979.84, "duration": 4.0}
+{"text": "bulls, put away your s your rotten", "start": 1982.32, "duration": 3.599}
+{"text": "tomatoes. I'm not making a bare case for", "start": 1983.84, "duration": 4.719}
+{"text": "silver. I'm just saying, you know, you", "start": 1985.919, "duration": 5.441}
+{"text": "ignore its industrial side in the near", "start": 1988.559, "duration": 4.96}
+{"text": "term at your own peril.", "start": 1991.36, "duration": 4.319}
+{"text": ">> What happened in June, early June, there", "start": 1993.519, "duration": 4.88}
+{"text": "was a huge runup of silver price.", "start": 1995.679, "duration": 3.281}
+{"text": ">> Yeah.", "start": 1998.399, "duration": 1.201}
+{"text": ">> Of the silver.", "start": 1998.96, "duration": 1.76}
+{"text": ">> So, I don't know if you can do it on", "start": 1999.6, "duration": 2.799}
+{"text": "your chart there, David, but that", "start": 2000.72, "duration": 4.4}
+{"text": "happened at the same time that platinum", "start": 2002.399, "duration": 5.041}
+{"text": "and palladium and even roodium were", "start": 2005.12, "duration": 3.52}
+{"text": "moving.", "start": 2007.44, "duration": 3.599}
+{"text": ">> And and interestingly enough, gold was", "start": 2008.64, "duration": 4.72}
+{"text": "not moving at this time. So, so there", "start": 2011.039, "duration": 3.921}
+{"text": "are a lot of people that got all excited", "start": 2013.36, "duration": 3.6}
+{"text": "when silver went shooting up to 40 bucks", "start": 2014.96, "duration": 3.76}
+{"text": "and they're saying this is it. You know,", "start": 2016.96, "duration": 3.839}
+{"text": "the ddollarization trend is finally", "start": 2018.72, "duration": 3.92}
+{"text": "hitting silver and it's off to the races", "start": 2020.799, "duration": 4.24}
+{"text": "now. But it didn't. If it was", "start": 2022.64, "duration": 4.159}
+{"text": "ddollarization or if it was something", "start": 2025.039, "duration": 3.681}
+{"text": "monetary that made that happen, gold", "start": 2026.799, "duration": 3.6}
+{"text": "would have moved at the same time. But", "start": 2028.72, "duration": 3.12}
+{"text": "it didn't.", "start": 2030.399, "duration": 4.0}
+{"text": ">> It moved overlay with silver industrial", "start": 2031.84, "duration": 5.199}
+{"text": "metals. So I I don't fully understand", "start": 2034.399, "duration": 4.0}
+{"text": "what happened there to be honest with", "start": 2037.039, "duration": 3.52}
+{"text": "you, David. But to me, it's just very", "start": 2038.399, "duration": 4.241}
+{"text": "striking that when this happened, it was", "start": 2040.559, "duration": 4.641}
+{"text": "a bunch of industrial minerals that", "start": 2042.64, "duration": 5.039}
+{"text": "moved it once and not the other monetary", "start": 2045.2, "duration": 6.639}
+{"text": "metal, gold. So, again, I I'm not making", "start": 2047.679, "duration": 7.44}
+{"text": "a bare case. I don't hate silver. You", "start": 2051.839, "duration": 5.361}
+{"text": "know, I think the industrial side of", "start": 2055.119, "duration": 4.641}
+{"text": "silver actually makes it it puts a", "start": 2057.2, "duration": 5.28}
+{"text": "bigger tailwind in silver sales on the", "start": 2059.76, "duration": 5.599}
+{"text": "other side of Trump shock because it has", "start": 2062.48, "duration": 4.72}
+{"text": "all this extra demand as an industrial", "start": 2065.359, "duration": 4.401}
+{"text": "mineral that gold doesn't have.", "start": 2067.2, "duration": 6.24}
+{"text": "So, I I really like silver. I'm", "start": 2069.76, "duration": 6.319}
+{"text": "I'm just not willing to ignore the", "start": 2073.44, "duration": 4.56}
+{"text": "reality of data such as you have on the", "start": 2076.079, "duration": 5.681}
+{"text": "screen right now. Platinum went up", "start": 2078.0, "duration": 5.76}
+{"text": "early June. Like you said, I'm trying to", "start": 2081.76, "duration": 4.0}
+{"text": "understand I know we don't have an exact", "start": 2083.76, "duration": 3.119}
+{"text": "answer for this. I'm just trying to", "start": 2085.76, "duration": 3.919}
+{"text": "understand the impetus be behind uh", "start": 2086.879, "duration": 4.8}
+{"text": "these moves which are very much", "start": 2089.679, "duration": 3.92}
+{"text": "correlated now that I have them both on", "start": 2091.679, "duration": 4.24}
+{"text": "the same chart. Lobo I I'm trying to", "start": 2093.599, "duration": 4.881}
+{"text": "understand maybe there was um uh there", "start": 2095.919, "duration": 4.881}
+{"text": "was some tariff announcement that uh", "start": 2098.48, "duration": 4.96}
+{"text": "that preceded which which sparked a huge", "start": 2100.8, "duration": 5.039}
+{"text": "demand for platinum hoarding or", "start": 2103.44, "duration": 4.0}
+{"text": "industrial metal hoarding. I I don't", "start": 2105.839, "duration": 2.881}
+{"text": "know. I'm just speculating here. It's", "start": 2107.44, "duration": 3.12}
+{"text": "important to understand maybe what", "start": 2108.72, "duration": 3.359}
+{"text": "happened so that if the same event", "start": 2110.56, "duration": 3.279}
+{"text": "happens again we could be ready. I agree", "start": 2112.079, "duration": 3.04}
+{"text": "and it would be great if we could do", "start": 2113.839, "duration": 3.121}
+{"text": "that but the honest answer David is that", "start": 2115.119, "duration": 4.161}
+{"text": "I don't know. I've heard many theories.", "start": 2116.96, "duration": 3.6}
+{"text": "There were a lot of people at the time", "start": 2119.28, "duration": 3.12}
+{"text": "this happened saying, \"Oh, it's because", "start": 2120.56, "duration": 3.44}
+{"text": "gold got expensive and the Chinese", "start": 2122.4, "duration": 4.16}
+{"text": "started buying silver instead.\" Well,", "start": 2124.0, "duration": 4.24}
+{"text": "but that doesn't explain platinum moving", "start": 2126.56, "duration": 3.279}
+{"text": "at the same time. And there were other", "start": 2128.24, "duration": 3.28}
+{"text": "people saying, \"Oh, well, it's the", "start": 2129.839, "duration": 3.201}
+{"text": "automotive industry coming back and", "start": 2131.52, "duration": 3.2}
+{"text": "platinum and platium and rodium are all", "start": 2133.04, "duration": 3.92}
+{"text": "well, but silver is is used mostly in", "start": 2134.72, "duration": 4.56}
+{"text": "solar panels. There is some in the cars,", "start": 2136.96, "duration": 5.04}
+{"text": "but not in catalytic converters. So, it", "start": 2139.28, "duration": 4.24}
+{"text": "doesn't make sense for it to move on", "start": 2142.0, "duration": 2.96}
+{"text": "that basis either.\" So, I've heard", "start": 2143.52, "duration": 3.839}
+{"text": "various explanations. Uh, oh, the", "start": 2144.96, "duration": 4.159}
+{"text": "Russians are buying silver now. There", "start": 2147.359, "duration": 3.76}
+{"text": "there's a bunch of things out there, but", "start": 2149.119, "duration": 3.281}
+{"text": "I didn't find any of them very", "start": 2151.119, "duration": 4.561}
+{"text": "satisfactory. It it might just be like", "start": 2152.4, "duration": 5.679}
+{"text": "just global positioning, the tariffs as", "start": 2155.68, "duration": 5.28}
+{"text": "you say, or China stockpiling like", "start": 2158.079, "duration": 4.801}
+{"text": "everything industrial", "start": 2160.96, "duration": 4.56}
+{"text": "that would explain a a multi-asset move", "start": 2162.88, "duration": 4.479}
+{"text": "like this. And we'll just we'll never", "start": 2165.52, "duration": 4.0}
+{"text": "know except for possibly in in hindsight", "start": 2167.359, "duration": 4.881}
+{"text": "if somebody comes out and discloses it.", "start": 2169.52, "duration": 6.0}
+{"text": "Um the so you know I wish I could tell", "start": 2172.24, "duration": 5.119}
+{"text": "you here's the trigger, watch for this", "start": 2175.52, "duration": 4.96}
+{"text": "in the future and that'll tell us um you", "start": 2177.359, "duration": 4.881}
+{"text": "know when to bet on this move happening", "start": 2180.48, "duration": 4.16}
+{"text": "again. But I I don't think anybody knows", "start": 2182.24, "duration": 5.599}
+{"text": "that. I the only takeaway I can say is", "start": 2184.64, "duration": 6.24}
+{"text": "that in this moment silver acted more", "start": 2187.839, "duration": 6.081}
+{"text": "like these other metals than gold. And", "start": 2190.88, "duration": 6.32}
+{"text": "so be cautious", "start": 2193.92, "duration": 6.08}
+{"text": "um about assuming", "start": 2197.2, "duration": 4.48}
+{"text": "be be cautious about assuming that", "start": 2200.0, "duration": 3.44}
+{"text": "silver has to act like gold all the", "start": 2201.68, "duration": 2.24}
+{"text": "time.", "start": 2203.44, "duration": 2.08}
+{"text": ">> I've added copper and palladium to this", "start": 2203.92, "duration": 3.199}
+{"text": "chart. I know it's a bit messy now, but", "start": 2205.52, "duration": 3.04}
+{"text": "uh here let me just remove palladium.", "start": 2207.119, "duration": 4.161}
+{"text": "It's not really necessary. Copper copper", "start": 2208.56, "duration": 4.88}
+{"text": "off cuz that's very different. That huge", "start": 2211.28, "duration": 5.12}
+{"text": "move on huge move on copper was because", "start": 2213.44, "duration": 4.48}
+{"text": "of a tariff announcement and then an", "start": 2216.4, "duration": 3.439}
+{"text": "unannouncement. Right.", "start": 2217.92, "duration": 3.28}
+{"text": ">> Yeah. that the point I was trying to", "start": 2219.839, "duration": 3.681}
+{"text": "make was that uh barring those tariff", "start": 2221.2, "duration": 4.399}
+{"text": "announcements and the announcement the", "start": 2223.52, "duration": 4.319}
+{"text": "the prices moved kind of in lock step up", "start": 2225.599, "duration": 4.081}
+{"text": "until that announcement but yes let's", "start": 2227.839, "duration": 4.561}
+{"text": "put palladium back up uh palladium has", "start": 2229.68, "duration": 5.28}
+{"text": "been um actually selling off unlike", "start": 2232.4, "duration": 5.76}
+{"text": "platinum and silver um again is there a", "start": 2234.96, "duration": 6.72}
+{"text": "story there uh right again they they are", "start": 2238.16, "duration": 5.76}
+{"text": "all industrial metals but in different", "start": 2241.68, "duration": 5.04}
+{"text": "markets so that's why you know I don't", "start": 2243.92, "duration": 5.199}
+{"text": "think it's just like the auto industry", "start": 2246.72, "duration": 4.399}
+{"text": ">> you know it might China, you know,", "start": 2249.119, "duration": 4.48}
+{"text": "stocking up or not, you know, whatever.", "start": 2251.119, "duration": 6.081}
+{"text": "Um, and again, not to repeat myself, I", "start": 2253.599, "duration": 5.201}
+{"text": "do not know the answer, David. I don't", "start": 2257.2, "duration": 2.96}
+{"text": "want to tell your audience, \"Yeah, do", "start": 2258.8, "duration": 2.799}
+{"text": "this, bet on this next time. Here's the", "start": 2260.16, "duration": 4.32}
+{"text": "trigger.\" I I don't know. U, but but be", "start": 2261.599, "duration": 4.961}
+{"text": "careful about what you assume on this", "start": 2264.48, "duration": 2.879}
+{"text": "basis.", "start": 2266.56, "duration": 2.48}
+{"text": ">> Well, let's just talk about copper now.", "start": 2267.359, "duration": 4.24}
+{"text": "Uh, is this an arbitrage opportunity at", "start": 2269.04, "duration": 5.12}
+{"text": "some point with copper? This is this is", "start": 2271.599, "duration": 5.441}
+{"text": "the US market, right? This is COMX. So,", "start": 2274.16, "duration": 4.72}
+{"text": "uh, there was some discrepancy between", "start": 2277.04, "duration": 4.16}
+{"text": "pricing on the COMX and the LME, uh,", "start": 2278.88, "duration": 4.479}
+{"text": "which which contributed to,", "start": 2281.2, "duration": 5.04}
+{"text": ">> yeah, I'm I'm being I guess politically", "start": 2283.359, "duration": 4.881}
+{"text": "correct, but I there's some arbitrage", "start": 2286.24, "duration": 3.839}
+{"text": "happening here. That's what partly", "start": 2288.24, "duration": 3.68}
+{"text": "contributed to this big downdraft in the", "start": 2290.079, "duration": 4.241}
+{"text": "price. This here, uh, like you mentioned", "start": 2291.92, "duration": 5.12}
+{"text": "was the tariff announcement, 50% copper", "start": 2294.32, "duration": 5.84}
+{"text": "tariff announcement. And uh I so I don't", "start": 2297.04, "duration": 3.76}
+{"text": "know the market", "start": 2300.16, "duration": 2.16}
+{"text": ">> and the big one on the downside was the", "start": 2300.8, "duration": 3.279}
+{"text": "announcement that you know like the", "start": 2302.32, "duration": 4.08}
+{"text": "actual copper product that is traded you", "start": 2304.079, "duration": 4.241}
+{"text": "know what we trade on the comics was", "start": 2306.4, "duration": 3.84}
+{"text": "going to be excluded from the tariffs.", "start": 2308.32, "duration": 4.32}
+{"text": "The tariffs are on finished products and", "start": 2310.24, "duration": 3.44}
+{"text": "things.", "start": 2312.64, "duration": 3.36}
+{"text": ">> 449 that's that's a fair value now.", "start": 2313.68, "duration": 3.84}
+{"text": "That's the that's the fair value of", "start": 2316.0, "duration": 3.44}
+{"text": "copper.", "start": 2317.52, "duration": 4.0}
+{"text": ">> It's been trading that way.", "start": 2319.44, "duration": 6.0}
+{"text": ">> Yes. Um the issue there is that again as", "start": 2321.52, "duration": 5.68}
+{"text": "we started this conversation on the", "start": 2325.44, "duration": 3.84}
+{"text": "macro I do think that there's more Trump", "start": 2327.2, "duration": 5.12}
+{"text": "shock to hit the economy and and Dr.", "start": 2329.28, "duration": 5.04}
+{"text": "Copper is called that for a reason. So", "start": 2332.32, "duration": 3.68}
+{"text": "if I'm right more weakness in the", "start": 2334.32, "duration": 4.0}
+{"text": "economy ahead and not just in the US by", "start": 2336.0, "duration": 5.04}
+{"text": "the way um then I I think there's", "start": 2338.32, "duration": 5.519}
+{"text": "near-term vulnerability to copper. Now,", "start": 2341.04, "duration": 4.96}
+{"text": "if I could sit that out, like if I'm a", "start": 2343.839, "duration": 4.0}
+{"text": "long-term investor and I don't care if", "start": 2346.0, "duration": 4.72}
+{"text": "copper goes down 30% from here because", "start": 2347.839, "duration": 4.401}
+{"text": "I'm confident it'll go up in the years", "start": 2350.72, "duration": 4.399}
+{"text": "ahead and and if copper goes down 30%,", "start": 2352.24, "duration": 5.359}
+{"text": "the copper stocks will go down 60% or,", "start": 2355.119, "duration": 4.96}
+{"text": "you know, something like that, right?", "start": 2357.599, "duration": 5.121}
+{"text": "So,", "start": 2360.079, "duration": 4.641}
+{"text": "you know, if if I've got a 10-year", "start": 2362.72, "duration": 3.6}
+{"text": "outlook or something, maybe I just go", "start": 2364.72, "duration": 2.879}
+{"text": "ahead and buy this dip and don't worry", "start": 2366.32, "duration": 3.6}
+{"text": "about it. But in my experience, most", "start": 2367.599, "duration": 4.641}
+{"text": "investors don't have that kind of u", "start": 2369.92, "duration": 4.72}
+{"text": "staying power. They don't like it if", "start": 2372.24, "duration": 4.64}
+{"text": "they buy something and it goes down 60%", "start": 2374.64, "duration": 4.479}
+{"text": "no matter how much they believe in it.", "start": 2376.88, "duration": 3.76}
+{"text": "So if you're not willing to take that", "start": 2379.119, "duration": 3.681}
+{"text": "risk, you know, I don't I don't think", "start": 2380.64, "duration": 3.84}
+{"text": "copper just goes to the moon and never", "start": 2382.8, "duration": 3.12}
+{"text": "looks back tomorrow. I think there's", "start": 2384.48, "duration": 3.04}
+{"text": "time to wait and see if the other shoe", "start": 2385.92, "duration": 3.76}
+{"text": "drops and if copper gives us a shot at", "start": 2387.52, "duration": 4.64}
+{"text": "lower prices. Basically, this is what", "start": 2389.68, "duration": 3.76}
+{"text": "I'm doing with my own money right now,", "start": 2392.16, "duration": 3.6}
+{"text": "David. I'm extremely bullish on copper", "start": 2393.44, "duration": 5.36}
+{"text": "going forward. uh even longer term even", "start": 2395.76, "duration": 5.76}
+{"text": "more bullish than uranium.", "start": 2398.8, "duration": 6.0}
+{"text": "But I see such potential for near-term", "start": 2401.52, "duration": 5.52}
+{"text": "correction in copper that I'm still", "start": 2404.8, "duration": 4.799}
+{"text": "mostly accumulating cash. I did buy one", "start": 2407.04, "duration": 5.2}
+{"text": "stock that got oversold, but mostly I'm", "start": 2409.599, "duration": 4.881}
+{"text": "just accumulating cash and waiting to", "start": 2412.24, "duration": 4.4}
+{"text": "deploy. So I don't know the future. I", "start": 2414.48, "duration": 3.68}
+{"text": "can't promise what will happen or if", "start": 2416.64, "duration": 3.12}
+{"text": "that's a good idea or not, but I can", "start": 2418.16, "duration": 2.8}
+{"text": "tell you that's what I'm doing with my", "start": 2419.76, "duration": 1.92}
+{"text": "own money.", "start": 2420.96, "duration": 2.56}
+{"text": ">> Which of these commodities do you like", "start": 2421.68, "duration": 3.2}
+{"text": "the most? And we haven't talked about", "start": 2423.52, "duration": 3.92}
+{"text": "uranium uh yet. I wonder if uranium is", "start": 2424.88, "duration": 4.56}
+{"text": "the answer to my question. If not, what", "start": 2427.44, "duration": 4.56}
+{"text": "else?", "start": 2429.44, "duration": 5.36}
+{"text": "Yes. And yes,", "start": 2432.0, "duration": 6.0}
+{"text": "copper was my top pick for this year. Uh", "start": 2434.8, "duration": 4.799}
+{"text": "and the reasons for that are mostly", "start": 2438.0, "duration": 3.359}
+{"text": "still ahead of us. I'm still very very", "start": 2439.599, "duration": 3.441}
+{"text": "bullish on copper except for this", "start": 2441.359, "duration": 3.841}
+{"text": "near-term thing. But but I got to say at", "start": 2443.04, "duration": 3.68}
+{"text": "this particular moment that we're", "start": 2445.2, "duration": 4.72}
+{"text": "talking, uh, uranium, it visibly carved", "start": 2446.72, "duration": 4.8}
+{"text": "out a bottom a couple months ago and", "start": 2449.92, "duration": 4.0}
+{"text": "then it kind of got ahead of itself and", "start": 2451.52, "duration": 4.48}
+{"text": "then it fell back again and it now looks", "start": 2453.92, "duration": 4.48}
+{"text": "to be carving out a bottom again and", "start": 2456.0, "duration": 6.0}
+{"text": "that puts it on an upward trend. So if I", "start": 2458.4, "duration": 7.919}
+{"text": "miss the last big uranium move upwards,", "start": 2462.0, "duration": 6.48}
+{"text": "uh, I would not dally right now. and and", "start": 2466.319, "duration": 5.601}
+{"text": "and right now as much as I like copper", "start": 2468.48, "duration": 5.68}
+{"text": "like going forward and for years to come", "start": 2471.92, "duration": 4.64}
+{"text": "I see more opportunity right now in the", "start": 2474.16, "duration": 4.0}
+{"text": "uranium space. So if you ask me what is", "start": 2476.56, "duration": 4.559}
+{"text": "my top shopping priority it is", "start": 2478.16, "duration": 4.8}
+{"text": "absolutely no question uranium more than", "start": 2481.119, "duration": 3.761}
+{"text": "gold more than silver more than copper", "start": 2482.96, "duration": 4.24}
+{"text": "right now if I could only add you know", "start": 2484.88, "duration": 4.0}
+{"text": "had a choice of all and I only had could", "start": 2487.2, "duration": 4.0}
+{"text": "add one it would be uranium", "start": 2488.88, "duration": 3.76}
+{"text": ">> get your reaction to this article from", "start": 2491.2, "duration": 4.72}
+{"text": "the energy uh department energy.gov is a", "start": 2492.64, "duration": 5.04}
+{"text": "website. Nine key takeaways from the", "start": 2495.92, "duration": 3.6}
+{"text": "president's executive orders on nuclear", "start": 2497.68, "duration": 3.76}
+{"text": "energy. I won't read all of them, but", "start": 2499.52, "duration": 3.04}
+{"text": "let's just go through some of the", "start": 2501.44, "duration": 2.879}
+{"text": "highlights. Speed up nuclear reactor", "start": 2502.56, "duration": 5.36}
+{"text": "licensing. Add 300 gawatts of new US", "start": 2504.319, "duration": 5.601}
+{"text": "nuclear capacity by 2050. Well, that's", "start": 2507.92, "duration": 4.08}
+{"text": "still some time away, but um you know,", "start": 2509.92, "duration": 4.0}
+{"text": ">> but it's huge. And and by the way, the", "start": 2512.0, "duration": 3.839}
+{"text": "Chinese are doing more than that by", "start": 2513.92, "duration": 3.679}
+{"text": "2040,", "start": 2515.839, "duration": 3.601}
+{"text": ">> which is you know, on the scale of what", "start": 2517.599, "duration": 3.76}
+{"text": "it time it takes to build nuclear power", "start": 2519.44, "duration": 4.32}
+{"text": "plants, that's like tomorrow. Well, what", "start": 2521.359, "duration": 3.76}
+{"text": "does this mean for investors though? I", "start": 2523.76, "duration": 3.44}
+{"text": "mean, a lot of the new I know for a fact", "start": 2525.119, "duration": 4.96}
+{"text": "that a lot of the uranium uh that the US", "start": 2527.2, "duration": 5.44}
+{"text": "nuclear reactors use does not actually", "start": 2530.079, "duration": 4.801}
+{"text": "come from the US. And in fact, nuclear", "start": 2532.64, "duration": 4.32}
+{"text": "uh sorry, uranium production in the US", "start": 2534.88, "duration": 4.88}
+{"text": "lags behind other countries.", "start": 2536.96, "duration": 5.28}
+{"text": ">> Almost zero until recently. So there's", "start": 2539.76, "duration": 4.0}
+{"text": "there's no question about that. So no,", "start": 2542.24, "duration": 2.96}
+{"text": ">> investors be looking abroad. Should", "start": 2543.76, "duration": 3.839}
+{"text": "investors be positioning now to US", "start": 2545.2, "duration": 4.96}
+{"text": "companies? Uranium is valuable enough to", "start": 2547.599, "duration": 5.601}
+{"text": "be a globally fungeible e", "start": 2550.16, "duration": 6.0}
+{"text": "a globally fungeible commodity.", "start": 2553.2, "duration": 4.8}
+{"text": ">> So it's this is very bullish for the", "start": 2556.16, "duration": 3.439}
+{"text": "uranium market around the world but it's", "start": 2558.0, "duration": 4.0}
+{"text": "also obviously bullish for US sourced", "start": 2559.599, "duration": 3.921}
+{"text": "uranium. There's a clear bias and", "start": 2562.0, "duration": 4.319}
+{"text": "preference here like this is explicit.", "start": 2563.52, "duration": 4.64}
+{"text": "So uh you know who they are. I don't", "start": 2566.319, "duration": 4.241}
+{"text": "give free stock picks but it's pretty", "start": 2568.16, "duration": 4.56}
+{"text": "clear who actually has uranium", "start": 2570.56, "duration": 4.559}
+{"text": "production in the United States. Um I'm", "start": 2572.72, "duration": 3.76}
+{"text": "not and I'm not saying they're all good", "start": 2575.119, "duration": 2.96}
+{"text": "picks by the way. Some of them are", "start": 2576.48, "duration": 3.76}
+{"text": "really struggling, some of them are", "start": 2578.079, "duration": 5.201}
+{"text": "doing better. Um,", "start": 2580.24, "duration": 4.8}
+{"text": "but I think it doesn't take much due", "start": 2583.28, "duration": 3.839}
+{"text": "diligence diligence to tell who's going", "start": 2585.04, "duration": 4.16}
+{"text": "to be able to deliver US sourced uranium", "start": 2587.119, "duration": 3.521}
+{"text": "to the market and they will have an", "start": 2589.2, "duration": 3.119}
+{"text": "extra price advantage that that will", "start": 2590.64, "duration": 5.12}
+{"text": "that is a material and investable fact.", "start": 2592.319, "duration": 4.721}
+{"text": "Um, but but", "start": 2595.76, "duration": 3.44}
+{"text": ">> I think it sounds like Trump Sorry. Go", "start": 2597.04, "duration": 2.64}
+{"text": "ahead.", "start": 2599.2, "duration": 2.56}
+{"text": ">> No. Well, okay. So, I was going to say", "start": 2599.68, "duration": 4.0}
+{"text": "don't underestimate the global aspect of", "start": 2601.76, "duration": 3.68}
+{"text": "this. You know when I when I say the", "start": 2603.68, "duration": 3.439}
+{"text": "Chinese are building even more reactors", "start": 2605.44, "duration": 4.32}
+{"text": "and doing it faster that really matters.", "start": 2607.119, "duration": 5.601}
+{"text": "This is such a powerful global trend", "start": 2609.76, "duration": 4.88}
+{"text": "that even Sweden, this announcement was", "start": 2612.72, "duration": 3.92}
+{"text": "just today and Sweden is is like", "start": 2614.64, "duration": 3.28}
+{"text": "Germany, like one of these most", "start": 2616.64, "duration": 3.52}
+{"text": "anti-uclear in a way places and", "start": 2617.92, "duration": 4.56}
+{"text": "particularly the mining. And I just saw", "start": 2620.16, "duration": 4.24}
+{"text": "an announcement today that Sweden is now", "start": 2622.48, "duration": 4.56}
+{"text": "looking at permitting uranium mining.", "start": 2624.4, "duration": 5.199}
+{"text": "And this this is a big a deal is Germany", "start": 2627.04, "duration": 4.319}
+{"text": "saying, well, maybe we should reconsider", "start": 2629.599, "duration": 4.561}
+{"text": "nuclear power. Uh, you know, in terms of", "start": 2631.359, "duration": 4.641}
+{"text": "straws in the wind, sign of the times,", "start": 2634.16, "duration": 3.199}
+{"text": "whatever you want to call it, this is", "start": 2636.0, "duration": 4.72}
+{"text": "huge. I mean, this is like the United", "start": 2637.359, "duration": 5.121}
+{"text": "States is talking about reactivating", "start": 2640.72, "duration": 3.76}
+{"text": "Three-Mile Island.", "start": 2642.48, "duration": 4.08}
+{"text": "Like that is that is jaw-dropping that", "start": 2644.48, "duration": 4.639}
+{"text": "that would even be considered", "start": 2646.56, "duration": 6.64}
+{"text": "uh given the fear around that name. So,", "start": 2649.119, "duration": 5.761}
+{"text": "what we're saying here, David, the key", "start": 2653.2, "duration": 3.919}
+{"text": "takeaway is that the demand side of this", "start": 2654.88, "duration": 4.64}
+{"text": "story just keeps getting better and", "start": 2657.119, "duration": 4.321}
+{"text": "better on an almost daily basis. I mean,", "start": 2659.52, "duration": 4.079}
+{"text": "it's unbelievable how much we're seeing", "start": 2661.44, "duration": 4.879}
+{"text": "the demand side increase here. And at", "start": 2663.599, "duration": 4.48}
+{"text": "the same time, we're seeing the supply", "start": 2666.319, "duration": 4.641}
+{"text": "side still constrained. There's a there", "start": 2668.079, "duration": 4.481}
+{"text": "was a reasonable fear that the", "start": 2670.96, "duration": 4.24}
+{"text": "lowhanging fruit of uh like mothball", "start": 2672.56, "duration": 4.24}
+{"text": "mines that could be brought back online", "start": 2675.2, "duration": 3.6}
+{"text": "or or lowcost projects that could be", "start": 2676.8, "duration": 4.4}
+{"text": "built to bring new supply online, it was", "start": 2678.8, "duration": 4.559}
+{"text": "reasonable to worry about, you know,", "start": 2681.2, "duration": 4.48}
+{"text": "that possibly over supplying the market", "start": 2683.359, "duration": 4.401}
+{"text": "in the near term. But now that it's", "start": 2685.68, "duration": 3.84}
+{"text": "started and these mines are being built", "start": 2687.76, "duration": 3.68}
+{"text": "or re refurbished,", "start": 2689.52, "duration": 2.4}
+{"text": ">> yeah,", "start": 2691.44, "duration": 2.8}
+{"text": ">> they're almost all behind schedule or", "start": 2691.92, "duration": 4.159}
+{"text": "over budget. Some of them aren't", "start": 2694.24, "duration": 4.96}
+{"text": "happening at all. So while it was", "start": 2696.079, "duration": 5.52}
+{"text": "reasonable to worry about high prices", "start": 2699.2, "duration": 4.72}
+{"text": "high prices in this market, it is no", "start": 2701.599, "duration": 4.0}
+{"text": "longer reasonable to me. The market has", "start": 2703.92, "duration": 3.6}
+{"text": "shown that it's easier said than done to", "start": 2705.599, "duration": 4.801}
+{"text": "bring these uranium mines online. And so", "start": 2707.52, "duration": 4.88}
+{"text": "demand's going up, supply remains", "start": 2710.4, "duration": 4.24}
+{"text": "constrained. This is clearly bullish.", "start": 2712.4, "duration": 4.4}
+{"text": "And sorry, one final thing. Uranium", "start": 2714.64, "duration": 4.719}
+{"text": "prices are highly recession resistant.", "start": 2716.8, "duration": 4.559}
+{"text": "So, while I'm worried about copper and", "start": 2719.359, "duration": 3.521}
+{"text": "maybe even silver a little bit in the", "start": 2721.359, "duration": 3.76}
+{"text": "near term because of economic weakness,", "start": 2722.88, "duration": 4.8}
+{"text": "I think that has zero impact on uranium.", "start": 2725.119, "duration": 4.72}
+{"text": ">> You don't think electricity consumption", "start": 2727.68, "duration": 4.24}
+{"text": "will change given a recession?", "start": 2729.839, "duration": 4.48}
+{"text": ">> It will, but not base load power. You", "start": 2731.92, "duration": 4.96}
+{"text": "use uranium because it's 24/7 365.", "start": 2734.319, "duration": 4.321}
+{"text": "That's nuclear power is always there.", "start": 2736.88, "duration": 3.439}
+{"text": "Base load power. It's the kind of thing", "start": 2738.64, "duration": 3.92}
+{"text": "you use for hospitals and airports and", "start": 2740.319, "duration": 4.321}
+{"text": "data center. The kind of thing that you", "start": 2742.56, "duration": 3.84}
+{"text": "don't want to switch off at night or", "start": 2744.64, "duration": 4.32}
+{"text": "ever. I understand.", "start": 2746.4, "duration": 4.24}
+{"text": ">> And to my earlier question about whether", "start": 2748.96, "duration": 4.32}
+{"text": "or not uh investors should be looking at", "start": 2750.64, "duration": 6.88}
+{"text": "domestic US-based uh nuclear or uranium", "start": 2753.28, "duration": 6.24}
+{"text": "producing companies, this this this next", "start": 2757.52, "duration": 4.079}
+{"text": "point says one of the big takeaways from", "start": 2759.52, "duration": 3.599}
+{"text": "the executive orders is that President", "start": 2761.599, "duration": 3.281}
+{"text": "Trump wants to maximize domestic", "start": 2763.119, "duration": 3.921}
+{"text": "production of nuclear fuel. He wants to", "start": 2764.88, "duration": 4.4}
+{"text": "also according to the executive orders", "start": 2767.04, "duration": 4.96}
+{"text": "uh increase the number of American uh", "start": 2769.28, "duration": 5.52}
+{"text": "workers at nuclear sites uh and uranium", "start": 2772.0, "duration": 5.76}
+{"text": "power plant uh uranium uh uh mines. I I", "start": 2774.8, "duration": 5.84}
+{"text": "wonder what incentive uh or incentives", "start": 2777.76, "duration": 6.079}
+{"text": "he's giving to", "start": 2780.64, "duration": 5.679}
+{"text": "to to to make uranium producers actually", "start": 2783.839, "duration": 4.48}
+{"text": "start producing in the US and to", "start": 2786.319, "duration": 4.081}
+{"text": "actually bolster the production uh", "start": 2788.319, "duration": 3.921}
+{"text": "profile domestically.", "start": 2790.4, "duration": 3.679}
+{"text": ">> Yeah, I have to make uranium great", "start": 2792.24, "duration": 3.2}
+{"text": "again. I have to push back on that a", "start": 2794.079, "duration": 3.921}
+{"text": "little bit. This is fuel production and", "start": 2795.44, "duration": 4.24}
+{"text": "those people the workforce he's talking", "start": 2798.0, "duration": 4.48}
+{"text": "about is for you know when you when you", "start": 2799.68, "duration": 4.639}
+{"text": "take the mine product and you vaporize", "start": 2802.48, "duration": 3.359}
+{"text": "it, you centrifuge it and all these", "start": 2804.319, "duration": 3.28}
+{"text": "things they do to the process to get to", "start": 2805.839, "duration": 3.441}
+{"text": "the pellet. The mines don't make the", "start": 2807.599, "duration": 3.681}
+{"text": "pellets. These two points that you're", "start": 2809.28, "duration": 4.48}
+{"text": "talking about are the work needed to", "start": 2811.28, "duration": 4.079}
+{"text": "take the mine product and turn it into", "start": 2813.76, "duration": 3.76}
+{"text": "the fuel the actual fuel that goes into", "start": 2815.359, "duration": 4.401}
+{"text": "the reactor. So actually that doesn't", "start": 2817.52, "duration": 2.96}
+{"text": "really incentive", "start": 2819.76, "duration": 1.92}
+{"text": ">> the enrichment part", "start": 2820.48, "duration": 3.359}
+{"text": ">> if right if you didn't care where that", "start": 2821.68, "duration": 3.84}
+{"text": "uranium came from you could do all these", "start": 2823.839, "duration": 2.721}
+{"text": "things and it wouldn't make any", "start": 2825.52, "duration": 3.839}
+{"text": "difference to the minds at all. So", "start": 2826.56, "duration": 3.519}
+{"text": ">> okay", "start": 2829.359, "duration": 2.881}
+{"text": ">> but at the same time the US has", "start": 2830.079, "duration": 4.321}
+{"text": "established and this was a Trump 1.0 0", "start": 2832.24, "duration": 4.48}
+{"text": "idea the US has established a uranium", "start": 2834.4, "duration": 5.04}
+{"text": "reserve and there's also clearly this", "start": 2836.72, "duration": 5.2}
+{"text": "drive towards um you know domestic", "start": 2839.44, "duration": 5.2}
+{"text": "sources of critical minerals and uranium", "start": 2841.92, "duration": 5.28}
+{"text": "was cited a couple months ago in one of", "start": 2844.64, "duration": 4.64}
+{"text": "the earlier critical minerals executive", "start": 2847.2, "duration": 4.639}
+{"text": "orders uranium and by the way gold too", "start": 2849.28, "duration": 4.64}
+{"text": "oddly enough and the same one but to", "start": 2851.839, "duration": 4.24}
+{"text": "this point uranium was cited as one of", "start": 2853.92, "duration": 3.679}
+{"text": "these critical minerals that we need to", "start": 2856.079, "duration": 3.121}
+{"text": "incent", "start": 2857.599, "duration": 3.201}
+{"text": "so I'm not saying that the miners are", "start": 2859.2, "duration": 3.36}
+{"text": "not getting incentives in the United", "start": 2860.8, "duration": 3.92}
+{"text": "States I think it's real. I think it's", "start": 2862.56, "duration": 4.64}
+{"text": "material and I think it's investable. Um", "start": 2864.72, "duration": 4.0}
+{"text": "but those points that you showed those", "start": 2867.2, "duration": 2.96}
+{"text": "are about the enrichment which is a", "start": 2868.72, "duration": 2.96}
+{"text": "different it's related but a different", "start": 2870.16, "duration": 2.0}
+{"text": "question.", "start": 2871.68, "duration": 2.08}
+{"text": ">> Well that's still part of um yeah that's", "start": 2872.16, "duration": 4.159}
+{"text": "a good point and that should in theory", "start": 2873.76, "duration": 4.319}
+{"text": "bolster national security. We don't have", "start": 2876.319, "duration": 4.481}
+{"text": "to rely on well by by we I mean the US", "start": 2878.079, "duration": 4.161}
+{"text": "doesn't have to rely on other countries", "start": 2880.8, "duration": 3.039}
+{"text": "for enrichment which is a key part of", "start": 2882.24, "duration": 2.8}
+{"text": "the process", "start": 2883.839, "duration": 2.641}
+{"text": ">> especially since so much of that comes", "start": 2885.04, "duration": 2.559}
+{"text": "from Russia.", "start": 2886.48, "duration": 3.28}
+{"text": ">> Yeah sense there.", "start": 2887.599, "duration": 3.681}
+{"text": ">> How long will this process take by the", "start": 2889.76, "duration": 2.16}
+{"text": "way?", "start": 2891.28, "duration": 3.12}
+{"text": ">> Years. years. Okay. So, we're looking at", "start": 2891.92, "duration": 5.199}
+{"text": "post Trump, they could still have So, in", "start": 2894.4, "duration": 4.64}
+{"text": "theory, this could be reversed, right?", "start": 2897.119, "duration": 2.321}
+{"text": "The next", "start": 2899.04, "duration": 2.0}
+{"text": ">> it could, but but it's interesting, you", "start": 2899.44, "duration": 4.159}
+{"text": "know, you know, the the US uranium", "start": 2901.04, "duration": 4.16}
+{"text": "strategic uranium reserve or whatever", "start": 2903.599, "duration": 3.601}
+{"text": "the hell they call it, that was a Trump", "start": 2905.2, "duration": 4.639}
+{"text": "1.0 idea, but it was under Biden that it", "start": 2907.2, "duration": 4.96}
+{"text": "got funded in the first um purchases", "start": 2909.839, "duration": 3.841}
+{"text": "were made.", "start": 2912.16, "duration": 3.52}
+{"text": ">> I and and even, you know, if you recall,", "start": 2913.68, "duration": 3.76}
+{"text": "it's not that long ago, you know, under", "start": 2915.68, "duration": 4.399}
+{"text": "the Biden administration, there was um I", "start": 2917.44, "duration": 4.639}
+{"text": "think it was like 2.6 6 billion was", "start": 2920.079, "duration": 4.401}
+{"text": "allocated for encouraging the", "start": 2922.079, "duration": 5.76}
+{"text": "development of advanced nuclear. So the", "start": 2924.48, "duration": 6.4}
+{"text": "the the fact that uranium has finally", "start": 2927.839, "duration": 5.921}
+{"text": "become under the green umbrella, you", "start": 2930.88, "duration": 4.88}
+{"text": "know, it's non-carbon emitting and so", "start": 2933.76, "duration": 4.96}
+{"text": "on, I I think that actually makes it", "start": 2935.76, "duration": 4.559}
+{"text": "something that can endure changes of", "start": 2938.72, "duration": 2.16}
+{"text": "power.", "start": 2940.319, "duration": 2.481}
+{"text": ">> Well, uh I'll finish off on this note.", "start": 2940.88, "duration": 4.479}
+{"text": "People should go to uh the independent", "start": 2942.8, "duration": 4.16}
+{"text": "speeculator.com", "start": 2945.359, "duration": 4.0}
+{"text": "to learn more about Loel's works, get", "start": 2946.96, "duration": 5.52}
+{"text": "his uh stock picks. What do you want", "start": 2949.359, "duration": 5.601}
+{"text": "people to know um about the independent", "start": 2952.48, "duration": 4.16}
+{"text": "speculator? What can we learn from this", "start": 2954.96, "duration": 2.96}
+{"text": "site? What are you working on right now", "start": 2956.64, "duration": 4.0}
+{"text": "that you know, give us a teaser? Lots of", "start": 2957.92, "duration": 4.8}
+{"text": "things there. I think the main takeaway", "start": 2960.64, "duration": 3.84}
+{"text": "is is in the name, the independent", "start": 2962.72, "duration": 4.0}
+{"text": "speculator. I I don't promise that I'm", "start": 2964.48, "duration": 4.879}
+{"text": "always going to pick the highest gaining", "start": 2966.72, "duration": 4.16}
+{"text": "stocks or that I know everything that", "start": 2969.359, "duration": 3.76}
+{"text": "I'm always right. I do promise that I'm", "start": 2970.88, "duration": 3.84}
+{"text": "independent. There is no amount of money", "start": 2973.119, "duration": 4.48}
+{"text": "a company can pay me to say, you know,", "start": 2974.72, "duration": 4.879}
+{"text": "this company is a great speculation when", "start": 2977.599, "duration": 5.121}
+{"text": "it's not or I think the opposite. So,", "start": 2979.599, "duration": 7.801}
+{"text": "um, you know, it", "start": 2982.72, "duration": 4.68}
+{"text": "a person who asks you to trust them is", "start": 2987.44, "duration": 3.52}
+{"text": "usually not trustworthy. So, I'm not", "start": 2989.359, "duration": 5.361}
+{"text": "going to say trust me. Um,", "start": 2990.96, "duration": 6.24}
+{"text": "but if you if you come to agree, if you", "start": 2994.72, "duration": 4.32}
+{"text": "do your analysis and you decide that I", "start": 2997.2, "duration": 4.24}
+{"text": "really am an independent speculator,", "start": 2999.04, "duration": 4.96}
+{"text": "then I really think that's something", "start": 3001.44, "duration": 6.32}
+{"text": "that you should consider in your in your", "start": 3004.0, "duration": 5.28}
+{"text": "own input going forward.", "start": 3007.76, "duration": 2.72}
+{"text": ">> Great. Thank you. We'll put the link", "start": 3009.28, "duration": 3.279}
+{"text": "down below and uh we'll make sure to", "start": 3010.48, "duration": 4.639}
+{"text": "give Lobo a follow there. Thank you very", "start": 3012.559, "duration": 3.921}
+{"text": "much, Lobo, for your time today. I", "start": 3015.119, "duration": 2.48}
+{"text": "appreciate it. I know you're traveling", "start": 3016.48, "duration": 2.72}
+{"text": "in Europe, so we'll speak again soon.", "start": 3017.599, "duration": 2.161}
+{"text": "Take care.", "start": 3019.2, "duration": 2.639}
+{"text": ">> Thank you, David. Good questions. Thank", "start": 3019.76, "duration": 3.359}
+{"text": "you for watching. Don't forget to like", "start": 3021.839, "duration": 4.601}
+{"text": "and subscribe.", "start": 3023.119, "duration": 3.321}

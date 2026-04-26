@@ -1,0 +1,893 @@
+{"text": "Our next guest is Emiriel Madard, the", "start": 0.0, "duration": 4.56}
+{"text": "NEC professor of software science and", "start": 2.24, "duration": 5.119}
+{"text": "engineering at MIT. Professor Madard is", "start": 4.56, "duration": 4.64}
+{"text": "an inventor of random linear network", "start": 7.359, "duration": 5.521}
+{"text": "coding or RLNC, a patent in technology", "start": 9.2, "duration": 6.16}
+{"text": "used in 5G and satellite communication", "start": 12.88, "duration": 4.64}
+{"text": "systems. Her work has already been used", "start": 15.36, "duration": 4.16}
+{"text": "by industry leaders like Cisco and", "start": 17.52, "duration": 3.919}
+{"text": "Ericson. And now she's bringing her", "start": 19.52, "duration": 4.96}
+{"text": "expertise to the web 3 space by using", "start": 21.439, "duration": 6.241}
+{"text": "RLNC in Optimum, an infrastructure for", "start": 24.48, "duration": 5.6}
+{"text": "blockchain designed to eliminate a lot", "start": 27.68, "duration": 4.24}
+{"text": "of the problems surrounding scalability", "start": 30.08, "duration": 4.56}
+{"text": "bottlenecks and efficient storage. How", "start": 31.92, "duration": 5.28}
+{"text": "will the technology of web 3 evolve? And", "start": 34.64, "duration": 4.16}
+{"text": "ultimately, what does the future of", "start": 37.2, "duration": 4.4}
+{"text": "global finance look like with faster,", "start": 38.8, "duration": 4.96}
+{"text": "more efficient peer-to-peer systems?", "start": 41.6, "duration": 4.08}
+{"text": "Professor Madard, welcome to the show.", "start": 43.76, "duration": 4.08}
+{"text": "Great to see you, David. Have Thank you", "start": 45.68, "duration": 4.32}
+{"text": "so much for having me. Professor, you", "start": 47.84, "duration": 5.6}
+{"text": "are uh one of the um I want to call you", "start": 50.0, "duration": 6.079}
+{"text": "inventors or uh project originators of", "start": 53.44, "duration": 4.48}
+{"text": "something called the random linear", "start": 56.079, "duration": 4.081}
+{"text": "network coding. Um it's uh interesting", "start": 57.92, "duration": 3.92}
+{"text": "technology. Tell us what it is, how it's", "start": 60.16, "duration": 5.2}
+{"text": "used by um satellite communications.", "start": 61.84, "duration": 4.72}
+{"text": "Tell us a little bit about your work", "start": 65.36, "duration": 3.36}
+{"text": "leading up to this project before we", "start": 66.56, "duration": 4.559}
+{"text": "talk about uh how it impacts web 3.", "start": 68.72, "duration": 5.04}
+{"text": "Yeah, thanks a lot. So um I've been", "start": 71.119, "duration": 5.68}
+{"text": "leading uh for the last two decades uh", "start": 73.76, "duration": 5.28}
+{"text": "the network coding and reliable", "start": 76.799, "duration": 5.68}
+{"text": "communications group. Uh it's uh part of", "start": 79.04, "duration": 7.52}
+{"text": "the research lab electronics at MIT. Um", "start": 82.479, "duration": 6.481}
+{"text": "and what network coding is at a high", "start": 86.56, "duration": 6.879}
+{"text": "level is representing data not just as", "start": 88.96, "duration": 8.159}
+{"text": "straight up data but as equations which", "start": 93.439, "duration": 6.0}
+{"text": "are", "start": 97.119, "duration": 4.481}
+{"text": "effectively equivalent to the original", "start": 99.439, "duration": 5.281}
+{"text": "data but actually have much more", "start": 101.6, "duration": 5.199}
+{"text": "flexibility", "start": 104.72, "duration": 5.12}
+{"text": "um and allow for greater robustness", "start": 106.799, "duration": 6.881}
+{"text": "greater efficiency in transporting or", "start": 109.84, "duration": 6.239}
+{"text": "storing data.", "start": 113.68, "duration": 5.92}
+{"text": "uh so uh that has been really my life's", "start": 116.079, "duration": 7.521}
+{"text": "work. Uh and very early on I became", "start": 119.6, "duration": 6.72}
+{"text": "quite interested in doing this in a", "start": 123.6, "duration": 7.279}
+{"text": "decentralized way. That's to say not uh", "start": 126.32, "duration": 6.4}
+{"text": "having a single entity that's", "start": 130.879, "duration": 4.0}
+{"text": "orchestrating and creating all of these", "start": 132.72, "duration": 5.84}
+{"text": "uh equations uh but allowing a", "start": 134.879, "duration": 6.481}
+{"text": "decentralized approach to creating these", "start": 138.56, "duration": 5.759}
+{"text": "equations in a way that still maintains", "start": 141.36, "duration": 5.36}
+{"text": "uh the integrity, robustness and", "start": 144.319, "duration": 3.521}
+{"text": "security of the data.", "start": 146.72, "duration": 4.0}
+{"text": "Okay. Maybe describe uh to the layman", "start": 147.84, "duration": 5.6}
+{"text": "watching how some of these technologies", "start": 150.72, "duration": 4.799}
+{"text": "could be used and applied on an", "start": 153.44, "duration": 5.2}
+{"text": "industrial scale today. Absolutely. Uh", "start": 155.519, "duration": 5.521}
+{"text": "so suppose that you and I are chatting", "start": 158.64, "duration": 4.72}
+{"text": "right now David and I'm trying to send", "start": 161.04, "duration": 4.08}
+{"text": "you some data. Now", "start": 163.36, "duration": 4.959}
+{"text": "as we all know data is just numbers. Uh", "start": 165.12, "duration": 5.44}
+{"text": "that's uh what makes it data rather than", "start": 168.319, "duration": 4.081}
+{"text": "something else.", "start": 170.56, "duration": 6.16}
+{"text": "And suppose that I have uh two different", "start": 172.4, "duration": 7.44}
+{"text": "pieces of data. Let's call them X and Y", "start": 176.72, "duration": 5.76}
+{"text": "to transmit to you. I could tell you X.", "start": 179.84, "duration": 5.679}
+{"text": "I could tell you why. Um, but maybe", "start": 182.48, "duration": 5.6}
+{"text": "there's a delay and you don't get X, you", "start": 185.519, "duration": 4.961}
+{"text": "just get Y. That's not good enough,", "start": 188.08, "duration": 5.12}
+{"text": "right? If I'm sending you a bank account", "start": 190.48, "duration": 6.08}
+{"text": "and I only sent you the second half uh", "start": 193.2, "duration": 5.039}
+{"text": "of the numbers of the bank account,", "start": 196.56, "duration": 3.679}
+{"text": "that's not going to do it. You need both", "start": 198.239, "duration": 4.321}
+{"text": "halves. So, you might say, \"Hey, look,", "start": 200.239, "duration": 5.121}
+{"text": "Muriel, it looks like I'm missing X. I", "start": 202.56, "duration": 5.36}
+{"text": "waited around for a while. You know, we", "start": 205.36, "duration": 4.56}
+{"text": "have this discussion. I sent it to you", "start": 207.92, "duration": 4.64}
+{"text": "again. then you recon reconstitute the", "start": 209.92, "duration": 4.239}
+{"text": "XY", "start": 212.56, "duration": 4.08}
+{"text": "uh pair, but you know that kind of takes", "start": 214.159, "duration": 6.0}
+{"text": "a while and it's not very efficient. Um,", "start": 216.64, "duration": 7.04}
+{"text": "if I go, you know what, um, I really", "start": 220.159, "duration": 5.681}
+{"text": "want to make sure that David gets both X", "start": 223.68, "duration": 4.88}
+{"text": "and Y and I really want to make sure", "start": 225.84, "duration": 6.24}
+{"text": "that he gets X and Y in a timely fashion", "start": 228.56, "duration": 6.48}
+{"text": "with high reliability.", "start": 232.08, "duration": 6.799}
+{"text": "Uh, I could try to send X twice. Um, but", "start": 235.04, "duration": 6.8}
+{"text": "then what if Y gets lost? Then you have", "start": 238.879, "duration": 6.0}
+{"text": "two copies of X and you're still missing", "start": 241.84, "duration": 6.08}
+{"text": "Y. That doesn't help you. Um, I could", "start": 244.879, "duration": 6.961}
+{"text": "try to send X twice and Y twice, but", "start": 247.92, "duration": 6.48}
+{"text": "that has used a lot of resources. You", "start": 251.84, "duration": 5.679}
+{"text": "sent four numbers when you really just", "start": 254.4, "duration": 6.0}
+{"text": "need to send two numbers and you're", "start": 257.519, "duration": 4.881}
+{"text": "pretty sure that one of them will get", "start": 260.4, "duration": 4.799}
+{"text": "lost. So, that's kind of wasteful.", "start": 262.4, "duration": 6.72}
+{"text": "Instead, what I could do is I could send", "start": 265.199, "duration": 9.44}
+{"text": "X Y and then send you just X + Y. So,", "start": 269.12, "duration": 7.76}
+{"text": "let's see what happens.", "start": 274.639, "duration": 5.361}
+{"text": "If X gets lost, like in our first", "start": 276.88, "duration": 6.8}
+{"text": "example, you got Y and X + Y. That's", "start": 280.0, "duration": 6.4}
+{"text": "enough to recover X. You just subtract Y", "start": 283.68, "duration": 6.079}
+{"text": "from X + Y. If Y gets lost, you'd get X", "start": 286.4, "duration": 5.44}
+{"text": "and X plus Y. That's good enough to", "start": 289.759, "duration": 4.801}
+{"text": "recover both numbers. And of course if X", "start": 291.84, "duration": 5.76}
+{"text": "+ Y gets lost, no harm, no foul. You", "start": 294.56, "duration": 5.68}
+{"text": "already had the X and the Y. So in that", "start": 297.6, "duration": 5.92}
+{"text": "case, if you will, the extra data that", "start": 300.24, "duration": 5.92}
+{"text": "was sent matches", "start": 303.52, "duration": 4.72}
+{"text": "uh the", "start": 306.16, "duration": 4.24}
+{"text": "lack of reliability of the channel,", "start": 308.24, "duration": 5.2}
+{"text": "those losses as we usually call them. Uh", "start": 310.4, "duration": 4.639}
+{"text": "and you're not wasteful in what you've", "start": 313.44, "duration": 4.0}
+{"text": "transmitted. But also that means that we", "start": 315.039, "duration": 4.481}
+{"text": "don't have to engage in a whole", "start": 317.44, "duration": 4.24}
+{"text": "conversation about what you got, what", "start": 319.52, "duration": 4.0}
+{"text": "you didn't get, when you got it, when", "start": 321.68, "duration": 4.799}
+{"text": "you didn't get it. And it really speeds", "start": 323.52, "duration": 8.08}
+{"text": "up and smooths significantly um the", "start": 326.479, "duration": 7.201}
+{"text": "communication that we have between the", "start": 331.6, "duration": 2.8}
+{"text": "two of us.", "start": 333.68, "duration": 3.2}
+{"text": "Oh well, RLNC has already been deployed", "start": 334.4, "duration": 5.6}
+{"text": "in 5G and satellite systems. Can you", "start": 336.88, "duration": 5.28}
+{"text": "highlight some of the key improvements", "start": 340.0, "duration": 3.84}
+{"text": "in those infrastructures that the", "start": 342.16, "duration": 4.96}
+{"text": "technology has already made? So um it", "start": 343.84, "duration": 5.6}
+{"text": "has been uh it has been deployed in", "start": 347.12, "duration": 4.16}
+{"text": "softwaredefined wide area networks", "start": 349.44, "duration": 5.36}
+{"text": "currently uh and it's also deployed in", "start": 351.28, "duration": 7.759}
+{"text": "uh systems that have um very challenged", "start": 354.8, "duration": 6.8}
+{"text": "environments uh such as underwater", "start": 359.039, "duration": 6.16}
+{"text": "systems. Um so that's the kind of uh", "start": 361.6, "duration": 6.8}
+{"text": "that's the kind of system uh which can", "start": 365.199, "duration": 5.28}
+{"text": "really benefit when you think of these", "start": 368.4, "duration": 6.56}
+{"text": "losses. Now why are we doing this now in", "start": 370.479, "duration": 7.361}
+{"text": "uh in web 3? The reason we're doing this", "start": 374.96, "duration": 6.32}
+{"text": "in blockchain and web 3 is the added", "start": 377.84, "duration": 5.68}
+{"text": "complication is the complication of", "start": 381.28, "duration": 4.4}
+{"text": "scalability when you have a", "start": 383.52, "duration": 4.08}
+{"text": "decentralized system. And so the", "start": 385.68, "duration": 5.92}
+{"text": "challenges there uh are perfect uh for", "start": 387.6, "duration": 6.4}
+{"text": "RLNC. Well, one of the other challenges", "start": 391.6, "duration": 4.4}
+{"text": "uh for blockchain tech is uh the", "start": 394.0, "duration": 3.84}
+{"text": "bandwidth and storage bottleneck problem", "start": 396.0, "duration": 3.919}
+{"text": "that a lot of uh existing blockchains", "start": 397.84, "duration": 4.079}
+{"text": "and layer ones have. How does uh your", "start": 399.919, "duration": 4.56}
+{"text": "technology solve those issues?", "start": 401.919, "duration": 5.84}
+{"text": "Yeah. Uh that's a great question. Um let", "start": 404.479, "duration": 5.681}
+{"text": "me take one example which actually", "start": 407.759, "duration": 5.041}
+{"text": "connects to our first offering uh", "start": 410.16, "duration": 6.159}
+{"text": "optimum uh P2P which we've nicknamed mom", "start": 412.8, "duration": 4.88}
+{"text": "P2P. Okay.", "start": 416.319, "duration": 4.641}
+{"text": "Um so if you think of systems like for", "start": 417.68, "duration": 6.079}
+{"text": "instance Ethereum uh but there are some", "start": 420.96, "duration": 6.0}
+{"text": "other systems out there. Uh it's a", "start": 423.759, "duration": 5.921}
+{"text": "decentralized system. Uh you have what's", "start": 426.96, "duration": 6.16}
+{"text": "called propagation. Uh you need to have", "start": 429.68, "duration": 6.48}
+{"text": "validators in the system exchange", "start": 433.12, "duration": 6.079}
+{"text": "information and that can take a long", "start": 436.16, "duration": 6.56}
+{"text": "time. um think of it as taking multiple", "start": 439.199, "duration": 6.0}
+{"text": "seconds which is very different from the", "start": 442.72, "duration": 4.479}
+{"text": "kinds of latencies were used for", "start": 445.199, "duration": 4.72}
+{"text": "instance in web two where you know if", "start": 447.199, "duration": 5.12}
+{"text": "you told me that any sort of service in", "start": 449.919, "duration": 4.56}
+{"text": "web two is going to take seconds I would", "start": 452.319, "duration": 4.401}
+{"text": "say I don't think people are going to", "start": 454.479, "duration": 6.321}
+{"text": "want to use it that's way too slow um so", "start": 456.72, "duration": 6.24}
+{"text": "what is one of the reasons it takes so", "start": 460.8, "duration": 5.2}
+{"text": "long well it's uncoordinated it's", "start": 462.96, "duration": 6.48}
+{"text": "decentralized so uh you have different", "start": 466.0, "duration": 5.759}
+{"text": "nodes foods in the network trying to", "start": 469.44, "duration": 4.96}
+{"text": "exchange information with each other.", "start": 471.759, "duration": 4.72}
+{"text": "And the way they exchange that", "start": 474.4, "duration": 5.76}
+{"text": "information with each other um is they", "start": 476.479, "duration": 5.44}
+{"text": "do what's called gossiping. And", "start": 480.16, "duration": 3.759}
+{"text": "gossiping is exactly what it sounds", "start": 481.919, "duration": 5.361}
+{"text": "like. I find something out, I tell some", "start": 483.919, "duration": 5.12}
+{"text": "of my neighbors, and then there's all", "start": 487.28, "duration": 5.28}
+{"text": "kinds of exchanges that take place. Um", "start": 489.039, "duration": 7.121}
+{"text": "so that kind of gossip uh can become", "start": 492.56, "duration": 8.24}
+{"text": "actually really inefficient. Why? Well,", "start": 496.16, "duration": 7.84}
+{"text": "you want to have every node communicate", "start": 500.8, "duration": 5.76}
+{"text": "with enough nodes so that there's actual", "start": 504.0, "duration": 6.4}
+{"text": "exchange of information. Like if you", "start": 506.56, "duration": 6.399}
+{"text": "have a network that relies on gossip to", "start": 510.4, "duration": 5.119}
+{"text": "disseminate but nobody talks to anybody,", "start": 512.959, "duration": 5.041}
+{"text": "nothing's going to disseminate. On the", "start": 515.519, "duration": 5.681}
+{"text": "other hand, if you have too much", "start": 518.0, "duration": 5.839}
+{"text": "communication, then people are wasting a", "start": 521.2, "duration": 4.639}
+{"text": "lot of resources", "start": 523.839, "duration": 4.321}
+{"text": "repeating information that was already", "start": 525.839, "duration": 4.401}
+{"text": "known. So, it's like, you know, you've", "start": 528.16, "duration": 4.88}
+{"text": "heard the same piece of information from", "start": 530.24, "duration": 5.12}
+{"text": "four different neighbors. That was a", "start": 533.04, "duration": 4.72}
+{"text": "real waste of time. That time that you", "start": 535.36, "duration": 3.919}
+{"text": "spent, you could have spent on new", "start": 537.76, "duration": 4.24}
+{"text": "information rather than old information.", "start": 539.279, "duration": 5.041}
+{"text": "So, that's what uh current", "start": 542.0, "duration": 5.519}
+{"text": "state-of-the-art is struggling with.", "start": 544.32, "duration": 7.519}
+{"text": "Um if you look now at using equations uh", "start": 547.519, "duration": 6.561}
+{"text": "a little bit like we just described the", "start": 551.839, "duration": 5.361}
+{"text": "x + y but just like more complicated", "start": 554.08, "duration": 6.64}
+{"text": "equations but similar concept. Now what", "start": 557.2, "duration": 5.84}
+{"text": "happens is rather than repeating the", "start": 560.72, "duration": 4.0}
+{"text": "same thing to you rather than telling", "start": 563.04, "duration": 6.08}
+{"text": "you x say twice three four times I'm", "start": 564.72, "duration": 6.4}
+{"text": "actually each time telling you a new", "start": 569.12, "duration": 3.76}
+{"text": "equation", "start": 571.12, "duration": 4.8}
+{"text": "and the way we construct our equations", "start": 572.88, "duration": 5.92}
+{"text": "is such that it's highly likely that the", "start": 575.92, "duration": 5.52}
+{"text": "equations that you get are telling you", "start": 578.8, "duration": 5.68}
+{"text": "stuff that you didn't know before. So", "start": 581.44, "duration": 5.28}
+{"text": "the example we had, we had two unknowns,", "start": 584.48, "duration": 5.68}
+{"text": "X and Y. Two unknowns, two equations.", "start": 586.72, "duration": 5.36}
+{"text": "That's all it takes. Suppose that I told", "start": 590.16, "duration": 5.2}
+{"text": "you now I have 10 unknowns. I just need", "start": 592.08, "duration": 5.6}
+{"text": "10 equations. And as long as those", "start": 595.36, "duration": 5.44}
+{"text": "equations are sufficiently different, I", "start": 597.68, "duration": 4.8}
+{"text": "can actually reconstruct the original", "start": 600.8, "duration": 6.479}
+{"text": "data. So then I don't have any wasted", "start": 602.48, "duration": 7.919}
+{"text": "transmissions. I'm making optimum use,", "start": 607.279, "duration": 6.0}
+{"text": "hence our name. I'm making optimum use", "start": 610.399, "duration": 5.601}
+{"text": "of all the transmissions of information", "start": 613.279, "duration": 5.12}
+{"text": "and everything that's been told to me is", "start": 616.0, "duration": 4.959}
+{"text": "something that is actually useful uh for", "start": 618.399, "duration": 4.56}
+{"text": "reconstructing the data.", "start": 620.959, "duration": 3.921}
+{"text": "Another common problem is that during", "start": 622.959, "duration": 4.0}
+{"text": "periods of high network congestion, a", "start": 624.88, "duration": 4.24}
+{"text": "lot of crypto users experience high", "start": 626.959, "duration": 4.961}
+{"text": "fees, slow confirmation times. Um how do", "start": 629.12, "duration": 4.56}
+{"text": "you plan to change or how could this", "start": 631.92, "duration": 5.52}
+{"text": "tech change that uh scenario?", "start": 633.68, "duration": 8.719}
+{"text": "That's a really really good point. Uh so", "start": 637.44, "duration": 8.48}
+{"text": "what happens in any network uh whether", "start": 642.399, "duration": 7.44}
+{"text": "it be a network that's exchanging data", "start": 645.92, "duration": 7.2}
+{"text": "or a network that's transporting cars is", "start": 649.839, "duration": 5.761}
+{"text": "that there's a very nonlinear", "start": 653.12, "duration": 6.64}
+{"text": "relationship between the load uh and the", "start": 655.6, "duration": 6.0}
+{"text": "delay.", "start": 659.76, "duration": 5.28}
+{"text": "So let's think of for instance being uh", "start": 661.6, "duration": 6.88}
+{"text": "on a road. We all know what happens.", "start": 665.04, "duration": 4.96}
+{"text": "Either", "start": 668.48, "duration": 4.479}
+{"text": "traffic is light, there's no delay, or", "start": 670.0, "duration": 5.36}
+{"text": "you're in a traffic jam. There's not a", "start": 672.959, "duration": 4.88}
+{"text": "lot of times where you feel that, hey,", "start": 675.36, "duration": 4.32}
+{"text": "there's a lot of traffic on the road,", "start": 677.839, "duration": 4.081}
+{"text": "but this is great. I'm not getting", "start": 679.68, "duration": 4.64}
+{"text": "backed up. There's no delays. Amazing.", "start": 681.92, "duration": 3.919}
+{"text": "Things are going great, even though it's", "start": 684.32, "duration": 4.639}
+{"text": "not very um even though there's a lot of", "start": 685.839, "duration": 6.161}
+{"text": "uh traffic. Um and there's reasons for", "start": 688.959, "duration": 5.041}
+{"text": "that. And it's the same thing that", "start": 692.0, "duration": 4.0}
+{"text": "happens when people are doing", "start": 694.0, "duration": 4.48}
+{"text": "transactions. If there's a lot of", "start": 696.0, "duration": 6.0}
+{"text": "demand, you get backed up. And once you", "start": 698.48, "duration": 7.039}
+{"text": "start getting backed up, your system", "start": 702.0, "duration": 7.68}
+{"text": "gets really sluggish and you have to", "start": 705.519, "duration": 8.961}
+{"text": "back a lot away from that level of usage", "start": 709.68, "duration": 9.44}
+{"text": "of the system. So what does optimum do?", "start": 714.48, "duration": 7.68}
+{"text": "What optimum does is that it completely", "start": 719.12, "duration": 5.04}
+{"text": "changes", "start": 722.16, "duration": 5.119}
+{"text": "it completely changes those uh those", "start": 724.16, "duration": 6.32}
+{"text": "dynamics so that the point at which you", "start": 727.279, "duration": 5.601}
+{"text": "get backed up now happens much much", "start": 730.48, "duration": 5.76}
+{"text": "later. So uh let's give the example", "start": 732.88, "duration": 6.16}
+{"text": "going back to the data propagation that", "start": 736.24, "duration": 4.719}
+{"text": "we were talking about. Remember, if I", "start": 739.04, "duration": 4.4}
+{"text": "don't code, I'm going to get, say, four", "start": 740.959, "duration": 6.0}
+{"text": "copies of X, which means that it's like", "start": 743.44, "duration": 7.6}
+{"text": "you gave me a highway with four lanes,", "start": 746.959, "duration": 7.44}
+{"text": "but I'm only using one lane because it's", "start": 751.04, "duration": 5.76}
+{"text": "the same car", "start": 754.399, "duration": 4.24}
+{"text": "traveling, you know, just picking up all", "start": 756.8, "duration": 3.92}
+{"text": "four lanes. How is that useful? So, I've", "start": 758.639, "duration": 5.601}
+{"text": "really wasted my lanes. With coding now", "start": 760.72, "duration": 6.48}
+{"text": "you get to use your four lanes fully", "start": 764.24, "duration": 6.159}
+{"text": "because it's four different equations.", "start": 767.2, "duration": 7.199}
+{"text": "So it's means that you know rather than", "start": 770.399, "duration": 6.88}
+{"text": "having a four lane system that's working", "start": 774.399, "duration": 5.44}
+{"text": "like a one lane system you actually get", "start": 777.279, "duration": 5.441}
+{"text": "your four four lanes and therefore the", "start": 779.839, "duration": 5.201}
+{"text": "point at which you're going to encounter", "start": 782.72, "duration": 5.52}
+{"text": "a traffic jam massively changes.", "start": 785.04, "duration": 6.4}
+{"text": "Okay. So in the context of crypto um how", "start": 788.24, "duration": 6.24}
+{"text": "is it that uh optimum is going to uh fix", "start": 791.44, "duration": 5.6}
+{"text": "the problem of perhaps more", "start": 794.48, "duration": 5.2}
+{"text": "decentralization being slower? Uh I", "start": 797.04, "duration": 4.64}
+{"text": "think that's one of the concerns from a", "start": 799.68, "duration": 4.399}
+{"text": "lot of crypto users that as a blockchain", "start": 801.68, "duration": 4.08}
+{"text": "becomes more decentralized you get", "start": 804.079, "duration": 2.801}
+{"text": "slower performance.", "start": 805.76, "duration": 5.199}
+{"text": "That's a really good point. Um, so that", "start": 806.88, "duration": 7.199}
+{"text": "tradeoff between speed and", "start": 810.959, "duration": 5.12}
+{"text": "decentralization", "start": 814.079, "duration": 4.481}
+{"text": "is a tradeoff that happens when you", "start": 816.079, "duration": 5.44}
+{"text": "don't code. That's why people have", "start": 818.56, "duration": 7.76}
+{"text": "actually experienced it. Um, and", "start": 821.519, "duration": 6.32}
+{"text": "basically", "start": 826.32, "duration": 6.16}
+{"text": "if you code that apparent tradeoff goes", "start": 827.839, "duration": 9.12}
+{"text": "away. So it's not an inherent property.", "start": 832.48, "duration": 8.0}
+{"text": "It's actually a", "start": 836.959, "duration": 7.041}
+{"text": "experience that comes out of bad", "start": 840.48, "duration": 7.28}
+{"text": "algorithms. So what happens is if you're", "start": 844.0, "duration": 5.76}
+{"text": "going to have a lot of repeats, you go,", "start": 847.76, "duration": 6.16}
+{"text": "\"Hey, I need somebody to try to control", "start": 849.76, "duration": 6.56}
+{"text": "what's going on. Tell people not to send", "start": 853.92, "duration": 4.64}
+{"text": "too many repeats.\" But that doesn't", "start": 856.32, "duration": 4.639}
+{"text": "scale. Why does it not scale? Because", "start": 858.56, "duration": 4.48}
+{"text": "you know, if you're going to try to have", "start": 860.959, "duration": 6.081}
+{"text": "a central controller, you need to get", "start": 863.04, "duration": 6.799}
+{"text": "fresh information to that controller so", "start": 867.04, "duration": 5.76}
+{"text": "that that controller can actually take", "start": 869.839, "duration": 7.201}
+{"text": "action. And if your network grows, that", "start": 872.8, "duration": 6.8}
+{"text": "amount of information is going to grow", "start": 877.04, "duration": 5.599}
+{"text": "and the delay to get that information", "start": 879.6, "duration": 5.28}
+{"text": "will also grow and eventually the whole", "start": 882.639, "duration": 4.801}
+{"text": "system is just going to collapse under", "start": 884.88, "duration": 6.399}
+{"text": "its own weight. So the decentralization", "start": 887.44, "duration": 7.759}
+{"text": "and the speed is actually a false", "start": 891.279, "duration": 8.8}
+{"text": "tradeoff. It's if you will a simple side", "start": 895.199, "duration": 8.64}
+{"text": "effect of inefficient algorithms.", "start": 900.079, "duration": 6.721}
+{"text": "Uh are you aware of the um so-called", "start": 903.839, "duration": 6.881}
+{"text": "Bitcoin or blockchain trillemma uh where", "start": 906.8, "duration": 6.64}
+{"text": "it's it's argued that you can't have all", "start": 910.72, "duration": 5.119}
+{"text": "three scalability, security, and", "start": 913.44, "duration": 3.92}
+{"text": "decentralization.", "start": 915.839, "duration": 3.521}
+{"text": "some some projects have claimed to", "start": 917.36, "duration": 4.08}
+{"text": "achieve that. Uh where do you stand on", "start": 919.36, "duration": 2.88}
+{"text": "this debate?", "start": 921.44, "duration": 2.639}
+{"text": "Yeah. Yeah. Thank you for for bringing", "start": 922.24, "duration": 4.32}
+{"text": "that up. I think it's it's a really", "start": 924.079, "duration": 4.401}
+{"text": "really good question. It's a core", "start": 926.56, "duration": 3.2}
+{"text": "question.", "start": 928.48, "duration": 5.68}
+{"text": "Um so uh let me start with the fact that", "start": 929.76, "duration": 8.4}
+{"text": "uh the trillemma is very clear from the", "start": 934.16, "duration": 7.359}
+{"text": "get-go um that it's not a theorem, it's", "start": 938.16, "duration": 8.32}
+{"text": "not a lema. uh it's um it's if you will", "start": 941.519, "duration": 7.841}
+{"text": "um a meta remark and I think it was", "start": 946.48, "duration": 6.08}
+{"text": "definitely a very useful meta remark. If", "start": 949.36, "duration": 4.96}
+{"text": "you think really on the mathematical", "start": 952.56, "duration": 4.48}
+{"text": "side, uh there is something called the", "start": 954.32, "duration": 7.28}
+{"text": "cap theorem uh which was actually um uh", "start": 957.04, "duration": 7.76}
+{"text": "established by one of my my colleagues", "start": 961.6, "duration": 6.799}
+{"text": "uh and friends and actually a an adviser", "start": 964.8, "duration": 7.279}
+{"text": "to our to our project who had", "start": 968.399, "duration": 5.921}
+{"text": "the NEC chair in software science and", "start": 972.079, "duration": 4.721}
+{"text": "engineering before I held it. So I sort", "start": 974.32, "duration": 5.04}
+{"text": "of inherited from her Nancy Lynch. some", "start": 976.8, "duration": 6.159}
+{"text": "of your uh some of your um um some of", "start": 979.36, "duration": 6.0}
+{"text": "our listeners might might know her.", "start": 982.959, "duration": 5.761}
+{"text": "She's you know a giant in the field. Um", "start": 985.36, "duration": 7.279}
+{"text": "and I think that the trilmma was maybe a", "start": 988.72, "duration": 5.76}
+{"text": "little bit of a reinterpretation of that", "start": 992.639, "duration": 5.041}
+{"text": "theorem but that theorem", "start": 994.48, "duration": 6.32}
+{"text": "says very specific things under very", "start": 997.68, "duration": 6.399}
+{"text": "very specific conditions.", "start": 1000.8, "duration": 7.76}
+{"text": "in general that trilmama is I think", "start": 1004.079, "duration": 6.481}
+{"text": "generally misinterpreted has been", "start": 1008.56, "duration": 4.719}
+{"text": "misinterpreted uh and actually we have a", "start": 1010.56, "duration": 6.399}
+{"text": "recent piece on that uh along with um", "start": 1013.279, "duration": 7.601}
+{"text": "Dr. Conoir our uh our CTO", "start": 1016.959, "duration": 8.161}
+{"text": "um um Dr. Nicolola, one one of our", "start": 1020.88, "duration": 7.6}
+{"text": "uh Optiman researchers uh basically", "start": 1025.12, "duration": 6.319}
+{"text": "showing that the trillemma such as it is", "start": 1028.48, "duration": 5.52}
+{"text": "commonly understood does not hold and", "start": 1031.439, "duration": 6.24}
+{"text": "explaining why RLNC changes that uh", "start": 1034.0, "duration": 5.76}
+{"text": "trillemma framework.", "start": 1037.679, "duration": 3.841}
+{"text": "Okay. Well, with that in mind, let's", "start": 1039.76, "duration": 3.199}
+{"text": "move on to talk about Ethereum", "start": 1041.52, "duration": 3.919}
+{"text": "specifically. Let's talk about how", "start": 1042.959, "duration": 4.641}
+{"text": "Optimum is going to improve Ethereum.", "start": 1045.439, "duration": 4.24}
+{"text": "But before we do that, let's just review", "start": 1047.6, "duration": 3.92}
+{"text": "the last decade of Ethereum's", "start": 1049.679, "duration": 4.081}
+{"text": "performance. How would you how would you", "start": 1051.52, "duration": 5.039}
+{"text": "evaluate how Ethereum has evolved from", "start": 1053.76, "duration": 5.52}
+{"text": "its genesis to where it is now and what", "start": 1056.559, "duration": 4.24}
+{"text": "improvements could be made?", "start": 1059.28, "duration": 4.399}
+{"text": "Yeah, I I mean I think by any measures", "start": 1060.799, "duration": 6.481}
+{"text": "it has been an amazing project. uh the", "start": 1063.679, "duration": 6.321}
+{"text": "effect it has had, the penetration it", "start": 1067.28, "duration": 8.639}
+{"text": "has had, um the variety of applications", "start": 1070.0, "duration": 9.52}
+{"text": "it has allowed. Um it's really", "start": 1075.919, "duration": 6.481}
+{"text": "impressive. Uh and there's no I I I", "start": 1079.52, "duration": 5.6}
+{"text": "don't think there's any other way to to", "start": 1082.4, "duration": 10.92}
+{"text": "describe it. Um now I think if you go to", "start": 1085.12, "duration": 8.2}
+{"text": "sort of its general philosophy if you", "start": 1093.919, "duration": 5.441}
+{"text": "think of it as", "start": 1096.64, "duration": 5.44}
+{"text": "um roughly", "start": 1099.36, "duration": 5.84}
+{"text": "that an EVM matches to an operating", "start": 1102.08, "duration": 6.32}
+{"text": "system um let's think a little bit of", "start": 1105.2, "duration": 8.08}
+{"text": "what a computer is um so um does a model", "start": 1108.4, "duration": 6.88}
+{"text": "for comfort what a computer is it's", "start": 1113.28, "duration": 5.12}
+{"text": "actually a question that people asked uh", "start": 1115.28, "duration": 4.8}
+{"text": "right after World War II, you know,", "start": 1118.4, "duration": 5.2}
+{"text": "there had been all the uh um", "start": 1120.08, "duration": 6.4}
+{"text": "big strides in computing that came out", "start": 1123.6, "duration": 5.04}
+{"text": "of for instance the Enigma machine and", "start": 1126.48, "duration": 5.76}
+{"text": "and all of those uh you know legendary", "start": 1128.64, "duration": 7.84}
+{"text": "um progresses in computation. Um and a", "start": 1132.24, "duration": 7.28}
+{"text": "voyman uh put forth uh a model for", "start": 1136.48, "duration": 5.439}
+{"text": "computer which actually has quite stood", "start": 1139.52, "duration": 5.68}
+{"text": "the test of time and the voy model is", "start": 1141.919, "duration": 7.521}
+{"text": "the following. So the computer has a", "start": 1145.2, "duration": 7.2}
+{"text": "compute part which has what they call", "start": 1149.44, "duration": 4.96}
+{"text": "the controller which we would recognize", "start": 1152.4, "duration": 3.519}
+{"text": "probably as kind of the operating", "start": 1154.4, "duration": 2.8}
+{"text": "system.", "start": 1155.919, "duration": 4.161}
+{"text": "It has the arithmetic logic unit what we", "start": 1157.2, "duration": 4.32}
+{"text": "would probably think of kind of like", "start": 1160.08, "duration": 4.64}
+{"text": "your CPU. It has a bus and it has", "start": 1161.52, "duration": 7.44}
+{"text": "memory. Uh, and a lot of the work has", "start": 1164.72, "duration": 5.52}
+{"text": "gone and of course it has to have an", "start": 1168.96, "duration": 3.36}
+{"text": "input and an output. And a lot of the", "start": 1170.24, "duration": 4.48}
+{"text": "work has gone around that compute part", "start": 1172.32, "duration": 5.359}
+{"text": "and it's been amazing work.", "start": 1174.72, "duration": 8.0}
+{"text": "the buzz and the memory um don't look as", "start": 1177.679, "duration": 9.041}
+{"text": "recognizable at all uh as you know if", "start": 1182.72, "duration": 6.56}
+{"text": "you took say a computer architecture", "start": 1186.72, "duration": 5.76}
+{"text": "class in college or even if you just", "start": 1189.28, "duration": 5.2}
+{"text": "decided to build a computer you would", "start": 1192.48, "duration": 4.88}
+{"text": "say wow you know for instance using", "start": 1194.48, "duration": 5.92}
+{"text": "gossip for propagation that's kind of a", "start": 1197.36, "duration": 8.08}
+{"text": "strange way to mimic a bus in a computer", "start": 1200.4, "duration": 7.84}
+{"text": "so I think that Ethereum has done", "start": 1205.44, "duration": 6.16}
+{"text": "amazing things. Um, but it's sort of", "start": 1208.24, "duration": 6.559}
+{"text": "starting to hit a bit of a wall on the", "start": 1211.6, "duration": 6.16}
+{"text": "part that I would say is propagation", "start": 1214.799, "duration": 6.721}
+{"text": "uh and uh memory versus the computation", "start": 1217.76, "duration": 5.919}
+{"text": "part", "start": 1221.52, "duration": 4.399}
+{"text": "and really that's where optimum kicks", "start": 1223.679, "duration": 4.24}
+{"text": "in. That's that's that's how we're we're", "start": 1225.919, "duration": 5.041}
+{"text": "we're helping out. uh you've said I", "start": 1227.919, "duration": 5.201}
+{"text": "think uh offline to me uh that uh", "start": 1230.96, "duration": 3.839}
+{"text": "validator coordination will be one of", "start": 1233.12, "duration": 4.32}
+{"text": "the biggest uh big next frontiers for", "start": 1234.799, "duration": 4.961}
+{"text": "you uh for improvement. So maybe explain", "start": 1237.44, "duration": 6.0}
+{"text": "how optimum P2P and uh RNL RL and C can", "start": 1239.76, "duration": 6.96}
+{"text": "improve coordination on that front and", "start": 1243.44, "duration": 4.719}
+{"text": "potentially reduce latency.", "start": 1246.72, "duration": 6.079}
+{"text": "Absolutely. Uh and actually um we are", "start": 1248.159, "duration": 7.121}
+{"text": "right now uh in testn net and actually", "start": 1252.799, "duration": 5.76}
+{"text": "moving to hoodie testn net uh with a lot", "start": 1255.28, "duration": 5.6}
+{"text": "of validators. You can see an entire", "start": 1258.559, "duration": 6.961}
+{"text": "list uh on our website. Um but uh you", "start": 1260.88, "duration": 7.279}
+{"text": "know uh I would say the majority of the", "start": 1265.52, "duration": 5.76}
+{"text": "very large validator uh projects we're", "start": 1268.159, "duration": 5.52}
+{"text": "working with. Um, by the way, it's been", "start": 1271.28, "duration": 4.32}
+{"text": "a fantastic experience and they've been", "start": 1273.679, "duration": 6.48}
+{"text": "extremely um extremely um uh cooperative", "start": 1275.6, "duration": 8.16}
+{"text": "and and collaborative. Uh, so what we do", "start": 1280.159, "duration": 5.681}
+{"text": "is we", "start": 1283.76, "duration": 5.6}
+{"text": "uh start with speeding up uh what's", "start": 1285.84, "duration": 5.6}
+{"text": "called the consensus layer uh which of", "start": 1289.36, "duration": 5.6}
+{"text": "course is a core part uh of any", "start": 1291.44, "duration": 7.119}
+{"text": "blockchain and Ethereum is no exception.", "start": 1294.96, "duration": 7.12}
+{"text": "Um and what we see is an improvement of", "start": 1298.559, "duration": 7.281}
+{"text": "an order of about a factor of six in the", "start": 1302.08, "duration": 7.599}
+{"text": "delay. Uh so if you think of any system", "start": 1305.84, "duration": 6.719}
+{"text": "you know improving latency by about 6x", "start": 1309.679, "duration": 5.601}
+{"text": "and any portion of that uh of any", "start": 1312.559, "duration": 4.641}
+{"text": "portion of uh of a system particularly", "start": 1315.28, "duration": 4.08}
+{"text": "one where you know it's taking seconds", "start": 1317.2, "duration": 5.04}
+{"text": "normally that's a massive improvement.", "start": 1319.36, "duration": 4.96}
+{"text": "Um what that means is going back to", "start": 1322.24, "duration": 4.319}
+{"text": "where you asking before about gas fees", "start": 1324.32, "duration": 5.04}
+{"text": "that allows people to reduce gas fees", "start": 1326.559, "duration": 5.681}
+{"text": "have you know faster finality", "start": 1329.36, "duration": 7.36}
+{"text": "um it allows um validators to improve", "start": 1332.24, "duration": 8.64}
+{"text": "their APY it basically", "start": 1336.72, "duration": 7.36}
+{"text": "removes artificial inefficiencies in the", "start": 1340.88, "duration": 6.56}
+{"text": "system. So once these efficiencies are", "start": 1344.08, "duration": 6.32}
+{"text": "realized uh professor what practical", "start": 1347.44, "duration": 5.28}
+{"text": "applications do you see uh being built", "start": 1350.4, "duration": 4.08}
+{"text": "on top of Ethereum that maybe could not", "start": 1352.72, "duration": 3.68}
+{"text": "exist today and just stretching beyond", "start": 1354.48, "duration": 6.079}
+{"text": "Ethereum uh once we achieve more uh", "start": 1356.4, "duration": 6.639}
+{"text": "optimal performance pun intended uh", "start": 1360.559, "duration": 5.681}
+{"text": "overall across blockchains um you know", "start": 1363.039, "duration": 5.281}
+{"text": "how do we see the landscape changing in", "start": 1366.24, "duration": 4.16}
+{"text": "terms of actual applications built on", "start": 1368.32, "duration": 3.599}
+{"text": "layer ones? Yeah, that's a great", "start": 1370.4, "duration": 3.519}
+{"text": "question. Uh, and let me start by saying", "start": 1371.919, "duration": 4.081}
+{"text": "that as you mentioned, our approach is", "start": 1373.919, "duration": 4.0}
+{"text": "not Ethereum specific.", "start": 1376.0, "duration": 4.32}
+{"text": "Uh, we're starting with Ethereum because", "start": 1377.919, "duration": 4.481}
+{"text": "it's a good place to start. It's a great", "start": 1380.32, "duration": 5.92}
+{"text": "chain. Um, and uh, our permissionless", "start": 1382.4, "duration": 6.88}
+{"text": "approach is uh, is able to manage that", "start": 1386.24, "duration": 5.6}
+{"text": "well. Uh our next step is actually to go", "start": 1389.28, "duration": 6.96}
+{"text": "to Salana um which um uses some coding", "start": 1391.84, "duration": 8.4}
+{"text": "but uses a very uh old-fashioned um very", "start": 1396.24, "duration": 6.319}
+{"text": "you know inefficient code called read", "start": 1400.24, "duration": 5.76}
+{"text": "Solomon um and you know which dates back", "start": 1402.559, "duration": 6.161}
+{"text": "to the 60s50s", "start": 1406.0, "duration": 6.4}
+{"text": "so um certainly we're looking to improve", "start": 1408.72, "duration": 6.8}
+{"text": "any chain and we looking to scale any", "start": 1412.4, "duration": 3.759}
+{"text": "chain", "start": 1415.52, "duration": 1.279}
+{"text": "absolutely", "start": 1416.159, "duration": 4.4}
+{"text": "um so I think that there multiple", "start": 1416.799, "duration": 8.401}
+{"text": "One can never always predict uh how", "start": 1420.559, "duration": 7.841}
+{"text": "giving a more powerful engine is going", "start": 1425.2, "duration": 5.76}
+{"text": "to allow new applications.", "start": 1428.4, "duration": 5.36}
+{"text": "Um but so it's it's always a little bit", "start": 1430.96, "duration": 6.8}
+{"text": "difficult to to guess. Um but certainly", "start": 1433.76, "duration": 7.039}
+{"text": "having a system which is going to allow", "start": 1437.76, "duration": 6.24}
+{"text": "for lower gas fees means that you know", "start": 1440.799, "duration": 8.24}
+{"text": "and also uh enable people to have much", "start": 1444.0, "duration": 7.76}
+{"text": "faster finality. It means that certain", "start": 1449.039, "duration": 4.88}
+{"text": "applications which right now are just", "start": 1451.76, "duration": 4.0}
+{"text": "not that attractive because they're too", "start": 1453.919, "duration": 4.0}
+{"text": "expensive or too slow could actually", "start": 1455.76, "duration": 5.76}
+{"text": "become uh very feasible and very", "start": 1457.919, "duration": 6.561}
+{"text": "attractive. Uh I'd like to add one", "start": 1461.52, "duration": 5.36}
+{"text": "aspect though uh which is not so much", "start": 1464.48, "duration": 4.16}
+{"text": "around the applications but one of the", "start": 1466.88, "duration": 4.799}
+{"text": "things that optimum allows", "start": 1468.64, "duration": 6.639}
+{"text": "if you look currently at blockchain", "start": 1471.679, "duration": 7.681}
+{"text": "um you know blockchain is really very um", "start": 1475.279, "duration": 7.681}
+{"text": "imbued in a culture of community", "start": 1479.36, "duration": 5.199}
+{"text": "and there's sort of a couple different", "start": 1482.96, "duration": 4.48}
+{"text": "ways in which members of the community", "start": 1484.559, "duration": 7.36}
+{"text": "can get involved you know very roughly", "start": 1487.44, "duration": 9.28}
+{"text": "Um one is as users uh of the technology", "start": 1491.919, "duration": 7.521}
+{"text": "maybe you know they trade in crypto they", "start": 1496.72, "duration": 8.16}
+{"text": "follow etc. um maybe um that's you know", "start": 1499.44, "duration": 8.32}
+{"text": "basically where it stops or they can", "start": 1504.88, "duration": 6.08}
+{"text": "contribute in terms of building software", "start": 1507.76, "duration": 7.36}
+{"text": "or being uh part of the infrastructure", "start": 1510.96, "duration": 7.12}
+{"text": "generally as validators. Um being a", "start": 1515.12, "duration": 5.12}
+{"text": "validator is you know it's a big", "start": 1518.08, "duration": 5.04}
+{"text": "commitment uh generally requires a fair", "start": 1520.24, "duration": 7.679}
+{"text": "amount of um upfront investment", "start": 1523.12, "duration": 7.439}
+{"text": "uh in terms of the machines and then a", "start": 1527.919, "duration": 5.76}
+{"text": "lot of um operational investment in", "start": 1530.559, "duration": 5.521}
+{"text": "terms of uptime so that for instance you", "start": 1533.679, "duration": 4.721}
+{"text": "don't get slashed because you know your", "start": 1536.08, "duration": 4.88}
+{"text": "your your validator went down etc. Uh", "start": 1538.4, "duration": 5.519}
+{"text": "and those are sort of the the the the", "start": 1540.96, "duration": 5.04}
+{"text": "approaches and of course some people do", "start": 1543.919, "duration": 4.801}
+{"text": "more than one.", "start": 1546.0, "duration": 7.279}
+{"text": "What we allow is we allow something that", "start": 1548.72, "duration": 6.959}
+{"text": "we call a flex note which means that", "start": 1553.279, "duration": 5.201}
+{"text": "let's go back to our equations.", "start": 1555.679, "duration": 7.681}
+{"text": "I can be a machine. I can run a machine", "start": 1558.48, "duration": 8.799}
+{"text": "that just propagates equations.", "start": 1563.36, "duration": 6.08}
+{"text": "Is not doing the heavy lifting of", "start": 1567.279, "duration": 3.76}
+{"text": "validation.", "start": 1569.44, "duration": 3.359}
+{"text": "Um", "start": 1571.039, "duration": 4.321}
+{"text": "is just", "start": 1572.799, "duration": 4.561}
+{"text": "a", "start": 1575.36, "duration": 6.0}
+{"text": "cog in a decentralized machine where I'm", "start": 1577.36, "duration": 5.919}
+{"text": "helping", "start": 1581.36, "duration": 5.28}
+{"text": "my neighbors. I'm helping my community", "start": 1583.279, "duration": 6.0}
+{"text": "with getting faster equations and I get", "start": 1586.64, "duration": 6.0}
+{"text": "rewarded for it. So that aspect means", "start": 1589.279, "duration": 6.161}
+{"text": "also that we're looking at a much more", "start": 1592.64, "duration": 5.68}
+{"text": "decentralized infrastructure", "start": 1595.44, "duration": 6.16}
+{"text": "of flex nodes where flex nodes can be", "start": 1598.32, "duration": 6.32}
+{"text": "small nodes, it can be large nodes um", "start": 1601.6, "duration": 5.52}
+{"text": "and they can be from small contributors", "start": 1604.64, "duration": 4.8}
+{"text": "or of course uh you know larger", "start": 1607.12, "duration": 4.559}
+{"text": "contributors. So that's really core to", "start": 1609.44, "duration": 3.92}
+{"text": "what we're looking to do. So you", "start": 1611.679, "duration": 3.681}
+{"text": "mentioned that you're moving on to uh", "start": 1613.36, "duration": 4.08}
+{"text": "Salana next. Can you tell us about some", "start": 1615.36, "duration": 3.919}
+{"text": "of the major milestones that Optimum has", "start": 1617.44, "duration": 4.96}
+{"text": "already Optima has already achieved so", "start": 1619.279, "duration": 5.921}
+{"text": "far? I believe you raised close to 11", "start": 1622.4, "duration": 5.04}
+{"text": "million so far. Uh you've launched a", "start": 1625.2, "duration": 3.76}
+{"text": "test net with major validators like", "start": 1627.44, "duration": 3.119}
+{"text": "you've mentioned previously. Um what", "start": 1628.96, "duration": 3.44}
+{"text": "what what's next besides moving on to", "start": 1630.559, "duration": 2.561}
+{"text": "Salana?", "start": 1632.4, "duration": 3.92}
+{"text": "Absolutely. Um so as you mentioned we", "start": 1633.12, "duration": 5.76}
+{"text": "have raised our seed round. Um we we", "start": 1636.32, "duration": 4.56}
+{"text": "actually raised just under 12. We were", "start": 1638.88, "duration": 3.679}
+{"text": "looking for 10, but we were so heavily", "start": 1640.88, "duration": 3.279}
+{"text": "overs subscribed", "start": 1642.559, "duration": 4.081}
+{"text": "uh that we ended up uh you know trying", "start": 1644.159, "duration": 4.0}
+{"text": "to make sure that we could accommodate", "start": 1646.64, "duration": 4.08}
+{"text": "as many of the fantastic partners uh as", "start": 1648.159, "duration": 6.4}
+{"text": "we're willing to um to join even though", "start": 1650.72, "duration": 6.4}
+{"text": "we we had to as I said we were very very", "start": 1654.559, "duration": 6.881}
+{"text": "heavily subscribed. Um so", "start": 1657.12, "duration": 6.88}
+{"text": "we have our amazing test net. I", "start": 1661.44, "duration": 4.8}
+{"text": "mentioned, you know, the the mult", "start": 1664.0, "duration": 6.48}
+{"text": "multiples, you know, typically 6x. Um I", "start": 1666.24, "duration": 6.16}
+{"text": "don't think I've seen under 4x right", "start": 1670.48, "duration": 4.96}
+{"text": "now, but you know, we've seen up to 9x", "start": 1672.4, "duration": 6.08}
+{"text": "uh improvements in latency. Um I", "start": 1675.44, "duration": 7.599}
+{"text": "mentioned that we have onboarded uh very", "start": 1678.48, "duration": 6.96}
+{"text": "uh very significant uh number of", "start": 1683.039, "duration": 4.801}
+{"text": "validators who together represent a very", "start": 1685.44, "duration": 6.64}
+{"text": "large uh percentage of the um uh the", "start": 1687.84, "duration": 5.76}
+{"text": "Ethereum", "start": 1692.08, "duration": 7.04}
+{"text": "uh uh traffic. And um what we're going", "start": 1693.6, "duration": 9.92}
+{"text": "to be doing next uh is of course working", "start": 1699.12, "duration": 8.08}
+{"text": "towards mainet. Uh we're also starting", "start": 1703.52, "duration": 7.759}
+{"text": "our um uh network hackathons. The first", "start": 1707.2, "duration": 8.0}
+{"text": "one will be at MIT just next month um", "start": 1711.279, "duration": 7.041}
+{"text": "just in a couple of weeks um for people", "start": 1715.2, "duration": 7.52}
+{"text": "to basically play and see how you can", "start": 1718.32, "duration": 6.56}
+{"text": "bring up a flex node the flex nodes that", "start": 1722.72, "duration": 5.6}
+{"text": "I just described. So bringing together a", "start": 1724.88, "duration": 7.36}
+{"text": "community of people who can operate and", "start": 1728.32, "duration": 7.04}
+{"text": "see the gains uh that they can get from", "start": 1732.24, "duration": 7.12}
+{"text": "operating a flex node. Um and then in", "start": 1735.36, "duration": 6.08}
+{"text": "the ne in the following year we're", "start": 1739.36, "duration": 3.919}
+{"text": "looking for uh so next year we're", "start": 1741.44, "duration": 4.56}
+{"text": "looking for our salana uh uh", "start": 1743.279, "duration": 4.88}
+{"text": "permissionless approach. Now what's", "start": 1746.0, "duration": 4.72}
+{"text": "comes longer term and we've already uh", "start": 1748.159, "duration": 5.601}
+{"text": "started working on this is moving not", "start": 1750.72, "duration": 6.319}
+{"text": "just to propagation where we're now uh", "start": 1753.76, "duration": 6.639}
+{"text": "but the entire memory layer remember I", "start": 1757.039, "duration": 6.561}
+{"text": "was talking about", "start": 1760.399, "duration": 6.081}
+{"text": "the bus the memory", "start": 1763.6, "duration": 4.319}
+{"text": "you know if you think of your computer", "start": 1766.48, "duration": 4.48}
+{"text": "you've got a bus uh you have read only", "start": 1767.919, "duration": 6.401}
+{"text": "memory uh and you have readwrite memory", "start": 1770.96, "duration": 5.439}
+{"text": "what we call RAM random access memory", "start": 1774.32, "duration": 4.4}
+{"text": "the read only memory memory is the ROM.", "start": 1776.399, "duration": 7.681}
+{"text": "So we are bringing thanks to coding DROM", "start": 1778.72, "duration": 8.88}
+{"text": "uh and D RAM so a read write uh random", "start": 1784.08, "duration": 6.24}
+{"text": "access memory. So that's that's our", "start": 1787.6, "duration": 6.48}
+{"text": "long-term uh uh road map uh and that's", "start": 1790.32, "duration": 4.64}
+{"text": "our vision.", "start": 1794.08, "duration": 2.88}
+{"text": "Okay. Do you have any advice for", "start": 1794.96, "duration": 4.319}
+{"text": "builders watching this program right now", "start": 1796.96, "duration": 6.16}
+{"text": "for how to develop a project or design a", "start": 1799.279, "duration": 6.801}
+{"text": "system for long-term resilience and also", "start": 1803.12, "duration": 5.439}
+{"text": "um to optimize efficiency?", "start": 1806.08, "duration": 6.24}
+{"text": "Yeah, that's a really good question. Um", "start": 1808.559, "duration": 5.441}
+{"text": "it's a very complicated questions", "start": 1812.32, "duration": 3.68}
+{"text": "because there's so many aspects to it.", "start": 1814.0, "duration": 3.679}
+{"text": "I know you kind of teach a course on", "start": 1816.0, "duration": 3.919}
+{"text": "this, but maybe sum summarize it for two", "start": 1817.679, "duration": 5.521}
+{"text": "in two minutes or less.", "start": 1819.919, "duration": 8.161}
+{"text": "Yeah. Yeah. So um I think that", "start": 1823.2, "duration": 8.079}
+{"text": "one of the things that to me is striking", "start": 1828.08, "duration": 5.28}
+{"text": "going back to this computer analogy and", "start": 1831.279, "duration": 4.081}
+{"text": "one shouldn't overwork analogies but is", "start": 1833.36, "duration": 6.16}
+{"text": "the following. If you find that things", "start": 1835.36, "duration": 7.76}
+{"text": "are being done in a way that's different", "start": 1839.52, "duration": 6.72}
+{"text": "from what you would want to do in a", "start": 1843.12, "duration": 5.439}
+{"text": "computer architecture.", "start": 1846.24, "duration": 4.72}
+{"text": "It's worth", "start": 1848.559, "duration": 6.081}
+{"text": "taking a break and asking why, right?", "start": 1850.96, "duration": 6.079}
+{"text": "There has to be a good reason. Was this", "start": 1854.64, "duration": 4.32}
+{"text": "just because people had to pull", "start": 1857.039, "duration": 3.841}
+{"text": "something together quickly and that's", "start": 1858.96, "duration": 3.439}
+{"text": "kind of the best they could do under the", "start": 1860.88, "duration": 3.039}
+{"text": "circumstances?", "start": 1862.399, "duration": 3.601}
+{"text": "Is it because there's a really", "start": 1863.919, "duration": 4.401}
+{"text": "fundamental reason for doing it that", "start": 1866.0, "duration": 4.96}
+{"text": "way? Um,", "start": 1868.32, "duration": 5.12}
+{"text": "I think it's really important and you", "start": 1870.96, "duration": 4.0}
+{"text": "know, and this is this going to scale,", "start": 1873.44, "duration": 3.599}
+{"text": "is this going to break? Uh, are you", "start": 1874.96, "duration": 3.839}
+{"text": "building on sound? or you building on", "start": 1877.039, "duration": 4.321}
+{"text": "something that's very um you know that's", "start": 1878.799, "duration": 6.88}
+{"text": "very robust. Um I mean you were talking", "start": 1881.36, "duration": 6.0}
+{"text": "particularly about developers you know", "start": 1885.679, "duration": 3.841}
+{"text": "when we think about programming", "start": 1887.36, "duration": 4.16}
+{"text": "certainly you know when people learn to", "start": 1889.52, "duration": 4.8}
+{"text": "program um they generally learn to", "start": 1891.52, "duration": 4.8}
+{"text": "program in a way which is fairly", "start": 1894.32, "duration": 4.239}
+{"text": "independent of the machine they're on.", "start": 1896.32, "duration": 5.359}
+{"text": "Sure, your program will work more", "start": 1898.559, "duration": 5.921}
+{"text": "slowly, less,", "start": 1901.679, "duration": 5.12}
+{"text": "you know, less efficiently or whatever", "start": 1904.48, "duration": 3.919}
+{"text": "if you have a slow computer or fast", "start": 1906.799, "duration": 4.0}
+{"text": "computer. But your basic programming", "start": 1908.399, "duration": 4.4}
+{"text": "until you get into pretty complicated", "start": 1910.799, "duration": 4.88}
+{"text": "stuff. It's pretty much machine", "start": 1912.799, "duration": 5.681}
+{"text": "independent, right? I mean, imagine if", "start": 1915.679, "duration": 4.161}
+{"text": "you were like, I don't know, learning", "start": 1918.48, "duration": 3.28}
+{"text": "Python and having to go, \"Oh, darn.\" You", "start": 1919.84, "duration": 4.319}
+{"text": "know, I have to check what kind of bus I", "start": 1921.76, "duration": 5.919}
+{"text": "have, uh, what my CPU is. you know, you", "start": 1924.159, "duration": 5.441}
+{"text": "you you'd think this is really not very", "start": 1927.679, "duration": 5.12}
+{"text": "modular. So, if that's not what's", "start": 1929.6, "duration": 5.6}
+{"text": "happening right now, it's probably a", "start": 1932.799, "duration": 6.0}
+{"text": "cluge. Um, so I think that in terms of", "start": 1935.2, "duration": 6.319}
+{"text": "robustness, trying to develop for the", "start": 1938.799, "duration": 5.681}
+{"text": "long term in a way that's going to t", "start": 1941.519, "duration": 5.841}
+{"text": "stand the test of time, uh, means really", "start": 1944.48, "duration": 4.64}
+{"text": "going back to principles.", "start": 1947.36, "duration": 4.08}
+{"text": "I'm curious how you would rate Satoshi's", "start": 1949.12, "duration": 3.679}
+{"text": "attempt to build a blockchain. I'm", "start": 1951.44, "duration": 3.68}
+{"text": "talking about Bitcoin. uh reviewing the", "start": 1952.799, "duration": 4.401}
+{"text": "original white paper, uh Bitcoin was", "start": 1955.12, "duration": 3.76}
+{"text": "meant to be a peer-to-peer system. How", "start": 1957.2, "duration": 5.199}
+{"text": "would you rate rate or assess Bitcoin's", "start": 1958.88, "duration": 6.639}
+{"text": "peer-to-peer effectiveness? Um how would", "start": 1962.399, "duration": 6.561}
+{"text": "you rate its uh its its usefulness as a", "start": 1965.519, "duration": 5.52}
+{"text": "peer-to-p peer system and ultimately its", "start": 1968.96, "duration": 4.079}
+{"text": "other character characteristics that we", "start": 1971.039, "duration": 3.681}
+{"text": "talked about such as scalability,", "start": 1973.039, "duration": 4.161}
+{"text": "security, and decentralization.", "start": 1974.72, "duration": 4.48}
+{"text": "So again,", "start": 1977.2, "duration": 3.199}
+{"text": "you know, it's been absolutely", "start": 1979.2, "duration": 3.04}
+{"text": "remarkable, right? I mean what it has", "start": 1980.399, "duration": 5.361}
+{"text": "achieved its longevity and so on. Uh I", "start": 1982.24, "duration": 6.319}
+{"text": "think that the question there to me is a", "start": 1985.76, "duration": 4.72}
+{"text": "little bit more", "start": 1988.559, "duration": 4.641}
+{"text": "uh what it does. Uh let's go back to an", "start": 1990.48, "duration": 6.0}
+{"text": "operating system. Um you know when we", "start": 1993.2, "duration": 5.52}
+{"text": "talk about operating systems we usually", "start": 1996.48, "duration": 4.16}
+{"text": "mean an operating system where I can", "start": 1998.72, "duration": 4.0}
+{"text": "program pretty much anything we want.", "start": 2000.64, "duration": 4.159}
+{"text": "You know I was talking about things like", "start": 2002.72, "duration": 4.319}
+{"text": "the Enigma machine. The name Turing", "start": 2004.799, "duration": 5.521}
+{"text": "comes to to mind. And um you know then", "start": 2007.039, "duration": 4.561}
+{"text": "you're talking about something that's", "start": 2010.32, "duration": 3.68}
+{"text": "tour incomplete or pretty much I can", "start": 2011.6, "duration": 4.959}
+{"text": "program it to do whatever I want. Okay,", "start": 2014.0, "duration": 4.32}
+{"text": "maybe not at the speed I want and so on,", "start": 2016.559, "duration": 3.921}
+{"text": "but you know I can I can I can get it to", "start": 2018.32, "duration": 6.16}
+{"text": "do whatever I want. Um compare that for", "start": 2020.48, "duration": 8.24}
+{"text": "instance with uh the operating system on", "start": 2024.48, "duration": 6.24}
+{"text": "my thermostat. I have a thermostat over", "start": 2028.72, "duration": 5.199}
+{"text": "there. Uh it's not built to do", "start": 2030.72, "duration": 4.959}
+{"text": "everything, right? I mean, I don't know", "start": 2033.919, "duration": 3.6}
+{"text": "exactly what operating system it has,", "start": 2035.679, "duration": 3.441}
+{"text": "but basically what it's supposed to do", "start": 2037.519, "duration": 4.64}
+{"text": "is, you know, bring the temperature up,", "start": 2039.12, "duration": 5.52}
+{"text": "bring the temperature down. That's kind", "start": 2042.159, "duration": 4.0}
+{"text": "of what it's supposed to do, and it does", "start": 2044.64, "duration": 3.68}
+{"text": "it really well, right?", "start": 2046.159, "duration": 5.92}
+{"text": "Um, would I want to program an arbitrary", "start": 2048.32, "duration": 5.599}
+{"text": "application", "start": 2052.079, "duration": 4.161}
+{"text": "on my thermostat?", "start": 2053.919, "duration": 4.401}
+{"text": "Probably not.", "start": 2056.24, "duration": 4.48}
+{"text": "So, you know, so judging it as a", "start": 2058.32, "duration": 4.88}
+{"text": "thermostat, it's fantastic. It's a great", "start": 2060.72, "duration": 4.8}
+{"text": "We shouldn't be judging Bitcoin based on", "start": 2063.2, "duration": 3.919}
+{"text": "Ethereum's properties. We should be", "start": 2065.52, "duration": 3.28}
+{"text": "judging Bitcoin based on what it does", "start": 2067.119, "duration": 4.881}
+{"text": "well. So, what does it do very well?", "start": 2068.8, "duration": 5.279}
+{"text": "It's an amazing distributed ledger,", "start": 2072.0, "duration": 4.0}
+{"text": "right? A decentralized ledger. It's an", "start": 2074.079, "duration": 5.28}
+{"text": "amazing ledger. Um, so that's that's", "start": 2076.0, "duration": 7.119}
+{"text": "great. Um, it's it's managed to do that", "start": 2079.359, "duration": 5.28}
+{"text": "remarkably.", "start": 2083.119, "duration": 6.081}
+{"text": "Um but um you know from then to go okay", "start": 2084.639, "duration": 8.641}
+{"text": "I want to program this to run some", "start": 2089.2, "duration": 6.32}
+{"text": "arbitrary application it's a little bit", "start": 2093.28, "duration": 5.68}
+{"text": "unfair that that's not you know", "start": 2095.52, "duration": 5.68}
+{"text": "some people have attempted that there", "start": 2098.96, "duration": 3.84}
+{"text": "there is this question as to whether or", "start": 2101.2, "duration": 3.36}
+{"text": "not people should be building layer 2s", "start": 2102.8, "duration": 4.16}
+{"text": "to run in your words arbitrary", "start": 2104.56, "duration": 5.039}
+{"text": "applications on the Bitcoin layer 1", "start": 2106.96, "duration": 4.8}
+{"text": "versus just building a new project or a", "start": 2109.599, "duration": 5.281}
+{"text": "new chain altogether. um you know those", "start": 2111.76, "duration": 5.68}
+{"text": "are two extremes. What what what would", "start": 2114.88, "duration": 4.959}
+{"text": "you advocate for?", "start": 2117.44, "duration": 5.76}
+{"text": "That's a really good question. Um", "start": 2119.839, "duration": 5.121}
+{"text": "my general view is that it really", "start": 2123.2, "duration": 3.2}
+{"text": "becomes a question of the particular", "start": 2124.96, "duration": 3.44}
+{"text": "trade-offs that people have, right? If", "start": 2126.4, "duration": 4.959}
+{"text": "they go, well, you know, maybe I'm not", "start": 2128.4, "duration": 5.52}
+{"text": "so interested in speed,", "start": 2131.359, "duration": 4.72}
+{"text": "uh and", "start": 2133.92, "duration": 5.679}
+{"text": "I really have a strong reason, whatever", "start": 2136.079, "duration": 6.161}
+{"text": "it may be, to try to use this as a", "start": 2139.599, "duration": 4.0}
+{"text": "ledger. And that's really what I'm", "start": 2142.24, "duration": 4.16}
+{"text": "trying to get out of, hey, why not, you", "start": 2143.599, "duration": 7.281}
+{"text": "know? Um, but", "start": 2146.4, "duration": 8.959}
+{"text": "I I think one has to be um realistic", "start": 2150.88, "duration": 7.92}
+{"text": "uh about what something was built for.", "start": 2155.359, "duration": 6.561}
+{"text": "And um", "start": 2158.8, "duration": 4.72}
+{"text": "you know, and as long as one does that", "start": 2161.92, "duration": 3.919}
+{"text": "and one is well aware of the you know,", "start": 2163.52, "duration": 4.88}
+{"text": "the pluses and minuses, that's fine. Uh", "start": 2165.839, "duration": 4.081}
+{"text": "it's it's just a question of being", "start": 2168.4, "duration": 2.48}
+{"text": "lucid. I believe", "start": 2169.92, "duration": 3.04}
+{"text": "looking ahead 5 to 10 years, how could", "start": 2170.88, "duration": 6.64}
+{"text": "Optimum and broadly RLNC reshape global", "start": 2172.96, "duration": 8.159}
+{"text": "finance networks, settle trades faster", "start": 2177.52, "duration": 7.2}
+{"text": "um and even collaborate with uh data", "start": 2181.119, "duration": 7.841}
+{"text": "heavy industries uh like AI um to train", "start": 2184.72, "duration": 6.639}
+{"text": "models um in in the global finance", "start": 2188.96, "duration": 2.96}
+{"text": "sphere.", "start": 2191.359, "duration": 3.521}
+{"text": "That's a fantastic question, David. Um", "start": 2191.92, "duration": 4.88}
+{"text": "we're building really what the", "start": 2194.88, "duration": 5.04}
+{"text": "decentralized memory layer. Uh and going", "start": 2196.8, "duration": 5.92}
+{"text": "back to programming on a computer, uh", "start": 2199.92, "duration": 6.08}
+{"text": "what we want to do is to take optimum", "start": 2202.72, "duration": 6.96}
+{"text": "advantage of the available resources.", "start": 2206.0, "duration": 6.8}
+{"text": "Um that means whatever transmission", "start": 2209.68, "duration": 5.2}
+{"text": "resources there are whatever memory that", "start": 2212.8, "duration": 5.039}
+{"text": "is we want to provide a fully", "start": 2214.88, "duration": 4.64}
+{"text": "decentralized", "start": 2217.839, "duration": 3.921}
+{"text": "experience a fully decentralized", "start": 2219.52, "duration": 3.92}
+{"text": "approach so that the experience is the", "start": 2221.76, "duration": 4.319}
+{"text": "same as if you were on a single", "start": 2223.44, "duration": 6.32}
+{"text": "computer. Um, so people should be able", "start": 2226.079, "duration": 6.081}
+{"text": "to program", "start": 2229.76, "duration": 5.44}
+{"text": "basically not having to worry about, you", "start": 2232.16, "duration": 5.919}
+{"text": "know, where's the data, how am I going", "start": 2235.2, "duration": 5.44}
+{"text": "to get access to it", "start": 2238.079, "duration": 5.28}
+{"text": "and do that in a way which is", "start": 2240.64, "duration": 6.32}
+{"text": "transparent and as fast", "start": 2243.359, "duration": 7.201}
+{"text": "and as reliably as physically possible", "start": 2246.96, "duration": 6.72}
+{"text": "given the current uh given whatever the", "start": 2250.56, "duration": 5.44}
+{"text": "resources are that are available at that", "start": 2253.68, "duration": 4.96}
+{"text": "time. and do this in a decentralized way", "start": 2256.0, "duration": 5.839}
+{"text": "where flex nodes all over the world are", "start": 2258.64, "duration": 5.12}
+{"text": "helping each other out, are allowing", "start": 2261.839, "duration": 6.641}
+{"text": "people to get the benefit of Optimum,", "start": 2263.76, "duration": 8.319}
+{"text": "reap their own benefits uh and help each", "start": 2268.48, "duration": 5.84}
+{"text": "other out without the need for", "start": 2272.079, "duration": 3.361}
+{"text": "centralization.", "start": 2274.32, "duration": 3.92}
+{"text": "Well, I uh I appreciate your time and um", "start": 2275.44, "duration": 5.6}
+{"text": "I uh I feel bad that I am not smart", "start": 2278.24, "duration": 4.879}
+{"text": "enough to have taken your course at MIT.", "start": 2281.04, "duration": 3.12}
+{"text": "So, I am uh", "start": 2283.119, "duration": 3.921}
+{"text": "It's not too late, David.", "start": 2284.16, "duration": 4.56}
+{"text": "I think it's kind of too late for me,", "start": 2287.04, "duration": 3.2}
+{"text": "but I enjoy speaking with you", "start": 2288.72, "duration": 2.72}
+{"text": "nonetheless.", "start": 2290.24, "duration": 3.68}
+{"text": "Um, how I I'm wondering, I'm just", "start": 2291.44, "duration": 4.88}
+{"text": "curious, is your course on the online uh", "start": 2293.92, "duration": 5.919}
+{"text": "MIT course catalog? Is that uh", "start": 2296.32, "duration": 6.16}
+{"text": "so uh if you're interested in in network", "start": 2299.839, "duration": 5.681}
+{"text": "coding, random network coding, uh we um", "start": 2302.48, "duration": 5.52}
+{"text": "I just published a book uh with some", "start": 2305.52, "duration": 5.68}
+{"text": "collaborators. It's uh appealingly named", "start": 2308.0, "duration": 6.4}
+{"text": "network coding for engineers. uh so you", "start": 2311.2, "duration": 5.28}
+{"text": "know if there's engineers out there who", "start": 2314.4, "duration": 4.88}
+{"text": "who want to read up on it I I recommend", "start": 2316.48, "duration": 5.2}
+{"text": "that they get the book and uh I don't", "start": 2319.28, "duration": 6.24}
+{"text": "assume we don't assume any knowledge uh", "start": 2321.68, "duration": 8.48}
+{"text": "of math um behind you know um be behind", "start": 2325.52, "duration": 8.24}
+{"text": "the coding uh it has you know Python", "start": 2330.16, "duration": 6.4}
+{"text": "examples and so yeah if if people are", "start": 2333.76, "duration": 5.12}
+{"text": "interested in in just playing with the", "start": 2336.56, "duration": 4.24}
+{"text": "tech by all means we we start from", "start": 2338.88, "duration": 4.4}
+{"text": "scratch and we take it", "start": 2340.8, "duration": 5.12}
+{"text": "um we take it very far in that book.", "start": 2343.28, "duration": 5.04}
+{"text": "And uh where else can people learn about", "start": 2345.92, "duration": 4.24}
+{"text": "your work and uh what you're currently", "start": 2348.32, "duration": 3.6}
+{"text": "working on in the meantime?", "start": 2350.16, "duration": 4.72}
+{"text": "Absolutely. Thanks for asking. Um our", "start": 2351.92, "duration": 5.84}
+{"text": "website uh get optimum.xyz", "start": 2354.88, "duration": 7.36}
+{"text": "has a lot of papers, a lot of resources", "start": 2357.76, "duration": 7.359}
+{"text": "um and we keep it very much up todate.", "start": 2362.24, "duration": 5.2}
+{"text": "Um also if people want to participate in", "start": 2365.119, "duration": 4.641}
+{"text": "our hackathons, I mentioned a first", "start": 2367.44, "duration": 5.2}
+{"text": "inerson hackathon next month.", "start": 2369.76, "duration": 4.24}
+{"text": "The following month we're going to have", "start": 2372.64, "duration": 4.0}
+{"text": "one in person in Europe and then we'll", "start": 2374.0, "duration": 5.599}
+{"text": "be doing online hackathons", "start": 2376.64, "duration": 5.68}
+{"text": "uh throughout the world uh so that", "start": 2379.599, "duration": 6.0}
+{"text": "people can actually interact uh with the", "start": 2382.32, "duration": 6.24}
+{"text": "optimum system and really in a hands-on", "start": 2385.599, "duration": 7.281}
+{"text": "fashion. Um again this is towards people", "start": 2388.56, "duration": 7.92}
+{"text": "being able to spin up their own flex", "start": 2392.88, "duration": 7.36}
+{"text": "nodes and become an active participant", "start": 2396.48, "duration": 6.4}
+{"text": "uh in the optimum network. So if people", "start": 2400.24, "duration": 4.32}
+{"text": "are interested and say hey you know I", "start": 2402.88, "duration": 4.16}
+{"text": "want to play with it please uh stay", "start": 2404.56, "duration": 5.44}
+{"text": "tuned. Uh we have a very large um", "start": 2407.04, "duration": 5.92}
+{"text": "community on discord where we have um", "start": 2410.0, "duration": 5.92}
+{"text": "and of course we're on X where we uh we", "start": 2412.96, "duration": 6.159}
+{"text": "advertise those different activities. Uh", "start": 2415.92, "duration": 5.36}
+{"text": "so if you want to read a book and you", "start": 2419.119, "duration": 4.081}
+{"text": "know please read our book, read the", "start": 2421.28, "duration": 4.72}
+{"text": "papers that are on our website. Uh get", "start": 2423.2, "duration": 5.2}
+{"text": "engaged in the community, participate in", "start": 2426.0, "duration": 7.359}
+{"text": "the hackathons. Uh we really want to", "start": 2428.4, "duration": 7.84}
+{"text": "pull as many people as uh as are", "start": 2433.359, "duration": 5.121}
+{"text": "interested into our project.", "start": 2436.24, "duration": 4.56}
+{"text": "Okay. Excellent. Uh well, I appreciate", "start": 2438.48, "duration": 3.359}
+{"text": "it. Once again, this was very", "start": 2440.8, "duration": 3.68}
+{"text": "educational, even though um uh a lot of", "start": 2441.839, "duration": 5.041}
+{"text": "it went over my head, but we'll put uh", "start": 2444.48, "duration": 4.8}
+{"text": "we'll put the links down below to uh to", "start": 2446.88, "duration": 5.199}
+{"text": "your work so people can uh study more", "start": 2449.28, "duration": 4.319}
+{"text": "and learn more about uh what you're", "start": 2452.079, "duration": 2.561}
+{"text": "currently working on. Thank you very", "start": 2453.599, "duration": 3.441}
+{"text": "much, Professor Madar. We'll speak again", "start": 2454.64, "duration": 3.92}
+{"text": "soon. Take care.", "start": 2457.04, "duration": 3.44}
+{"text": "Thank you so much for the opportunity,", "start": 2458.56, "duration": 3.279}
+{"text": "David.", "start": 2460.48, "duration": 2.56}
+{"text": "Thank you for watching. Don't forget to", "start": 2461.839, "duration": 4.601}
+{"text": "like and subscribe.", "start": 2463.04, "duration": 3.4}
+{"text": "[Applause]", "start": 2467.21, "duration": 3.07}

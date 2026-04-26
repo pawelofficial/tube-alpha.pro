@@ -1,0 +1,1298 @@
+{"text": "I think we're heading into a really", "start": 0.0, "duration": 6.4}
+{"text": "massive crisis uh here in in the West in", "start": 1.839, "duration": 7.281}
+{"text": "many ways. The dust up between Israel", "start": 6.4, "duration": 5.6}
+{"text": "and Iran, that's not over by a long", "start": 9.12, "duration": 5.519}
+{"text": "shot. Uh and there's a bunch of other", "start": 12.0, "duration": 4.88}
+{"text": "places in the world that are time bombs", "start": 14.639, "duration": 4.56}
+{"text": "waiting to go off. Our next guest has", "start": 16.88, "duration": 4.479}
+{"text": "argued that a greater depression may be", "start": 19.199, "duration": 3.84}
+{"text": "upon us. What does this look like? Are", "start": 21.359, "duration": 4.321}
+{"text": "we entering the stages now? Uh what is", "start": 23.039, "duration": 4.721}
+{"text": "unraveling with Trump's policies? and", "start": 25.68, "duration": 4.8}
+{"text": "how will these policies affect not just", "start": 27.76, "duration": 4.72}
+{"text": "corporate America but our investments?", "start": 30.48, "duration": 3.759}
+{"text": "Doc Casey joins us once more. He is a", "start": 32.48, "duration": 4.72}
+{"text": "best-selling author of crisis investing", "start": 34.239, "duration": 5.681}
+{"text": "and the international man. Recently he's", "start": 37.2, "duration": 4.879}
+{"text": "published a new book called uh the", "start": 39.92, "duration": 4.08}
+{"text": "preparation. We'll talk about that. Uh", "start": 42.079, "duration": 3.521}
+{"text": "he's also the author of a number of", "start": 44.0, "duration": 5.6}
+{"text": "other works including his series on uh", "start": 45.6, "duration": 6.88}
+{"text": "Charles Knight uh the fictional", "start": 49.6, "duration": 5.279}
+{"text": "character who's gone through um several", "start": 52.48, "duration": 4.239}
+{"text": "different phases in at least three", "start": 54.879, "duration": 4.641}
+{"text": "different books. So uh we'll talk about", "start": 56.719, "duration": 4.48}
+{"text": "some of that. Thank you very much Doug.", "start": 59.52, "duration": 3.28}
+{"text": "Welcome back to the show.", "start": 61.199, "duration": 3.28}
+{"text": "Well it's always good to be here with", "start": 62.8, "duration": 4.96}
+{"text": "you David. I'm not I'm not in Buenosares", "start": 64.479, "duration": 5.68}
+{"text": "at the moment which is where I usually", "start": 67.76, "duration": 5.6}
+{"text": "am. Uh, I'm on the shores of the", "start": 70.159, "duration": 6.241}
+{"text": "Chesapeake Bay, uh, in Virginia, uh,", "start": 73.36, "duration": 5.04}
+{"text": "because it's summer here and it's winter", "start": 76.4, "duration": 5.6}
+{"text": "in Buenosaris. So, uh, time to fly", "start": 78.4, "duration": 6.96}
+{"text": "north. How how are you liking it now? I", "start": 82.0, "duration": 5.04}
+{"text": "I remember speaking to you last time you", "start": 85.36, "duration": 4.0}
+{"text": "were in Argentina and we actually talked", "start": 87.04, "duration": 4.8}
+{"text": "about Argentina briefly, so good to have", "start": 89.36, "duration": 5.28}
+{"text": "you back in the US. Are you liking the", "start": 91.84, "duration": 3.84}
+{"text": "transition?", "start": 94.64, "duration": 3.76}
+{"text": "Uh, yeah. Well, I go where the I go", "start": 95.68, "duration": 5.68}
+{"text": "where the weather suits my clothes. Uh,", "start": 98.4, "duration": 5.759}
+{"text": "which is to say I like summer. But as", "start": 101.36, "duration": 5.92}
+{"text": "far as Argentina's concerned, uh, I've", "start": 104.159, "duration": 5.201}
+{"text": "been a huge supporter of Malay's", "start": 107.28, "duration": 4.799}
+{"text": "policies because, uh, as all the world", "start": 109.36, "duration": 6.719}
+{"text": "knows, uh, he's, uh, the first anarcho", "start": 112.079, "duration": 6.881}
+{"text": "capitalist in world history, uh, to have", "start": 116.079, "duration": 5.36}
+{"text": "won a national election. And by an", "start": 118.96, "duration": 5.119}
+{"text": "anarchal capitalist uh I mean somebody", "start": 121.439, "duration": 4.72}
+{"text": "that does not believe in government as", "start": 124.079, "duration": 4.88}
+{"text": "an institution and is doing has been", "start": 126.159, "duration": 6.08}
+{"text": "doing his best to uh disband the", "start": 128.959, "duration": 6.64}
+{"text": "Argentine government which has been", "start": 132.239, "duration": 6.72}
+{"text": "pathological for the last 80 years. So", "start": 135.599, "duration": 7.28}
+{"text": "uh Argentina is looking quite good uh", "start": 138.959, "duration": 5.601}
+{"text": "much much better than it was before", "start": 142.879, "duration": 4.08}
+{"text": "Malay was elected. I'm very happy to", "start": 144.56, "duration": 5.039}
+{"text": "have made a big bet on Argentina some", "start": 146.959, "duration": 5.92}
+{"text": "years ago. U it's paying off because", "start": 149.599, "duration": 7.36}
+{"text": "he's he's upsetting the entire political", "start": 152.879, "duration": 8.161}
+{"text": "and economic uh super structure of", "start": 156.959, "duration": 4.961}
+{"text": "Argentina.", "start": 161.04, "duration": 2.64}
+{"text": "In which way can the West learn from", "start": 161.92, "duration": 3.44}
+{"text": "MLE?", "start": 163.68, "duration": 5.68}
+{"text": "Well, you've got to uh attempt to", "start": 165.36, "duration": 8.4}
+{"text": "totally abolish many regulatory agencies", "start": 169.36, "duration": 7.44}
+{"text": "and fire all the people that live there.", "start": 173.76, "duration": 5.28}
+{"text": "And when I say abolish, I don't mean cut", "start": 176.8, "duration": 4.4}
+{"text": "back. I mean pull them out by their", "start": 179.04, "duration": 5.119}
+{"text": "roots. And so Agent Orange where they", "start": 181.2, "duration": 7.119}
+{"text": "grew because most of the uh", "start": 184.159, "duration": 7.121}
+{"text": "infrastructure of government uh serves", "start": 188.319, "duration": 5.601}
+{"text": "no useful purpose. Well, that's", "start": 191.28, "duration": 6.56}
+{"text": "understating it. Uh is corrupting and", "start": 193.92, "duration": 8.8}
+{"text": "destructive of capital and uh uh holds", "start": 197.84, "duration": 8.16}
+{"text": "down entrepreneurialism and production.", "start": 202.72, "duration": 6.4}
+{"text": "So Malay is in the process of changing", "start": 206.0, "duration": 7.519}
+{"text": "Argentina from a country that uh was", "start": 209.12, "duration": 7.92}
+{"text": "modeled by Juan Peron after Mussolini's", "start": 213.519, "duration": 7.121}
+{"text": "Italy, a genuine fascist country where", "start": 217.04, "duration": 7.279}
+{"text": "the state and corporations are handin", "start": 220.64, "duration": 6.4}
+{"text": "glove together and he's trying to free", "start": 224.319, "duration": 7.041}
+{"text": "marketize it. Uh we'll see uh if he uh", "start": 227.04, "duration": 8.32}
+{"text": "uh wins the u uh", "start": 231.36, "duration": 7.04}
+{"text": "elections that are coming up in two", "start": 235.36, "duration": 6.239}
+{"text": "couple of months uh to see if he can", "start": 238.4, "duration": 5.839}
+{"text": "take over the Congress. Right now he's", "start": 241.599, "duration": 4.56}
+{"text": "like Trump doing a lot of things by", "start": 244.239, "duration": 4.881}
+{"text": "executive order which is kind of risky.", "start": 246.159, "duration": 4.561}
+{"text": "Uh what he needs to do is change the", "start": 249.12, "duration": 3.52}
+{"text": "laws. So if he wins the elections in a", "start": 250.72, "duration": 4.159}
+{"text": "couple of months, uh, Argentina is going", "start": 252.64, "duration": 5.839}
+{"text": "to totally overturn its past sorted 80", "start": 254.879, "duration": 5.76}
+{"text": "years of history. You know, it used to", "start": 258.479, "duration": 4.72}
+{"text": "be one of the three or four most", "start": 260.639, "duration": 4.481}
+{"text": "prosperous countries in the world 100", "start": 263.199, "duration": 4.321}
+{"text": "years ago. Now it's just another third", "start": 265.12, "duration": 5.359}
+{"text": "world country. So anyway,", "start": 267.52, "duration": 5.04}
+{"text": "turning to turning back to the rest of", "start": 270.479, "duration": 4.72}
+{"text": "the world in the US, uh, how close or", "start": 272.56, "duration": 4.639}
+{"text": "far away are we to this greater", "start": 275.199, "duration": 3.201}
+{"text": "depression that you've been talking", "start": 277.199, "duration": 4.56}
+{"text": "about? uh given Trump's policies. I", "start": 278.4, "duration": 5.519}
+{"text": "believe we spoke just after the", "start": 281.759, "duration": 5.201}
+{"text": "inauguration or shortly around that time", "start": 283.919, "duration": 4.961}
+{"text": "and so a lot has changed, a lot has", "start": 286.96, "duration": 3.92}
+{"text": "developed. How would you evaluate the", "start": 288.88, "duration": 6.08}
+{"text": "last 9 months or so? And um are we", "start": 290.88, "duration": 5.599}
+{"text": "closer? We're farther away from this", "start": 294.96, "duration": 3.12}
+{"text": "greater depression.", "start": 296.479, "duration": 5.361}
+{"text": "Well, Trump is a mixed bag. Uh there are", "start": 298.08, "duration": 5.839}
+{"text": "some things that you have to love about", "start": 301.84, "duration": 5.12}
+{"text": "them and some things that", "start": 303.919, "duration": 5.84}
+{"text": "are really stupid and destructive. But", "start": 306.96, "duration": 6.48}
+{"text": "let me say this, it's that uh given a", "start": 309.759, "duration": 6.321}
+{"text": "choice between", "start": 313.44, "duration": 7.039}
+{"text": "Trump and uh uh Camela uh there was no", "start": 316.08, "duration": 8.399}
+{"text": "choice. uh the US was sliding down down", "start": 320.479, "duration": 8.321}
+{"text": "downhill uh to become uh a highly", "start": 324.479, "duration": 7.921}
+{"text": "regulated, highly taxed socialist state", "start": 328.8, "duration": 6.64}
+{"text": "and something had to be done. Uh Trump", "start": 332.4, "duration": 5.92}
+{"text": "was not the optimal solution but thank", "start": 335.44, "duration": 6.0}
+{"text": "God we dodged the bullet with the uh", "start": 338.32, "duration": 6.48}
+{"text": "Democrats and Kamla. The thing that", "start": 341.44, "duration": 7.039}
+{"text": "worries me most about Trump are his um", "start": 344.8, "duration": 8.08}
+{"text": "are his tariffs, which uh amount to a", "start": 348.479, "duration": 7.361}
+{"text": "gigantic tax increase on the American", "start": 352.88, "duration": 5.84}
+{"text": "public because of course tariffs are", "start": 355.84, "duration": 6.16}
+{"text": "something that importers pay, which is", "start": 358.72, "duration": 6.96}
+{"text": "to say the residents of the US pay. And", "start": 362.0, "duration": 6.0}
+{"text": "not only is it hurting uh the average", "start": 365.68, "duration": 3.76}
+{"text": "his tariffs are hurting the average", "start": 368.0, "duration": 5.759}
+{"text": "American, but uh they're hurting uh our", "start": 369.44, "duration": 8.8}
+{"text": "partners that we trade with. So it's uh", "start": 373.759, "duration": 7.361}
+{"text": "uh I understand why Trump put on the", "start": 378.24, "duration": 4.32}
+{"text": "tariffs because he's trying to bring", "start": 381.12, "duration": 4.24}
+{"text": "manufacturing back to the US, but he's", "start": 382.56, "duration": 5.04}
+{"text": "trying to bring it back in an artificial", "start": 385.36, "duration": 5.119}
+{"text": "way. He's creating another distortion in", "start": 387.6, "duration": 5.92}
+{"text": "the economy. And to answer your earlier", "start": 390.479, "duration": 6.641}
+{"text": "question, uh the greater depression, uh", "start": 393.52, "duration": 6.64}
+{"text": "yeah, we're uh", "start": 397.12, "duration": 5.68}
+{"text": "we're on schedule for that. A depression", "start": 400.16, "duration": 5.36}
+{"text": "uh you'll recall is a period of time", "start": 402.8, "duration": 5.6}
+{"text": "when most people's standard of living", "start": 405.52, "duration": 5.119}
+{"text": "drops significantly.", "start": 408.4, "duration": 6.079}
+{"text": "And uh you can argue that that's been", "start": 410.639, "duration": 7.441}
+{"text": "going on for some years", "start": 414.479, "duration": 7.681}
+{"text": "uh because the uh the state in the US", "start": 418.08, "duration": 5.679}
+{"text": "the government has been growing and", "start": 422.16, "duration": 4.319}
+{"text": "growing and growing uh at the expense of", "start": 423.759, "duration": 6.401}
+{"text": "the private economy. uh and these two", "start": 426.479, "duration": 6.72}
+{"text": "trillion or even $3 trillion a year", "start": 430.16, "duration": 6.479}
+{"text": "deficits that the government is running", "start": 433.199, "duration": 6.161}
+{"text": "is coming directly and indirectly out of", "start": 436.639, "duration": 5.521}
+{"text": "the pockets of the American people. So", "start": 439.36, "duration": 4.88}
+{"text": "yeah, the answer to the question is", "start": 442.16, "duration": 6.0}
+{"text": "we're headed for something uh that uh is", "start": 444.24, "duration": 7.04}
+{"text": "going to be much worse and much", "start": 448.16, "duration": 6.319}
+{"text": "longerlasting and much different than", "start": 451.28, "duration": 7.359}
+{"text": "the unpleasantness of 1929 to 1946. I", "start": 454.479, "duration": 6.56}
+{"text": "know that's a radical statement to make", "start": 458.639, "duration": 4.721}
+{"text": "but uh and there are things that are", "start": 461.039, "duration": 4.0}
+{"text": "ameliorating", "start": 463.36, "duration": 4.399}
+{"text": "uh that trend uh which we could talk", "start": 465.039, "duration": 7.6}
+{"text": "about but uh uh I'm not uh very sanguin", "start": 467.759, "duration": 7.28}
+{"text": "about any of the markets in North", "start": 472.639, "duration": 5.84}
+{"text": "America today with one exception uh the", "start": 475.039, "duration": 7.121}
+{"text": "resource market uh which is where you", "start": 478.479, "duration": 5.84}
+{"text": "are in Vancouver. You've heard me talk a", "start": 482.16, "duration": 4.08}
+{"text": "lot recently about rising gold prices", "start": 484.319, "duration": 3.921}
+{"text": "and how important it is to be building", "start": 486.24, "duration": 4.079}
+{"text": "your savings in hard assets like gold", "start": 488.24, "duration": 4.399}
+{"text": "and silver. But what if I told you that", "start": 490.319, "duration": 4.16}
+{"text": "you could do a lot more than just", "start": 492.639, "duration": 4.24}
+{"text": "holding gold? What if you could also", "start": 494.479, "duration": 5.761}
+{"text": "earn income from it pay in gold? That's", "start": 496.879, "duration": 5.04}
+{"text": "exactly what today's sponsor, Monetary", "start": 500.24, "duration": 3.359}
+{"text": "Metals, is doing. They're", "start": 501.919, "duration": 3.84}
+{"text": "revolutionizing how people invest in", "start": 503.599, "duration": 4.72}
+{"text": "gold and silver. Instead of paying to", "start": 505.759, "duration": 4.56}
+{"text": "store your metal or watching it sit", "start": 508.319, "duration": 4.561}
+{"text": "idle, now you can get paid to own it.", "start": 510.319, "duration": 4.241}
+{"text": "Right now in the marketplace, you can", "start": 512.88, "duration": 4.8}
+{"text": "earn up to 4% interest on gold paid in", "start": 514.56, "duration": 5.279}
+{"text": "gold. That means your holdings grow in", "start": 517.68, "duration": 4.719}
+{"text": "actual ounces, not dollars, on top of", "start": 519.839, "duration": 5.601}
+{"text": "any price appreciation. Interest is paid", "start": 522.399, "duration": 5.201}
+{"text": "monthly in physical gold, which you can", "start": 525.44, "duration": 5.12}
+{"text": "redeem and take delivery of. Thousands", "start": 527.6, "duration": 5.04}
+{"text": "of investors are already earning real", "start": 530.56, "duration": 3.92}
+{"text": "interest in physical gold and silver", "start": 532.64, "duration": 4.319}
+{"text": "through monetary medals every month.", "start": 534.48, "duration": 4.72}
+{"text": "It's time you did as well. Go to", "start": 536.959, "duration": 5.241}
+{"text": "monetary-medals.com/lin", "start": 539.2, "duration": 3.0}
+{"text": "link down below or scan the QR code here", "start": 542.959, "duration": 4.721}
+{"text": "to learn more and get started. Yes,", "start": 545.12, "duration": 4.88}
+{"text": "that's right. Uh capital of mining. Yes,", "start": 547.68, "duration": 4.08}
+{"text": "we'll talk about the resource sector and", "start": 550.0, "duration": 3.279}
+{"text": "also your greater depression thesis in", "start": 551.76, "duration": 2.8}
+{"text": "just a bit in more detail. I want to", "start": 553.279, "duration": 3.761}
+{"text": "play for you this clip. Uh it's an", "start": 554.56, "duration": 4.08}
+{"text": "interview with an expert on China", "start": 557.04, "duration": 3.76}
+{"text": "relations. His name is Victor Gao from", "start": 558.64, "duration": 4.24}
+{"text": "60 Minutes Australia. This references", "start": 560.8, "duration": 5.84}
+{"text": "your uh earlier statement and um and uh", "start": 562.88, "duration": 5.36}
+{"text": "remarks about manufacturing, bringing", "start": 566.64, "duration": 3.36}
+{"text": "manufacturing back home. This is what he", "start": 568.24, "duration": 3.12}
+{"text": "had to say. Take a listen where we act", "start": 570.0, "duration": 1.92}
+{"text": "together.", "start": 571.36, "duration": 2.64}
+{"text": "Do you accept that Mr. Trump is is", "start": 571.92, "duration": 4.08}
+{"text": "trying to protect his businesses and", "start": 574.0, "duration": 2.959}
+{"text": "jobs?", "start": 576.0, "duration": 4.64}
+{"text": "No. First of all, the maximum tariff", "start": 576.959, "duration": 5.281}
+{"text": "against the rest of the world, including", "start": 580.64, "duration": 3.92}
+{"text": "against China, will not move", "start": 582.24, "duration": 4.159}
+{"text": "manufacturing jobs back to the United", "start": 584.56, "duration": 4.08}
+{"text": "States. If President Trump is serious,", "start": 586.399, "duration": 4.0}
+{"text": "President Trump need to talk with China", "start": 588.64, "duration": 3.36}
+{"text": "because China has been the most", "start": 590.399, "duration": 3.601}
+{"text": "successful manufacturing country in the", "start": 592.0, "duration": 4.08}
+{"text": "world today. China's manufacturing", "start": 594.0, "duration": 4.72}
+{"text": "output is larger than EU, US, Japan", "start": 596.08, "duration": 5.6}
+{"text": "combined together. And China produces", "start": 598.72, "duration": 5.679}
+{"text": "about six times more power for", "start": 601.68, "duration": 4.88}
+{"text": "industrial use than the United States", "start": 604.399, "duration": 5.041}
+{"text": "does. So if President Trump is serious", "start": 606.56, "duration": 4.88}
+{"text": "about recreating manufacturing jobs in", "start": 609.44, "duration": 3.76}
+{"text": "the United States, he need to do several", "start": 611.44, "duration": 4.24}
+{"text": "things. And I offer this advice without", "start": 613.2, "duration": 4.8}
+{"text": "charging him a penny. He need to build", "start": 615.68, "duration": 4.8}
+{"text": "up connectivity, build up container", "start": 618.0, "duration": 5.2}
+{"text": "ports, build up highspeed railway, build", "start": 620.48, "duration": 5.2}
+{"text": "up high quality uh highway system for", "start": 623.2, "duration": 5.199}
+{"text": "example, build up inner river uh", "start": 625.68, "duration": 5.92}
+{"text": "transportation and he need to increase", "start": 628.399, "duration": 6.081}
+{"text": "power generation like crazy. He need to", "start": 631.6, "duration": 5.44}
+{"text": "at least double the power capacity in", "start": 634.48, "duration": 6.32}
+{"text": "the United States to really achieve", "start": 637.04, "duration": 5.84}
+{"text": "meaningful amount of manufacturing jobs", "start": 640.8, "duration": 4.0}
+{"text": "back to the United States. He need to", "start": 642.88, "duration": 4.0}
+{"text": "train the American people. He need to", "start": 644.8, "duration": 5.599}
+{"text": "instill this discipline and work ethics", "start": 646.88, "duration": 5.76}
+{"text": "which will enable the great people in", "start": 650.399, "duration": 4.161}
+{"text": "the United States to work in factories", "start": 652.64, "duration": 4.16}
+{"text": "which need to be competitive which need", "start": 654.56, "duration": 5.12}
+{"text": "to be have the marketability not only in", "start": 656.8, "duration": 5.599}
+{"text": "the US market but in the global market.", "start": 659.68, "duration": 4.64}
+{"text": "Okay, I'll stop there. Uh, I mean,", "start": 662.399, "duration": 3.281}
+{"text": "notwithstanding the fact that the US", "start": 664.32, "duration": 3.12}
+{"text": "already has the most sophisticated", "start": 665.68, "duration": 3.839}
+{"text": "infrastructure in the world, but what", "start": 667.44, "duration": 4.16}
+{"text": "what about his other remarks? What of", "start": 669.519, "duration": 2.401}
+{"text": "it?", "start": 671.6, "duration": 4.479}
+{"text": "Uh, I agree 100% with Mr. Gao. Uh, it", "start": 671.92, "duration": 5.52}
+{"text": "was Mr. Ga, wasn't it?", "start": 676.079, "duration": 2.961}
+{"text": "Yes. Victor Ga. Yes.", "start": 677.44, "duration": 4.399}
+{"text": "Yes. Everything he said is quite correct", "start": 679.04, "duration": 7.359}
+{"text": "with one critical exception. He's", "start": 681.839, "duration": 6.641}
+{"text": "seems to be looking for Trump to do", "start": 686.399, "duration": 6.0}
+{"text": "these things. Uh, America could be", "start": 688.48, "duration": 7.28}
+{"text": "competitive with China, uh, but not by", "start": 692.399, "duration": 7.12}
+{"text": "putting on tariffs, but by freeing", "start": 695.76, "duration": 6.96}
+{"text": "itself up. And that's not something", "start": 699.519, "duration": 6.721}
+{"text": "Trump can do by doing things. The way", "start": 702.72, "duration": 5.84}
+{"text": "for America to win is by getting the", "start": 706.24, "duration": 4.64}
+{"text": "government out of people's hair. So", "start": 708.56, "duration": 4.0}
+{"text": "Trump doesn't have to actively do", "start": 710.88, "duration": 4.079}
+{"text": "anything. What Trump has to do is follow", "start": 712.56, "duration": 5.76}
+{"text": "the path of Malay and Argentina and uh", "start": 714.959, "duration": 6.161}
+{"text": "abolish regulations and get rid of", "start": 718.32, "duration": 6.48}
+{"text": "taxes. Uh that is what will make America", "start": 721.12, "duration": 5.92}
+{"text": "as competitive as China. If anything", "start": 724.8, "duration": 6.8}
+{"text": "will uh so he's right, but his solution", "start": 727.04, "duration": 8.479}
+{"text": "is a little bit offkilter. Trump should", "start": 731.6, "duration": 7.28}
+{"text": "not be doing actual things like look", "start": 735.519, "duration": 6.641}
+{"text": "what Trump's doing. uh taking 10% of", "start": 738.88, "duration": 6.24}
+{"text": "Intel corporation having golden shares", "start": 742.16, "duration": 8.56}
+{"text": "and US steel. Uh uh this is this is", "start": 745.12, "duration": 8.08}
+{"text": "economic fascism. He should be", "start": 750.72, "duration": 5.119}
+{"text": "disinvolving the US government from the", "start": 753.2, "duration": 5.6}
+{"text": "economy as opposed to involving it more", "start": 755.839, "duration": 8.0}
+{"text": "more um deeply. Incidentally, uh my", "start": 758.8, "duration": 7.599}
+{"text": "first novel, Speculator, has just been", "start": 763.839, "duration": 4.8}
+{"text": "published in Chinese. I don't know if", "start": 766.399, "duration": 3.44}
+{"text": "you can see it. I'm not", "start": 768.639, "duration": 4.081}
+{"text": "yes not marketing it but I agree with", "start": 769.839, "duration": 6.24}
+{"text": "Mr. Mr. G's analysis in many ways", "start": 772.72, "duration": 3.84}
+{"text": "though.", "start": 776.079, "duration": 3.44}
+{"text": "Well, what is economic fascism? Are", "start": 776.56, "duration": 5.839}
+{"text": "governments not in theory allowed to or", "start": 779.519, "duration": 5.281}
+{"text": "supposed to be participating in the free", "start": 782.399, "duration": 5.68}
+{"text": "markets by buying shares of a company or", "start": 784.8, "duration": 5.039}
+{"text": "uh suggesting some sort of partnership", "start": 788.079, "duration": 4.801}
+{"text": "whereby in this case that you mentioned", "start": 789.839, "duration": 4.641}
+{"text": "the company will provide a certain", "start": 792.88, "duration": 4.079}
+{"text": "revenue. I think Nvidia will give a", "start": 794.48, "duration": 4.88}
+{"text": "certain revenue of chip sales to China", "start": 796.959, "duration": 5.601}
+{"text": "to the US government in exchange for", "start": 799.36, "duration": 6.24}
+{"text": "access to the US markets I guess um in", "start": 802.56, "duration": 4.48}
+{"text": "perpetuity.", "start": 805.6, "duration": 3.52}
+{"text": "Yeah, this is exactly the opposite of", "start": 807.04, "duration": 3.359}
+{"text": "what the government should be doing.", "start": 809.12, "duration": 3.76}
+{"text": "Look, what should the government be", "start": 810.399, "duration": 6.401}
+{"text": "doing? Uh the government is a coercive", "start": 812.88, "duration": 6.56}
+{"text": "power. It's a dead hand on the economy.", "start": 816.8, "duration": 5.039}
+{"text": "So what should the government do? Since", "start": 819.44, "duration": 4.8}
+{"text": "the government is force, it's coercion.", "start": 821.839, "duration": 4.881}
+{"text": "That's the nature of the state. It", "start": 824.24, "duration": 4.56}
+{"text": "should do nothing but protect people", "start": 826.72, "duration": 4.32}
+{"text": "from force and coercion. What does that", "start": 828.8, "duration": 5.68}
+{"text": "mean? It means uh uh a military to", "start": 831.04, "duration": 6.32}
+{"text": "protect the citizens from coercion from", "start": 834.48, "duration": 7.12}
+{"text": "abroad, police to protect uh them from", "start": 837.36, "duration": 6.56}
+{"text": "criminals and coercion in the country", "start": 841.6, "duration": 4.4}
+{"text": "and a court system to allow them to", "start": 843.92, "duration": 4.56}
+{"text": "adjudicate disputes without resorting to", "start": 846.0, "duration": 4.8}
+{"text": "force. And it shouldn't do anything", "start": 848.48, "duration": 4.719}
+{"text": "else. it shouldn't have any involvement", "start": 850.8, "duration": 5.92}
+{"text": "in the economy. Uh the result of", "start": 853.199, "duration": 6.32}
+{"text": "government involvement in the economy is", "start": 856.72, "duration": 5.919}
+{"text": "creating distortions which lead to a", "start": 859.519, "duration": 6.641}
+{"text": "depression eventually and corruption as", "start": 862.639, "duration": 6.56}
+{"text": "uh government officials uh find ways to", "start": 866.16, "duration": 7.119}
+{"text": "enrich themselves. So, uh, he should be,", "start": 869.199, "duration": 6.801}
+{"text": "uh, doing kind of the opposite of what", "start": 873.279, "duration": 6.8}
+{"text": "he's doing and get rid of his shares in", "start": 876.0, "duration": 7.279}
+{"text": "US Steel and Invidia, whatever else, but", "start": 880.079, "duration": 5.361}
+{"text": "he's going just the opposite way. So,", "start": 883.279, "duration": 5.041}
+{"text": "the prognosis, the long-term prognosis", "start": 885.44, "duration": 5.759}
+{"text": "for what Trump is doing is not good, but", "start": 888.32, "duration": 4.16}
+{"text": "a lot better than what it would have", "start": 891.199, "duration": 3.2}
+{"text": "been if Kamala had been elected. The", "start": 892.48, "duration": 4.24}
+{"text": "idea here is that maybe there's", "start": 894.399, "duration": 4.481}
+{"text": "short-term pain, meaning some", "start": 896.72, "duration": 4.0}
+{"text": "shareholders might not like this idea.", "start": 898.88, "duration": 3.199}
+{"text": "Actually, Invidia shares haven't really", "start": 900.72, "duration": 3.2}
+{"text": "declined much on this news. Uh, but", "start": 902.079, "duration": 3.76}
+{"text": "that's a different story. Uh, I know", "start": 903.92, "duration": 4.159}
+{"text": "personally several people who have", "start": 905.839, "duration": 3.761}
+{"text": "struggled with their import export", "start": 908.079, "duration": 3.601}
+{"text": "businesses because of tariffs, had to", "start": 909.6, "duration": 4.239}
+{"text": "lay people off and whatnot. Uh the idea", "start": 911.68, "duration": 3.519}
+{"text": "here is that they're short-term paying", "start": 913.839, "duration": 4.081}
+{"text": "for long-term gain, meaning potentially", "start": 915.199, "duration": 5.121}
+{"text": "this could revitalize American", "start": 917.92, "duration": 4.56}
+{"text": "manufacturing, bring back jobs,", "start": 920.32, "duration": 5.36}
+{"text": "reinvigorate the overall labor force.", "start": 922.48, "duration": 4.719}
+{"text": "David,", "start": 925.68, "duration": 5.04}
+{"text": "the way to invigorate the uh US economy,", "start": 927.199, "duration": 7.841}
+{"text": "as I said, is not by putting on tariffs,", "start": 930.72, "duration": 6.239}
+{"text": "which hurt the American people as well", "start": 935.04, "duration": 5.12}
+{"text": "as our foreign trading partners. The way", "start": 936.959, "duration": 5.921}
+{"text": "to solve the problem", "start": 940.16, "duration": 7.2}
+{"text": "is by deregulating the US economy", "start": 942.88, "duration": 7.759}
+{"text": "and radically cutting taxes as well and", "start": 947.36, "duration": 6.88}
+{"text": "radically cutting government spending", "start": 950.639, "duration": 6.32}
+{"text": "so that you can cut taxes. In other", "start": 954.24, "duration": 5.039}
+{"text": "words, freeing the American economy up.", "start": 956.959, "duration": 3.841}
+{"text": "He's doing just the opposite, I'm", "start": 959.279, "duration": 2.24}
+{"text": "afraid.", "start": 960.8, "duration": 3.76}
+{"text": "What should that process look like,", "start": 961.519, "duration": 5.361}
+{"text": "Doug? If we were to if you were to", "start": 964.56, "duration": 4.0}
+{"text": "instill these policies yourself, if you", "start": 966.88, "duration": 5.36}
+{"text": "were the president and you had to by", "start": 968.56, "duration": 6.639}
+{"text": "constituents orders make America freer,", "start": 972.24, "duration": 4.959}
+{"text": "make America greater again, what would", "start": 975.199, "duration": 2.481}
+{"text": "you do?", "start": 977.199, "duration": 2.161}
+{"text": "Well, one thing that Trump has done", "start": 977.68, "duration": 4.48}
+{"text": "which is absolutely wonderful is", "start": 979.36, "duration": 5.76}
+{"text": "abolishing US aid", "start": 982.16, "duration": 5.84}
+{"text": "uh which was spending how much was their", "start": 985.12, "duration": 7.6}
+{"text": "budget? Uh $40 billion a year gigantic.", "start": 988.0, "duration": 6.88}
+{"text": "So he's a boiler sled agency which was", "start": 992.72, "duration": 5.28}
+{"text": "just a giveaway scheme to uh uh", "start": 994.88, "duration": 7.759}
+{"text": "transferring money from uh", "start": 998.0, "duration": 7.04}
+{"text": "like like all foreign aid schemes.", "start": 1002.639, "duration": 5.041}
+{"text": "That's basically what US ID was taking", "start": 1005.04, "duration": 4.799}
+{"text": "money from poor people in a rich country", "start": 1007.68, "duration": 4.48}
+{"text": "America and giving it to rich people in", "start": 1009.839, "duration": 7.201}
+{"text": "foreign countries. Uh USAID was full of", "start": 1012.16, "duration": 8.16}
+{"text": "corruption. Now what he did to USA ID", "start": 1017.04, "duration": 4.799}
+{"text": "should be done throughout the US", "start": 1020.32, "duration": 4.16}
+{"text": "government. Those all those buildings in", "start": 1021.839, "duration": 5.84}
+{"text": "Washington DC should be emptied and the", "start": 1024.48, "duration": 4.88}
+{"text": "people that are working in them should", "start": 1027.679, "duration": 4.16}
+{"text": "find something productive to do in the", "start": 1029.36, "duration": 4.959}
+{"text": "real economy.", "start": 1031.839, "duration": 3.761}
+{"text": "That's what I would do.", "start": 1034.319, "duration": 4.161}
+{"text": "Okay. Uh this also leads to ultimately", "start": 1035.6, "duration": 5.199}
+{"text": "uh your book the preparation.", "start": 1038.48, "duration": 5.28}
+{"text": "uh uh the training of the labor force", "start": 1040.799, "duration": 5.361}
+{"text": "starts at the education age which is", "start": 1043.76, "duration": 3.919}
+{"text": "something that your book addresses in", "start": 1046.16, "duration": 5.2}
+{"text": "detail. So the the standard procedure is", "start": 1047.679, "duration": 6.801}
+{"text": "finish high school, go to college, get a", "start": 1051.36, "duration": 6.0}
+{"text": "job, perhaps get a master's degree, go", "start": 1054.48, "duration": 6.559}
+{"text": "back to the workforce, you know, rinse", "start": 1057.36, "duration": 6.72}
+{"text": "and repeat. Is that the way forward?", "start": 1061.039, "duration": 5.921}
+{"text": "Yeah, that that is no longer uh once", "start": 1064.08, "duration": 7.2}
+{"text": "once upon a time uh like 50 years ago", "start": 1066.96, "duration": 7.28}
+{"text": "that was uh arguably a formula for", "start": 1071.28, "duration": 6.96}
+{"text": "success. Get get a college education.", "start": 1074.24, "duration": 6.88}
+{"text": "But the world has changed and even 50", "start": 1078.24, "duration": 4.319}
+{"text": "years ago when people were getting a", "start": 1081.12, "duration": 4.88}
+{"text": "college education, it was marginal. But", "start": 1082.559, "duration": 7.201}
+{"text": "today, college is uh", "start": 1086.0, "duration": 6.4}
+{"text": "going to college can bankrupt you. But", "start": 1089.76, "duration": 4.72}
+{"text": "that's not the real problem. The fact", "start": 1092.4, "duration": 6.0}
+{"text": "that most kids uh get out of college", "start": 1094.48, "duration": 6.96}
+{"text": "with a huge albatross of debt around", "start": 1098.4, "duration": 6.48}
+{"text": "their necks. Uh the real problem is that", "start": 1101.44, "duration": 6.16}
+{"text": "college isn't just a neutral experience.", "start": 1104.88, "duration": 5.44}
+{"text": "Uh it's no longer a positive experience.", "start": 1107.6, "duration": 5.439}
+{"text": "It's uh", "start": 1110.32, "duration": 5.04}
+{"text": "you're jumping into a cesspool. Most of", "start": 1113.039, "duration": 5.76}
+{"text": "the professors in most colleges today,", "start": 1115.36, "duration": 6.64}
+{"text": "it's unbelievable, but it's true, are", "start": 1118.799, "duration": 7.12}
+{"text": "woke or Marxists or worse. Uh, so", "start": 1122.0, "duration": 8.0}
+{"text": "college is a corrupting influence. Uh, a", "start": 1125.919, "duration": 6.401}
+{"text": "young man will go to college for four", "start": 1130.0, "duration": 4.64}
+{"text": "years, which is really like extended", "start": 1132.32, "duration": 5.359}
+{"text": "adolescence these days. Uh, kind of", "start": 1134.64, "duration": 5.039}
+{"text": "living in luxury. I'm not talking", "start": 1137.679, "duration": 4.801}
+{"text": "incidentally about going to college for", "start": 1139.679, "duration": 5.041}
+{"text": "STEM courses, science, technology,", "start": 1142.48, "duration": 4.72}
+{"text": "engineering, math, math. That's", "start": 1144.72, "duration": 5.36}
+{"text": "different. Uh a formal structured", "start": 1147.2, "duration": 5.28}
+{"text": "environment can be very beneficial for", "start": 1150.08, "duration": 4.88}
+{"text": "those things. Medicine, law, but most", "start": 1152.48, "duration": 4.24}
+{"text": "people don't take these things. Most", "start": 1154.96, "duration": 6.4}
+{"text": "people take liberal arts. uh and what", "start": 1156.72, "duration": 7.04}
+{"text": "I'm suggesting is during those four", "start": 1161.36, "duration": 5.92}
+{"text": "years of time uh a young man do", "start": 1163.76, "duration": 6.72}
+{"text": "something that we call the preparation.", "start": 1167.28, "duration": 5.759}
+{"text": "Uh what we've done in this book is we", "start": 1170.48, "duration": 6.24}
+{"text": "divide the four years or", "start": 1173.039, "duration": 6.241}
+{"text": "uh after you graduate from high school", "start": 1176.72, "duration": 5.76}
+{"text": "into 16 quarters and in each of these", "start": 1179.28, "duration": 4.72}
+{"text": "quarters", "start": 1182.48, "duration": 4.96}
+{"text": "uh you set a task for yourself in", "start": 1184.0, "duration": 6.96}
+{"text": "addition to the uh academic studies", "start": 1187.44, "duration": 5.599}
+{"text": "which will would continue. I'll tell you", "start": 1190.96, "duration": 6.16}
+{"text": "how like over the course of the four", "start": 1193.039, "duration": 7.121}
+{"text": "years when most people just sit in a", "start": 1197.12, "duration": 7.36}
+{"text": "desk and listen to lectures and a lot of", "start": 1200.16, "duration": 6.16}
+{"text": "time cut their classes because they've", "start": 1204.48, "duration": 3.76}
+{"text": "been out partying the night before. I'm", "start": 1206.32, "duration": 4.0}
+{"text": "I'm speaking from my own experience", "start": 1208.24, "duration": 3.679}
+{"text": "having gone to college and I think most", "start": 1210.32, "duration": 5.04}
+{"text": "people's uh or falling asleep in class", "start": 1211.919, "duration": 6.081}
+{"text": "or taking bad notes or letting their", "start": 1215.36, "duration": 4.4}
+{"text": "mind wander when the professor is", "start": 1218.0, "duration": 5.039}
+{"text": "talking if the professor is any good and", "start": 1219.76, "duration": 4.799}
+{"text": "you don't just have a substandard", "start": 1223.039, "duration": 4.481}
+{"text": "teaching assistant. So we've solved that", "start": 1224.559, "duration": 6.161}
+{"text": "problem I think with uh the way we would", "start": 1227.52, "duration": 7.519}
+{"text": "deliver courses but", "start": 1230.72, "duration": 7.439}
+{"text": "young men want to go out and do things", "start": 1235.039, "duration": 6.0}
+{"text": "not be lectured to. So when they take", "start": 1238.159, "duration": 4.721}
+{"text": "the preparation", "start": 1241.039, "duration": 5.441}
+{"text": "uh you'll learn like for instance you", "start": 1242.88, "duration": 8.0}
+{"text": "might go to um Florida for 3 weeks and", "start": 1246.48, "duration": 7.52}
+{"text": "learn to drive heavy equipment.", "start": 1250.88, "duration": 4.32}
+{"text": "Does that mean that you're going to be a", "start": 1254.0, "duration": 3.919}
+{"text": "heavy equipment driver? No. But you'll", "start": 1255.2, "duration": 4.32}
+{"text": "know something that very few other", "start": 1257.919, "duration": 4.24}
+{"text": "people know how to how to do. You'll", "start": 1259.52, "duration": 6.159}
+{"text": "spend a month in Maine learning how to", "start": 1262.159, "duration": 6.64}
+{"text": "build a house so that you'll learn how", "start": 1265.679, "duration": 6.0}
+{"text": "to be an electrician, a plumber, uh a", "start": 1268.799, "duration": 4.561}
+{"text": "carpenter,", "start": 1271.679, "duration": 7.281}
+{"text": "uh to a apprentice level. Anyway, uh", "start": 1273.36, "duration": 7.199}
+{"text": "these skills will last you the rest of", "start": 1278.96, "duration": 4.88}
+{"text": "your life. Uh you'll learn to fly a", "start": 1280.559, "duration": 7.12}
+{"text": "plane in Alaska. Uh you'll go to", "start": 1283.84, "duration": 6.24}
+{"text": "Thailand for three months during one of", "start": 1287.679, "duration": 5.601}
+{"text": "our one of our uh quarterly cycles we", "start": 1290.08, "duration": 6.079}
+{"text": "call them and take martial arts, Muay", "start": 1293.28, "duration": 6.08}
+{"text": "Thai, so that uh every young man should", "start": 1296.159, "duration": 5.76}
+{"text": "know how to handle himself if things get", "start": 1299.36, "duration": 7.92}
+{"text": "rough. So that um at the end of four", "start": 1301.919, "duration": 9.681}
+{"text": "years when most people might just have a", "start": 1307.28, "duration": 8.72}
+{"text": "degree uh you'll already have broad", "start": 1311.6, "duration": 7.36}
+{"text": "experience in many subjects all over the", "start": 1316.0, "duration": 4.96}
+{"text": "world. The idea is to become a", "start": 1318.96, "duration": 4.719}
+{"text": "renaissance man. David,", "start": 1320.96, "duration": 4.56}
+{"text": "everybody should attempt to be a", "start": 1323.679, "duration": 4.401}
+{"text": "renaissance man. what the Italians of", "start": 1325.52, "duration": 6.08}
+{"text": "those days called an omo universal", "start": 1328.08, "duration": 4.959}
+{"text": "a universal man", "start": 1331.6, "duration": 4.4}
+{"text": "this sounds like a good system uh a good", "start": 1333.039, "duration": 5.441}
+{"text": "alternative and I don't think anyone", "start": 1336.0, "duration": 4.4}
+{"text": "listening would disagree with you that a", "start": 1338.48, "duration": 3.84}
+{"text": "lot of college courses that we took are", "start": 1340.4, "duration": 5.2}
+{"text": "not even in the uh frontal lobe of our", "start": 1342.32, "duration": 5.92}
+{"text": "memories right now but when we even talk", "start": 1345.6, "duration": 4.24}
+{"text": "about this take a look at the stat I", "start": 1348.24, "duration": 4.48}
+{"text": "mean we say this but there is still", "start": 1349.84, "duration": 5.68}
+{"text": "according to labor statistics a", "start": 1352.72, "duration": 5.52}
+{"text": "correlation between higher education and", "start": 1355.52, "duration": 5.12}
+{"text": "income even today which persists and", "start": 1358.24, "duration": 5.2}
+{"text": "people look at this as justification for", "start": 1360.64, "duration": 4.48}
+{"text": "investing in four years of a college", "start": 1363.44, "duration": 3.2}
+{"text": "degree. So look look at this less than a", "start": 1365.12, "duration": 3.36}
+{"text": "high school diploma your chances of", "start": 1366.64, "duration": 3.84}
+{"text": "unemployment the unemployment rate is", "start": 1368.48, "duration": 6.16}
+{"text": "6.2% and it goes down dramatically as", "start": 1370.48, "duration": 7.04}
+{"text": "you progress through the um higher", "start": 1374.64, "duration": 4.399}
+{"text": "education tree.", "start": 1377.52, "duration": 3.519}
+{"text": "That's that's confusing cause and", "start": 1379.039, "duration": 4.801}
+{"text": "effect. The reason why college graduates", "start": 1381.039, "duration": 6.161}
+{"text": "earn more than people that don't have", "start": 1383.84, "duration": 6.24}
+{"text": "college educations is because they're", "start": 1387.2, "duration": 4.56}
+{"text": "smarter.", "start": 1390.08, "duration": 3.92}
+{"text": "That's why they went to college. So, of", "start": 1391.76, "duration": 5.039}
+{"text": "course, people that are brighter are", "start": 1394.0, "duration": 4.64}
+{"text": "going to do well, but it's not because", "start": 1396.799, "duration": 4.481}
+{"text": "of college. Uh it's because they're", "start": 1398.64, "duration": 5.36}
+{"text": "naturally more enterprising and h have", "start": 1401.28, "duration": 5.519}
+{"text": "higher IQs, but they're misallocating", "start": 1404.0, "duration": 4.559}
+{"text": "that time in college. You get out of", "start": 1406.799, "duration": 4.961}
+{"text": "college, you're burdened by debt. Uh", "start": 1408.559, "duration": 6.0}
+{"text": "you've picked up lots of bad ideas from", "start": 1411.76, "duration": 6.0}
+{"text": "your professors uh", "start": 1414.559, "duration": 5.761}
+{"text": "who who are trying to indoctrinate you", "start": 1417.76, "duration": 5.12}
+{"text": "with woke ideas which have totally", "start": 1420.32, "duration": 6.4}
+{"text": "conquered academia. So the cause and the", "start": 1422.88, "duration": 7.76}
+{"text": "effect are confused uh with that. Uh you", "start": 1426.72, "duration": 5.92}
+{"text": "don't h earn a higher income because you", "start": 1430.64, "duration": 5.2}
+{"text": "went to college. uh", "start": 1432.64, "duration": 5.76}
+{"text": "it it's it's you're earning a higher", "start": 1435.84, "duration": 4.64}
+{"text": "income because you have you're you're", "start": 1438.4, "duration": 4.0}
+{"text": "brighter typically, but you shouldn't", "start": 1440.48, "duration": 5.84}
+{"text": "waste that intelligence uh with the uh", "start": 1442.4, "duration": 8.72}
+{"text": "preparation. We suggest uh that it's", "start": 1446.32, "duration": 7.76}
+{"text": "possible to get both a bachelor of arts", "start": 1451.12, "duration": 6.64}
+{"text": "degree where you're learning history and", "start": 1454.08, "duration": 6.0}
+{"text": "English. Basically, the these are the", "start": 1457.76, "duration": 4.56}
+{"text": "two main things, but skipping things", "start": 1460.08, "duration": 4.479}
+{"text": "that they're trying to indoctrinate you", "start": 1462.32, "duration": 4.16}
+{"text": "with in a college like sociology,", "start": 1464.559, "duration": 4.48}
+{"text": "psychology, political science, and so", "start": 1466.48, "duration": 6.319}
+{"text": "forth by taking courses from", "start": 1469.039, "duration": 6.88}
+{"text": "oh MIT and Oxford are two universities", "start": 1472.799, "duration": 7.76}
+{"text": "that offer free courses uh online. And I", "start": 1475.919, "duration": 7.12}
+{"text": "like the teaching company especially", "start": 1480.559, "duration": 5.281}
+{"text": "because they've rounded up worldclass", "start": 1483.039, "duration": 5.76}
+{"text": "professors who give command performance", "start": 1485.84, "duration": 5.6}
+{"text": "lectures that are very entertaining and", "start": 1488.799, "duration": 4.721}
+{"text": "you can listen to them numerous times to", "start": 1491.44, "duration": 5.28}
+{"text": "learn a subject. So at the end of the", "start": 1493.52, "duration": 5.039}
+{"text": "preparation which is four years in", "start": 1496.72, "duration": 4.24}
+{"text": "addition to doing all these fun things", "start": 1498.559, "duration": 5.281}
+{"text": "that we just talked about uh you'll have", "start": 1500.96, "duration": 6.16}
+{"text": "the knowledge of a BA you'll also have", "start": 1503.84, "duration": 6.319}
+{"text": "the knowledge of a BS uh taking a", "start": 1507.12, "duration": 6.24}
+{"text": "bachelor of science uh by taking courses", "start": 1510.159, "duration": 5.921}
+{"text": "online uh", "start": 1513.36, "duration": 6.72}
+{"text": "physics, chemistry, biology, astronomy", "start": 1516.08, "duration": 7.68}
+{"text": "and on top of that because even if you", "start": 1520.08, "duration": 5.76}
+{"text": "have a Bachelor of Science and a", "start": 1523.76, "duration": 6.159}
+{"text": "Bachelor of Arts from a college. Uh very", "start": 1525.84, "duration": 6.48}
+{"text": "valuable knowledge but no practical", "start": 1529.919, "duration": 4.561}
+{"text": "application when you're looking to get a", "start": 1532.32, "duration": 6.479}
+{"text": "job. That's why we have uh uh four", "start": 1534.48, "duration": 7.439}
+{"text": "quarters devoted to what you learn in an", "start": 1538.799, "duration": 7.041}
+{"text": "MBA. Marketing, sales,", "start": 1541.919, "duration": 6.401}
+{"text": "uh business administration, accounting,", "start": 1545.84, "duration": 5.68}
+{"text": "law, which most college graduates know", "start": 1548.32, "duration": 6.719}
+{"text": "nothing about. So uh we're cramming a", "start": 1551.52, "duration": 7.68}
+{"text": "lot into uh into this time uh these four", "start": 1555.039, "duration": 7.681}
+{"text": "years, but those four years are among", "start": 1559.2, "duration": 5.68}
+{"text": "the most valuable in your life. You're", "start": 1562.72, "duration": 4.319}
+{"text": "like a sponge and you should be", "start": 1564.88, "duration": 4.48}
+{"text": "absorbing all the knowledge and all the", "start": 1567.039, "duration": 6.561}
+{"text": "experience that you can. Look,", "start": 1569.36, "duration": 7.28}
+{"text": "I'm of the opinion that once a young man", "start": 1573.6, "duration": 6.72}
+{"text": "gets out of high school, he should go on", "start": 1576.64, "duration": 6.0}
+{"text": "what Joseph Campbell called a hero's", "start": 1580.32, "duration": 5.839}
+{"text": "journey. Challenge yourself. Do things", "start": 1582.64, "duration": 8.32}
+{"text": "that other young men are not doing. And", "start": 1586.159, "duration": 7.12}
+{"text": "that's what this book is all about.", "start": 1590.96, "duration": 4.0}
+{"text": "I want to play for you this skit to end", "start": 1593.279, "duration": 3.361}
+{"text": "this conversation on this segment. And", "start": 1594.96, "duration": 3.12}
+{"text": "before we move back to the economy, this", "start": 1596.64, "duration": 3.44}
+{"text": "is um I'm not sure if you're aware,", "start": 1598.08, "duration": 4.16}
+{"text": "Father Guido Sarduchi. It's a fictional", "start": 1600.08, "duration": 4.719}
+{"text": "character by the comedian Nollo in the", "start": 1602.24, "duration": 6.24}
+{"text": "70s. Okay. He has a he has a what he", "start": 1604.799, "duration": 5.441}
+{"text": "calls a fiveminute university. I'll just", "start": 1608.48, "duration": 3.28}
+{"text": "play a minute and then you know this is", "start": 1610.24, "duration": 2.48}
+{"text": "comic relief here.", "start": 1611.76, "duration": 2.399}
+{"text": "I got this idea for a school. I would", "start": 1612.72, "duration": 3.52}
+{"text": "like to start with something called the", "start": 1614.159, "duration": 5.281}
+{"text": "fiveminute university.", "start": 1616.24, "duration": 5.439}
+{"text": "And the idea is that in 5 minutes you", "start": 1619.44, "duration": 4.16}
+{"text": "learn what the average college graduate", "start": 1621.679, "duration": 4.641}
+{"text": "remembers 5 years after he or she's out", "start": 1623.6, "duration": 5.88}
+{"text": "of school.", "start": 1626.32, "duration": 3.16}
+{"text": "with the cost of like $20.", "start": 1631.84, "duration": 5.68}
+{"text": "That might seem like a lot of money, $20", "start": 1635.44, "duration": 4.239}
+{"text": "just for 5 minutes. But that's for like", "start": 1637.52, "duration": 6.159}
+{"text": "a tuition, capping and gown, the rental,", "start": 1639.679, "duration": 7.201}
+{"text": "graduation, a picture, snacks,", "start": 1643.679, "duration": 5.521}
+{"text": "everything. Everything included. Say if", "start": 1646.88, "duration": 4.399}
+{"text": "you want to take a Spanish, what I teach", "start": 1649.2, "duration": 4.56}
+{"text": "is", "start": 1651.279, "duration": 4.801}
+{"text": "that means how are you? And the answer", "start": 1653.76, "duration": 6.08}
+{"text": "is ween means very well. And believe me,", "start": 1656.08, "duration": 5.36}
+{"text": "if you took two years of college", "start": 1659.84, "duration": 6.68}
+{"text": "Spanish, five years after out of school,", "start": 1661.44, "duration": 5.08}
+{"text": "That's very That's very good, David. And", "start": 1674.799, "duration": 4.0}
+{"text": "there's a lot of truth in that. That's", "start": 1677.279, "duration": 4.801}
+{"text": "why it's funny because it's true.", "start": 1678.799, "duration": 6.321}
+{"text": "Yeah, I I know. I've been to college.", "start": 1682.08, "duration": 5.839}
+{"text": "All right. Um I want to turn back.", "start": 1685.12, "duration": 6.4}
+{"text": "Me, too. If if I'd had if I'd had this", "start": 1687.919, "duration": 6.561}
+{"text": "damn book when I got out of high school,", "start": 1691.52, "duration": 6.96}
+{"text": "it would have accelerated my life.", "start": 1694.48, "duration": 6.799}
+{"text": "It would have put it on steroids. But I", "start": 1698.48, "duration": 5.12}
+{"text": "didn't have any guidance. Nobody was", "start": 1701.279, "duration": 3.841}
+{"text": "thinking about that. They all want you", "start": 1703.6, "duration": 3.36}
+{"text": "to go to college and become an", "start": 1705.12, "duration": 4.64}
+{"text": "organization man to be employed by", "start": 1706.96, "duration": 6.56}
+{"text": "somebody else. And the end phenomenon of", "start": 1709.76, "duration": 6.32}
+{"text": "the preparation is that you're ready to", "start": 1713.52, "duration": 4.56}
+{"text": "be an entrepreneur", "start": 1716.08, "duration": 5.28}
+{"text": "and employ other people, not be employed", "start": 1718.08, "duration": 5.12}
+{"text": "as a middle manager. So,", "start": 1721.36, "duration": 3.439}
+{"text": "sure. I mean some people look I I think", "start": 1723.2, "duration": 3.92}
+{"text": "your system is good for some people but", "start": 1724.799, "duration": 5.36}
+{"text": "I I I I observed that the majority of", "start": 1727.12, "duration": 5.36}
+{"text": "people don't want to be entrepreneurs", "start": 1730.159, "duration": 4.161}
+{"text": "and they want to be an organization", "start": 1732.48, "duration": 4.88}
+{"text": "person um for right or for wrong and you", "start": 1734.32, "duration": 4.479}
+{"text": "know the society can't function if", "start": 1737.36, "duration": 2.4}
+{"text": "everybody is an entrepreneur.", "start": 1738.799, "duration": 2.561}
+{"text": "Entrepreneurs need to hire people to", "start": 1739.76, "duration": 4.48}
+{"text": "work for them. So you know maybe maybe", "start": 1741.36, "duration": 5.039}
+{"text": "that college institution is still", "start": 1744.24, "duration": 4.24}
+{"text": "relevant for most people", "start": 1746.399, "duration": 4.721}
+{"text": "for some people. Yeah. But you're you're", "start": 1748.48, "duration": 5.36}
+{"text": "quite correct. But there's a uh a better", "start": 1751.12, "duration": 4.88}
+{"text": "alternative that I think would", "start": 1753.84, "duration": 3.439}
+{"text": "not for everybody.", "start": 1756.0, "duration": 1.76}
+{"text": "Sure.", "start": 1757.279, "duration": 2.721}
+{"text": "Nothing's for everybody. College itself", "start": 1757.76, "duration": 4.639}
+{"text": "is not for everybody. So, yep, you're", "start": 1760.0, "duration": 3.76}
+{"text": "right. But uh", "start": 1762.399, "duration": 3.441}
+{"text": "let's turn Yes. Let's turn back on the", "start": 1763.76, "duration": 4.32}
+{"text": "economy and I want to just address the", "start": 1765.84, "duration": 4.0}
+{"text": "um greater depression that you were", "start": 1768.08, "duration": 2.88}
+{"text": "talking about earlier. And in", "start": 1769.84, "duration": 3.28}
+{"text": "particular, let's take a listen to what", "start": 1770.96, "duration": 5.199}
+{"text": "Jerome Powell had to say at the Jackson", "start": 1773.12, "duration": 6.4}
+{"text": "Hole Symposium uh last week. Uh this is", "start": 1776.159, "duration": 5.041}
+{"text": "a clip where he highlighted some of the", "start": 1779.52, "duration": 4.08}
+{"text": "challenges that the economy is currently", "start": 1781.2, "duration": 4.719}
+{"text": "facing. I'm just curious if if you agree", "start": 1783.6, "duration": 4.16}
+{"text": "with him or not. Take a listen.", "start": 1785.919, "duration": 3.841}
+{"text": "Economy has faced new challenges.", "start": 1787.76, "duration": 3.68}
+{"text": "Significantly higher tariffs across our", "start": 1789.76, "duration": 3.76}
+{"text": "trading partners are remaking the global", "start": 1791.44, "duration": 4.239}
+{"text": "trading system. Tighter immigration", "start": 1793.52, "duration": 4.399}
+{"text": "policy has led to an abrupt slowdown in", "start": 1795.679, "duration": 5.041}
+{"text": "labor force growth. Over the longer run,", "start": 1797.919, "duration": 5.12}
+{"text": "changes in tax, spending, and regulatory", "start": 1800.72, "duration": 4.24}
+{"text": "policies may also have important", "start": 1803.039, "duration": 3.841}
+{"text": "implications for economic growth and", "start": 1804.96, "duration": 3.52}
+{"text": "productivity.", "start": 1806.88, "duration": 3.279}
+{"text": "there is significant uncertainty about", "start": 1808.48, "duration": 3.199}
+{"text": "where all of these policies will", "start": 1810.159, "duration": 3.681}
+{"text": "eventually settle and what their lasting", "start": 1811.679, "duration": 4.0}
+{"text": "effects on the economy will be.", "start": 1813.84, "duration": 3.36}
+{"text": "Okay. Can you evaluate what he just", "start": 1815.679, "duration": 1.921}
+{"text": "said?", "start": 1817.2, "duration": 3.28}
+{"text": "Yeah. The way I would read it is that he", "start": 1817.6, "duration": 6.799}
+{"text": "sees that there are a lot of distortions", "start": 1820.48, "duration": 5.6}
+{"text": "uh economic distortions and", "start": 1824.399, "duration": 4.321}
+{"text": "misallocations of capital that have been", "start": 1826.08, "duration": 5.12}
+{"text": "cranked into the economy uh in good", "start": 1828.72, "duration": 5.439}
+{"text": "measure because of the Federal Reserve,", "start": 1831.2, "duration": 7.599}
+{"text": "our central bank for many years. And if", "start": 1834.159, "duration": 6.64}
+{"text": "they're unwound,", "start": 1838.799, "duration": 4.561}
+{"text": "it's going to unemploy a lot of people", "start": 1840.799, "duration": 5.201}
+{"text": "and bankrupt a lot of businesses. So,", "start": 1843.36, "duration": 5.84}
+{"text": "he's worried about that. Of course,", "start": 1846.0, "duration": 4.799}
+{"text": "that's that's how I read between the", "start": 1849.2, "duration": 2.88}
+{"text": "lines of what he said.", "start": 1850.799, "duration": 2.561}
+{"text": "Should he be worried? Is that a", "start": 1852.08, "duration": 3.28}
+{"text": "legitimate worry at this point?", "start": 1853.36, "duration": 4.319}
+{"text": "It's a legitimate worry. Of course, as", "start": 1855.36, "duration": 4.96}
+{"text": "you know, David, I would go further and", "start": 1857.679, "duration": 5.921}
+{"text": "I would say that the uh Federal Reserve", "start": 1860.32, "duration": 5.599}
+{"text": "should be abolished. It's really nothing", "start": 1863.6, "duration": 6.24}
+{"text": "but an engine of inflation. Uh", "start": 1865.919, "duration": 5.441}
+{"text": "it's only been around for the last", "start": 1869.84, "duration": 4.079}
+{"text": "hundred years or so and", "start": 1871.36, "duration": 4.88}
+{"text": "we don't need a central bank.", "start": 1873.919, "duration": 5.12}
+{"text": "Everybody's got one. But it's just", "start": 1876.24, "duration": 5.36}
+{"text": "another way for the government to", "start": 1879.039, "duration": 6.081}
+{"text": "indirectly tax uh the citizens of the", "start": 1881.6, "duration": 4.559}
+{"text": "country.", "start": 1885.12, "duration": 4.32}
+{"text": "How would the country work without", "start": 1886.159, "duration": 4.801}
+{"text": "I'm just let's explore this idea", "start": 1889.44, "duration": 2.719}
+{"text": "further. By the way, you're not the", "start": 1890.96, "duration": 3.12}
+{"text": "first to talk about abolishing the Fed.", "start": 1892.159, "duration": 3.601}
+{"text": "Ron Paul, for example, is an advocate of", "start": 1894.08, "duration": 3.04}
+{"text": "abolishing the Fed. But anyway, how", "start": 1895.76, "duration": 2.799}
+{"text": "would the system work theoretically", "start": 1897.12, "duration": 2.559}
+{"text": "speaking? How would a country govern", "start": 1898.559, "duration": 2.72}
+{"text": "itself monetarily without a central", "start": 1899.679, "duration": 2.561}
+{"text": "bank?", "start": 1901.279, "duration": 3.921}
+{"text": "The way the US did before 1913 when the", "start": 1902.24, "duration": 5.84}
+{"text": "Fed was created, uh you you would need a", "start": 1905.2, "duration": 5.44}
+{"text": "sound money. That would mean a commodity", "start": 1908.08, "duration": 4.88}
+{"text": "money that can't be created out of thin", "start": 1910.64, "duration": 6.24}
+{"text": "air. Uh gold would be ideal. Uh perhaps", "start": 1912.96, "duration": 5.76}
+{"text": "in the years to come, it will be joined", "start": 1916.88, "duration": 4.399}
+{"text": "by Bitcoin. uh which I've been a fan of", "start": 1918.72, "duration": 5.92}
+{"text": "since 2017. Anyway,", "start": 1921.279, "duration": 5.441}
+{"text": "uh you don't need the Federal Reserve.", "start": 1924.64, "duration": 3.759}
+{"text": "Uh", "start": 1926.72, "duration": 5.12}
+{"text": "the way a bank historically has worked", "start": 1928.399, "duration": 7.12}
+{"text": "is people put their money in a bank for", "start": 1931.84, "duration": 6.88}
+{"text": "a period of time. The bank consolidates", "start": 1935.519, "duration": 7.04}
+{"text": "small deposits, lends pays 3%, lends", "start": 1938.72, "duration": 6.959}
+{"text": "them out at 6% to make up for possible", "start": 1942.559, "duration": 7.84}
+{"text": "losses. and uh and uh it's profit margin", "start": 1945.679, "duration": 6.24}
+{"text": "and and that's the way the banking", "start": 1950.399, "duration": 5.12}
+{"text": "system works. Uh", "start": 1951.919, "duration": 6.88}
+{"text": "real capital as opposed to phony fiat", "start": 1955.519, "duration": 6.801}
+{"text": "money capital. Uh the Fed serves no", "start": 1958.799, "duration": 6.161}
+{"text": "useful purpose. It it does nothing but", "start": 1962.32, "duration": 6.719}
+{"text": "distort the economy by directing credit", "start": 1964.96, "duration": 8.16}
+{"text": "to politically favored institutions.", "start": 1969.039, "duration": 4.64}
+{"text": "So uh", "start": 1973.12, "duration": 2.0}
+{"text": "you don't think that they have any role", "start": 1973.679, "duration": 4.081}
+{"text": "in controlling unemployment as well and", "start": 1975.12, "duration": 4.24}
+{"text": "keeping the unemployment rate low which", "start": 1977.76, "duration": 3.36}
+{"text": "is one of their mandates?", "start": 1979.36, "duration": 4.799}
+{"text": "No. As a matter of fact, it does exactly", "start": 1981.12, "duration": 5.679}
+{"text": "the opposite of that by destroying the", "start": 1984.159, "duration": 6.0}
+{"text": "currency. Uh it makes it harder for", "start": 1986.799, "duration": 7.201}
+{"text": "people to save money uh", "start": 1990.159, "duration": 7.76}
+{"text": "and cap and build capital. and capital", "start": 1994.0, "duration": 7.519}
+{"text": "is what you need uh to create wealth and", "start": 1997.919, "duration": 6.24}
+{"text": "employ people. Uh they're making the", "start": 2001.519, "duration": 6.081}
+{"text": "country poorer. Uh look, one of the", "start": 2004.159, "duration": 4.801}
+{"text": "countries that I've spent a lot of time", "start": 2007.6, "duration": 6.88}
+{"text": "in happens to be Zimbabwe. Uh and", "start": 2008.96, "duration": 7.68}
+{"text": "they have a central bank. In fact, it's", "start": 2014.48, "duration": 4.96}
+{"text": "the biggest building in Harrari by far,", "start": 2016.64, "duration": 6.48}
+{"text": "their central bank. And uh by printing", "start": 2019.44, "duration": 8.079}
+{"text": "up uh hundreds of trillions of dollars", "start": 2023.12, "duration": 7.84}
+{"text": "uh they didn't employ more people. Uh", "start": 2027.519, "duration": 5.841}
+{"text": "they made it impossible to destroy more", "start": 2030.96, "duration": 8.719}
+{"text": "people. Uh and the US is doing that.", "start": 2033.36, "duration": 9.039}
+{"text": "It's it's not as bad as Zimbabwe quite", "start": 2039.679, "duration": 4.641}
+{"text": "obviously because we have an immense", "start": 2042.399, "duration": 4.4}
+{"text": "amount of capital stored up in the US", "start": 2044.32, "duration": 4.96}
+{"text": "that we're living off of at this point.", "start": 2046.799, "duration": 5.681}
+{"text": "But at this point, what the US is doing", "start": 2049.28, "duration": 5.599}
+{"text": "is it's living off of capital that's", "start": 2052.48, "duration": 5.76}
+{"text": "been stored up in many many decades", "start": 2054.879, "duration": 8.96}
+{"text": "before and it's mortgaging itself uh for", "start": 2058.24, "duration": 7.359}
+{"text": "many decades of production into the", "start": 2063.839, "duration": 4.32}
+{"text": "future. So yeah, we're heading for a", "start": 2065.599, "duration": 4.961}
+{"text": "really nasty depression and the Federal", "start": 2068.159, "duration": 4.48}
+{"text": "Reserve is not the solution to the", "start": 2070.56, "duration": 4.96}
+{"text": "problem. Juggling interest rates and", "start": 2072.639, "duration": 5.2}
+{"text": "juggling the fiat money supply. the", "start": 2075.52, "duration": 3.839}
+{"text": "Federal Reserve is one of the great", "start": 2077.839, "duration": 4.401}
+{"text": "causes of the depression.", "start": 2079.359, "duration": 4.881}
+{"text": "I know that's a shock. I know that comes", "start": 2082.24, "duration": 4.24}
+{"text": "as a shock to a lot of people to hear", "start": 2084.24, "duration": 4.72}
+{"text": "that because it's about the opposite of", "start": 2086.48, "duration": 5.919}
+{"text": "what they learned in college uh in in", "start": 2088.96, "duration": 5.679}
+{"text": "the BS economic courses that are", "start": 2092.399, "duration": 4.401}
+{"text": "generally taught in universities today.", "start": 2094.639, "duration": 4.241}
+{"text": "You know, um former Fed chair Jenna", "start": 2096.8, "duration": 4.48}
+{"text": "Yelen actually uh made a joking remark", "start": 2098.88, "duration": 3.92}
+{"text": "that kind of mirrors what you said.", "start": 2101.28, "duration": 4.16}
+{"text": "Somebody asked her at a CFA event, what", "start": 2102.8, "duration": 5.12}
+{"text": "causes recessions? Uh I was there I", "start": 2105.44, "duration": 4.72}
+{"text": "attended I was in the audience and she", "start": 2107.92, "duration": 4.0}
+{"text": "said two things caused economic", "start": 2110.16, "duration": 4.16}
+{"text": "recessions. Number one economic", "start": 2111.92, "duration": 4.24}
+{"text": "distortions were financial distortions", "start": 2114.32, "duration": 3.44}
+{"text": "were her words. Financial distortions", "start": 2116.16, "duration": 4.48}
+{"text": "and number two the Fed. So um there was", "start": 2117.76, "duration": 4.4}
+{"text": "an eruption of laughter from the", "start": 2120.64, "duration": 3.6}
+{"text": "audience. Um I I think she was half", "start": 2122.16, "duration": 4.959}
+{"text": "joking. Anyway uh I will", "start": 2124.24, "duration": 4.32}
+{"text": "whether she knew it or not though she", "start": 2127.119, "duration": 3.841}
+{"text": "she was quite correct in in what she", "start": 2128.56, "duration": 5.12}
+{"text": "what she said. what should be done about", "start": 2130.96, "duration": 4.639}
+{"text": "Janet did Janet did quite well for", "start": 2133.68, "duration": 5.52}
+{"text": "herself as uh Fed chairman. It was", "start": 2135.599, "duration": 7.281}
+{"text": "it was amazing that she was paid about I", "start": 2139.2, "duration": 6.399}
+{"text": "don't know what it was 8 $10 million for", "start": 2142.88, "duration": 6.959}
+{"text": "speeches that uh banks gave her before", "start": 2145.599, "duration": 7.201}
+{"text": "she became uh chairman of the Fed to", "start": 2149.839, "duration": 6.081}
+{"text": "favorably incline her I guess. Yeah, but", "start": 2152.8, "duration": 5.68}
+{"text": "that's very funny. You're right, David.", "start": 2155.92, "duration": 4.0}
+{"text": "Well, what should be done about this", "start": 2158.48, "duration": 3.599}
+{"text": "issue? July budget deficit up 20%", "start": 2159.92, "duration": 3.679}
+{"text": "year-over-year despite record Trump", "start": 2162.079, "duration": 3.52}
+{"text": "tariff income. The US budget deficit", "start": 2163.599, "duration": 5.281}
+{"text": "rose 20% in July. Uh while the US saw a", "start": 2165.599, "duration": 7.201}
+{"text": "20 273% increase or 21 billion increase", "start": 2168.88, "duration": 6.4}
+{"text": "in customs revenue in July over the same", "start": 2172.8, "duration": 5.6}
+{"text": "period last year mostly from tariffs. Uh", "start": 2175.28, "duration": 6.319}
+{"text": "overall the Treasury uh recorded a", "start": 2178.4, "duration": 4.88}
+{"text": "record national debt and a higher", "start": 2181.599, "duration": 3.52}
+{"text": "deficit. The national debt now creeps up", "start": 2183.28, "duration": 5.839}
+{"text": "to above the $37 trillion mark. What", "start": 2185.119, "duration": 5.361}
+{"text": "should be done about this?", "start": 2189.119, "duration": 3.441}
+{"text": "The national debt is never going to be", "start": 2190.48, "duration": 4.48}
+{"text": "paid off. It's going to be defaulted on.", "start": 2192.56, "duration": 4.64}
+{"text": "And it can be defaulted on one of two", "start": 2194.96, "duration": 5.52}
+{"text": "ways. Either in a", "start": 2197.2, "duration": 5.44}
+{"text": "by not paying it, which would result in", "start": 2200.48, "duration": 5.52}
+{"text": "a deflationary collapse, or by printing", "start": 2202.64, "duration": 5.68}
+{"text": "up more money to pay it, which means", "start": 2206.0, "duration": 3.839}
+{"text": "that the US dollar is eventually going", "start": 2208.32, "duration": 4.32}
+{"text": "to be hyperinflated out of existence,", "start": 2209.839, "duration": 5.121}
+{"text": "which would be the ultimate catastrophe", "start": 2212.64, "duration": 4.88}
+{"text": "for the US. And the way to solve the", "start": 2214.96, "duration": 6.08}
+{"text": "problem is for the US government to", "start": 2217.52, "duration": 7.44}
+{"text": "radically cut its spending. Uh which as", "start": 2221.04, "duration": 7.6}
+{"text": "I said before means abolishing wholesale", "start": 2224.96, "duration": 6.8}
+{"text": "lots of agencies in the government. Uh", "start": 2228.64, "duration": 5.439}
+{"text": "name them one after another. They all", "start": 2231.76, "duration": 3.92}
+{"text": "should go. Anything that these", "start": 2234.079, "duration": 3.601}
+{"text": "government agencies", "start": 2235.68, "duration": 6.48}
+{"text": "do uh could be done if it's needed by", "start": 2237.68, "duration": 6.64}
+{"text": "entrepreneurs in free market doing", "start": 2242.16, "duration": 6.56}
+{"text": "things for a profit efficiently. So uh", "start": 2244.32, "duration": 6.56}
+{"text": "that's the only solution. You've got to", "start": 2248.72, "duration": 4.879}
+{"text": "get rid of the dead end of government uh", "start": 2250.88, "duration": 5.36}
+{"text": "and free the country up because we're", "start": 2253.599, "duration": 6.721}
+{"text": "we're devolving in the US towards what", "start": 2256.24, "duration": 7.839}
+{"text": "China was 30 years ago. Well, before", "start": 2260.32, "duration": 7.279}
+{"text": "Deng Xiaoping uh freed it up. So,", "start": 2264.079, "duration": 5.28}
+{"text": "actually we're regressing.", "start": 2267.599, "duration": 3.52}
+{"text": "Okay, let's finish off on markets now.", "start": 2269.359, "duration": 3.361}
+{"text": "Before we talk about commodities, which", "start": 2271.119, "duration": 3.041}
+{"text": "and the resource sector, which is your", "start": 2272.72, "duration": 2.72}
+{"text": "preferred sector right now, let's talk", "start": 2274.16, "duration": 3.04}
+{"text": "about the um biggest sector, the hottest", "start": 2275.44, "duration": 4.32}
+{"text": "sector right now, which is AI. Uh", "start": 2277.2, "duration": 4.24}
+{"text": "there's an MIT study that I like to", "start": 2279.76, "duration": 5.28}
+{"text": "point uh to your attention. MIT study on", "start": 2281.44, "duration": 7.28}
+{"text": "AI profits rattles tech investors. uh", "start": 2285.04, "duration": 5.36}
+{"text": "driving the news. According to", "start": 2288.72, "duration": 5.52}
+{"text": "researchers at MIT, 95% of organizations", "start": 2290.4, "duration": 7.52}
+{"text": "found zero return despite enterprise", "start": 2294.24, "duration": 6.24}
+{"text": "investment of $30 billion to $40 billion", "start": 2297.92, "duration": 4.96}
+{"text": "into Gen AI. The study says this is uh", "start": 2300.48, "duration": 4.639}
+{"text": "they study 300 public AI initiatives to", "start": 2302.88, "duration": 4.8}
+{"text": "try to try and sus out the no hype", "start": 2305.119, "duration": 5.281}
+{"text": "reality of AI's impact on businesses.", "start": 2307.68, "duration": 4.96}
+{"text": "Even firms that are now using AI are not", "start": 2310.4, "duration": 4.16}
+{"text": "seeing widespread disruption between the", "start": 2312.64, "duration": 4.24}
+{"text": "lines. companies that bought AI tools", "start": 2314.56, "duration": 3.92}
+{"text": "were far more successful than those that", "start": 2316.88, "duration": 4.56}
+{"text": "built internal pilots. However, um so", "start": 2318.48, "duration": 4.8}
+{"text": "what they're saying here, my fear is", "start": 2321.44, "duration": 3.679}
+{"text": "that at some point people will wake up", "start": 2323.28, "duration": 3.839}
+{"text": "and say, \"All right, AI is great, but", "start": 2325.119, "duration": 3.521}
+{"text": "maybe all this money is not actually", "start": 2327.119, "duration": 4.881}
+{"text": "being spent all that wisely.\" Um you've", "start": 2328.64, "duration": 5.76}
+{"text": "criticized uh tech and AI as being in a", "start": 2332.0, "duration": 4.16}
+{"text": "deflating bubble, I believe, where your", "start": 2334.4, "duration": 3.92}
+{"text": "words, you know, maybe help us make", "start": 2336.16, "duration": 4.88}
+{"text": "sense of this research that may or may", "start": 2338.32, "duration": 4.16}
+{"text": "not align with what you already think.", "start": 2341.04, "duration": 3.36}
+{"text": "Well, you're quite correct again, David.", "start": 2342.48, "duration": 7.28}
+{"text": "Uh AI is wonderful. It's um look", "start": 2344.4, "duration": 8.8}
+{"text": "the printing press was wonderful. Uh the", "start": 2349.76, "duration": 6.96}
+{"text": "internet was fantastic. The cell phone", "start": 2353.2, "duration": 5.6}
+{"text": "uh the computer all these things are", "start": 2356.72, "duration": 4.399}
+{"text": "fantastic and AI could be the biggest", "start": 2358.8, "duration": 6.64}
+{"text": "thing of all. But uh there's a", "start": 2361.119, "duration": 7.281}
+{"text": "speculative bubble going on in the stock", "start": 2365.44, "duration": 6.88}
+{"text": "market and in spending by companies like", "start": 2368.4, "duration": 5.92}
+{"text": "uh Meta and Google and all the rest of", "start": 2372.32, "duration": 5.12}
+{"text": "them building these giant data centers.", "start": 2374.32, "duration": 5.68}
+{"text": "And um I think this is going to be a", "start": 2377.44, "duration": 5.36}
+{"text": "classic example of the old saying", "start": 2380.0, "duration": 6.4}
+{"text": "high-tech big wreck. So uh I'm all for", "start": 2382.8, "duration": 8.24}
+{"text": "AI. uh not not discounting its its", "start": 2386.4, "duration": 8.4}
+{"text": "dangers to uh to put us into the world", "start": 2391.04, "duration": 5.52}
+{"text": "of the Terminator.", "start": 2394.8, "duration": 3.6}
+{"text": "You know, I' I've heard the opinion and", "start": 2396.56, "duration": 4.32}
+{"text": "I kind of agree, but I'll let you let", "start": 2398.4, "duration": 4.64}
+{"text": "you address this that robotics will be", "start": 2400.88, "duration": 5.28}
+{"text": "the next multi-trillion dollar industry", "start": 2403.04, "duration": 5.76}
+{"text": "following AI. After the software is more", "start": 2406.16, "duration": 4.48}
+{"text": "developed, I'm talking about the AI", "start": 2408.8, "duration": 4.799}
+{"text": "front. The next step is to put it in", "start": 2410.64, "duration": 6.0}
+{"text": "robotics that can do physical labor and", "start": 2413.599, "duration": 4.881}
+{"text": "things for us.", "start": 2416.64, "duration": 5.28}
+{"text": "Absolutely. AB, no question about it. Uh", "start": 2418.48, "duration": 5.44}
+{"text": "I mean this is all moving towards Ray", "start": 2421.92, "duration": 3.76}
+{"text": "Ray Kerszswhile's idea of the", "start": 2423.92, "duration": 5.76}
+{"text": "singularity where all of these fantastic", "start": 2425.68, "duration": 5.6}
+{"text": "technologies", "start": 2429.68, "duration": 4.64}
+{"text": "basically come together in a few years.", "start": 2431.28, "duration": 7.2}
+{"text": "uh bioengineering, AI, uh space", "start": 2434.32, "duration": 8.88}
+{"text": "exploration, robotics, nanotechnology", "start": 2438.48, "duration": 7.84}
+{"text": "uh and as far as robotics is concerned,", "start": 2443.2, "duration": 5.2}
+{"text": "absolutely correct. I mean it was only", "start": 2446.32, "duration": 5.519}
+{"text": "last week that in China they had a fair", "start": 2448.4, "duration": 6.4}
+{"text": "where they had uh how many hundreds", "start": 2451.839, "duration": 6.24}
+{"text": "hundreds of country companies that are", "start": 2454.8, "duration": 6.0}
+{"text": "building robots that it was an athletic", "start": 2458.079, "duration": 5.201}
+{"text": "cont. It was it was an Olympics for", "start": 2460.8, "duration": 4.72}
+{"text": "robots to see what they could do, play", "start": 2463.28, "duration": 5.44}
+{"text": "soccer, box, all this type of thing. So,", "start": 2465.52, "duration": 6.96}
+{"text": "uh, robotics is advancing more quickly", "start": 2468.72, "duration": 6.24}
+{"text": "than Moore's law. And we've all seen the", "start": 2472.48, "duration": 5.52}
+{"text": "videos from like Boston Dynamics here in", "start": 2474.96, "duration": 5.68}
+{"text": "the US. China's way, way ahead of the", "start": 2478.0, "duration": 5.599}
+{"text": "US, but Boston Dynamics is, I guess, our", "start": 2480.64, "duration": 6.16}
+{"text": "leading company. And uh they already", "start": 2483.599, "duration": 6.641}
+{"text": "have a robot that can operate", "start": 2486.8, "duration": 6.08}
+{"text": "independent. Look, in 5 years, in 10", "start": 2490.24, "duration": 5.68}
+{"text": "years, as Elon Musk has said, everybody", "start": 2492.88, "duration": 6.239}
+{"text": "is going to have his own robot. That's", "start": 2495.92, "duration": 6.32}
+{"text": "the good news. The bad news is that the", "start": 2499.119, "duration": 4.801}
+{"text": "government's going to be replacing", "start": 2502.24, "duration": 4.32}
+{"text": "soldiers with actual real true-to-life", "start": 2503.92, "duration": 5.6}
+{"text": "terminators. So uh there's a lot of", "start": 2506.56, "duration": 5.68}
+{"text": "dangers uh involved in this as well as", "start": 2509.52, "duration": 5.599}
+{"text": "opportunity opportunities.", "start": 2512.24, "duration": 4.56}
+{"text": "Do you think at that point humanity will", "start": 2515.119, "duration": 3.601}
+{"text": "have an existential crisis? Many people", "start": 2516.8, "duration": 5.6}
+{"text": "will wonder what the relevance of them", "start": 2518.72, "duration": 6.32}
+{"text": "is if robots can do their jobs for them", "start": 2522.4, "duration": 5.12}
+{"text": "if non-scentient entities can perform", "start": 2525.04, "duration": 5.039}
+{"text": "tasks that people do today? You know", "start": 2527.52, "duration": 5.04}
+{"text": "well I'm not look I'm not worried about", "start": 2530.079, "duration": 4.721}
+{"text": "unemployment in the long run. And why is", "start": 2532.56, "duration": 5.68}
+{"text": "that? Because every individual on this", "start": 2534.8, "duration": 6.96}
+{"text": "planet has an essentially infinite", "start": 2538.24, "duration": 6.96}
+{"text": "desire for goods and services. So you", "start": 2541.76, "duration": 5.839}
+{"text": "can be employed right now or 10 years", "start": 2545.2, "duration": 6.56}
+{"text": "from now 24/7 providing goods and", "start": 2547.599, "duration": 7.601}
+{"text": "services for your fellow humans. So", "start": 2551.76, "duration": 6.48}
+{"text": "unemployment is not a problem and we", "start": 2555.2, "duration": 5.2}
+{"text": "don't you we don't need a universal", "start": 2558.24, "duration": 5.2}
+{"text": "basic income or any destructive nonsense", "start": 2560.4, "duration": 6.88}
+{"text": "such as that uh to solve the problem.", "start": 2563.44, "duration": 6.48}
+{"text": "But um", "start": 2567.28, "duration": 5.36}
+{"text": "it look it's going to create a lot of", "start": 2569.92, "duration": 5.12}
+{"text": "changes. Just like during the last", "start": 2572.64, "duration": 4.56}
+{"text": "industrial revolution", "start": 2575.04, "duration": 4.0}
+{"text": "uh there were millions of people that", "start": 2577.2, "duration": 6.32}
+{"text": "were weaving cloth at uh with hand looms", "start": 2579.04, "duration": 7.76}
+{"text": "in their cottages, cottage industries.", "start": 2583.52, "duration": 4.88}
+{"text": "They all lost their jobs. They had to go", "start": 2586.8, "duration": 5.039}
+{"text": "to the big cities and be remployed. Uh", "start": 2588.4, "duration": 5.84}
+{"text": "same thing happened when the cell phone", "start": 2591.839, "duration": 5.041}
+{"text": "was invented. When the computer was", "start": 2594.24, "duration": 6.24}
+{"text": "invented, uh typing pools vanished and", "start": 2596.88, "duration": 5.6}
+{"text": "all those basically women that were", "start": 2600.48, "duration": 4.48}
+{"text": "working in them had to do something else", "start": 2602.48, "duration": 5.2}
+{"text": "and they did. So, you know, people will", "start": 2604.96, "duration": 5.76}
+{"text": "adjust. I'm not too worried about uh", "start": 2607.68, "duration": 5.04}
+{"text": "that. I am worried about the financial", "start": 2610.72, "duration": 6.56}
+{"text": "markets though because uh uh it's the", "start": 2612.72, "duration": 7.2}
+{"text": "financial market is hugely skewed", "start": 2617.28, "duration": 6.24}
+{"text": "towards high-tech and pension funds and", "start": 2619.92, "duration": 6.8}
+{"text": "mutual funds and people's individual", "start": 2623.52, "duration": 6.24}
+{"text": "accounts are hugely skewed", "start": 2626.72, "duration": 6.08}
+{"text": "towards the mag seven uh high-tech", "start": 2629.76, "duration": 9.76}
+{"text": "stocks and if this AI um boom", "start": 2632.8, "duration": 9.68}
+{"text": "goes bust and I will they're going to", "start": 2639.52, "duration": 6.16}
+{"text": "lose a lot of money and then what are", "start": 2642.48, "duration": 5.119}
+{"text": "they going to do? Uh because they were", "start": 2645.68, "duration": 3.2}
+{"text": "looking at that money to pay their", "start": 2647.599, "duration": 5.361}
+{"text": "mortgages, to pay their car payments, uh", "start": 2648.88, "duration": 7.12}
+{"text": "to pay their student loans. Uh so what", "start": 2652.96, "duration": 4.48}
+{"text": "are they going to do? They're going to", "start": 2656.0, "duration": 3.52}
+{"text": "go whining to the government, asking the", "start": 2657.44, "duration": 3.76}
+{"text": "government to do something and the", "start": 2659.52, "duration": 3.68}
+{"text": "government will something really stupid", "start": 2661.2, "duration": 6.159}
+{"text": "and destructive. So um yeah. Yeah, we're", "start": 2663.2, "duration": 5.84}
+{"text": "heading into dangerous times. the", "start": 2667.359, "duration": 4.48}
+{"text": "greater depression uh is still with us.", "start": 2669.04, "duration": 3.36}
+{"text": "David", "start": 2671.839, "duration": 4.24}
+{"text": "Doug, what uh do you like in particular", "start": 2672.4, "duration": 5.84}
+{"text": "about the resource sector now if if the", "start": 2676.079, "duration": 3.681}
+{"text": "other sectors look a little bit frothy", "start": 2678.24, "duration": 4.16}
+{"text": "to you? In particular, AI and tech. Uh", "start": 2679.76, "duration": 4.48}
+{"text": "gold uh as you know has performed", "start": 2682.4, "duration": 3.439}
+{"text": "extraordinarily well in the last 18", "start": 2684.24, "duration": 5.359}
+{"text": "months. It's at new all-time highs. Um", "start": 2685.839, "duration": 5.601}
+{"text": "platinum, palladium have done well", "start": 2689.599, "duration": 4.24}
+{"text": "palladium in particular skyrocketing", "start": 2691.44, "duration": 4.56}
+{"text": "this year. Uh, but are you still a", "start": 2693.839, "duration": 4.321}
+{"text": "believer in in the metals at current", "start": 2696.0, "duration": 3.44}
+{"text": "prices today? In other words, if", "start": 2698.16, "duration": 3.52}
+{"text": "somebody who had not previously invested", "start": 2699.44, "duration": 4.48}
+{"text": "already were to say to you, Doug, maybe", "start": 2701.68, "duration": 4.32}
+{"text": "I missed the boat. What would you say?", "start": 2703.92, "duration": 5.76}
+{"text": "Well, as you know, I've been a uh", "start": 2706.0, "duration": 5.92}
+{"text": "supporter of gold for philosophical", "start": 2709.68, "duration": 4.72}
+{"text": "reasons like forever. I've been buying", "start": 2711.92, "duration": 5.439}
+{"text": "it since it was about $45 an ounce and", "start": 2714.4, "duration": 5.36}
+{"text": "it's at all-time highs. So, you know,", "start": 2717.359, "duration": 5.601}
+{"text": "I've gotten about 100 to one on my", "start": 2719.76, "duration": 5.04}
+{"text": "money. I've always used it as a savings", "start": 2722.96, "duration": 3.6}
+{"text": "vehicle though sometimes as a", "start": 2724.8, "duration": 3.92}
+{"text": "speculative vehicle. Uh and to answer", "start": 2726.56, "duration": 5.12}
+{"text": "that question, should you buy gold now?", "start": 2728.72, "duration": 5.359}
+{"text": "Yeah, you should because it's the only", "start": 2731.68, "duration": 4.0}
+{"text": "financial asset that's not", "start": 2734.079, "duration": 3.76}
+{"text": "simultaneously somebody else's", "start": 2735.68, "duration": 5.52}
+{"text": "liability. And it's a way to get out of", "start": 2737.839, "duration": 5.52}
+{"text": "fiat money, whether it's the Canadian", "start": 2741.2, "duration": 4.639}
+{"text": "dollar or the US dollar. They're all", "start": 2743.359, "duration": 4.72}
+{"text": "just toilet paper that printed up at", "start": 2745.839, "duration": 5.041}
+{"text": "will by central banks. So yeah, you", "start": 2748.079, "duration": 4.641}
+{"text": "should buy gold, but for safety and", "start": 2750.88, "duration": 5.12}
+{"text": "security, uh it gold is right now is", "start": 2752.72, "duration": 5.599}
+{"text": "priced where it kind of should be", "start": 2756.0, "duration": 4.88}
+{"text": "relative to the price of meals or", "start": 2758.319, "duration": 5.28}
+{"text": "clothes or houses. It's about where it", "start": 2760.88, "duration": 5.439}
+{"text": "should be. It's not underpriced anymore.", "start": 2763.599, "duration": 7.76}
+{"text": "But uh where I am putting money is into", "start": 2766.319, "duration": 8.081}
+{"text": "these crappy little mining stocks,", "start": 2771.359, "duration": 4.801}
+{"text": "development companies, exploration", "start": 2774.4, "duration": 5.36}
+{"text": "companies, and producers because they're", "start": 2776.16, "duration": 8.08}
+{"text": "u the producers are very very profitable", "start": 2779.76, "duration": 8.319}
+{"text": "at the moment. the industrywide all-in", "start": 2784.24, "duration": 7.28}
+{"text": "sustaining cost of uh mining an ounce of", "start": 2788.079, "duration": 8.721}
+{"text": "gold uh it's about say $1,300 an ounce", "start": 2791.52, "duration": 9.839}
+{"text": "but gold is about $3,300 an ounce. So", "start": 2796.8, "duration": 7.68}
+{"text": "miners are coining money but the market", "start": 2801.359, "duration": 7.521}
+{"text": "doesn't care. Uh so I own gold miners", "start": 2804.48, "duration": 10.0}
+{"text": "and I own gold developers that are uh", "start": 2808.88, "duration": 8.719}
+{"text": "working to put a deposit that they've", "start": 2814.48, "duration": 6.08}
+{"text": "laid out into production as well as some", "start": 2817.599, "duration": 5.76}
+{"text": "explorers which are on Easter egg hunts", "start": 2820.56, "duration": 5.68}
+{"text": "to find deposits. And they're very", "start": 2823.359, "duration": 5.76}
+{"text": "volatile. And in past bull markets over", "start": 2826.24, "duration": 8.16}
+{"text": "the last 50 years, uh many many of these", "start": 2829.119, "duration": 8.561}
+{"text": "uh gold stocks have not just gone 10 to", "start": 2834.4, "duration": 5.6}
+{"text": "one, they've gone to 100 to one. And", "start": 2837.68, "duration": 5.6}
+{"text": "actually uh some have gone a thousand to", "start": 2840.0, "duration": 5.76}
+{"text": "one just in a few years. They're very", "start": 2843.28, "duration": 4.64}
+{"text": "volatile. They're as volatile as", "start": 2845.76, "duration": 4.319}
+{"text": "begs the question as to how you pick", "start": 2847.92, "duration": 3.36}
+{"text": "stocks. I mean, you don't have to give", "start": 2850.079, "duration": 2.561}
+{"text": "specific names if you don't want to, but", "start": 2851.28, "duration": 3.2}
+{"text": "what is your process? You're the one who", "start": 2852.64, "duration": 3.04}
+{"text": "addressed this to me and brought this to", "start": 2854.48, "duration": 2.72}
+{"text": "my attention. You said of the 2,000 or", "start": 2855.68, "duration": 3.04}
+{"text": "so junior miners out there in the", "start": 2857.2, "duration": 4.72}
+{"text": "universe of investable stocks, 95% of", "start": 2858.72, "duration": 5.68}
+{"text": "them are in your words crap. So, how do", "start": 2861.92, "duration": 4.32}
+{"text": "you select the 5%.", "start": 2864.4, "duration": 4.48}
+{"text": "Yes, that's an exact quote for me and I", "start": 2866.24, "duration": 5.52}
+{"text": "think I'm quite accurate uh in that.", "start": 2868.88, "duration": 4.719}
+{"text": "Well,", "start": 2871.76, "duration": 3.839}
+{"text": "uh it's been an area of specialty of", "start": 2873.599, "duration": 6.48}
+{"text": "mine for many years and uh", "start": 2875.599, "duration": 7.601}
+{"text": "in order to invest successfully in", "start": 2880.079, "duration": 6.081}
+{"text": "junior mining stocks uh and it's not", "start": 2883.2, "duration": 7.2}
+{"text": "just gold uh it can be for that matter", "start": 2886.16, "duration": 9.439}
+{"text": "coal and oil and uh platinum and copper", "start": 2890.4, "duration": 9.04}
+{"text": "nickel uh", "start": 2895.599, "duration": 6.0}
+{"text": "I've developed something called the nine", "start": 2899.44, "duration": 5.84}
+{"text": "P's uh a little pneummonic to uh help", "start": 2901.599, "duration": 5.601}
+{"text": "you remember what you should look at", "start": 2905.28, "duration": 4.799}
+{"text": "when you're looking at a stock. Uh first", "start": 2907.2, "duration": 5.68}
+{"text": "is the property. In order to analyze the", "start": 2910.079, "duration": 4.881}
+{"text": "property, you should know a little bit", "start": 2912.88, "duration": 4.719}
+{"text": "or maybe a lot as you learn about", "start": 2914.96, "duration": 6.159}
+{"text": "geology and mining engineering. Uh more", "start": 2917.599, "duration": 6.0}
+{"text": "important than that is the people. Who", "start": 2921.119, "duration": 4.321}
+{"text": "are the people in back of it? Are they", "start": 2923.599, "duration": 4.48}
+{"text": "have they been successful? Uh or are", "start": 2925.44, "duration": 4.96}
+{"text": "they just stock promoters?", "start": 2928.079, "duration": 4.961}
+{"text": "uh look at the paper. Where's all the", "start": 2930.4, "duration": 4.8}
+{"text": "stock? How much money is in the bank?", "start": 2933.04, "duration": 6.24}
+{"text": "The finances spelled with a ph. So when", "start": 2935.2, "duration": 6.56}
+{"text": "you're looking at these companies, you", "start": 2939.28, "duration": 5.12}
+{"text": "can go down the list and but this is the", "start": 2941.76, "duration": 5.359}
+{"text": "type of thing that we emphasize in this", "start": 2944.4, "duration": 5.439}
+{"text": "book, the preparation so that you're not", "start": 2947.119, "duration": 4.801}
+{"text": "a babe in the woods even in the stock", "start": 2949.839, "duration": 4.641}
+{"text": "market. Uh", "start": 2951.92, "duration": 5.679}
+{"text": "but uh yeah, it's a minefield investing", "start": 2954.48, "duration": 6.16}
+{"text": "in uh small resource companies just like", "start": 2957.599, "duration": 5.52}
+{"text": "it's a minefield investing in small", "start": 2960.64, "duration": 5.679}
+{"text": "biotech companies or small computer", "start": 2963.119, "duration": 7.841}
+{"text": "companies or almost anything. Uh and", "start": 2966.319, "duration": 7.601}
+{"text": "most people are unprepared for it. So", "start": 2970.96, "duration": 4.879}
+{"text": "what do they do? they give their money", "start": 2973.92, "duration": 4.24}
+{"text": "to Black Rockck or somebody like that", "start": 2975.839, "duration": 5.121}
+{"text": "who uh take 2% of their capital every", "start": 2978.16, "duration": 6.48}
+{"text": "year to make the same mistakes that they", "start": 2980.96, "duration": 6.0}
+{"text": "probably make as individuals. It's it's", "start": 2984.64, "duration": 4.959}
+{"text": "perverse. I mean, the whole economy is a", "start": 2986.96, "duration": 4.56}
+{"text": "bubble today. Greatly over", "start": 2989.599, "duration": 3.76}
+{"text": "financialized, but that's another", "start": 2991.52, "duration": 3.76}
+{"text": "tangent. I don't want to go off on that.", "start": 2993.359, "duration": 4.401}
+{"text": "Right. Okay. So are you more uh inclined", "start": 2995.28, "duration": 4.559}
+{"text": "to invest in the uh gold space, silver", "start": 2997.76, "duration": 4.96}
+{"text": "space, copper and nickel and base metal", "start": 2999.839, "duration": 5.601}
+{"text": "space uh or are they equally uh", "start": 3002.72, "duration": 4.56}
+{"text": "attractive to you now?", "start": 3005.44, "duration": 4.08}
+{"text": "And don't forget uranium because", "start": 3007.28, "duration": 3.279}
+{"text": "uranium. Yes, uranium.", "start": 3009.52, "duration": 4.88}
+{"text": "Yeah, because nuclear is uh I've always", "start": 3010.559, "duration": 7.681}
+{"text": "said is the safest, the cheapest, and", "start": 3014.4, "duration": 6.0}
+{"text": "the cleanest form of mass power", "start": 3018.24, "duration": 4.56}
+{"text": "generation. And the technology there is", "start": 3020.4, "duration": 5.36}
+{"text": "changing right before our very eyes. Uh", "start": 3022.8, "duration": 6.0}
+{"text": "so it's like what Mr. Gaus said uh China", "start": 3025.76, "duration": 6.64}
+{"text": "has many times more electrical uh", "start": 3028.8, "duration": 5.84}
+{"text": "generating capability than the US does", "start": 3032.4, "duration": 4.719}
+{"text": "at this point and nuclear is the only", "start": 3034.64, "duration": 5.84}
+{"text": "solution to that problem. So uh what am", "start": 3037.119, "duration": 5.601}
+{"text": "I I'm interested in all of them cuz all", "start": 3040.48, "duration": 5.28}
+{"text": "of these things are cheap. the stocks in", "start": 3042.72, "duration": 4.879}
+{"text": "particular. Nobody wants to own the", "start": 3045.76, "duration": 6.559}
+{"text": "stocks because uh look uh mining is a", "start": 3047.599, "duration": 7.601}
+{"text": "19th century choo choo trading business.", "start": 3052.319, "duration": 5.28}
+{"text": "I mean, you're out playing around in the", "start": 3055.2, "duration": 5.119}
+{"text": "dirt with big yellow trucks. Uh so, of", "start": 3057.599, "duration": 5.121}
+{"text": "course, most of the younger generation", "start": 3060.319, "duration": 4.881}
+{"text": "doesn't want to, you know, mess around", "start": 3062.72, "duration": 6.24}
+{"text": "with stuff like that. But uh you know if", "start": 3065.2, "duration": 7.2}
+{"text": "if you want to have buildings or", "start": 3068.96, "duration": 5.84}
+{"text": "or knives and forks to eat with or", "start": 3072.4, "duration": 5.199}
+{"text": "anything uh you need the stuff that", "start": 3074.8, "duration": 5.44}
+{"text": "comes from mining", "start": 3077.599, "duration": 5.921}
+{"text": "a and then the NOS's", "start": 3080.24, "duration": 7.76}
+{"text": "uh will make your life miserable and", "start": 3083.52, "duration": 6.64}
+{"text": "native tribes and all that will try to", "start": 3088.0, "duration": 4.8}
+{"text": "shake you down and the government will", "start": 3090.16, "duration": 5.199}
+{"text": "try to shake you down. mining is a", "start": 3092.8, "duration": 5.44}
+{"text": "horrible business. Uh I recognize that.", "start": 3095.359, "duration": 4.48}
+{"text": "That's why I say it's a I've always said", "start": 3098.24, "duration": 3.119}
+{"text": "it's a crappy business. Most of the", "start": 3099.839, "duration": 5.201}
+{"text": "stocks are crappy. But that said, that's", "start": 3101.359, "duration": 6.561}
+{"text": "all over discounted by how cheap the", "start": 3105.04, "duration": 4.64}
+{"text": "stocks are right now because of those", "start": 3107.92, "duration": 5.36}
+{"text": "things. So um yeah, I expect that if we", "start": 3109.68, "duration": 5.2}
+{"text": "talk", "start": 3113.28, "duration": 5.76}
+{"text": "I hope uh in 6 months or a year or two", "start": 3114.88, "duration": 7.36}
+{"text": "years uh the average mining stock which", "start": 3119.04, "duration": 5.84}
+{"text": "is already perking up and they're doing", "start": 3122.24, "duration": 5.52}
+{"text": "quite well. Thank you very much. Uh my", "start": 3124.88, "duration": 4.32}
+{"text": "the average stock might have gone", "start": 3127.76, "duration": 4.16}
+{"text": "already 5 to one even 10 to one. I'm", "start": 3129.2, "duration": 5.359}
+{"text": "very very optimistic about the prospects", "start": 3131.92, "duration": 4.639}
+{"text": "for it. It's the only cheap place in the", "start": 3134.559, "duration": 4.0}
+{"text": "market. Let me let me say that. The only", "start": 3136.559, "duration": 4.081}
+{"text": "cheap place in the stock market is in", "start": 3138.559, "duration": 4.0}
+{"text": "mining stocks. They're close to the", "start": 3140.64, "duration": 3.919}
+{"text": "cheapest level in history relative to", "start": 3142.559, "duration": 2.961}
+{"text": "other stocks.", "start": 3144.559, "duration": 2.721}
+{"text": "All right. So then final question, you", "start": 3145.52, "duration": 4.16}
+{"text": "were uh a very well-known author even in", "start": 3147.28, "duration": 5.039}
+{"text": "the 80s for your work on investing", "start": 3149.68, "duration": 4.159}
+{"text": "during crisis. Like I mentioned, you", "start": 3152.319, "duration": 2.961}
+{"text": "were the bestselling author of the book", "start": 3153.839, "duration": 3.201}
+{"text": "Crisis Investing. How can we apply some", "start": 3155.28, "duration": 3.52}
+{"text": "of the lessons from that book which was", "start": 3157.04, "duration": 3.6}
+{"text": "published first published in 1980 I", "start": 3158.8, "duration": 4.319}
+{"text": "believe to the present today? Well, the", "start": 3160.64, "duration": 3.76}
+{"text": "market always presents new", "start": 3163.119, "duration": 3.041}
+{"text": "opportunities, but things are a lot", "start": 3164.4, "duration": 3.76}
+{"text": "different now than they were back in the", "start": 3166.16, "duration": 6.0}
+{"text": "80s. uh", "start": 3168.16, "duration": 5.76}
+{"text": "one of the lessons that we can look at", "start": 3172.16, "duration": 5.199}
+{"text": "look it's the uh I call that book crisis", "start": 3173.92, "duration": 6.639}
+{"text": "investing uh partially because in", "start": 3177.359, "duration": 7.441}
+{"text": "Chinese the symbol for the word crisis", "start": 3180.559, "duration": 7.601}
+{"text": "is a combination of the symbol for", "start": 3184.8, "duration": 7.279}
+{"text": "danger and the symbol for opportunity", "start": 3188.16, "duration": 6.56}
+{"text": "and that is a crisis so I think we're", "start": 3192.079, "duration": 6.561}
+{"text": "heading into a really massive crisis uh", "start": 3194.72, "duration": 7.119}
+{"text": "here in in the West in many ways uh", "start": 3198.64, "duration": 6.08}
+{"text": "economically, financially,", "start": 3201.839, "duration": 6.24}
+{"text": "socially, demographically,", "start": 3204.72, "duration": 8.8}
+{"text": "uh militarily too. Uh you know, this war", "start": 3208.079, "duration": 8.24}
+{"text": "between the Ukraine and Russia, it ain't", "start": 3213.52, "duration": 6.96}
+{"text": "over yet. And uh not to mention the dust", "start": 3216.319, "duration": 7.361}
+{"text": "up between Israel and Iran, that's not", "start": 3220.48, "duration": 6.32}
+{"text": "over by a long shot. Uh, and there's a", "start": 3223.68, "duration": 4.8}
+{"text": "bunch of other places in the world that", "start": 3226.8, "duration": 6.319}
+{"text": "are time bombs waiting to go off. Uh, so", "start": 3228.48, "duration": 6.16}
+{"text": "we're going to be living in a world of", "start": 3233.119, "duration": 5.281}
+{"text": "crisis. And the question is", "start": 3234.64, "duration": 5.84}
+{"text": "you've got to build some capital and", "start": 3238.4, "duration": 4.8}
+{"text": "then you got to deploy it intelligently.", "start": 3240.48, "duration": 5.68}
+{"text": "And um", "start": 3243.2, "duration": 6.56}
+{"text": "the only defense against what's going on", "start": 3246.16, "duration": 9.04}
+{"text": "is to learn as much as you can and do", "start": 3249.76, "duration": 8.88}
+{"text": "develop as many skills as you can", "start": 3255.2, "duration": 6.08}
+{"text": "so that no matter what happens, they'll", "start": 3258.64, "duration": 5.439}
+{"text": "be able to land on your feet. Don't be a", "start": 3261.28, "duration": 4.96}
+{"text": "one-trick pony. Not in today's world.", "start": 3264.079, "duration": 4.401}
+{"text": "You never should have been anytime, but", "start": 3266.24, "duration": 5.119}
+{"text": "I think now more than ever. I guess", "start": 3268.48, "duration": 5.2}
+{"text": "that's the only general advice that I", "start": 3271.359, "duration": 5.361}
+{"text": "that I can give. Uh don't spend your", "start": 3273.68, "duration": 7.2}
+{"text": "time online watching funny cat videos. I", "start": 3276.72, "duration": 7.359}
+{"text": "mean, you should spend your time online", "start": 3280.88, "duration": 4.8}
+{"text": "trying to learn something that's going", "start": 3284.079, "duration": 4.721}
+{"text": "to improve your status in the world and", "start": 3285.68, "duration": 6.159}
+{"text": "thereby improve the world itself.", "start": 3288.8, "duration": 4.96}
+{"text": "By making yourself better, you make the", "start": 3291.839, "duration": 3.121}
+{"text": "world better.", "start": 3293.76, "duration": 4.079}
+{"text": "Well, I the best type of altruism.", "start": 3294.96, "duration": 4.8}
+{"text": "That that that's good advice. I mean, I", "start": 3297.839, "duration": 3.921}
+{"text": "I I I happen to like the cat videos, but", "start": 3299.76, "duration": 3.68}
+{"text": "I I'll cut down on those. Thank you,", "start": 3301.76, "duration": 4.16}
+{"text": "Chuck.", "start": 3303.44, "duration": 3.36}
+{"text": "I do, too.", "start": 3305.92, "duration": 1.52}
+{"text": "We all do.", "start": 3306.8, "duration": 3.12}
+{"text": "I I I I like talking to you more than", "start": 3307.44, "duration": 4.159}
+{"text": "the cat videos, and I like reading your", "start": 3309.92, "duration": 3.36}
+{"text": "work more than the cat videos. So, where", "start": 3311.599, "duration": 3.76}
+{"text": "can we read your work, Doug?", "start": 3313.28, "duration": 4.88}
+{"text": "Well, look,", "start": 3315.359, "duration": 4.401}
+{"text": "people should buy this book. They're", "start": 3318.16, "duration": 3.36}
+{"text": "going to be very happy if they do,", "start": 3319.76, "duration": 4.16}
+{"text": "especially if you've got kids that are", "start": 3321.52, "duration": 4.96}
+{"text": "approaching college age. Or for that", "start": 3323.92, "duration": 5.76}
+{"text": "matter, if you're if you're in a", "start": 3326.48, "duration": 5.76}
+{"text": "dead-end job and having a mid a midlife", "start": 3329.68, "duration": 4.72}
+{"text": "crisis, you should buy this book. It's", "start": 3332.24, "duration": 4.319}
+{"text": "on Amazon, and I think you're going to", "start": 3334.4, "duration": 6.8}
+{"text": "be very happy with it. So, uh I guess uh", "start": 3336.559, "duration": 6.56}
+{"text": "that's what I'd say. Listen, I hate to", "start": 3341.2, "duration": 5.28}
+{"text": "be selling something because, uh you", "start": 3343.119, "duration": 5.041}
+{"text": "know, I don't need to sell anything. I", "start": 3346.48, "duration": 4.079}
+{"text": "mean, I I'm just fine. Life has treated", "start": 3348.16, "duration": 6.399}
+{"text": "me really well. Uh, but uh to me, it's", "start": 3350.559, "duration": 7.04}
+{"text": "kind of a good karma thing. Uh, and I'd", "start": 3354.559, "duration": 5.201}
+{"text": "like people to follow the instruction", "start": 3357.599, "duration": 4.561}
+{"text": "here because I wish I'd had this damn", "start": 3359.76, "duration": 5.76}
+{"text": "book when I was 18 years old myself. I", "start": 3362.16, "duration": 5.6}
+{"text": "I'd be curious to read a book that you", "start": 3365.52, "duration": 4.4}
+{"text": "wrote on how to prepare for investing.", "start": 3367.76, "duration": 3.76}
+{"text": "Oh, sorry. Uh, retirement. Not", "start": 3369.92, "duration": 5.04}
+{"text": "investing. Uh, retirement. Um, I I I I", "start": 3371.52, "duration": 4.96}
+{"text": "wonder if you've ever done work on that.", "start": 3374.96, "duration": 4.0}
+{"text": "I mean, this the preparation is a book", "start": 3376.48, "duration": 5.599}
+{"text": "on how to prepare for the start of your", "start": 3378.96, "duration": 5.2}
+{"text": "career. How do you prepare then for the", "start": 3382.079, "duration": 3.921}
+{"text": "end of your career? I I'd be curious to", "start": 3384.16, "duration": 2.8}
+{"text": "get your thoughts, but", "start": 3386.0, "duration": 3.28}
+{"text": "I I don't think that uh you should", "start": 3386.96, "duration": 5.92}
+{"text": "retire, David. Uh because what does that", "start": 3389.28, "duration": 5.44}
+{"text": "mean? What are you going to do? Sit on", "start": 3392.88, "duration": 4.8}
+{"text": "the front porch and feed the pigeons or", "start": 3394.72, "duration": 6.8}
+{"text": "go fishing every day? I mean uh I think", "start": 3397.68, "duration": 5.84}
+{"text": "it's incumbent upon all of us as", "start": 3401.52, "duration": 3.92}
+{"text": "individuals", "start": 3403.52, "duration": 6.48}
+{"text": "to be productive to produce more than we", "start": 3405.44, "duration": 7.679}
+{"text": "consume. So you can consume more too.", "start": 3410.0, "duration": 4.88}
+{"text": "That's good. And you can't consume", "start": 3413.119, "duration": 3.521}
+{"text": "unless you produce.", "start": 3414.88, "duration": 5.28}
+{"text": "So uh I don't believe in retirement. Uh", "start": 3416.64, "duration": 6.959}
+{"text": "quite frankly it's uh it's a trap to", "start": 3420.16, "duration": 5.52}
+{"text": "think you're going to retire. Uh if", "start": 3423.599, "duration": 4.881}
+{"text": "anything, you should change your", "start": 3425.68, "duration": 6.0}
+{"text": "occupation and do something else that", "start": 3428.48, "duration": 4.879}
+{"text": "you might like better, that you might", "start": 3431.68, "duration": 5.2}
+{"text": "find more interesting, more stimulating.", "start": 3433.359, "duration": 7.601}
+{"text": "And uh that's why actually this book is", "start": 3436.88, "duration": 6.56}
+{"text": "probably even better for somebody who's", "start": 3440.96, "duration": 6.399}
+{"text": "65 and wondering what to do with themsel", "start": 3443.44, "duration": 7.2}
+{"text": "for somebody that's 18. I don't know.", "start": 3447.359, "duration": 5.121}
+{"text": "It's the way I live my life, quite", "start": 3450.64, "duration": 2.56}
+{"text": "frankly.", "start": 3452.48, "duration": 2.8}
+{"text": "Okay. Well, good good stuff, Doug. We'll", "start": 3453.2, "duration": 3.84}
+{"text": "put the links down below. So, make sure", "start": 3455.28, "duration": 3.519}
+{"text": "to follow Doug at the International Man", "start": 3457.04, "duration": 3.84}
+{"text": "and also check out his new book. We'll", "start": 3458.799, "duration": 4.0}
+{"text": "put the Amazon link as well in the", "start": 3460.88, "duration": 3.28}
+{"text": "description. Welcome back to the show,", "start": 3462.799, "duration": 3.121}
+{"text": "Doug. It's always good to see you. We'll", "start": 3464.16, "duration": 3.199}
+{"text": "speak next time.", "start": 3465.92, "duration": 3.84}
+{"text": "I look forward to it, David. Thank you.", "start": 3467.359, "duration": 3.681}
+{"text": "And thank you for watching. Don't forget", "start": 3469.76, "duration": 4.839}
+{"text": "to like and subscribe.", "start": 3471.04, "duration": 3.559}
+{"text": "[Applause]", "start": 3475.43, "duration": 3.07}

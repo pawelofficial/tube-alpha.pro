@@ -1,0 +1,37 @@
+
+<!-- ============================================ -->
+<!-- dummy3.html (save as separate file) -->
+<!-- ============================================ -->
+{% extends "base.html" %}
+
+{% block title %}Dummy 3 - Youtube Investor{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="text-center fade-in">
+            <h1>Dummy Page 3</h1>
+            <p class="hero-subtitle">
+                This is /dummy3 - a test page for navigation
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2>Test Content for Dummy 3</h2>
+                <p>This is a dummy page created for testing the navigation structure.</p>
+                <p>Current path: <strong>{{ request.url.path }}</strong></p>
+                <p>Authentication status: <strong>{% if is_authenticated %}Authenticated as {{ user_email }}{% else %}Not authenticated{% endif %}</strong></p>
+                
+                <div class="mt-lg">
+                    <a href="/" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,449 @@
+{% extends "base.html" %}
+
+{% block title %}Submit Your Video - Youtube Investor{% endblock %}
+
+{% block content %}
+<section class="section" style="padding-bottom: 0;">
+    <div class="container">
+        <div class="text-center fade-in">
+            <h1>  Analyze your own video</h1>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 30px;">
+    <div class="container">
+        <div class="card" style="border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="card-body" style="padding: 30px 40px;">
+                <!-- Input Form Section -->
+                <div>
+                    <div class="form-group" style="margin: 0;">
+                        <label for="textInput" style="font-weight: 500; color: #333; margin-bottom: 12px; display: block;">
+                             paste yt video url here to analyze it
+                        </label>
+                        <div class="input-wrapper {% if not pro %}input-disabled{% endif %}">
+                            <input 
+                                type="text" 
+                                id="textInput" 
+                                class="form-control modern-input" 
+                                placeholder="Enter your YouTube video URL e.g. https://youtube.com/watch?v=dQw4w9WgXcQ"
+                                {% if not pro %}disabled{% endif %}
+                            >
+                            <div class="button-wrapper">
+                                <button 
+                                    id="submitBtn" 
+                                    class="btn btn-primary modern-btn"
+                                    onclick="{% if pro %}submitText(){% endif %}"
+                                    {% if not pro %}disabled{% endif %}
+                                >
+                                    <span class="btn-text">Submit</span>
+                                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                                {% if not pro %}
+                                <div class="pro-tooltip">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>Upgrade to Pro to submit videos</span>
+                                    <a href="/pricing" class="tooltip-link">View Plans →</a>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Loading Indicator -->
+                    <div id="loadingIndicator" class="loading-container" style="display: none;">
+                        <div class="spinner"></div>
+                        <span class="loading-text">Processing your request, it may take a while...</span>
+                    </div>
+                    
+                    <!-- Result Display -->
+                    <div id="resultDisplay" style="margin-top: 25px; display: none;">
+                        <div class="result-card">
+                            <div class="result-header">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <h4 id="resultStatus"></h4>
+                            </div>
+                            <p id="resultText" class="result-text"></p>
+                        </div>
+                        
+                        <!-- Tiles Visualization -->
+                        <div id="tiles-visualization" style="margin-top: 30px; display: none;">
+                            <h3 style="margin-bottom: 20px; color: #2c3e50;">Analysis Results</h3>
+                            <div id="asset-grid" class="asset-grid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Modern input styling */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.input-wrapper:focus-within:not(.input-disabled) {
+    background: white;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.input-wrapper.input-disabled {
+    background: #e9ecef;
+    opacity: 0.6;
+}
+
+.modern-input {
+    flex: 1;
+    padding: 14px 18px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #2c3e50;
+    outline: none;
+}
+
+.modern-input::placeholder {
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.modern-input:disabled {
+    cursor: not-allowed;
+}
+
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.modern-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.modern-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.modern-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.modern-btn:disabled {
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Show tooltip on hover of the button itself when disabled */
+.modern-btn:disabled:hover + .pro-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.pro-tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    right: 0;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    z-index: 1000;
+    min-width: 280px;
+}
+
+/* Keep tooltip visible when hovering over it */
+.pro-tooltip:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.pro-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background: #1e293b;
+    transform: rotate(45deg);
+}
+
+.pro-tooltip svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #fbbf24;
+}
+
+.pro-tooltip span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.tooltip-link {
+    display: inline-block;
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.tooltip-link:hover {
+    color: #93c5fd;
+}
+
+.btn-icon {
+    transition: transform 0.3s ease;
+}
+
+.modern-btn:hover:not(:disabled) .btn-icon {
+    transform: translateX(3px);
+}
+
+/* Loading indicator */
+.loading-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 20px;
+    background: #f0f4f8;
+    border-radius: 12px;
+}
+
+.spinner {
+    border: 3px solid #e2e8f0;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    color: #64748b;
+    font-size: 14px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Result display */
+.result-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #f6f9fc 0%, #e9f7ef 100%);
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+}
+
+.error-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-radius: 12px;
+    border-left: 4px solid #ef4444;
+}
+
+.error-text {
+    color: #991b1b;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.result-header h4 {
+    margin: 0;
+    color: #10b981;
+    font-size: 16px;
+}
+
+.result-text {
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Override default section spacing */
+.section {
+    padding: 40px 0;
+}
+
+/* Tiles Visualization Styles */
+.quotes ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.asset-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+    overflow: hidden;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s;
+    cursor: pointer;
+}
+
+.asset-card:hover { 
+    transform: translateY(-1px); 
+    box-shadow: 0 6px 18px rgba(0,0,0,.15); 
+}
+
+.asset-head {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: .9rem 1rem;
+}
+
+.asset-left { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+    text-align: left; 
+}
+
+.asset-name { 
+    font-weight: 600; 
+    font-size: 1rem; 
+}
+
+.asset-meta { 
+    font-size: .8rem; 
+    color: #6b7280; 
+}
+
+.badge {
+    font-size: .75rem; 
+    padding: .25rem .5rem; 
+    border-radius: 999px; 
+    border: 1px solid currentColor;
+}
+
+.card-avg { 
+    font-variant-numeric: tabular-nums; 
+    font-weight: 600; 
+}
+
+.asset-details { 
+    display: none; 
+    border-top: 1px dashed #e5e7eb; 
+}
+
+.asset-card.open .asset-details { 
+    display: block; 
+}
+
+.quotes { 
+    padding: .6rem 1rem 1rem; 
+    max-height: 260px; 
+    overflow: auto; 
+}
+
+.quotes li { 
+    margin: .35rem 0; 
+    line-height: 1.35; 
+}
+
+.tag { 
+    font-size: .72rem; 
+    opacity: .9; 
+    margin-left: .4rem; 
+}
+
+.t-red { color: #e25b5b; border-color: #e25b5b33; }
+.t-green { color: #3fbf6f; border-color: #3fbf6f33; }
+.t-gray { color: #a0a0a0; border-color: #a0a0a033; }
+.b-red { border-left: 4px solid #e25b5b; }
+.b-green { border-left: 4px solid #3fbf6f; }
+.b-gray { border-left: 4px solid #a0a0a0; }
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+<script src="/static/yourvid_script.js"></script>
+
+<script>   
+document.addEventListener('DOMContentLoaded', function() {
+    const textInput = document.getElementById('textInput');
+    
+    if (textInput) {
+        textInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+                event.preventDefault();
+                // Need to pass the email here too
+                submitText();
+            }
+        });
+    }
+});
+</script>
+
+{% endblock %}

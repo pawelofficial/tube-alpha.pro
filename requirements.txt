@@ -1,0 +1,26 @@
+# Web framework
+fastapi==0.116.1
+uvicorn==0.35.0
+gunicorn==23.0.0
+python-multipart==0.0.20
+
+# Templates (kept for legacy frontend, will be removed later)
+Jinja2==3.1.6
+
+# Database
+aiosqlite==0.21.0
+
+# YouTube scraping
+youtube-transcript-api==1.2.2
+yt-dlp==2025.6.9
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# AI / OpenAI
+openai==2.0.1
+tiktoken==0.11.0
+
+# Config & utilities
+python-dotenv>=1.0.0
+PyYAML==6.0.2
+tenacity==9.1.2

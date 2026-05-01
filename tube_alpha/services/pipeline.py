@@ -85,6 +85,8 @@ class VideoPipeline:
             )
         title = _clean_title(title)
 
+        video_date = self._youtube.get_video_upload_date_with_rotation(video_id)
+
         # Step 4: Validate with AI
         logger.info("Step 2/6: Validating content for %s", video_id)
         validation = self._sentiment.validate_video(title, description)
@@ -95,8 +97,12 @@ class VideoPipeline:
         # Step 5: Save metadata
         logger.info("Step 3/6: Saving metadata for %s", video_id)
         self._youtube.save_channel_metadata(
-            video_id=video_id, title=title, guest=guest,
-            description_summary=summary, valid=is_valid,
+            video_id=video_id,
+            title=title,
+            guest=guest,
+            description_summary=summary,
+            valid=is_valid,
+            video_date=video_date,
         )
 
         if not is_valid:

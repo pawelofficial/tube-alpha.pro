@@ -126,3 +126,30 @@ async def guests_list(
 ) -> List[Dict]:
     """What guests have been interviewed?"""
     return data.guests_list()
+
+
+@router.get("/filters")
+async def filter_options(
+    data: DataService = Depends(get_data_service),
+) -> Dict[str, Any]:
+    """Distinct values for dashboard filter dropdowns (assets, guests, sentiments, date range)."""
+    return data.filter_options()
+
+
+@router.get("/dashboard")
+async def dashboard_overview(
+    asset: Optional[str] = Query(None, description="Filter by exact asset name"),
+    from_date: Optional[str] = Query(None, description="Filter: video_date >= (ISO date)"),
+    to_date: Optional[str] = Query(None, description="Filter: video_date <= (ISO date)"),
+    guest: Optional[str] = Query(None, description="Filter by exact guest name"),
+    sentiment: Optional[str] = Query(None, description="Filter by sentiment substring (e.g. bullish)"),
+    data: DataService = Depends(get_data_service),
+) -> Dict[str, Any]:
+    """Aggregate dashboard: stats, asset leaderboard, guest breakdown, timeline."""
+    return data.dashboard_overview(
+        asset=asset,
+        from_date=from_date,
+        to_date=to_date,
+        guest=guest,
+        sentiment=sentiment,
+    )

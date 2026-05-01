@@ -11,4 +11,4 @@ RUN mkdir -p data core/logs core/transcripts
 
 EXPOSE 8080
 
-CMD exec gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
+CMD exec gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT --timeout 120 --log-level info

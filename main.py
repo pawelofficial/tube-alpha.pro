@@ -11,6 +11,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from starlette.middleware.sessions import SessionMiddleware
 
 # Load environment variables before importing anything else
 load_dotenv()
@@ -64,6 +65,15 @@ app = FastAPI(
     description="YouTube investment sentiment analysis API",
     version="1.0.0",
     lifespan=lifespan,
+)
+
+_is_prod = os.getenv("ENVIRONMENT", "development").lower() != "development"
+app.add_middleware(
+    SessionMiddleware,
+    secret_key=os.getenv("SESSION_SECRET", "dev-secret-change-in-production"),
+    max_age=86400 * 30,   # 30-day session
+    https_only=_is_prod,  # only send cookie over HTTPS in production
+    same_site="lax",      # required for OAuth redirect to work
 )
 
 if (BASE_DIR / "static").exists():

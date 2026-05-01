@@ -325,6 +325,15 @@ class DataService:
 
         return rows
 
+    def distinct_asset_names(self) -> List[str]:
+        """Distinct asset labels from ``vw_assets`` (alphabetical, non-empty)."""
+        rows = self._db.fetch_all(
+            """SELECT asset FROM vw_assets
+               WHERE asset IS NOT NULL AND TRIM(asset) != ''
+               ORDER BY asset COLLATE NOCASE"""
+        )
+        return [str(r["asset"]).strip() for r in rows if r.get("asset") is not None]
+
     # ------------------------------------------------------------------
     # Use case: What guests have been interviewed?
     # ------------------------------------------------------------------

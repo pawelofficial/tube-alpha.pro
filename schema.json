@@ -108,5 +108,13 @@
         }
       ]
     }
+  ],
+  "views": [
+    {
+      "name": "vw_assets",
+      "db_type": "data",
+      "drop_view": "DROP VIEW IF EXISTS vw_assets;",
+      "create_view": "CREATE VIEW vw_assets AS SELECT DISTINCT asset FROM answers;"
+    }
   ]
 }

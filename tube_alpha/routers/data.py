@@ -85,6 +85,14 @@ async def videos_list(
     return data.videos_list(limit=limit)
 
 
+@router.get("/assets/names")
+async def asset_names_list(
+    data: DataService = Depends(get_data_service),
+) -> List[str]:
+    """Distinct asset names from ``vw_assets`` for dropdowns."""
+    return data.distinct_asset_names()
+
+
 @router.get("/assets")
 async def assets_list(
     data: DataService = Depends(get_data_service),

@@ -15,14 +15,14 @@ from fastapi.staticfiles import StaticFiles
 # Load environment variables before importing anything else
 load_dotenv()
 
+from tube_alpha.logging_setup import PerModuleFileHandler
 from tube_alpha.routers import auth, data, health, pages, scheduler, sentiments, users, videos
 from tube_alpha.routers.dependencies import get_scheduler
 
-# Configure logging
+# Configure logging (stdout + one file per project .py source via LogRecord.pathname)
 BASE_DIR = Path(__file__).resolve().parent
 LOG_DIR = BASE_DIR / "core" / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
-LOG_FILE = LOG_DIR / "ai.log"
 
 log_level = getattr(logging, os.getenv("LOG_LEVEL", "INFO").upper(), logging.INFO)
 log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -32,8 +32,9 @@ logging.basicConfig(
     format=log_format,
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(LOG_FILE, encoding="utf-8"),
+        PerModuleFileHandler(LOG_DIR, project_root=BASE_DIR),
     ],
+    force=True,
 )
 
 logger = logging.getLogger(__name__)

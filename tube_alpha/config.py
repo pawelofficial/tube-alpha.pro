@@ -30,6 +30,17 @@ def _load_yaml_config() -> dict:
     return {}
 
 
+def _sentiment_max_chunks() -> int:
+    """Max transcript chunks to send to the LLM (-1 = all). Env overrides YAML."""
+    raw = os.getenv("SENTIMENT_MAX_CHUNKS", "").strip()
+    if raw:
+        return int(raw)
+    yaml_val = _load_yaml_config().get("SENTIMENT", {}).get("MAX_CHUNKS")
+    if yaml_val is None:
+        return -1
+    return int(yaml_val)
+
+
 @dataclass(frozen=True)
 class Settings:
     # Environment
@@ -59,8 +70,11 @@ class Settings:
     yt_language: str = field(default_factory=lambda: _load_yaml_config().get("YTD", {}).get("LANGUAGE", "en"))
     quote_separator: str = field(default_factory=lambda: _load_yaml_config().get("YTD", {}).get("SEP", "|~|"))
 
-    # Sentiment analysis
-    max_tokens_per_chunk: int = 1000
+    # Sentiment analysis (MAX_CHUNKS in config.yaml / SENTIMENT_MAX_CHUNKS env; -1 = entire transcript)
+    max_tokens_per_chunk: int = field(
+        default_factory=lambda: int(_load_yaml_config().get("SENTIMENT", {}).get("MAX_TOKENS_PER_CHUNK", 1000))
+    )
+    sentiment_max_chunks: int = field(default_factory=_sentiment_max_chunks)
 
     @property
     def is_development(self) -> bool:

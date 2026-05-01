@@ -121,20 +121,30 @@ class SentimentService:
         Returns list of dicts with keys: asset, sentiment, quotes.
         """
         all_parsed = []
+        max_chunks = self._settings.sentiment_max_chunks
 
-        for chunk in self._split_by_tokens(transcript_text):
+        for chunk_no, chunk in enumerate(self._split_by_tokens(transcript_text), start=1):
             messages = [
                 {"role": "system", "content": _SENTIMENT_PROMPT},
                 {"role": "user", "content": json.dumps(chunk)},
             ]
-            logger.info("Processing chunk of %d characters", len(chunk))
-
+            logger.info(
+                "Processing chunk %d%s of %d characters",
+                chunk_no,
+                f"/{max_chunks}" if max_chunks > 0 else "",
+                len(chunk),
+            )
+            
+            logger.debug("Sentiment messages: %s", messages)
             resp = self._client.chat.completions.create(model=self._model, messages=messages)
             answer = resp.choices[0].message.content
-
+            logger.debug("Sentiment answer: %s", answer)
+            
             _, parsed = self._parse_completion(answer)
             all_parsed.extend(parsed)
-            break  # Process first chunk only (matches original behavior)
+
+            if max_chunks > 0 and chunk_no >= max_chunks:
+                break
 
         return all_parsed
 

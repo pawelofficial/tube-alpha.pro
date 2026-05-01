@@ -5,3 +5,9 @@ YTD:
   VIDS_COUNT : 10
   LANGUAGE : 'en'
   SEP: '|~|'
+
+# Sentiment: MAX_CHUNKS -1 = full transcript; N >= 1 = first N chunks only (saves API calls).
+# Override with env SENTIMENT_MAX_CHUNKS. MAX_TOKENS_PER_CHUNK splits each transcript slice.
+SENTIMENT:
+  MAX_CHUNKS: -1
+  MAX_TOKENS_PER_CHUNK: 1000

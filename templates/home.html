@@ -289,7 +289,7 @@
 
     try {
       const [latestRes, namesRes] = await Promise.all([
-        fetch('/api/v1/data/latest?limit=200'),
+        fetch('/api/v1/data/latest?limit=200&recent_days=7'),
         fetch('/api/v1/data/assets/names'),
       ]);
       if (!latestRes.ok) throw new Error(`HTTP ${latestRes.status}`);
@@ -299,7 +299,7 @@
       const data = await latestRes.json();
       _tiles = data.tiles || [];
       document.getElementById('meta-row').textContent =
-        `${_tiles.length} asset${_tiles.length !== 1 ? 's' : ''} · ${data.total_rows} data point${data.total_rows !== 1 ? 's' : ''}`;
+        `Last 7 days · ${_tiles.length} asset${_tiles.length !== 1 ? 's' : ''} · ${data.total_rows} data point${data.total_rows !== 1 ? 's' : ''}`;
       renderGrid();
     } catch (err) {
       wrap.innerHTML = `<div class="state-box"><span class="icon">⚠️</span><span>Could not load data — ${esc(err.message)}</span></div>`;

@@ -1,37 +1,764 @@
-
-<!-- ============================================ -->
-<!-- dummy2.html (save as separate file) -->
-<!-- ============================================ -->
 {% extends "base.html" %}
+{% block title %}Dashboard — Tube Alpha{% endblock %}
 
-{% block title %}Dummy 2 - Youtube Investor{% endblock %}
+{% block extra_head %}
+<style>
+  /* ── Stats row ── */
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 800px) { .stat-cards { grid-template-columns: repeat(2, 1fr); } }
+  .stat-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.1rem 1.3rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  .stat-label {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    color: var(--text-secondary);
+    font-weight: 600;
+  }
+  .stat-value {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.1;
+  }
+  .stat-value.sm { font-size: 1rem; margin-top: .3rem; }
+
+  /* ── Two-panel grid ── */
+  .dash-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 14px;
+    margin-bottom: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .dash-grid { grid-template-columns: 1fr; } }
+
+  /* ── Panel ── */
+  .panel {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: .85rem 1.2rem;
+    border-bottom: 1px solid var(--bg-secondary);
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .panel-count {
+    font-size: .75rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  /* ── Table ── */
+  .dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .84rem;
+  }
+  .dash-table th {
+    padding: .5rem 1rem;
+    text-align: left;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    white-space: nowrap;
+  }
+  .dash-table td {
+    padding: .55rem 1rem;
+    border-bottom: 1px solid var(--bg-secondary);
+    vertical-align: middle;
+  }
+  .dash-table tr:last-child td { border-bottom: none; }
+  .dash-table tr:hover td { background: #fafbfc; }
+  .cell-name { font-weight: 600; color: var(--text-primary); }
+  .cell-num  { color: var(--text-secondary); text-align: right; white-space: nowrap; }
+
+  /* ── Sentiment bar ── */
+  .sent-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 90px;
+  }
+  .sent-bar {
+    flex: 1;
+    height: 5px;
+    background: var(--bg-secondary);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .sent-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+  }
+
+  /* ── Score badge ── */
+  .net-badge {
+    font-size: .74rem;
+    font-weight: 700;
+    min-width: 38px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .net-badge.bull { color: #2dce89; }
+  .net-badge.bear { color: #f5365c; }
+  .net-badge.neut { color: #adb5bd; }
+
+  /* ── Bull / Bear mini counts ── */
+  .mini-bull { color: #2dce89; font-size: .8rem; }
+  .mini-bear { color: #f5365c; font-size: .8rem; }
+
+  /* ── Timeline panel ── */
+  .timeline-panel {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem 1.2rem 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .timeline-title {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+  .timeline-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 110px;
+    overflow-x: auto;
+    padding-bottom: 28px; /* room for rotated labels */
+  }
+  .tl-bar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 22px;
+    max-width: 50px;
+    height: 100%;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .tl-bar {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    min-height: 3px;
+    cursor: default;
+    transition: opacity .15s;
+  }
+  .tl-bar:hover { opacity: .7; }
+  .tl-label {
+    position: absolute;
+    bottom: -22px;
+    font-size: .6rem;
+    color: var(--text-light);
+    white-space: nowrap;
+    transform: rotate(-40deg);
+    transform-origin: top left;
+  }
+
+  /* ── Loading / empty states ── */
+  .state-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    color: var(--text-secondary);
+    gap: .5rem;
+    font-size: .9rem;
+  }
+  .spinner {
+    width: 30px; height: 30px;
+    border: 3px solid var(--bg-secondary);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: .6rem;
+    flex-wrap: wrap;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: .9rem 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .filter-label {
+    font-size: .68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-secondary);
+  }
+  .filter-bar select,
+  .filter-bar input[type="date"] {
+    padding: .32rem .6rem;
+    border: 1px solid var(--text-light);
+    border-radius: var(--radius-md);
+    font-size: .84rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color .2s;
+    min-width: 120px;
+  }
+  .filter-bar select:focus,
+  .filter-bar input[type="date"]:focus { border-color: var(--primary-color); }
+  .filter-bar input[type="date"] { min-width: 130px; }
+  .filter-active-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: rgba(94,114,228,.08);
+    border: 1px solid rgba(94,114,228,.2);
+    border-radius: 999px;
+    padding: .2rem .55rem;
+    margin-left: .25rem;
+  }
+
+  /* ── Sentiment gauge ── */
+  .gauge-panel {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem 1.4rem 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  .gauge-heading {
+    font-size: .72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-secondary);
+    margin-bottom: .75rem;
+  }
+  .gauge-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .gauge-svg-wrap { flex-shrink: 0; width: 210px; }
+  .gauge-text { text-align: center; min-width: 140px; }
+  .gauge-category {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: .2rem;
+  }
+  .gauge-score {
+    font-size: .85rem;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: .75rem;
+  }
+  .gauge-pills {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+  }
+  .gauge-pill {
+    font-size: .78rem;
+    padding: .22rem .65rem;
+    border-radius: 99px;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .gauge-pill.bull { background: #d1fae5; color: #065f46; }
+  .gauge-pill.bear { background: #fee2e2; color: #991b1b; }
+  .gauge-pill.neut { background: var(--bg-secondary); color: var(--text-secondary); }
+
+  /* ── Sortable headers ── */
+  .th-sort {
+    cursor: pointer;
+    user-select: none;
+  }
+  .th-sort:hover { color: var(--text-primary); }
+  .sort-icon {
+    font-size: .6rem;
+    margin-left: 3px;
+    color: var(--text-light);
+    display: inline-block;
+    width: .7em;
+  }
+  .sort-icon.active { color: var(--primary-color); }
+</style>
+{% endblock %}
 
 {% block content %}
 <section class="section">
-    <div class="container">
-        <div class="text-center fade-in">
-            <h1>Dummy Page 2</h1>
-            <p class="hero-subtitle">
-                This is /dummy2 - a test page for navigation
-            </p>
-        </div>
-    </div>
-</section>
+  <div class="container">
 
-<section class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Test Content for Dummy 2</h2>
-                <p>This is a dummy page created for testing the navigation structure.</p>
-                <p>Current path: <strong>{{ request.url.path }}</strong></p>
-                <p>Authentication status: <strong>{% if is_authenticated %}Authenticated as {{ user_email }}{% else %}Not authenticated{% endif %}</strong></p>
-                
-                <div class="mt-lg">
-                    <a href="/" class="btn btn-primary">Back to Home</a>
-                </div>
-            </div>
-        </div>
+    <div style="margin-bottom: 1.4rem; display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem;">
+      <div>
+        <h2 style="margin: 0; font-size: 1.35rem; color: var(--text-primary);">📈 Dashboard</h2>
+        <div style="font-size: .8rem; color: var(--text-secondary); margin-top: 3px;" id="dash-meta">Loading…</div>
+      </div>
+      <button class="btn btn-outline btn-sm" onclick="loadDashboard()">↺ Refresh</button>
     </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">Asset</span>
+        <select id="f-asset" onchange="applyFilters()">
+          <option value="">All assets</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Guest</span>
+        <select id="f-guest" onchange="applyFilters()">
+          <option value="">All guests</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Sentiment</span>
+        <select id="f-sentiment" onchange="applyFilters()">
+          <option value="">All sentiments</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">From</span>
+        <input type="date" id="f-from" onchange="applyFilters()">
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">To</span>
+        <input type="date" id="f-to" onchange="applyFilters()">
+      </div>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: .5rem;">
+        <span id="filter-badge" style="display:none;" class="filter-active-badge">
+          <span id="filter-count"></span> filter<span id="filter-plural"></span> active
+        </span>
+        <button class="btn btn-sm btn-outline" id="clear-btn" style="display:none;" onclick="clearFilters()">✕ Clear</button>
+      </div>
+    </div>
+
+    <!-- Stats cards -->
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-label">Videos processed</div>
+        <div class="stat-value" id="stat-videos">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Unique assets</div>
+        <div class="stat-value" id="stat-assets">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total mentions</div>
+        <div class="stat-value" id="stat-mentions">—</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Date range</div>
+        <div class="stat-value sm" id="stat-dates">—</div>
+      </div>
+    </div>
+
+    <!-- Sentiment gauge -->
+    <div class="gauge-panel" id="gauge-panel">
+      <div class="state-box" style="min-height: 80px;"><div class="spinner"></div></div>
+    </div>
+
+    <!-- Asset leaderboard + Guest breakdown -->
+    <div class="dash-grid" id="dash-grid">
+      <div class="state-box"><div class="spinner"></div><span>Loading…</span></div>
+    </div>
+
+    <!-- Activity timeline -->
+    <div class="timeline-panel">
+      <div class="timeline-title">
+        Activity Timeline
+        <span style="font-size: .75rem; font-weight: 400; color: var(--text-secondary);">— mentions per video date, green = net bullish</span>
+      </div>
+      <div class="timeline-chart" id="timeline-chart">
+        <div class="state-box" style="min-height: 80px;"><div class="spinner"></div></div>
+      </div>
+    </div>
+
+  </div>
 </section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  const esc      = s => String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const cls      = s => s > 0.05 ? 'bull' : (s < -0.05 ? 'bear' : 'neut');
+  const fmtScore = s => (s > 0 ? '+' : '') + Number(s).toFixed(2);
+  const barColor = s => s > 0.05 ? '#2dce89' : (s < -0.05 ? '#f5365c' : '#adb5bd');
+  const fmtDate  = d => d ? String(d).split('T')[0] : '—';
+  const noData   = cols => `<tr><td colspan="${cols}" style="padding:1.5rem;text-align:center;color:var(--text-light);">No data yet</td></tr>`;
+
+  /* ── Data store ── */
+  let _assets = [];
+  let _guests = [];
+
+  /* ── Sort state (persists across filter changes) ── */
+  const sortState = {
+    assets: { col: 'mention_count', dir: -1 },
+    guests: { col: 'video_count',   dir: -1 },
+  };
+
+  /* ── Sorting ── */
+  function sortBy(table, col) {
+    const st = sortState[table];
+    st.dir = (st.col === col) ? -st.dir : -1;
+    st.col = col;
+    if (table === 'assets') renderAssets();
+    else renderGuests();
+  }
+
+  function sorted(rows, st) {
+    return [...rows].sort((a, b) => {
+      const av = a[st.col] ?? '';
+      const bv = b[st.col] ?? '';
+      return typeof av === 'string' ? st.dir * av.localeCompare(bv) : st.dir * (av - bv);
+    });
+  }
+
+  function updateInds(tableId, st) {
+    document.querySelectorAll(`#${tableId} th[data-col]`).forEach(th => {
+      const icon = th.querySelector('.sort-icon');
+      if (!icon) return;
+      const active = th.dataset.col === st.col;
+      icon.textContent = active ? (st.dir === -1 ? '↓' : '↑') : '↕';
+      icon.classList.toggle('active', active);
+    });
+  }
+
+  /* ── Filter helpers ── */
+  function getFilters() {
+    return {
+      asset:     document.getElementById('f-asset').value,
+      guest:     document.getElementById('f-guest').value,
+      sentiment: document.getElementById('f-sentiment').value,
+      from_date: document.getElementById('f-from').value,
+      to_date:   document.getElementById('f-to').value,
+    };
+  }
+
+  function updateFilterBadge() {
+    const f = getFilters();
+    const count = Object.values(f).filter(v => v).length;
+    const badge = document.getElementById('filter-badge');
+    const btn   = document.getElementById('clear-btn');
+    if (count > 0) {
+      document.getElementById('filter-count').textContent = count;
+      document.getElementById('filter-plural').textContent = count === 1 ? '' : 's';
+      badge.style.display = '';
+      btn.style.display   = '';
+    } else {
+      badge.style.display = 'none';
+      btn.style.display   = 'none';
+    }
+  }
+
+  function applyFilters() {
+    updateFilterBadge();
+    loadDashboard();
+  }
+
+  function clearFilters() {
+    ['f-asset', 'f-guest', 'f-sentiment'].forEach(id => document.getElementById(id).value = '');
+    ['f-from', 'f-to'].forEach(id => document.getElementById(id).value = '');
+    updateFilterBadge();
+    loadDashboard();
+  }
+
+  /* ── Populate filter dropdowns from /api/v1/data/filters ── */
+  async function loadFilterOptions() {
+    try {
+      const res = await fetch('/api/v1/data/filters');
+      if (!res.ok) return;
+      const opts = await res.json();
+
+      fillSelect('f-asset',     opts.assets     || [], 'All assets');
+      fillSelect('f-guest',     opts.guests     || [], 'All guests');
+      fillSelect('f-sentiment', opts.sentiments || [], 'All sentiments');
+
+      const dr = opts.date_range || {};
+      const minD = (dr.min_video_date || '').split('T')[0];
+      const maxD = (dr.max_video_date || '').split('T')[0];
+      if (minD) {
+        document.getElementById('f-from').min = minD;
+        document.getElementById('f-from').max = maxD;
+        document.getElementById('f-to').min   = minD;
+        document.getElementById('f-to').max   = maxD;
+      }
+    } catch {}
+  }
+
+  function fillSelect(id, options, placeholder) {
+    const sel = document.getElementById(id);
+    sel.innerHTML = `<option value="">${esc(placeholder)}</option>`;
+    options.forEach(v => {
+      const o = document.createElement('option');
+      o.value = v;
+      o.textContent = v;
+      sel.appendChild(o);
+    });
+  }
+
+  /* ── Render helpers ── */
+  function renderAssets() {
+    const st = sortState.assets;
+    document.getElementById('assets-tbody').innerHTML =
+      sorted(_assets, st).map(a => {
+        const total   = (a.bullish || 0) + (a.bearish || 0);
+        const bullPct = total > 0 ? Math.round((a.bullish / total) * 100) : 50;
+        const c = cls(a.net_score);
+        return `
+          <tr>
+            <td class="cell-name">${esc(a.asset)}</td>
+            <td class="cell-num">${a.mention_count}</td>
+            <td class="cell-num">${a.video_count}</td>
+            <td>
+              <div class="sent-bar-wrap">
+                <div class="sent-bar">
+                  <div class="sent-bar-fill" style="width:${bullPct}%; background:${barColor(a.net_score)};"></div>
+                </div>
+                <span class="net-badge ${c}">${fmtScore(a.net_score)}</span>
+              </div>
+            </td>
+          </tr>`;
+      }).join('') || noData(4);
+    updateInds('assets-table', st);
+  }
+
+  function renderGuests() {
+    const st = sortState.guests;
+    document.getElementById('guests-tbody').innerHTML =
+      sorted(_guests, st).map(g => {
+        const c = cls(g.net_score);
+        return `
+          <tr>
+            <td class="cell-name">${esc(g.guest)}</td>
+            <td class="cell-num">${g.video_count}</td>
+            <td><span class="mini-bull">▲${g.bullish || 0}</span></td>
+            <td><span class="mini-bear">▼${g.bearish || 0}</span></td>
+            <td><span class="net-badge ${c}">${fmtScore(g.net_score)}</span></td>
+          </tr>`;
+      }).join('') || noData(5);
+    updateInds('guests-table', st);
+  }
+
+  function renderGrid(assets, guests) {
+    _assets = assets;
+    _guests = guests;
+
+    document.getElementById('dash-grid').innerHTML = `
+      <div class="panel">
+        <div class="panel-header">
+          Asset Leaderboard
+          <span class="panel-count">top ${assets.length} by mentions</span>
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="dash-table" id="assets-table">
+            <thead>
+              <tr>
+                <th class="th-sort" data-col="asset" onclick="sortBy('assets','asset')">Asset <span class="sort-icon">↕</span></th>
+                <th class="th-sort" data-col="mention_count" onclick="sortBy('assets','mention_count')" style="text-align:right;">Mentions <span class="sort-icon active">↓</span></th>
+                <th class="th-sort" data-col="video_count" onclick="sortBy('assets','video_count')" style="text-align:right;">Videos <span class="sort-icon">↕</span></th>
+                <th class="th-sort" data-col="net_score" onclick="sortBy('assets','net_score')">Sentiment <span class="sort-icon">↕</span></th>
+              </tr>
+            </thead>
+            <tbody id="assets-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          Guest Breakdown
+          <span class="panel-count">${guests.length} guest${guests.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="dash-table" id="guests-table">
+            <thead>
+              <tr>
+                <th class="th-sort" data-col="guest" onclick="sortBy('guests','guest')">Guest <span class="sort-icon">↕</span></th>
+                <th class="th-sort" data-col="video_count" onclick="sortBy('guests','video_count')" style="text-align:right;">Vids <span class="sort-icon active">↓</span></th>
+                <th class="th-sort" data-col="bullish" onclick="sortBy('guests','bullish')">Bull <span class="sort-icon">↕</span></th>
+                <th class="th-sort" data-col="bearish" onclick="sortBy('guests','bearish')">Bear <span class="sort-icon">↕</span></th>
+                <th class="th-sort" data-col="net_score" onclick="sortBy('guests','net_score')">Net <span class="sort-icon">↕</span></th>
+              </tr>
+            </thead>
+            <tbody id="guests-tbody"></tbody>
+          </table>
+        </div>
+      </div>`;
+
+    renderAssets();
+    renderGuests();
+  }
+
+  /* ── Main data fetch ── */
+  async function loadDashboard() {
+    setLoading();
+    try {
+      const f = getFilters();
+      const params = new URLSearchParams();
+      if (f.asset)     params.set('asset',     f.asset);
+      if (f.guest)     params.set('guest',     f.guest);
+      if (f.sentiment) params.set('sentiment', f.sentiment);
+      if (f.from_date) params.set('from_date', f.from_date);
+      if (f.to_date)   params.set('to_date',   f.to_date);
+      const url = '/api/v1/data/dashboard' + (params.size ? '?' + params : '');
+
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      renderStats(data.stats || {});
+      renderGauge(data.stats || {});
+      renderGrid(data.assets || [], data.guests || []);
+      renderTimeline(data.timeline || []);
+
+      const s = data.stats || {};
+      document.getElementById('dash-meta').textContent =
+        `${fmtDate(s.earliest_date)} to ${fmtDate(s.latest_date)}`;
+    } catch (err) {
+      document.getElementById('dash-grid').innerHTML =
+        `<div class="state-box" style="grid-column:1/-1;">⚠️ ${esc(err.message)}</div>`;
+      document.getElementById('dash-meta').textContent = 'Failed to load';
+    }
+  }
+
+  function setLoading() {
+    document.getElementById('dash-grid').innerHTML =
+      `<div class="state-box"><div class="spinner"></div><span>Loading…</span></div>`;
+    document.getElementById('timeline-chart').innerHTML =
+      `<div class="state-box" style="min-height:80px;"><div class="spinner"></div></div>`;
+    ['stat-videos','stat-assets','stat-mentions','stat-dates'].forEach(id => {
+      document.getElementById(id).textContent = '—';
+    });
+    document.getElementById('dash-meta').textContent = 'Loading…';
+  }
+
+  function renderGauge(s) {
+    const bullish  = s.total_bullish  || 0;
+    const bearish  = s.total_bearish  || 0;
+    const mentions = s.total_mentions || 0;
+    const neutral  = Math.max(0, mentions - bullish - bearish);
+    const score    = s.net_score ?? 0;   // [-1, 1]
+
+    let category, catColor;
+    if      (score >  0.5) { category = 'Strongly Bullish'; catColor = '#059669'; }
+    else if (score >  0.1) { category = 'Bullish';          catColor = '#2dce89'; }
+    else if (score > -0.1) { category = 'Neutral';          catColor = '#9ca3af'; }
+    else if (score > -0.5) { category = 'Bearish';          catColor = '#f5365c'; }
+    else                   { category = 'Strongly Bearish'; catColor = '#be123c'; }
+
+    const rotation  = score * 90;
+    const scoreText = (score >= 0 ? '+' : '') + score.toFixed(2);
+
+    // Semi-circle arc:  centre (100,100) radius 80
+    // left (180°) → (20,100) | zone split at 120° → (60,30.7) and 60° → (140,30.7) | right (0°) → (180,100)
+    const svg = `<svg viewBox="0 0 200 115" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;overflow:visible;">
+      <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#f0f2f5" stroke-width="20" stroke-linecap="round"/>
+      <path d="M 20 100   A 80 80 0 0 1 60  30.7" fill="none" stroke="#fecaca" stroke-width="20"/>
+      <path d="M 60  30.7 A 80 80 0 0 1 140 30.7" fill="none" stroke="#e5e7eb" stroke-width="20"/>
+      <path d="M 140 30.7 A 80 80 0 0 1 180 100"  fill="none" stroke="#a7f3d0" stroke-width="20"/>
+      <line x1="100" y1="98" x2="100" y2="29"
+        stroke="rgba(0,0,0,.12)" stroke-width="4" stroke-linecap="round"
+        transform="rotate(${rotation + 1.5}, 100, 100)"/>
+      <line x1="100" y1="100" x2="100" y2="28"
+        stroke="#1e293b" stroke-width="3" stroke-linecap="round"
+        transform="rotate(${rotation}, 100, 100)"/>
+      <circle cx="100" cy="100" r="6"   fill="#1e293b"/>
+      <circle cx="100" cy="100" r="2.8" fill="white"/>
+      <text x="12"  y="113" font-size="9" fill="#f5365c" font-family="sans-serif" font-weight="700">Bear</text>
+      <text x="100" y="12"  font-size="9" fill="#9ca3af" font-family="sans-serif" font-weight="700" text-anchor="middle">Neutral</text>
+      <text x="188" y="113" font-size="9" fill="#059669" font-family="sans-serif" font-weight="700" text-anchor="end">Bull</text>
+    </svg>`;
+
+    document.getElementById('gauge-panel').innerHTML = `
+      <div class="gauge-heading">Overall Sentiment</div>
+      <div class="gauge-body">
+        <div class="gauge-svg-wrap">${svg}</div>
+        <div class="gauge-text">
+          <div class="gauge-category" style="color:${catColor};">${esc(category)}</div>
+          <div class="gauge-score">${scoreText} net score</div>
+          <div class="gauge-pills">
+            <span class="gauge-pill bull">▲ ${bullish} bullish</span>
+            <span class="gauge-pill neut">◆ ${neutral} neutral</span>
+            <span class="gauge-pill bear">▼ ${bearish} bearish</span>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function renderStats(s) {
+    document.getElementById('stat-videos').textContent   = s.total_videos   ?? '—';
+    document.getElementById('stat-assets').textContent   = s.total_assets   ?? '—';
+    document.getElementById('stat-mentions').textContent = s.total_mentions  ?? '—';
+    const early = fmtDate(s.earliest_date);
+    const late  = fmtDate(s.latest_date);
+    document.getElementById('stat-dates').textContent =
+      (early !== '—' && late !== '—') ? `${early} – ${late}` : '—';
+  }
+
+  function renderTimeline(data) {
+    const container = document.getElementById('timeline-chart');
+    if (!data.length) {
+      container.innerHTML = '<span style="color:var(--text-light);font-size:.85rem;align-self:center;">No timeline data</span>';
+      return;
+    }
+    const maxCount = Math.max(...data.map(d => d.mention_count), 1);
+    container.innerHTML = data.map(d => {
+      const h   = Math.max(3, Math.round((d.mention_count / maxCount) * 80));
+      const net = (d.bullish || 0) - (d.bearish || 0);
+      const col = net > 0 ? '#2dce89' : (net < 0 ? '#f5365c' : '#adb5bd');
+      const lbl = String(d.date || '').slice(5); // MM-DD
+      const tip = `${d.date}: ${d.mention_count} mentions (▲${d.bullish||0} ▼${d.bearish||0})`;
+      return `
+        <div class="tl-bar-wrap" title="${esc(tip)}">
+          <div class="tl-bar" style="height:${h}px; background:${col}95;"></div>
+          <div class="tl-label">${esc(lbl)}</div>
+        </div>`;
+    }).join('');
+  }
+
+  /* ── Boot ── */
+  loadFilterOptions();
+  loadDashboard();
+</script>
 {% endblock %}

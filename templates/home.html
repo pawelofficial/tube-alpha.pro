@@ -215,8 +215,10 @@
 
     <!-- Filter bar -->
     <div class="filter-bar">
-      <span class="filter-label">Filter:</span>
-      <input type="text" id="search-input" placeholder="Asset name…" oninput="renderGrid()" />
+      <span class="filter-label">Asset:</span>
+      <select id="asset-filter" onchange="renderGrid()">
+        <option value="">All assets</option>
+      </select>
       <select id="sentiment-filter" onchange="renderGrid()">
         <option value="">All sentiments</option>
         <option value="bull">Bullish</option>
@@ -263,18 +265,41 @@
   }
 
   /* ── fetch ── */
+  function fillAssetSelect(names) {
+    const sel = document.getElementById('asset-filter');
+    const prev = sel.value;
+    sel.replaceChildren();
+    const opt0 = document.createElement('option');
+    opt0.value = '';
+    opt0.textContent = 'All assets';
+    sel.appendChild(opt0);
+    for (const a of names || []) {
+      const o = document.createElement('option');
+      o.value = a;
+      o.textContent = a;
+      sel.appendChild(o);
+    }
+    sel.value = [...sel.options].some(o => o.value === prev) ? prev : '';
+  }
+
   async function loadTiles() {
     const wrap = document.getElementById('grid-wrap');
     wrap.innerHTML = `<div class="state-box"><div class="spinner"></div><span>Fetching data…</span></div>`;
     document.getElementById('meta-row').textContent = 'Loading…';
 
     try {
-      const r = await fetch('/api/v1/data/latest?limit=200');
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const data = await r.json();
+      const [latestRes, namesRes] = await Promise.all([
+        fetch('/api/v1/data/latest?limit=200&recent_days=7'),
+        fetch('/api/v1/data/assets/names'),
+      ]);
+      if (!latestRes.ok) throw new Error(`HTTP ${latestRes.status}`);
+      if (namesRes.ok) {
+        fillAssetSelect(await namesRes.json());
+      }
+      const data = await latestRes.json();
       _tiles = data.tiles || [];
       document.getElementById('meta-row').textContent =
-        `${_tiles.length} asset${_tiles.length !== 1 ? 's' : ''} · ${data.total_rows} data point${data.total_rows !== 1 ? 's' : ''}`;
+        `Last 7 days · ${_tiles.length} asset${_tiles.length !== 1 ? 's' : ''} · ${data.total_rows} data point${data.total_rows !== 1 ? 's' : ''}`;
       renderGrid();
     } catch (err) {
       wrap.innerHTML = `<div class="state-box"><span class="icon">⚠️</span><span>Could not load data — ${esc(err.message)}</span></div>`;
@@ -284,12 +309,12 @@
   /* ── render ── */
   function renderGrid() {
     const wrap     = document.getElementById('grid-wrap');
-    const search   = document.getElementById('search-input').value.trim().toLowerCase();
+    const assetSel = document.getElementById('asset-filter').value;
     const sentFilt = document.getElementById('sentiment-filter').value;
     const sort     = document.getElementById('sort-select').value;
 
     let tiles = _tiles.filter(t => {
-      if (search && !t.asset.toLowerCase().includes(search)) return false;
+      if (assetSel && t.asset !== assetSel) return false;
       if (sentFilt && cls(t.avg_score) !== sentFilt) return false;
       return true;
     });

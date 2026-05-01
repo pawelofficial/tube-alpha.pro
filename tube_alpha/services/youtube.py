@@ -17,7 +17,8 @@ import json
 import logging
 import re
 import time
-from typing import Dict, List, Optional, Tuple
+from datetime import datetime, timezone
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 from bs4 import BeautifulSoup
@@ -81,6 +82,33 @@ def _clean_title(title: str) -> str:
     title = "".join(c for c in title if ord(c) >= 32)
     title = " ".join(title.split()).strip()
     return title
+
+
+def _upload_iso_from_ytdlp_info(info: Optional[Dict[str, Any]]) -> Optional[str]:
+    """Normalize yt-dlp `timestamp`, `release_timestamp`, or `upload_date` to UTC SQLite datetime."""
+    if not info:
+        return None
+    for key in ("timestamp", "release_timestamp"):
+        ts = info.get(key)
+        if ts is not None:
+            try:
+                return datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime(
+                    "%Y-%m-%d %H:%M:%S"
+                )
+            except (ValueError, OSError, OverflowError, TypeError):
+                pass
+    ud = info.get("upload_date") or info.get("release_date")
+    if ud:
+        s = str(ud).strip()
+        if len(s) == 8 and s.isdigit():
+            try:
+                dt = datetime(
+                    int(s[:4]), int(s[4:6]), int(s[6:8]), tzinfo=timezone.utc
+                )
+                return dt.strftime("%Y-%m-%d %H:%M:%S")
+            except ValueError:
+                pass
+    return None
 
 
 class YouTubeService:
@@ -238,6 +266,46 @@ class YouTubeService:
         logger.error("All proxy attempts failed for metadata of %s", video_id)
         return "error", "error"
 
+    # --- Upload date (yt-dlp; fills channels.video_date) ---
+
+    def _ytdlp_opts_meta_only(self, proxy_user_index: Optional[int]) -> dict:
+        opts: dict = {
+            "quiet": True,
+            "no_warnings": True,
+            "noplaylist": True,
+            "skip_download": True,
+        }
+        if self._proxy.is_configured:
+            url = self._proxy.get_proxy_url(proxy_user_index)
+            if url:
+                opts["proxy"] = url
+        return opts
+
+    def get_video_upload_date(
+        self, video_id: str, proxy_user_index: Optional[int] = None
+    ) -> Optional[str]:
+        """Return publish time as UTC ``YYYY-MM-DD HH:MM:SS`` via yt-dlp, or None."""
+        watch = f"https://www.youtube.com/watch?v={video_id}"
+        try:
+            with YoutubeDL(self._ytdlp_opts_meta_only(proxy_user_index)) as ydl:
+                info = ydl.extract_info(watch, download=False)
+            iso = _upload_iso_from_ytdlp_info(info)
+            if iso:
+                logger.info("Upload date for %s: %s", video_id, iso)
+            return iso
+        except Exception as e:
+            logger.warning("yt-dlp could not get upload date for %s: %s", video_id, e)
+            return None
+
+    def get_video_upload_date_with_rotation(self, video_id: str) -> Optional[str]:
+        if self._proxy.is_configured:
+            for user_idx in self._proxy.iter_proxy_users():
+                iso = self.get_video_upload_date(video_id, proxy_user_index=user_idx)
+                if iso:
+                    return iso
+            return None
+        return self.get_video_upload_date(video_id, proxy_user_index=None)
+
     # --- Database operations ---
 
     def save_channel_metadata(
@@ -247,12 +315,19 @@ class YouTubeService:
         guest: Optional[str],
         description_summary: Optional[str],
         valid: bool,
+        video_date: Optional[str] = None,
     ) -> None:
-        """Insert or update channel/video metadata."""
+        """Insert or update channel/video metadata (UPSERT on ``video_id``)."""
         self._db.execute(
-            """INSERT INTO channels (name, video_id, guest, description_summary, valid)
-               VALUES (?, ?, ?, ?, ?)""",
-            (title, video_id, guest, description_summary, str(valid)),
+            """INSERT INTO channels (name, video_id, guest, description_summary, valid, video_date)
+               VALUES (?, ?, ?, ?, ?, ?)
+               ON CONFLICT(video_id) DO UPDATE SET
+                 name = excluded.name,
+                 guest = excluded.guest,
+                 description_summary = excluded.description_summary,
+                 valid = excluded.valid,
+                 video_date = COALESCE(excluded.video_date, channels.video_date)""",
+            (title, video_id, guest, description_summary, str(valid), video_date),
         )
         logger.info("Saved channel metadata for %s", video_id)
 
@@ -344,13 +419,19 @@ class YouTubeService:
                 logger.info("Skipping %s - already processed", video_id)
                 continue
 
+            upload_iso = _upload_iso_from_ytdlp_info(entry)
+            if not upload_iso:
+                upload_iso = self.get_video_upload_date_with_rotation(video_id)
+
             # Insert channel record
             try:
                 self._db.execute(
-                    """INSERT INTO channels (name, video_id, transcript_downloaded, transcript_parsed)
-                       VALUES (?, ?, 0, 0)
-                       ON CONFLICT(video_id) DO NOTHING""",
-                    (channel_name, video_id),
+                    """INSERT INTO channels (name, video_id, transcript_downloaded,
+                                             transcript_parsed, video_date)
+                       VALUES (?, ?, 0, 0, ?)
+                       ON CONFLICT(video_id) DO UPDATE SET
+                         video_date = COALESCE(channels.video_date, excluded.video_date)""",
+                    (channel_name, video_id, upload_iso),
                 )
             except Exception:
                 pass

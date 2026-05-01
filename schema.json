@@ -108,5 +108,31 @@
         }
       ]
     }
+  ],
+  "views": [
+    {
+      "name": "vw_assets",
+      "db_type": "data",
+      "drop_view": "DROP VIEW IF EXISTS vw_assets;",
+      "create_view": "CREATE VIEW vw_assets AS SELECT DISTINCT asset FROM answers;"
+    },
+    {
+      "name": "vw_guests",
+      "db_type": "data",
+      "drop_view": "DROP VIEW IF EXISTS vw_guests;",
+      "create_view": "CREATE VIEW vw_guests AS SELECT DISTINCT guest FROM channels;"
+    },
+    {
+      "name": "vw_dates",
+      "db_type": "data",
+      "drop_view": "DROP VIEW IF EXISTS vw_dates;",
+      "create_view": "CREATE VIEW vw_dates AS SELECT MIN(video_date) AS min_video_date, MAX(video_date) AS max_video_date FROM channels;"
+    },
+    {
+      "name": "vw_sentiments",
+      "db_type": "data",
+      "drop_view": "DROP VIEW IF EXISTS vw_sentiments;",
+      "create_view": "CREATE VIEW vw_sentiments AS SELECT DISTINCT sentiment FROM answers;"
+    }
   ]
 }

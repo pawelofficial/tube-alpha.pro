@@ -325,6 +325,15 @@ class DataService:
 
         return rows
 
+    def distinct_asset_names(self) -> List[str]:
+        """Distinct asset labels from ``vw_assets`` (alphabetical, non-empty)."""
+        rows = self._db.fetch_all(
+            """SELECT asset FROM vw_assets
+               WHERE asset IS NOT NULL AND TRIM(asset) != ''
+               ORDER BY asset COLLATE NOCASE"""
+        )
+        return [str(r["asset"]).strip() for r in rows if r.get("asset") is not None]
+
     # ------------------------------------------------------------------
     # Use case: What guests have been interviewed?
     # ------------------------------------------------------------------
@@ -339,3 +348,152 @@ class DataService:
                GROUP BY guest
                ORDER BY last_ts DESC"""
         )
+
+    # ------------------------------------------------------------------
+    # Use case: Dashboard overview — aggregate stats across all data
+    # ------------------------------------------------------------------
+    def dashboard_overview(
+        self,
+        asset: Optional[str] = None,
+        from_date: Optional[str] = None,
+        to_date: Optional[str] = None,
+        guest: Optional[str] = None,
+        sentiment: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """Aggregate stats, leaderboards, and timeline for the dashboard.
+
+        All four queries share the same filter conditions so every panel
+        reflects the same slice of data.  User values are passed as
+        parameterised ``?`` arguments — the f-string only inserts our own
+        hardcoded SQL fragments, never user input.
+        """
+        conds: List[str] = ["1=1"]
+        cparams: list = []
+        if asset:
+            conds.append("a.asset = ?")
+            cparams.append(asset)
+        if from_date:
+            conds.append("c.video_date >= ?")
+            cparams.append(from_date)
+        if to_date:
+            conds.append("c.video_date <= ?")
+            cparams.append(to_date)
+        if guest:
+            conds.append("c.guest = ?")
+            cparams.append(guest)
+        if sentiment:
+            conds.append("LOWER(a.sentiment) LIKE ?")
+            cparams.append(f"%{sentiment.lower()}%")
+
+        where = " AND ".join(conds)
+        wp = tuple(cparams)
+
+        stats = self._db.fetch_one(f"""
+            SELECT
+                COUNT(DISTINCT c.video_id)                                                          AS total_videos,
+                COUNT(DISTINCT a.asset)                                                             AS total_assets,
+                COUNT(a.no)                                                                         AS total_mentions,
+                MIN(c.video_date)                                                                   AS earliest_date,
+                MAX(c.video_date)                                                                   AS latest_date,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bullish%' THEN 1 ELSE 0 END)               AS total_bullish,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bearish%' THEN 1 ELSE 0 END)               AS total_bearish
+            FROM channels c
+            JOIN answers a ON a.video_id = c.video_id
+            WHERE {where}
+        """, wp) or {}
+        # Compute overall net sentiment score [-1, 1] from the bullish/bearish totals
+        b  = stats.get("total_bullish") or 0
+        be = stats.get("total_bearish") or 0
+        polar = b + be
+        stats["net_score"] = round((b - be) / polar, 3) if polar else 0
+
+        timeline = self._db.fetch_all(f"""
+            SELECT
+                DATE(c.video_date)                                                          AS date,
+                COUNT(*)                                                                    AS mention_count,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bullish%' THEN 1 ELSE 0 END)       AS bullish,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bearish%' THEN 1 ELSE 0 END)       AS bearish
+            FROM channels c
+            JOIN answers a ON a.video_id = c.video_id
+            WHERE {where} AND c.video_date IS NOT NULL
+            GROUP BY DATE(c.video_date)
+            ORDER BY date ASC
+            LIMIT 30
+        """, wp)
+
+        assets = self._db.fetch_all(f"""
+            SELECT
+                a.asset,
+                COUNT(*)                                                                    AS mention_count,
+                COUNT(DISTINCT a.video_id)                                                  AS video_count,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bullish%' THEN 1 ELSE 0 END)       AS bullish,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bearish%' THEN 1 ELSE 0 END)       AS bearish,
+                MAX(a.ts)                                                                   AS last_ts
+            FROM answers a
+            JOIN channels c ON c.video_id = a.video_id
+            WHERE {where}
+            GROUP BY a.asset
+            ORDER BY mention_count DESC
+            LIMIT 20
+        """, wp)
+        for row in assets:
+            b  = row.get("bullish") or 0
+            be = row.get("bearish") or 0
+            cnt = row["mention_count"] or 1
+            row["net_score"] = round((b - be) / cnt, 2)
+
+        guests = self._db.fetch_all(f"""
+            SELECT
+                c.guest,
+                COUNT(DISTINCT c.video_id)                                                  AS video_count,
+                COUNT(a.no)                                                                 AS mention_count,
+                MAX(c.video_date)                                                           AS last_date,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bullish%' THEN 1 ELSE 0 END)       AS bullish,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bearish%' THEN 1 ELSE 0 END)       AS bearish
+            FROM channels c
+            JOIN answers a ON a.video_id = c.video_id
+            WHERE {where} AND c.guest IS NOT NULL AND TRIM(c.guest) != ''
+            GROUP BY c.guest
+            ORDER BY video_count DESC, last_date DESC
+        """, wp)
+        for row in guests:
+            b  = row.get("bullish") or 0
+            be = row.get("bearish") or 0
+            cnt = row["mention_count"] or 1
+            row["net_score"] = round((b - be) / cnt, 2)
+
+        return {
+            "stats": stats,
+            "timeline": timeline,
+            "assets": assets,
+            "guests": guests,
+        }
+
+    def filter_options(self) -> Dict[str, Any]:
+        """Distinct values for dashboard filter dropdowns."""
+        assets = self._db.fetch_scalars(
+            """SELECT DISTINCT asset FROM answers
+               WHERE asset IS NOT NULL AND TRIM(asset) != ''
+               ORDER BY asset COLLATE NOCASE"""
+        )
+        guests = self._db.fetch_scalars(
+            """SELECT DISTINCT guest FROM channels
+               WHERE guest IS NOT NULL AND TRIM(guest) != ''
+               ORDER BY guest COLLATE NOCASE"""
+        )
+        sentiments = self._db.fetch_scalars(
+            """SELECT DISTINCT sentiment FROM answers
+               WHERE sentiment IS NOT NULL AND TRIM(sentiment) != ''
+               ORDER BY sentiment COLLATE NOCASE"""
+        )
+        date_range = self._db.fetch_one(
+            """SELECT MIN(video_date) AS min_video_date,
+                      MAX(video_date) AS max_video_date
+               FROM channels WHERE video_date IS NOT NULL"""
+        ) or {}
+        return {
+            "assets": assets,
+            "guests": guests,
+            "sentiments": sentiments,
+            "date_range": date_range,
+        }

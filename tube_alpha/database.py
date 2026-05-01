@@ -141,18 +141,32 @@ class Database:
         with open(schema_file) as f:
             schema = json.load(f)
 
+        db_filename = self.db_path.stem  # "data" or "admin"
+
+        for view in schema.get("views", []):
+            view_name = view["name"]
+            if view.get("db_type", "data") != db_filename:
+                continue
+            logger.info("Dropping view: %s", view_name)
+            self.conn.execute(view["drop_view"])
+
         for table in schema["tables"]:
             table_name = table["name"]
             db_type = table.get("db_type", "data")
 
-            # Only process tables matching this database type
-            db_filename = self.db_path.stem  # "data" or "admin"
             if db_type != db_filename:
                 continue
 
             logger.info("Creating table: %s", table_name)
             self.conn.execute(table["drop_table"])
             self.conn.execute(table["create_table"])
+
+        for view in schema.get("views", []):
+            view_name = view["name"]
+            if view.get("db_type", "data") != db_filename:
+                continue
+            logger.info("Creating view: %s", view_name)
+            self.conn.execute(view["create_view"])
 
         self.conn.commit()
         logger.info("Schema creation complete for %s", self.db_path.name)

@@ -254,6 +254,60 @@
     margin-left: .25rem;
   }
 
+  /* ── Sentiment gauge ── */
+  .gauge-panel {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem 1.4rem 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  .gauge-heading {
+    font-size: .72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-secondary);
+    margin-bottom: .75rem;
+  }
+  .gauge-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .gauge-svg-wrap { flex-shrink: 0; width: 210px; }
+  .gauge-text { text-align: center; min-width: 140px; }
+  .gauge-category {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: .2rem;
+  }
+  .gauge-score {
+    font-size: .85rem;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: .75rem;
+  }
+  .gauge-pills {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+  }
+  .gauge-pill {
+    font-size: .78rem;
+    padding: .22rem .65rem;
+    border-radius: 99px;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .gauge-pill.bull { background: #d1fae5; color: #065f46; }
+  .gauge-pill.bear { background: #fee2e2; color: #991b1b; }
+  .gauge-pill.neut { background: var(--bg-secondary); color: var(--text-secondary); }
+
   /* ── Sortable headers ── */
   .th-sort {
     cursor: pointer;
@@ -337,6 +391,11 @@
         <div class="stat-label">Date range</div>
         <div class="stat-value sm" id="stat-dates">—</div>
       </div>
+    </div>
+
+    <!-- Sentiment gauge -->
+    <div class="gauge-panel" id="gauge-panel">
+      <div class="state-box" style="min-height: 80px;"><div class="spinner"></div></div>
     </div>
 
     <!-- Asset leaderboard + Guest breakdown -->
@@ -589,6 +648,7 @@
       const data = await res.json();
 
       renderStats(data.stats || {});
+      renderGauge(data.stats || {});
       renderGrid(data.assets || [], data.guests || []);
       renderTimeline(data.timeline || []);
 
@@ -611,6 +671,59 @@
       document.getElementById(id).textContent = '—';
     });
     document.getElementById('dash-meta').textContent = 'Loading…';
+  }
+
+  function renderGauge(s) {
+    const bullish  = s.total_bullish  || 0;
+    const bearish  = s.total_bearish  || 0;
+    const mentions = s.total_mentions || 0;
+    const neutral  = Math.max(0, mentions - bullish - bearish);
+    const score    = s.net_score ?? 0;   // [-1, 1]
+
+    let category, catColor;
+    if      (score >  0.5) { category = 'Strongly Bullish'; catColor = '#059669'; }
+    else if (score >  0.1) { category = 'Bullish';          catColor = '#2dce89'; }
+    else if (score > -0.1) { category = 'Neutral';          catColor = '#9ca3af'; }
+    else if (score > -0.5) { category = 'Bearish';          catColor = '#f5365c'; }
+    else                   { category = 'Strongly Bearish'; catColor = '#be123c'; }
+
+    const rotation  = score * 90;
+    const scoreText = (score >= 0 ? '+' : '') + score.toFixed(2);
+
+    // Semi-circle arc:  centre (100,100) radius 80
+    // left (180°) → (20,100) | zone split at 120° → (60,30.7) and 60° → (140,30.7) | right (0°) → (180,100)
+    const svg = `<svg viewBox="0 0 200 115" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;overflow:visible;">
+      <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#f0f2f5" stroke-width="20" stroke-linecap="round"/>
+      <path d="M 20 100   A 80 80 0 0 1 60  30.7" fill="none" stroke="#fecaca" stroke-width="20"/>
+      <path d="M 60  30.7 A 80 80 0 0 1 140 30.7" fill="none" stroke="#e5e7eb" stroke-width="20"/>
+      <path d="M 140 30.7 A 80 80 0 0 1 180 100"  fill="none" stroke="#a7f3d0" stroke-width="20"/>
+      <line x1="100" y1="98" x2="100" y2="29"
+        stroke="rgba(0,0,0,.12)" stroke-width="4" stroke-linecap="round"
+        transform="rotate(${rotation + 1.5}, 100, 100)"/>
+      <line x1="100" y1="100" x2="100" y2="28"
+        stroke="#1e293b" stroke-width="3" stroke-linecap="round"
+        transform="rotate(${rotation}, 100, 100)"/>
+      <circle cx="100" cy="100" r="6"   fill="#1e293b"/>
+      <circle cx="100" cy="100" r="2.8" fill="white"/>
+      <text x="12"  y="113" font-size="9" fill="#f5365c" font-family="sans-serif" font-weight="700">Bear</text>
+      <text x="100" y="12"  font-size="9" fill="#9ca3af" font-family="sans-serif" font-weight="700" text-anchor="middle">Neutral</text>
+      <text x="188" y="113" font-size="9" fill="#059669" font-family="sans-serif" font-weight="700" text-anchor="end">Bull</text>
+    </svg>`;
+
+    document.getElementById('gauge-panel').innerHTML = `
+      <div class="gauge-heading">Overall Sentiment</div>
+      <div class="gauge-body">
+        <div class="gauge-svg-wrap">${svg}</div>
+        <div class="gauge-text">
+          <div class="gauge-category" style="color:${catColor};">${esc(category)}</div>
+          <div class="gauge-score">${scoreText} net score</div>
+          <div class="gauge-pills">
+            <span class="gauge-pill bull">▲ ${bullish} bullish</span>
+            <span class="gauge-pill neut">◆ ${neutral} neutral</span>
+            <span class="gauge-pill bear">▼ ${bearish} bearish</span>
+          </div>
+        </div>
+      </div>`;
   }
 
   function renderStats(s) {

@@ -390,15 +390,22 @@ class DataService:
 
         stats = self._db.fetch_one(f"""
             SELECT
-                COUNT(DISTINCT c.video_id)  AS total_videos,
-                COUNT(DISTINCT a.asset)     AS total_assets,
-                COUNT(a.no)                 AS total_mentions,
-                MIN(c.video_date)           AS earliest_date,
-                MAX(c.video_date)           AS latest_date
+                COUNT(DISTINCT c.video_id)                                                          AS total_videos,
+                COUNT(DISTINCT a.asset)                                                             AS total_assets,
+                COUNT(a.no)                                                                         AS total_mentions,
+                MIN(c.video_date)                                                                   AS earliest_date,
+                MAX(c.video_date)                                                                   AS latest_date,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bullish%' THEN 1 ELSE 0 END)               AS total_bullish,
+                SUM(CASE WHEN LOWER(a.sentiment) LIKE '%bearish%' THEN 1 ELSE 0 END)               AS total_bearish
             FROM channels c
             JOIN answers a ON a.video_id = c.video_id
             WHERE {where}
         """, wp) or {}
+        # Compute overall net sentiment score [-1, 1] from the bullish/bearish totals
+        b  = stats.get("total_bullish") or 0
+        be = stats.get("total_bearish") or 0
+        polar = b + be
+        stats["net_score"] = round((b - be) / polar, 3) if polar else 0
 
         timeline = self._db.fetch_all(f"""
             SELECT

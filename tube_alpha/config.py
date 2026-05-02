@@ -76,6 +76,12 @@ class Settings:
     )
     sentiment_max_chunks: int = field(default_factory=_sentiment_max_chunks)
 
+    # Google OAuth2
+    google_client_id: str = field(default_factory=lambda: os.getenv("GOOGLE_CLIENT_ID", ""))
+    google_client_secret: str = field(default_factory=lambda: os.getenv("GOOGLE_CLIENT_SECRET", ""))
+    google_redirect_uri: str = field(default_factory=lambda: os.getenv("GOOGLE_REDIRECT_URI", "http://localhost:8000/auth/callback"))
+    session_secret: str = field(default_factory=lambda: os.getenv("SESSION_SECRET", "dev-secret-change-in-production"))
+
     @property
     def is_development(self) -> bool:
         return self.environment == "development"

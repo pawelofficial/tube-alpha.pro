@@ -3,29 +3,24 @@ steps:
     args:
       - build
       - '-t'
-      - '$_IMAGE'
+      - 'gcr.io/$PROJECT_ID/tube-alpha-pro-2:$COMMIT_SHA'
       - '.'
 
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - push
-      - '$_IMAGE'
+      - 'gcr.io/$PROJECT_ID/tube-alpha-pro-2:$COMMIT_SHA'
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       - run
       - deploy
-      - '$_SERVICE_NAME'
-      - '--image=$_IMAGE'
-      - '--region=$_REGION'
+      - 'tube-alpha-pro-2'
+      - '--image=gcr.io/$PROJECT_ID/tube-alpha-pro-2:$COMMIT_SHA'
+      - '--region=europe-west1'
       - '--platform=managed'
       - '--quiet'
-
-substitutions:
-  _SERVICE_NAME: tube-alpha-pro-2
-  _REGION: europe-west1
-  _IMAGE: gcr.io/$PROJECT_ID/tube-alpha-pro-2:$COMMIT_SHA
 
 options:
   logging: CLOUD_LOGGING_ONLY

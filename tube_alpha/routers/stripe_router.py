@@ -34,14 +34,18 @@ async def create_checkout_session(
     stripe.api_key = settings.stripe_secret_key
 
     base_url = str(request.base_url).rstrip("/")
-    session = stripe.checkout.Session.create(
-        customer_email=email,
-        line_items=[{"price": settings.stripe_price_id, "quantity": 1}],
-        mode="payment",
-        success_url=f"{base_url}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
-        cancel_url=f"{base_url}/profile",
-        metadata={"email": email},
-    )
+    try:
+        session = stripe.checkout.Session.create(
+            customer_email=email,
+            line_items=[{"price": settings.stripe_price_id, "quantity": 1}],
+            mode="payment",
+            success_url=f"{base_url}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
+            cancel_url=f"{base_url}/profile",
+            metadata={"email": email},
+        )
+    except stripe.error.StripeError as e:
+        logger.error("Stripe checkout error: %s", e)
+        raise HTTPException(status_code=400, detail=str(e.user_message or e))
     return {"url": session.url}
 
 
@@ -58,7 +62,7 @@ async def stripe_webhook(
 
     try:
         event = stripe.Webhook.construct_event(payload, sig_header, settings.stripe_webhook_secret)
-    except stripe.errors.SignatureVerificationError:
+    except stripe.error.SignatureVerificationError:
         raise HTTPException(status_code=400, detail="Invalid signature")
 
     if event["type"] == "checkout.session.completed":

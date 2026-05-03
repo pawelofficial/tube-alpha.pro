@@ -1,1 +1,11 @@
 gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+
+
+
+  # Build
+  docker build -t tube-alpha .
+
+  # Run
+  docker run -p 8080:8080 --env-file .env -e PORT=8080 -v ${PWD}/data:/app/data tube-alpha
+
+  The -v mount keeps your SQLite databases persistent. App will be at http://localhost:8080. 

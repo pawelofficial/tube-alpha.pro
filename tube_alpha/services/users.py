@@ -28,6 +28,16 @@ class UserService:
     def __init__(self, settings: Settings):
         self._settings = settings
         self._db = Database(settings.admin_db_path)
+        self._ensure_promo_table()
+
+    def _ensure_promo_table(self) -> None:
+        self._db.conn.execute(
+            "CREATE TABLE IF NOT EXISTS promo_codes("
+            "code varchar primary key, duration_days int, max_uses int, "
+            "uses_count int default 0, active boolean default 1, "
+            "created_at datetime default current_timestamp)"
+        )
+        self._db.conn.commit()
 
     def _ensure_user(self, email: str) -> None:
         """Create user row if it doesn't exist."""
@@ -114,3 +124,27 @@ class UserService:
         )
         logger.info("Subscription deactivated for %s", email)
         return self.get_profile(email)
+
+    def redeem_promo_code(self, email: str, code: str) -> dict:
+        """Redeem a promo code to activate/extend a user's pro subscription.
+
+        Raises ValueError with a user-facing message on invalid/exhausted codes.
+        Returns the updated profile on success.
+        """
+        row = self._db.fetch_one(
+            "SELECT duration_days, max_uses, uses_count, active FROM promo_codes WHERE code = ?",
+            (code,),
+        )
+        if row is None:
+            raise ValueError("Invalid promo code")
+        if not row["active"]:
+            raise ValueError("This promo code is no longer active")
+        if row["max_uses"] is not None and row["uses_count"] >= row["max_uses"]:
+            raise ValueError("This promo code has already been fully redeemed")
+
+        self._db.execute(
+            "UPDATE promo_codes SET uses_count = uses_count + 1 WHERE code = ?",
+            (code,),
+        )
+        logger.info("Promo code %s redeemed by %s (%d days)", code, email, row["duration_days"])
+        return self.activate_subscription(email, duration_days=row["duration_days"])

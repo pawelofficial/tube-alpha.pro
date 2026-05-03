@@ -18,6 +18,24 @@
       "foreign_keys": []
     },
     {
+      "name": "promo_codes",
+      "db_type":"admin",
+      "drop_backup": "drop table if exists promo_codes_bu_;",
+      "create_backup":"create table promo_codes_bu_ as select * from promo_codes;",
+      "drop_table": "drop table if exists promo_codes;",
+      "create_table": "create table promo_codes(code varchar primary key, duration_days int, max_uses int, uses_count int default 0, active boolean default 1, created_at datetime default current_timestamp);",
+      "columns": [
+        {"name": "code", "type": "varchar"},
+        {"name": "duration_days", "type": "int"},
+        {"name": "max_uses", "type": "int"},
+        {"name": "uses_count", "type": "int", "default": 0},
+        {"name": "active", "type": "boolean", "default": 1},
+        {"name": "created_at", "type": "datetime", "default": "current_timestamp"}
+      ],
+      "primary_key": ["code"],
+      "foreign_keys": []
+    },
+    {
       "name": "channels",
       "db_type":"data",
       "drop_backup": "drop table if exists channels_bu_;",

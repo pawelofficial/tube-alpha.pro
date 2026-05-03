@@ -60,3 +60,20 @@ async def deactivate_subscription(
     email = _require_email(request, auth)
     profile = users.deactivate_subscription(email)
     return UserProfile(**profile)
+
+
+@router.post("/users/redeem", response_model=UserProfile)
+async def redeem_promo_code(
+    request: Request,
+    code: str = Query(..., min_length=1, description="Promo code to redeem"),
+    auth: AuthService = Depends(get_auth_service),
+    users: UserService = Depends(get_user_service),
+):
+    """Redeem a promo code to activate or extend a pro subscription."""
+    email = _require_email(request, auth)
+    try:
+        profile = users.redeem_promo_code(email, code)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    logger.info("Promo code redeemed by %s", email)
+    return UserProfile(**profile)

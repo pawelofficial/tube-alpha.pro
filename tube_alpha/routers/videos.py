@@ -58,7 +58,9 @@ async def process_video(
 
     try:
         result = pipeline.process_video(url=body.url, video_id=body.video_id)
-        return result
     except Exception as e:
         logger.exception("Video processing failed for %s", body.url)
         raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
+
+    users.consume_video_credit(email)  # no-op for subscription users
+    return result

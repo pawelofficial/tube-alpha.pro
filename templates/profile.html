@@ -59,20 +59,30 @@
                     
                     <div class="feature-item" style="border-bottom: none;">
                         <div class="feature-icon" style="background: {% if pro %}linear-gradient(135deg, #667eea 0%, #764ba2 100%){% else %}linear-gradient(135deg, var(--text-secondary), var(--text-light)){% endif %}; font-size: 1.25rem;">
-                            {% if pro %}
-                            💎
-                            {% else %}
-                            🆓
+                            {% if plan_type == 'subscription' %}💎
+                            {% elif plan_type == 'onetime' %}🎬
+                            {% else %}🆓
                             {% endif %}
                         </div>
                         <div class="feature-content">
-                            <h3>Subscription Status</h3>
-                            {% if pro %}
-                            <p style="color: #667eea; font-weight: 600; margin-bottom: var(--spacing-xs);">💎 Active Pro Subscription</p>
-                            <p style="margin: 0;">You have access to all premium features and unlimited usage</p>
+                            <h3>Plan</h3>
+                            {% if plan_type == 'subscription' %}
+                            <p style="color: #667eea; font-weight: 600; margin-bottom: var(--spacing-xs);">💎 Active Subscription</p>
+                            <p style="margin: 0;">
+                                {% if pro_end %}
+                                    Renews / expires {{ pro_end }}{% if pro_days_remaining is not none %} &mdash; {{ pro_days_remaining }} days remaining{% endif %}
+                                {% else %}
+                                    Unlimited access to all premium features
+                                {% endif %}
+                            </p>
+                            {% elif plan_type == 'onetime' %}
+                            <p style="color: #667eea; font-weight: 600; margin-bottom: var(--spacing-xs);">💎 One-Time Purchase</p>
+                            <p style="margin: 0;">
+                                <strong>{{ videos_remaining }}</strong> video {{ 'analysis' if videos_remaining == 1 else 'analyses' }} remaining
+                            </p>
                             {% else %}
                             <p style="font-weight: 600; margin-bottom: var(--spacing-xs);">Free Plan</p>
-                            <p style="margin: 0;">Upgrade to Pro for unlimited access and advanced features</p>
+                            <p style="margin: 0;">Upgrade to Pro for full access</p>
                             {% endif %}
                         </div>
                     </div>

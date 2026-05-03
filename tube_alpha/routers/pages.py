@@ -47,7 +47,16 @@ async def profile(
     auth: AuthService = Depends(get_auth_service),
     users: UserService = Depends(get_user_service),
 ):
-    return templates.TemplateResponse("profile.html", _base_ctx(request, auth, users))
+    ctx = _base_ctx(request, auth, users)
+    if ctx["user_email"]:
+        p = users.get_profile(ctx["user_email"])
+        ctx["plan_type"] = p["plan_type"]
+        ctx["videos_remaining"] = p["videos_remaining"]
+        ctx["pro_end"] = p["pro_end"]
+        ctx["pro_days_remaining"] = p["pro_days_remaining"]
+    else:
+        ctx.update({"plan_type": "free", "videos_remaining": 0, "pro_end": None, "pro_days_remaining": None})
+    return templates.TemplateResponse("profile.html", ctx)
 
 
 @router.get("/yourvid", response_class=HTMLResponse)

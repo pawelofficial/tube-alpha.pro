@@ -1,0 +1,12 @@
+dbs:
+  - path: /app/data/data.sqlite
+    replicas:
+      - type: gcs
+        bucket: ${LITESTREAM_BUCKET}
+        path: data.sqlite
+
+  - path: /app/data/admin.sqlite
+    replicas:
+      - type: gcs
+        bucket: ${LITESTREAM_BUCKET}
+        path: admin.sqlite

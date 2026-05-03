@@ -23,7 +23,16 @@ class UserService:
         self._settings = settings
         self._db = Database(settings.admin_db_path)
         self._ensure_promo_table()
+        self._ensure_sessions_table()
         self._migrate_users_table()
+
+    def _ensure_sessions_table(self) -> None:
+        self._db.conn.execute(
+            "CREATE TABLE IF NOT EXISTS stripe_sessions("
+            "session_id varchar primary key, email varchar, mode varchar, "
+            "processed_at datetime default current_timestamp)"
+        )
+        self._db.conn.commit()
 
     def _ensure_promo_table(self) -> None:
         self._db.conn.execute(
@@ -182,6 +191,38 @@ class UserService:
         )
         logger.info("One-time credits added for %s: +%d", email, credits)
         return self.get_profile(email)
+
+    def process_stripe_session(
+        self,
+        session_id: str,
+        email: str,
+        mode: str,
+        credits: int = 10,
+        days: int = 30,
+    ) -> bool:
+        """Idempotently activate pro access for a completed Stripe session.
+
+        Uses stripe_sessions as a deduplication key so calling this from both
+        the success page redirect and the webhook never double-activates.
+        Returns True if newly activated, False if already processed.
+        """
+        if self._db.fetch_scalar(
+            "SELECT 1 FROM stripe_sessions WHERE session_id = ?", (session_id,)
+        ):
+            logger.info("Stripe session %s already processed — skipping", session_id)
+            return False
+
+        if mode == "subscription":
+            self.activate_subscription(email, duration_days=days)
+        else:
+            self.activate_onetime(email, credits=credits)
+
+        self._db.execute(
+            "INSERT OR IGNORE INTO stripe_sessions (session_id, email, mode) VALUES (?, ?, ?)",
+            (session_id, email, mode),
+        )
+        logger.info("Stripe session %s processed for %s (mode=%s)", session_id, email, mode)
+        return True
 
     def deactivate_subscription(self, email: str) -> dict:
         self._db.execute(

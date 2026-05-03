@@ -82,14 +82,16 @@ async def stripe_webhook(
 
     if event["type"] == "checkout.session.completed":
         session = event["data"]["object"]
+        session_id = session.get("id")
         email = session.get("customer_email") or session.get("metadata", {}).get("email")
-        mode = session.get("mode")  # "payment" = one-time, "subscription" = recurring
-        if email:
-            if mode == "subscription":
-                users.activate_subscription(email, duration_days=settings.stripe_pro_days)
-                logger.info("Subscription activated for %s (%d days)", email, settings.stripe_pro_days)
-            else:
-                users.activate_onetime(email, credits=settings.stripe_onetime_credits)
-                logger.info("One-time credits granted to %s (%d videos)", email, settings.stripe_onetime_credits)
+        mode = session.get("mode") or "payment"
+        if email and session_id:
+            users.process_stripe_session(
+                session_id=session_id,
+                email=email,
+                mode=mode,
+                credits=settings.stripe_onetime_credits,
+                days=settings.stripe_pro_days,
+            )
 
     return {"status": "ok"}

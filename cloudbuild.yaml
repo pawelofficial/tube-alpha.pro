@@ -1,0 +1,31 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - build
+      - '-t'
+      - '$_IMAGE'
+      - '.'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - push
+      - '$_IMAGE'
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - '$_SERVICE_NAME'
+      - '--image=$_IMAGE'
+      - '--region=$_REGION'
+      - '--platform=managed'
+      - '--quiet'
+
+substitutions:
+  _SERVICE_NAME: tube-alpha-pro-2
+  _REGION: europe-west1
+  _IMAGE: gcr.io/$PROJECT_ID/tube-alpha-pro-2:$COMMIT_SHA
+
+options:
+  logging: CLOUD_LOGGING_ONLY

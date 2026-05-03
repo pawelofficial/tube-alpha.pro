@@ -82,6 +82,13 @@ class Settings:
     google_redirect_uri: str = field(default_factory=lambda: os.getenv("GOOGLE_REDIRECT_URI", "http://localhost:8000/auth/callback"))
     session_secret: str = field(default_factory=lambda: os.getenv("SESSION_SECRET", "dev-secret-change-in-production"))
 
+    # Stripe
+    stripe_secret_key: str = field(default_factory=lambda: os.getenv("STRIPE_SECRET_KEY", ""))
+    stripe_publishable_key: str = field(default_factory=lambda: os.getenv("STRIPE_PUBLISHABLE_KEY", ""))
+    stripe_price_id: str = field(default_factory=lambda: os.getenv("STRIPE_PRICE_ID", ""))
+    stripe_webhook_secret: str = field(default_factory=lambda: os.getenv("STRIPE_WEBHOOK_SECRET", ""))
+    stripe_pro_days: int = field(default_factory=lambda: int(os.getenv("STRIPE_PRO_DAYS", "30")))
+
     @property
     def is_development(self) -> bool:
         return self.environment == "development"

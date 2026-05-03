@@ -66,3 +66,12 @@ async def dashboard(
     users: UserService = Depends(get_user_service),
 ):
     return templates.TemplateResponse("dashboard.html", _base_ctx(request, auth, users))
+
+
+@router.get("/payment/success", response_class=HTMLResponse)
+async def payment_success(
+    request: Request,
+    auth: AuthService = Depends(get_auth_service),
+    users: UserService = Depends(get_user_service),
+):
+    return templates.TemplateResponse("payment_success.html", _base_ctx(request, auth, users))

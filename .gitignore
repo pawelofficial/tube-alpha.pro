@@ -210,3 +210,6 @@ __marimo__/
 # SQLite WAL/SHM runtime files
 *.sqlite-shm
 *.sqlite-wal
+
+# SQLite databases (managed by Litestream in production)
+data/*.sqlite

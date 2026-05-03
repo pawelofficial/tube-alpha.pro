@@ -25,6 +25,15 @@ def main():
     users.activate_subscription("dev@example.com", duration_days=30)
     print("Added dev@example.com as pro user (30 days)")
 
+    # Seed a test promo code
+    from tube_alpha.database import Database
+    admin_db = Database(settings.admin_db_path)
+    admin_db.execute(
+        "INSERT OR IGNORE INTO promo_codes (code, duration_days, max_uses) VALUES (?, ?, ?)",
+        ("ALPHA1DAY", 1, 10),
+    )
+    print("Seeded promo code: ALPHA1DAY (1 day, max 10 uses)")
+
     print("\nReady. Run: python main.py")
     print("Then POST http://127.0.0.1:8000/api/v1/videos/process with body: {\"url\": \"https://youtube.com/watch?v=VIDEO_ID\"}")
 

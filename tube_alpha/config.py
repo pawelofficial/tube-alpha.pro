@@ -86,6 +86,7 @@ class Settings:
     stripe_secret_key: str = field(default_factory=lambda: os.getenv("STRIPE_SECRET_KEY", ""))
     stripe_publishable_key: str = field(default_factory=lambda: os.getenv("STRIPE_PUBLISHABLE_KEY", ""))
     stripe_price_id: str = field(default_factory=lambda: os.getenv("STRIPE_PRICE_ID", ""))
+    stripe_price_id_sub: str = field(default_factory=lambda: os.getenv("STRIPE_PRICE_ID_SUB", ""))
     stripe_webhook_secret: str = field(default_factory=lambda: os.getenv("STRIPE_WEBHOOK_SECRET", ""))
     stripe_pro_days: int = field(default_factory=lambda: int(os.getenv("STRIPE_PRO_DAYS", "30")))
 

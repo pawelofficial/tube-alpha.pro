@@ -25,22 +25,37 @@ def _require_email(request: Request, auth: AuthService) -> str:
 @router.post("/api/v1/stripe/checkout")
 async def create_checkout_session(
     request: Request,
+    type: str = "onetime",
     auth: AuthService = Depends(get_auth_service),
     users: UserService = Depends(get_user_service),
     settings: Settings = Depends(get_settings),
 ):
-    """Create a Stripe Checkout Session and return the redirect URL."""
+    """Create a Stripe Checkout Session and return the redirect URL.
+
+    type='onetime'      → one-time payment (mode=payment)
+    type='subscription' → recurring subscription (mode=subscription)
+    """
     email = _require_email(request, auth)
     stripe.api_key = settings.stripe_secret_key
+
+    if type == "subscription":
+        price_id = settings.stripe_price_id_sub
+        mode = "subscription"
+    else:
+        price_id = settings.stripe_price_id
+        mode = "payment"
+
+    if not price_id:
+        raise HTTPException(status_code=400, detail=f"Price not configured for type '{type}'")
 
     base_url = str(request.base_url).rstrip("/")
     try:
         session = stripe.checkout.Session.create(
             customer_email=email,
-            line_items=[{"price": settings.stripe_price_id, "quantity": 1}],
-            mode="payment",
+            line_items=[{"price": price_id, "quantity": 1}],
+            mode=mode,
             success_url=f"{base_url}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
-            cancel_url=f"{base_url}/profile",
+            cancel_url=f"{base_url}/pricing",
             metadata={"email": email},
         )
     except stripe.error.StripeError as e:

@@ -17,7 +17,7 @@ from starlette.middleware.sessions import SessionMiddleware
 load_dotenv()
 
 from tube_alpha.logging_setup import PerModuleFileHandler
-from tube_alpha.routers import auth, data, health, pages, scheduler, sentiments, users, videos
+from tube_alpha.routers import admin, auth, data, health, pages, scheduler, sentiments, users, videos
 from tube_alpha.routers import stripe_router
 from tube_alpha.routers.dependencies import get_scheduler
 
@@ -92,6 +92,7 @@ app.include_router(users.router)
 app.include_router(data.router)
 app.include_router(scheduler.router)
 app.include_router(stripe_router.router)
+app.include_router(admin.router)
 
 
 if __name__ == "__main__":

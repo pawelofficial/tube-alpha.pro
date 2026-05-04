@@ -1,17 +1,11 @@
 """User management service.
 
-Handles user profile data and subscription status.
+Two pro access models coexist:
+  subscription — time-based (pro_active=1, end_pro set)
+  onetime      — credit-based (videos_remaining > 0)
 
-Usage:
-    from tube_alpha.services.users import UserService
-    from tube_alpha.config import Settings
-
-    service = UserService(Settings())
-    is_pro = service.is_pro("user@example.com")
-
-    # Subscription management
-    service.activate_subscription("user@example.com", duration_days=30)
-    service.deactivate_subscription("user@example.com")
+is_pro() returns True if either model grants access.
+consume_video_credit() is a no-op for subscription users.
 """
 
 import logging
@@ -29,6 +23,16 @@ class UserService:
         self._settings = settings
         self._db = Database(settings.admin_db_path)
         self._ensure_promo_table()
+        self._ensure_sessions_table()
+        self._migrate_users_table()
+
+    def _ensure_sessions_table(self) -> None:
+        self._db.conn.execute(
+            "CREATE TABLE IF NOT EXISTS stripe_sessions("
+            "session_id varchar primary key, email varchar, mode varchar, "
+            "processed_at datetime default current_timestamp)"
+        )
+        self._db.conn.commit()
 
     def _ensure_promo_table(self) -> None:
         self._db.conn.execute(
@@ -39,97 +43,223 @@ class UserService:
         )
         self._db.conn.commit()
 
-    def _ensure_user(self, email: str) -> None:
-        """Create user row if it doesn't exist."""
-        existing = self._db.fetch_scalar(
-            "SELECT 1 FROM users WHERE email = ?", (email,)
+    def _migrate_users_table(self) -> None:
+        """Add new columns to users table if missing (safe on existing DBs)."""
+        existing = set(
+            self._db.fetch_scalars("SELECT name FROM pragma_table_info('users')")
         )
-        if existing is None:
+        migrations = [
+            ("plan_type", "ALTER TABLE users ADD COLUMN plan_type VARCHAR DEFAULT 'free'"),
+            ("videos_remaining", "ALTER TABLE users ADD COLUMN videos_remaining INTEGER DEFAULT 0"),
+        ]
+        for col, sql in migrations:
+            if col not in existing:
+                self._db.execute(sql)
+                logger.info("DB migration: added column users.%s", col)
+
+    def _ensure_user(self, email: str) -> None:
+        if self._db.fetch_scalar("SELECT 1 FROM users WHERE email = ?", (email,)) is None:
             self._db.execute(
-                "INSERT INTO users (email, pro_active) VALUES (?, 0)", (email,)
+                "INSERT INTO users (email, pro_active, plan_type, videos_remaining) "
+                "VALUES (?, 0, 'free', 0)",
+                (email,),
             )
 
+    # ------------------------------------------------------------------
+    # Pro status
+    # ------------------------------------------------------------------
+
     def is_pro(self, email: Optional[str]) -> bool:
-        """Check if user has an active pro subscription."""
+        """True if user has an active subscription OR remaining one-time credits."""
         if not email:
             return False
 
-        result = self._db.fetch_scalar(
-            "SELECT 1 FROM users WHERE email = ? AND pro_active = 1",
+        row = self._db.fetch_one(
+            "SELECT pro_active, end_pro, videos_remaining FROM users WHERE email = ?",
             (email,),
         )
-        return result is not None
+        if not row:
+            return False
+
+        # Subscription path: pro_active must be 1 AND end_pro must be in the future
+        if row["pro_active"]:
+            end_pro = row.get("end_pro")
+            if not end_pro:
+                return True  # legacy rows with no end date — treat as active
+            try:
+                if date.fromisoformat(str(end_pro)) >= date.today():
+                    return True
+            except (ValueError, TypeError):
+                pass
+
+        # One-time path: credits remaining
+        if (row.get("videos_remaining") or 0) > 0:
+            return True
+
+        return False
+
+    def _effective_plan_type(self, row: dict) -> str:
+        """Derive display plan type from actual DB state (not the stored column)."""
+        end_pro = row.get("end_pro")
+        if row.get("pro_active"):
+            try:
+                if not end_pro or date.fromisoformat(str(end_pro)) >= date.today():
+                    return "subscription"
+            except (ValueError, TypeError):
+                pass
+        if (row.get("videos_remaining") or 0) > 0:
+            return "onetime"
+        return "free"
+
+    # ------------------------------------------------------------------
+    # Profile
+    # ------------------------------------------------------------------
 
     def get_profile(self, email: str) -> dict:
-        """Get user profile with subscription details."""
         row = self._db.fetch_one(
-            "SELECT email, pro_active, start_pro, end_pro FROM users WHERE email = ?",
+            "SELECT email, pro_active, start_pro, end_pro, plan_type, videos_remaining "
+            "FROM users WHERE email = ?",
             (email,),
         )
-        if row:
-            is_pro = bool(row["pro_active"])
-            pro_start = row.get("start_pro")
-            pro_end = row.get("end_pro")
-            days_remaining = None
-            if is_pro and pro_end:
-                try:
-                    end_date = date.fromisoformat(pro_end)
-                    days_remaining = max(0, (end_date - date.today()).days)
-                except ValueError:
-                    pass
+        if not row:
             return {
-                "email": row["email"],
-                "is_pro": is_pro,
-                "pro_start": pro_start,
-                "pro_end": pro_end,
-                "pro_days_remaining": days_remaining,
+                "email": email,
+                "is_pro": False,
+                "plan_type": "free",
+                "pro_start": None,
+                "pro_end": None,
+                "pro_days_remaining": None,
+                "videos_remaining": 0,
             }
-        return {"email": email, "is_pro": False}
+
+        is_pro = self.is_pro(email)
+        pro_end = row.get("end_pro")
+        days_remaining = None
+        if pro_end:
+            try:
+                end_date = date.fromisoformat(str(pro_end))
+                days_remaining = max(0, (end_date - date.today()).days)
+            except (ValueError, TypeError):
+                pass
+
+        return {
+            "email": row["email"],
+            "is_pro": is_pro,
+            "plan_type": self._effective_plan_type(row),
+            "pro_start": row.get("start_pro"),
+            "pro_end": pro_end,
+            "pro_days_remaining": days_remaining,
+            "videos_remaining": row.get("videos_remaining") or 0,
+        }
+
+    # ------------------------------------------------------------------
+    # Activation
+    # ------------------------------------------------------------------
 
     def activate_subscription(self, email: str, duration_days: int = 30) -> dict:
-        """Activate or extend a user's pro subscription.
-
-        Returns the updated profile.
-        """
+        """Activate or extend a time-based pro subscription."""
         self._ensure_user(email)
         start = date.today().isoformat()
         end = (date.today() + timedelta(days=duration_days)).isoformat()
 
-        # If user already has an active subscription with time left, extend from end_pro
         row = self._db.fetch_one(
             "SELECT pro_active, end_pro FROM users WHERE email = ?", (email,)
         )
         if row and row["pro_active"] and row.get("end_pro"):
             try:
-                current_end = date.fromisoformat(row["end_pro"])
+                current_end = date.fromisoformat(str(row["end_pro"]))
                 if current_end > date.today():
                     end = (current_end + timedelta(days=duration_days)).isoformat()
-            except ValueError:
+            except (ValueError, TypeError):
                 pass
 
         self._db.execute(
-            "UPDATE users SET pro_active = 1, start_pro = ?, end_pro = ? WHERE email = ?",
+            "UPDATE users SET pro_active = 1, plan_type = 'subscription', "
+            "start_pro = ?, end_pro = ? WHERE email = ?",
             (start, end, email),
         )
         logger.info("Subscription activated for %s until %s", email, end)
         return self.get_profile(email)
 
-    def deactivate_subscription(self, email: str) -> dict:
-        """Deactivate a user's pro subscription.
+    def activate_onetime(self, email: str, credits: int = 10) -> dict:
+        """Add one-time video analysis credits. Stacks on existing credits."""
+        self._ensure_user(email)
+        self._db.execute(
+            "UPDATE users SET plan_type = 'onetime', start_pro = ?, "
+            "videos_remaining = videos_remaining + ? WHERE email = ?",
+            (date.today().isoformat(), credits, email),
+        )
+        logger.info("One-time credits added for %s: +%d", email, credits)
+        return self.get_profile(email)
 
-        Returns the updated profile.
+    def process_stripe_session(
+        self,
+        session_id: str,
+        email: str,
+        mode: str,
+        credits: int = 10,
+        days: int = 30,
+    ) -> bool:
+        """Idempotently activate pro access for a completed Stripe session.
+
+        Uses stripe_sessions as a deduplication key so calling this from both
+        the success page redirect and the webhook never double-activates.
+        Returns True if newly activated, False if already processed.
         """
+        if self._db.fetch_scalar(
+            "SELECT 1 FROM stripe_sessions WHERE session_id = ?", (session_id,)
+        ):
+            logger.info("Stripe session %s already processed — skipping", session_id)
+            return False
+
+        if mode == "subscription":
+            self.activate_subscription(email, duration_days=days)
+        else:
+            self.activate_onetime(email, credits=credits)
+
+        self._db.execute(
+            "INSERT OR IGNORE INTO stripe_sessions (session_id, email, mode) VALUES (?, ?, ?)",
+            (session_id, email, mode),
+        )
+        logger.info("Stripe session %s processed for %s (mode=%s)", session_id, email, mode)
+        return True
+
+    def deactivate_subscription(self, email: str) -> dict:
         self._db.execute(
             "UPDATE users SET pro_active = 0 WHERE email = ?", (email,)
         )
         logger.info("Subscription deactivated for %s", email)
         return self.get_profile(email)
 
-    def redeem_promo_code(self, email: str, code: str) -> dict:
-        """Redeem a promo code to activate/extend a user's pro subscription.
+    # ------------------------------------------------------------------
+    # Credit consumption
+    # ------------------------------------------------------------------
 
-        Raises ValueError with a user-facing message on invalid/exhausted codes.
-        Returns the updated profile on success.
+    def consume_video_credit(self, email: str) -> bool:
+        """Atomically consume 1 credit for one-time users.
+
+        No-op for active subscription users (subscription takes priority).
+        Returns True if a credit was consumed.
+        """
+        cursor = self._db.execute(
+            "UPDATE users SET videos_remaining = videos_remaining - 1 "
+            "WHERE email = ? AND videos_remaining > 0 "
+            "AND NOT (pro_active = 1 AND end_pro >= date('now'))",
+            (email,),
+        )
+        consumed = cursor.rowcount > 0
+        if consumed:
+            logger.info("Video credit consumed for %s", email)
+        return consumed
+
+    # ------------------------------------------------------------------
+    # Promo codes
+    # ------------------------------------------------------------------
+
+    def redeem_promo_code(self, email: str, code: str) -> dict:
+        """Redeem a promo code to activate/extend a subscription.
+
+        Raises ValueError on invalid/exhausted codes.
         """
         row = self._db.fetch_one(
             "SELECT duration_days, max_uses, uses_count, active FROM promo_codes WHERE code = ?",

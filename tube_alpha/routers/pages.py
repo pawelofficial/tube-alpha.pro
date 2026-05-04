@@ -5,7 +5,7 @@ from pathlib import Path
 
 import stripe
 from fastapi import APIRouter, Depends, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 
 from tube_alpha.config import Settings
@@ -53,14 +53,13 @@ async def profile(
     users: UserService = Depends(get_user_service),
 ):
     ctx = _base_ctx(request, auth, users)
-    if ctx["user_email"]:
-        p = users.get_profile(ctx["user_email"])
-        ctx["plan_type"] = p["plan_type"]
-        ctx["videos_remaining"] = p["videos_remaining"]
-        ctx["pro_end"] = p["pro_end"]
-        ctx["pro_days_remaining"] = p["pro_days_remaining"]
-    else:
-        ctx.update({"plan_type": "free", "videos_remaining": 0, "pro_end": None, "pro_days_remaining": None})
+    if not ctx["user_email"]:
+        return RedirectResponse(url="/login?next=/profile", status_code=302)
+    p = users.get_profile(ctx["user_email"])
+    ctx["plan_type"] = p["plan_type"]
+    ctx["videos_remaining"] = p["videos_remaining"]
+    ctx["pro_end"] = p["pro_end"]
+    ctx["pro_days_remaining"] = p["pro_days_remaining"]
     return templates.TemplateResponse("profile.html", ctx)
 
 

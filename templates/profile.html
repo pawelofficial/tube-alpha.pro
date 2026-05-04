@@ -134,6 +134,7 @@
 #promoMessage { font-size: 0.9rem; font-weight: 500; margin-top: var(--spacing-md); }
 </style>
 
+{% if is_authenticated %}
 <section class="section" style="padding-top: 0;">
     <div class="container">
         <div class="card">
@@ -153,6 +154,7 @@
         </div>
     </div>
 </section>
+{% endif %}
 
 <script>
 async function redeemCode() {

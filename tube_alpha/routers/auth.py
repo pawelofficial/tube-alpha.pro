@@ -13,10 +13,11 @@ import secrets
 from urllib.parse import urlencode
 
 import httpx
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Depends, Request
 from fastapi.responses import RedirectResponse
 
-from tube_alpha.routers.dependencies import get_settings
+from tube_alpha.routers.dependencies import get_settings, get_user_service
+from tube_alpha.services.users import UserService
 
 logger = logging.getLogger(__name__)
 
@@ -55,6 +56,7 @@ async def auth_callback(
     code: str = None,
     state: str = None,
     error: str = None,
+    users: UserService = Depends(get_user_service),
 ):
     if error or not code:
         logger.warning("OAuth error from Google: %s", error)
@@ -92,6 +94,7 @@ async def auth_callback(
         email = userinfo.get("email")
         if email and userinfo.get("email_verified"):
             request.session["user_email"] = email
+            users._ensure_user(email)
             logger.info("User signed in: %s", email)
         else:
             logger.warning("Google userinfo missing or unverified email: %s", userinfo)

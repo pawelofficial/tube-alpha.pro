@@ -81,6 +81,15 @@ async def dashboard(
     return templates.TemplateResponse("dashboard.html", _base_ctx(request, auth, users))
 
 
+@router.get("/about", response_class=HTMLResponse)
+async def about(
+    request: Request,
+    auth: AuthService = Depends(get_auth_service),
+    users: UserService = Depends(get_user_service),
+):
+    return templates.TemplateResponse("about.html", _base_ctx(request, auth, users))
+
+
 @router.get("/pricing", response_class=HTMLResponse)
 async def pricing(
     request: Request,

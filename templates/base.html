@@ -31,6 +31,9 @@
     </div>
   </div>
 
+  <!-- Backdrop for mobile sidebar (tap to close) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()"></div>
+
   <div class="main-layout">
 
     <!-- Sidebar -->
@@ -98,7 +101,22 @@
   <script>
     function toggleSidebar() {
       document.getElementById('sidebar').classList.toggle('mobile-open');
+      document.getElementById('sidebar-backdrop').classList.toggle('active');
     }
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('mobile-open');
+      document.getElementById('sidebar-backdrop').classList.remove('active');
+    }
+    // Close sidebar when a nav link is tapped on mobile
+    document.querySelectorAll('.sidebar-link').forEach(el => {
+      el.addEventListener('click', () => {
+        if (window.innerWidth <= 900) closeSidebar();
+      });
+    });
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeSidebar();
+    });
   </script>
 
   {% block extra_scripts %}{% endblock %}

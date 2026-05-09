@@ -10,7 +10,8 @@
     gap: 14px;
     margin-bottom: 1.5rem;
   }
-  @media (max-width: 800px) { .stat-cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 800px) { .stat-cards { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+  @media (max-width: 480px) { .stat-cards { grid-template-columns: 1fr; } }
   .stat-card {
     background: var(--bg-primary);
     border-radius: var(--radius-lg);
@@ -34,6 +35,8 @@
     line-height: 1.1;
   }
   .stat-value.sm { font-size: 1rem; margin-top: .3rem; }
+  .stat-card { min-width: 0; }
+  .stat-value, .stat-value.sm { word-break: break-word; overflow-wrap: anywhere; }
 
   /* ── Two-panel grid ── */
   .dash-grid {
@@ -277,7 +280,12 @@
     gap: 2.5rem;
     flex-wrap: wrap;
   }
-  .gauge-svg-wrap { flex-shrink: 0; width: 210px; }
+  @media (max-width: 768px) {
+    .gauge-body { gap: 1rem; }
+    .gauge-svg-wrap { width: 180px !important; }
+    .gauge-panel { padding: 1rem; }
+  }
+  .gauge-svg-wrap { flex-shrink: 0; width: 210px; max-width: 100%; }
   .gauge-text { text-align: center; min-width: 140px; }
   .gauge-category {
     font-size: 1.4rem;

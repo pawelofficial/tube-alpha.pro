@@ -88,6 +88,7 @@ class VideoProcessResponse(BaseModel):
     summary: str
     tiles: List[SentimentTile] = []
     message: str = ""
+    from_cache: bool = False
 
 
 class VideoMetadata(BaseModel):
@@ -113,6 +114,8 @@ class UserProfile(BaseModel):
 
     email: str
     is_pro: bool = False
+    plan_type: str = "free"
     pro_start: Optional[str] = None
     pro_end: Optional[str] = None
     pro_days_remaining: Optional[int] = None
+    videos_remaining: int = 0

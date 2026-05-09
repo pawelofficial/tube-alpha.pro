@@ -58,7 +58,14 @@ async def process_video(
 
     try:
         result = pipeline.process_video(url=body.url, video_id=body.video_id)
-        return result
     except Exception as e:
         logger.exception("Video processing failed for %s", body.url)
         raise HTTPException(status_code=500, detail=f"Processing failed: {e}")
+
+    # Only consume a credit when processing genuinely succeeded.
+    # success=False means the pipeline returned an error (bad metadata, not
+    # an investing video, etc.).  from_cache=True means no new scraping
+    # happened — the result came from a previous run.
+    if result.success and not result.from_cache:
+        users.consume_video_credit(email)
+    return result

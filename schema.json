@@ -6,13 +6,15 @@
       "drop_backup": "drop table if exists users_bu_;",
       "create_backup":"create table users_bu_ as select * from users;",
       "drop_table": "drop table if exists users;",
-      "create_table": "create table users(no int, email varchar, pro_active boolean, start_pro timestamp, end_pro timestamp);",
+      "create_table": "create table users(no int, email varchar, subscription_active boolean, start_pro timestamp, end_pro timestamp, plan_type varchar default 'free', videos_remaining integer default 0);",
       "columns": [
         {"name": "no", "type": "int"},
         {"name": "email", "type": "varchar"},
-        {"name": "pro_active", "type": "boolean"},
+        {"name": "subscription_active", "type": "boolean"},
         {"name": "start_pro", "type": "timestamp"},
-        {"name": "end_pro", "type": "timestamp"}
+        {"name": "end_pro", "type": "timestamp"},
+        {"name": "plan_type", "type": "varchar", "default": "free"},
+        {"name": "videos_remaining", "type": "integer", "default": 0}
       ],
       "primary_key": [],
       "foreign_keys": []

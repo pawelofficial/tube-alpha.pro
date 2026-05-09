@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Pricing - Tube Alpha{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Choose Your Plan</h1>
+        <p class="hero-subtitle">Unlock full access to sentiment analysis and premium features</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); max-width: 800px; margin: 0 auto;">
+
+            <!-- One-time -->
+            <div class="card" style="text-align: center;">
+                <div class="card-header" style="border-bottom: none; flex-direction: column; align-items: center; gap: var(--spacing-sm);">
+                    <div style="font-size: 2rem;">💎</div>
+                    <h2 class="card-title">One-Time</h2>
+                    <p class="card-subtitle">Pay once, keep access</p>
+                </div>
+                <div class="card-body" style="padding-top: 0;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: var(--spacing-lg);">
+                        Pro Access
+                    </div>
+                    <ul class="features-list" style="text-align: left; margin-bottom: var(--spacing-xl);">
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Unlimited video analysis
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Full dashboard access
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> 30 days of pro access
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> No subscription required
+                        </li>
+                    </ul>
+                    <button onclick="startCheckout('onetime')" class="btn btn-primary" style="width: 100%;">
+                        Buy Once
+                    </button>
+                </div>
+            </div>
+
+            <!-- Subscription -->
+            <!-- <div class="card" style="text-align: center; border: 2px solid #667eea; position: relative;"> -->
+            <div class="card" style="text-align: center; border: 2px solid #667eea; position: relative; display: none;">
+                <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4px 16px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">
+                    BEST VALUE
+                </div>
+                <div class="card-header" style="border-bottom: none; flex-direction: column; align-items: center; gap: var(--spacing-sm);">
+                    <div style="font-size: 2rem;">🔄</div>
+                    <h2 class="card-title">Monthly</h2>
+                    <p class="card-subtitle">Always up to date</p>
+                </div>
+                <div class="card-body" style="padding-top: 0;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: var(--spacing-lg);">
+                        Pro Access
+                    </div>
+                    <ul class="features-list" style="text-align: left; margin-bottom: var(--spacing-xl);">
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Unlimited video analysis
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Full dashboard access
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Continuous pro access
+                        </li>
+                        <li class="feature-item" style="border-bottom: none; padding: var(--spacing-sm) 0;">
+                            <span style="color: #22c55e; margin-right: var(--spacing-sm);">✓</span> Cancel anytime
+                        </li>
+                    </ul>
+                    <button onclick="startCheckout('subscription')" class="btn btn-primary" style="width: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <p style="text-align: center; margin-top: var(--spacing-xl); color: var(--text-secondary); font-size: 0.9rem;">
+            Secure payment via Stripe &nbsp;·&nbsp; <a href="/profile" style="color: var(--text-secondary);">Back to profile</a>
+        </p>
+    </div>
+</section>
+
+<script>
+async function startCheckout(type) {
+    try {
+        const resp = await fetch(`/api/v1/stripe/checkout?type=${type}`, { method: 'POST' });
+        if (!resp.ok) {
+            const body = await resp.json().catch(() => ({}));
+            alert('Checkout error: ' + (body.detail || resp.status));
+            return;
+        }
+        const data = await resp.json();
+        if (!data.url) { alert('No checkout URL returned.'); return; }
+        window.location.href = data.url;
+    } catch (e) {
+        alert('Checkout failed: ' + e.message);
+    }
+}
+</script>
+{% endblock %}

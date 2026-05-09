@@ -19,7 +19,8 @@ load_dotenv()
 from tube_alpha.logging_setup import PerModuleFileHandler
 from tube_alpha.routers import admin, auth, data, health, pages, scheduler, sentiments, users, videos
 from tube_alpha.routers import stripe_router
-from tube_alpha.routers.dependencies import get_scheduler
+from tube_alpha.routers.dependencies import get_scheduler, get_settings
+from tube_alpha.database import Database
 
 # Configure logging (stdout + one file per project .py source via LogRecord.pathname)
 BASE_DIR = Path(__file__).resolve().parent
@@ -45,6 +46,12 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup/shutdown lifecycle for the app."""
+    # Startup: ensure DB schemas exist
+    settings = get_settings()
+    schema_file = BASE_DIR / "schema.json"
+    Database(settings.data_db_path).init_schema(schema_file)
+    Database(settings.admin_db_path).init_schema(schema_file)
+
     # Startup: optionally auto-start the scheduler
     sched = get_scheduler()
     auto_scrape = os.getenv("AUTO_SCRAPE_ENABLED", "").lower() in ("1", "true", "yes")

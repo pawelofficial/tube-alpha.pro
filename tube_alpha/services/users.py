@@ -22,9 +22,20 @@ class UserService:
     def __init__(self, settings: Settings):
         self._settings = settings
         self._db = Database(settings.admin_db_path)
+        self._ensure_users_table()
         self._ensure_promo_table()
         self._ensure_sessions_table()
         self._migrate_users_table()
+
+    def _ensure_users_table(self) -> None:
+        self._db.conn.execute(
+            "CREATE TABLE IF NOT EXISTS users("
+            "no int, email varchar, subscription_active boolean, "
+            "start_pro timestamp, end_pro timestamp, "
+            "plan_type varchar default 'free', "
+            "videos_remaining integer default 0)"
+        )
+        self._db.conn.commit()
 
     def _ensure_sessions_table(self) -> None:
         self._db.conn.execute(

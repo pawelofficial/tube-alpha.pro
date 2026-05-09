@@ -20,6 +20,12 @@ router = APIRouter(tags=["pages"])
 _TEMPLATES_DIR = Path(__file__).resolve().parent.parent.parent / "templates"
 templates = Jinja2Templates(directory=str(_TEMPLATES_DIR))
 
+_STATIC_DIR = Path(__file__).resolve().parent.parent.parent / "static"
+try:
+    _STATIC_VERSION = str(int((_STATIC_DIR / "styles.css").stat().st_mtime))
+except OSError:
+    _STATIC_VERSION = "0"
+
 
 def _base_ctx(request: Request, auth: AuthService, users: UserService) -> dict:
     """Common template context for every page.
@@ -34,6 +40,7 @@ def _base_ctx(request: Request, auth: AuthService, users: UserService) -> dict:
         "is_authenticated": email is not None,
         "pro": users.is_pro(email),
         "user_email": email,
+        "static_v": _STATIC_VERSION,
     }
 
 

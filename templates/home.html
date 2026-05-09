@@ -58,6 +58,10 @@
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 14px;
   }
+  /* On phones force 1-col so a 240px min track can never overflow a 320px viewport */
+  @media (max-width: 480px) {
+    .asset-grid { grid-template-columns: 1fr; }
+  }
 
   /* ── Individual tile ── */
   .asset-card {
@@ -68,6 +72,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform .12s ease, box-shadow .12s ease;
+    min-width: 0;  /* allow flex children inside to shrink below content width */
   }
   .asset-card:hover {
     transform: translateY(-2px);
@@ -84,10 +89,15 @@
     padding: .85rem 1rem;
     gap: .5rem;
   }
+  .asset-head > div {
+    min-width: 0;  /* flex item must allow shrinking, else long names overflow */
+    flex: 1 1 auto;
+  }
   .asset-name {
     font-weight: 700;
     font-size: 1rem;
     color: var(--text-primary);
+    overflow-wrap: anywhere;  /* break unbreakable strings rather than overflow */
   }
   .asset-sub {
     font-size: .75rem;
@@ -152,6 +162,7 @@
     border-bottom: 1px solid var(--bg-secondary);
     line-height: 1.4;
     color: var(--text-secondary);
+    overflow-wrap: anywhere;
   }
   .quotes-list li:last-child { border-bottom: none; }
   .quotes-list li::before {

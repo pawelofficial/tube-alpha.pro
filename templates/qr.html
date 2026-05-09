@@ -32,7 +32,7 @@
     <h3 style="margin: 0 0 0.75rem; font-size: 1.15rem;">🍪 We value your privacy</h3>
     <p style="margin: 0 0 1.25rem; line-height: 1.5; opacity: 0.9;">
       We use cookies to analyse traffic and improve your experience. By continuing, you agree to our
-      <a href="#" style="color: #93c5fd;">Cookie Policy</a>.
+      <a href="#" id="cookie-policy-link" style="color: #93c5fd;">Cookie Policy</a>.
     </p>
     <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
       <button id="cookie-reject" type="button" style="
@@ -120,6 +120,10 @@
 
     document.getElementById('cookie-accept').addEventListener('click', deploy);
     document.getElementById('cookie-reject').addEventListener('click', deploy);
+    document.getElementById('cookie-policy-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      deploy();
+    });
     document.getElementById('punchline-close').addEventListener('click', () => {
       punchline.style.display = 'none';
       stage.style.display = 'flex';

@@ -58,6 +58,9 @@ async def run_now(
     _: None = Depends(require_admin_key),
 ) -> Dict[str, Any]:
     """Trigger an immediate scrape of all channels."""
+    import asyncio
+    import functools
     logger.info("Manual scrape triggered (max_videos=%s)", max_videos)
-    results = scheduler.run_once(max_videos=max_videos)
+    loop = asyncio.get_event_loop()
+    results = await loop.run_in_executor(None, functools.partial(scheduler.run_once, max_videos=max_videos))
     return {"message": "Scrape complete", "results": results}

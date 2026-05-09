@@ -12,7 +12,7 @@ aiosqlite==0.21.0
 
 # YouTube scraping
 youtube-transcript-api==1.2.2
-yt-dlp==2025.6.9
+yt-dlp==2026.3.17
 beautifulsoup4>=4.12.0
 requests>=2.31.0
 

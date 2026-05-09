@@ -72,6 +72,7 @@ class VideoPipeline:
                 success=True, video_id=video_id, standard_url=standard_url,
                 summary=summary, tiles=tiles,
                 message="Retrieved from cache",
+                from_cache=True,
             )
 
         # Step 3: Fetch metadata

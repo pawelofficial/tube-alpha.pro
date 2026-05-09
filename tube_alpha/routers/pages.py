@@ -98,13 +98,20 @@ async def payment_success(
     settings: Settings = Depends(get_settings),
 ):
     session_id = request.query_params.get("session_id")
-    email = auth.get_email_from_request(request)
+    auth_email = auth.get_email_from_request(request)
 
-    if session_id and email and settings.stripe_secret_key:
+    if session_id and settings.stripe_secret_key:
         try:
             stripe.api_key = settings.stripe_secret_key
             stripe_session = stripe.checkout.Session.retrieve(session_id)
-            if stripe_session.payment_status in ("paid", "no_payment_required"):
+            # Prefer the email Stripe recorded for this payment over whoever
+            # happens to be logged in right now; fall back to the auth email
+            # only if Stripe has nothing (shouldn't happen in practice).
+            stripe_email = stripe_session.customer_email or (
+                (stripe_session.metadata or {}).get("email")
+            )
+            email = stripe_email or auth_email
+            if email and stripe_session.payment_status in ("paid", "no_payment_required"):
                 users.process_stripe_session(
                     session_id=session_id,
                     email=email,

@@ -88,6 +88,7 @@ class VideoProcessResponse(BaseModel):
     summary: str
     tiles: List[SentimentTile] = []
     message: str = ""
+    from_cache: bool = False
 
 
 class VideoMetadata(BaseModel):

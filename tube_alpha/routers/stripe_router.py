@@ -94,4 +94,27 @@ async def stripe_webhook(
                 days=settings.stripe_pro_days,
             )
 
+    elif event["type"] == "invoice.payment_succeeded":
+        invoice = event["data"]["object"]
+        # Only extend on recurring renewals, not the initial charge
+        # (the initial charge is already handled by checkout.session.completed)
+        if invoice.get("billing_reason") == "subscription_cycle":
+            email = invoice.get("customer_email")
+            if email:
+                users.activate_subscription(email, duration_days=settings.stripe_pro_days)
+                logger.info("Subscription renewed for %s", email)
+
+    elif event["type"] == "customer.subscription.deleted":
+        subscription = event["data"]["object"]
+        customer_id = subscription.get("customer")
+        if customer_id:
+            try:
+                customer = stripe.Customer.retrieve(customer_id)
+                email = customer.get("email")
+                if email:
+                    users.deactivate_subscription(email)
+                    logger.info("Subscription cancelled for %s", email)
+            except stripe.error.StripeError as e:
+                logger.error("Failed to retrieve customer %s: %s", customer_id, e)
+
     return {"status": "ok"}

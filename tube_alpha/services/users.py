@@ -1,7 +1,7 @@
 """User management service.
 
 Two pro access models coexist:
-  subscription — time-based (pro_active=1, end_pro set)
+  subscription — time-based (subscription_active=1, end_pro set)
   onetime      — credit-based (videos_remaining > 0)
 
 is_pro() returns True if either model grants access.
@@ -57,10 +57,16 @@ class UserService:
                 self._db.execute(sql)
                 logger.info("DB migration: added column users.%s", col)
 
+        # Rename pro_active → subscription_active
+        if "pro_active" in existing and "subscription_active" not in existing:
+            self._db.conn.execute("ALTER TABLE users RENAME COLUMN pro_active TO subscription_active")
+            self._db.conn.commit()
+            logger.info("DB migration: renamed column users.pro_active → subscription_active")
+
     def _ensure_user(self, email: str) -> None:
         if self._db.fetch_scalar("SELECT 1 FROM users WHERE email = ?", (email,)) is None:
             self._db.execute(
-                "INSERT INTO users (email, pro_active, plan_type, videos_remaining) "
+                "INSERT INTO users (email, subscription_active, plan_type, videos_remaining) "
                 "VALUES (?, 0, 'free', 0)",
                 (email,),
             )
@@ -75,14 +81,14 @@ class UserService:
             return False
 
         row = self._db.fetch_one(
-            "SELECT pro_active, end_pro, videos_remaining FROM users WHERE email = ?",
+            "SELECT subscription_active, end_pro, videos_remaining FROM users WHERE email = ?",
             (email,),
         )
         if not row:
             return False
 
-        # Subscription path: pro_active must be 1 AND end_pro must be in the future
-        if row["pro_active"]:
+        # Subscription path: subscription_active must be 1 AND end_pro must be in the future
+        if row["subscription_active"]:
             end_pro = row.get("end_pro")
             if not end_pro:
                 return True  # legacy rows with no end date — treat as active
@@ -101,7 +107,7 @@ class UserService:
     def _effective_plan_type(self, row: dict) -> str:
         """Derive display plan type from actual DB state (not the stored column)."""
         end_pro = row.get("end_pro")
-        if row.get("pro_active"):
+        if row.get("subscription_active"):
             try:
                 if not end_pro or date.fromisoformat(str(end_pro)) >= date.today():
                     return "subscription"
@@ -117,7 +123,7 @@ class UserService:
 
     def get_profile(self, email: str) -> dict:
         row = self._db.fetch_one(
-            "SELECT email, pro_active, start_pro, end_pro, plan_type, videos_remaining "
+            "SELECT email, subscription_active, start_pro, end_pro, plan_type, videos_remaining "
             "FROM users WHERE email = ?",
             (email,),
         )
@@ -163,9 +169,9 @@ class UserService:
         end = (date.today() + timedelta(days=duration_days)).isoformat()
 
         row = self._db.fetch_one(
-            "SELECT pro_active, end_pro FROM users WHERE email = ?", (email,)
+            "SELECT subscription_active, end_pro FROM users WHERE email = ?", (email,)
         )
-        if row and row["pro_active"] and row.get("end_pro"):
+        if row and row["subscription_active"] and row.get("end_pro"):
             try:
                 current_end = date.fromisoformat(str(row["end_pro"]))
                 if current_end > date.today():
@@ -174,7 +180,7 @@ class UserService:
                 pass
 
         self._db.execute(
-            "UPDATE users SET pro_active = 1, plan_type = 'subscription', "
+            "UPDATE users SET subscription_active = 1, plan_type = 'subscription', "
             "start_pro = ?, end_pro = ? WHERE email = ?",
             (start, end, email),
         )
@@ -226,7 +232,7 @@ class UserService:
 
     def deactivate_subscription(self, email: str) -> dict:
         self._db.execute(
-            "UPDATE users SET pro_active = 0 WHERE email = ?", (email,)
+            "UPDATE users SET subscription_active = 0 WHERE email = ?", (email,)
         )
         logger.info("Subscription deactivated for %s", email)
         return self.get_profile(email)
@@ -244,7 +250,7 @@ class UserService:
         cursor = self._db.execute(
             "UPDATE users SET videos_remaining = videos_remaining - 1 "
             "WHERE email = ? AND videos_remaining > 0 "
-            "AND NOT (pro_active = 1 AND end_pro >= date('now'))",
+            "AND NOT (subscription_active = 1 AND end_pro >= date('now'))",
             (email,),
         )
         consumed = cursor.rowcount > 0

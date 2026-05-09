@@ -195,6 +195,21 @@
     white-space: nowrap;
     z-index: 1000;
     min-width: 280px;
+    max-width: calc(100vw - 40px);
+}
+
+@media (max-width: 480px) {
+    .pro-tooltip {
+        min-width: 0;
+        width: calc(100vw - 60px);
+        white-space: normal;
+    }
+    .modern-input {
+        padding: 12px 14px;
+    }
+    .modern-btn {
+        padding: 10px 16px;
+    }
 }
 
 /* Keep tooltip visible when hovering over it */

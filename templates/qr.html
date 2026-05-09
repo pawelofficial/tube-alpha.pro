@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container text-center">
+    <p style="max-width: 640px; margin: 0 auto 1.5rem; font-size: 1.1rem; line-height: 1.6;">
+      welcome to my website, its for people who like investing - it scrapes sentiments about assets from youtube, hit me up if you like it
+    </p>
+    <p style="max-width: 640px; margin: 0 auto; opacity: 0.75;">
+      Scroll down for a quick demo, or check out the
+      <a href="/dashboard">dashboard</a>.
+    </p>
+  </div>
+</section>
+
+<!-- Fake cookie banner (centered modal) -->
+<div id="cookie-backdrop" style="
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999;
+    padding: 1rem;">
+  <div id="cookie-banner" style="
+      background: #1f2937; color: #f3f4f6;
+      border: 1px solid #374151; border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      max-width: 480px; width: 100%;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+      font-size: 0.95rem;">
+    <h3 style="margin: 0 0 0.75rem; font-size: 1.15rem;">🍪 We value your privacy</h3>
+    <p style="margin: 0 0 1.25rem; line-height: 1.5; opacity: 0.9;">
+      We use cookies to analyse traffic and improve your experience. By continuing, you agree to our
+      <a href="#" style="color: #93c5fd;">Cookie Policy</a>.
+    </p>
+    <div style="display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap;">
+      <button id="cookie-reject" type="button" style="
+          background: transparent; color: #f3f4f6;
+          border: 1px solid #4b5563; border-radius: 6px;
+          padding: 0.55rem 1rem; cursor: pointer; font-size: 0.95rem;">
+        Reject non-essential
+      </button>
+      <button id="cookie-accept" type="button" style="
+          background: #2563eb; color: #fff;
+          border: 0; border-radius: 6px;
+          padding: 0.55rem 1.25rem; cursor: pointer; font-weight: 600; font-size: 0.95rem;">
+        Accept all
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden full-screen rickroll, deployed on click -->
+<div id="troll-stage" style="
+    position: fixed; inset: 0;
+    background: #000;
+    display: none;
+    align-items: center; justify-content: center;
+    z-index: 10000;">
+  <video
+    id="rickroll"
+    src="/static/rickroll.mp4"
+    playsinline
+    style="width: 100%; height: 100%; object-fit: contain;">
+  </video>
+</div>
+
+<!-- Punchline overlay shown after the video ends -->
+<div id="punchline" style="
+    position: fixed; inset: 0;
+    background: #0f172a;
+    color: #f8fafc;
+    display: none;
+    flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 10001;">
+  <div style="font-size: 3rem; margin-bottom: 1.5rem;">🐂🐻</div>
+  <p style="max-width: 640px; font-size: 1.4rem; line-height: 1.6; margin: 0 0 2rem;">
+    welcome to my website, its for people who like investing - it scrapes sentiments about assets from youtube, hit me up if you like it
+  </p>
+  <button id="punchline-close" type="button" style="
+      background: #2563eb; color: #fff; border: 0; border-radius: 6px;
+      padding: 0.7rem 1.5rem; font-weight: 600; font-size: 1rem; cursor: pointer;">
+    Continue to site
+  </button>
+</div>
+
+<script>
+  (function () {
+    const backdrop  = document.getElementById('cookie-backdrop');
+    const stage     = document.getElementById('troll-stage');
+    const video     = document.getElementById('rickroll');
+    const punchline = document.getElementById('punchline');
+
+    function deploy() {
+      backdrop.remove();
+      stage.style.display = 'flex';
+      video.muted = false;
+      video.volume = 1.0;
+      video.currentTime = 0;
+      video.play().catch(() => {
+        // If unmuted play is still blocked for some reason, fall back to controls.
+        video.controls = true;
+      });
+    }
+
+    let playCount = 0;
+
+    video.addEventListener('ended', () => {
+      playCount += 1;
+      if (playCount >= 2) {
+        window.location.href = '/';
+        return;
+      }
+      stage.style.display = 'none';
+      punchline.style.display = 'flex';
+    });
+
+    document.getElementById('cookie-accept').addEventListener('click', deploy);
+    document.getElementById('cookie-reject').addEventListener('click', deploy);
+    document.getElementById('punchline-close').addEventListener('click', () => {
+      punchline.style.display = 'none';
+      stage.style.display = 'flex';
+      video.currentTime = 0;
+      video.play().catch(() => { video.controls = true; });
+    });
+  })();
+</script>
+{% endblock %}

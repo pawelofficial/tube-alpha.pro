@@ -1,8 +1,8 @@
 
 
 YTD:
-  CHANNELS : ['TheDavidLinReport']
-  VIDS_COUNT : 10
+  CHANNELS : ['TheDavidLinReport','kitco','InvestingNews']
+  VIDS_COUNT : 3
   LANGUAGE : 'en'
   SEP: '|~|'
 

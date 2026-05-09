@@ -399,9 +399,18 @@ class YouTubeService:
 
         Returns dict with 'success' and 'failed' counts.
         """
-        ydl_opts = {"extract_flat": True, "quiet": True}
         count = max_videos or self._settings.yt_vids_count
         url = f"https://www.youtube.com/@{channel_name}/videos"
+        ydl_opts = {
+            "extract_flat": True,
+            "quiet": True,
+            "playlistend": count,
+        }
+        if self._proxy.is_configured:
+            proxy_url = self._proxy.get_proxy_url(0)
+            if proxy_url:
+                ydl_opts["proxy"] = proxy_url
+                logger.info("Using proxy for channel listing of %s", channel_name)
 
         logger.info("Scraping channel %s for last %d videos (url=%s)", channel_name, count, url)
 

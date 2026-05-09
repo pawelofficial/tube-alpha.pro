@@ -1,6 +1,7 @@
 """Admin SQL endpoint — password-protected raw SQL access to both databases."""
 
 import logging
+from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -8,6 +9,9 @@ from pydantic import BaseModel
 
 from tube_alpha.database import Database
 from tube_alpha.routers.dependencies import get_settings, require_admin_key
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+SCHEMA_FILE = BASE_DIR / "schema.json"
 
 logger = logging.getLogger(__name__)
 
@@ -61,3 +65,19 @@ def list_tables(db: str = "data", _: None = Depends(require_admin_key)):
         "SELECT type, name FROM sqlite_master WHERE type IN ('table','view') ORDER BY type, name"
     )
     return {"db": db, "objects": rows}
+
+
+@router.post("/schema/init")
+def init_schema(db: str = "data", _: None = Depends(require_admin_key)):
+    """Create tables that don't exist yet. Safe — never drops or overwrites data."""
+    database = _get_db(db)
+    database.init_schema(SCHEMA_FILE)
+    return {"db": db, "message": "Schema init complete"}
+
+
+@router.post("/schema/recreate")
+def recreate_schema(db: str = "data", _: None = Depends(require_admin_key)):
+    """Drop and recreate all tables. DESTRUCTIVE — wipes all data in the chosen database."""
+    database = _get_db(db)
+    database.create_schema(SCHEMA_FILE)
+    return {"db": db, "message": "Schema recreated — all data wiped"}

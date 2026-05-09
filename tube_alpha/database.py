@@ -171,6 +171,30 @@ class Database:
         self.conn.commit()
         logger.info("Schema creation complete for %s", self.db_path.name)
 
+    def init_schema(self, schema_file: Path) -> None:
+        """Create tables/views if they don't already exist. Safe to call on every startup."""
+        with open(schema_file) as f:
+            schema = json.load(f)
+
+        db_filename = self.db_path.stem
+
+        for table in schema["tables"]:
+            if table.get("db_type", "data") != db_filename:
+                continue
+            if not self.table_exists(table["name"]):
+                sql = table["create_table"].replace("create table ", "create table if not exists ", 1)
+                self.conn.execute(sql)
+                logger.info("Created table: %s", table["name"])
+
+        for view in schema.get("views", []):
+            if view.get("db_type", "data") != db_filename:
+                continue
+            self.conn.execute(view["drop_view"])
+            self.conn.execute(view["create_view"])
+
+        self.conn.commit()
+        logger.info("Schema init complete for %s", self.db_path.name)
+
     def table_exists(self, table_name: str) -> bool:
         """Check if a table exists."""
         result = self.fetch_scalar(

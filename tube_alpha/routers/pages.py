@@ -97,6 +97,15 @@ async def about(
     return templates.TemplateResponse("about.html", _base_ctx(request, auth, users))
 
 
+@router.get("/qr", response_class=HTMLResponse)
+async def qr(
+    request: Request,
+    auth: AuthService = Depends(get_auth_service),
+    users: UserService = Depends(get_user_service),
+):
+    return templates.TemplateResponse("qr.html", _base_ctx(request, auth, users))
+
+
 @router.get("/pricing", response_class=HTMLResponse)
 async def pricing(
     request: Request,

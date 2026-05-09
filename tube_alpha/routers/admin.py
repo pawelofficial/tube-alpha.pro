@@ -1,14 +1,13 @@
 """Admin SQL endpoint — password-protected raw SQL access to both databases."""
 
-import os
 import logging
 from typing import Any
 
-from fastapi import APIRouter, Header, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 
 from tube_alpha.database import Database
-from tube_alpha.routers.dependencies import get_settings
+from tube_alpha.routers.dependencies import get_settings, require_admin_key
 
 logger = logging.getLogger(__name__)
 
@@ -29,22 +28,13 @@ def _get_db(db_name: str) -> Database:
     return Database(path)
 
 
-def _check_key(x_admin_key: str) -> None:
-    secret = os.environ.get("ADMIN_SECRET_KEY", "")
-    if not secret:
-        raise HTTPException(status_code=503, detail="ADMIN_SECRET_KEY not configured")
-    if x_admin_key != secret:
-        raise HTTPException(status_code=403, detail="Invalid admin key")
-
-
 @router.post("/sql")
-def run_sql(body: SqlRequest, x_admin_key: str = Header(...)):
+def run_sql(body: SqlRequest, _: None = Depends(require_admin_key)):
     """Execute arbitrary SQL against data.sqlite or admin.sqlite.
 
     Returns rows for SELECT, rowcount for writes.
     Pass params as a JSON array matching ? placeholders.
     """
-    _check_key(x_admin_key)
     db = _get_db(body.db)
     sql = body.sql.strip()
     params = tuple(body.params)
@@ -64,9 +54,8 @@ def run_sql(body: SqlRequest, x_admin_key: str = Header(...)):
 
 
 @router.get("/tables")
-def list_tables(db: str = "data", x_admin_key: str = Header(...)):
+def list_tables(db: str = "data", _: None = Depends(require_admin_key)):
     """List all tables and views in the chosen database."""
-    _check_key(x_admin_key)
     database = _get_db(db)
     rows = database.fetch_all(
         "SELECT type, name FROM sqlite_master WHERE type IN ('table','view') ORDER BY type, name"

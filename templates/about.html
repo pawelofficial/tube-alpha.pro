@@ -1,63 +1,83 @@
 {% extends "base.html" %}
 
-{% block title %}About - TubeAlpha{% endblock %}
+{% block title %}About - Tube Alpha{% endblock %}
 
 {% block content %}
-<!-- About Header -->
 <section class="section">
-    <div class="container">
-        <div class="text-center fade-in">
-            <h1>About TubeAlpha</h1>
-            <p class="hero-subtitle">
-                Powerful investment analytics and visualization tools for YouTube content creators
-            </p>
-        </div>
+  <div class="container">
+    <div class="text-center fade-in">
+      <h1>About Tube Alpha</h1>
+      <p class="hero-subtitle">What this tool does and what it doesn't</p>
     </div>
+  </div>
 </section>
 
-<!-- About Content -->
 <section class="section">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Our Mission</h2>
-                <p>
-                    We're dedicated to helping YouTube content creators and investors make data-driven decisions. 
-                    Our platform combines cutting-edge analytics with intuitive visualization to help you 
-                    understand market trends and investment opportunities in the creator economy.
-                </p>
-                
-                <h3 class="mt-lg">What We Offer</h3>
-                <p>
-                    Our platform provides comprehensive investment tools including advanced query capabilities, 
-                    real-time analytics, interactive dashboards, and automated reporting specifically tailored 
-                    for YouTube and content creator investments.
-                </p>
-                
-                <h3 class="mt-lg">Technology Stack</h3>
-                <p>
-                    Built with <strong>FastAPI</strong> for blazing-fast performance, our platform leverages 
-                    modern Python libraries and best practices to deliver a reliable, scalable solution. 
-                    We use industry-standard security practices to keep your investment data safe.
-                </p>
-                
-                {% if not is_authenticated %}
-                <div class="mt-xl text-center">
-                    <p style="color: var(--text-secondary);">
-                        Ready to explore investment opportunities?
-                    </p>
-                    <a href="/login?next=%2Fdashboard" class="btn btn-primary btn-lg">Get Started Free</a>
-                </div>
-                {% else %}
-                <div class="mt-xl text-center">
-                    <p style="color: var(--text-secondary);">
-                        Thank you for being a premium member!
-                    </p>
-                    <a href="/dashboard" class="btn btn-primary btn-lg">Go to Dashboard</a>
-                </div>
-                {% endif %}
-            </div>
-        </div>
+  <div class="container" style="max-width: 760px;">
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+      <div class="card-body">
+        <h2>What is Tube Alpha?</h2>
+        <p>
+          Tube Alpha scrapes financial YouTube channels, downloads transcripts, and uses
+          AI to identify every asset mentioned — stocks, crypto, commodities — along with
+          whether the host was bullish or bearish on it. The result is a quick sentiment
+          summary so you can scan what analysts are talking about without watching hours
+          of video.
+        </p>
+      </div>
     </div>
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+      <div class="card-body">
+        <h2>How it works</h2>
+        <ul style="line-height: 2;">
+          <li>We monitor a curated list of financial YouTube channels.</li>
+          <li>New videos are automatically picked up and their transcripts extracted.</li>
+          <li>GPT-4o reads each transcript and identifies asset mentions with sentiment.</li>
+          <li>Results appear on the Dashboard, updated continuously as new videos land.</li>
+          <li>You can also paste any YouTube URL yourself to analyse a video on demand.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1.5rem; border-left: 4px solid var(--accent, #e74c3c);">
+      <div class="card-body">
+        <h2>⚠️ Not financial advice</h2>
+        <p>
+          Everything on this platform is for <strong>informational and entertainment purposes only</strong>.
+          Tube Alpha does not provide investment advice, financial guidance, or trading recommendations.
+          Sentiment extracted from YouTube videos reflects the opinions of the original content creators —
+          not ours, and not yours.
+        </p>
+        <p style="margin-top: 1rem;">
+          Always do your own research. Never make investment decisions based solely on what a
+          YouTuber says, and never based on an AI summary of what a YouTuber says.
+          Past sentiment is not indicative of future performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+      <div class="card-body">
+        <h2>Subscription</h2>
+        <p>
+          A subscription gives you full access to the Dashboard (all channels, all assets,
+          historical sentiment) and unlimited on-demand video analysis. Free users can
+          try a limited number of video analyses to see how it works before committing.
+        </p>
+        {% if not is_authenticated %}
+        <div class="mt-lg text-center">
+          <a href="/login?next=/pricing" class="btn btn-primary">See pricing</a>
+        </div>
+        {% else %}
+        <div class="mt-lg text-center">
+          <a href="/pricing" class="btn btn-primary">See pricing</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
 </section>
 {% endblock %}

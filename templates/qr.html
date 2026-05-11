@@ -106,14 +106,7 @@
       });
     }
 
-    let playCount = 0;
-
     video.addEventListener('ended', () => {
-      playCount += 1;
-      if (playCount >= 2) {
-        window.location.href = '/';
-        return;
-      }
       stage.style.display = 'none';
       punchline.style.display = 'flex';
     });
@@ -125,10 +118,7 @@
       deploy();
     });
     document.getElementById('punchline-close').addEventListener('click', () => {
-      punchline.style.display = 'none';
-      stage.style.display = 'flex';
-      video.currentTime = 0;
-      video.play().catch(() => { video.controls = true; });
+      window.location.href = '/';
     });
   })();
 </script>

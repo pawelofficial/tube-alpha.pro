@@ -354,11 +354,14 @@
         .join('');
 
       const guestHtml = (t.guests || []).length
-        ? (t.guests || []).map(g =>
-            `<span class="guest-link" onclick="event.stopPropagation();window.location='/api/v1/data/guest/${encodeURIComponent(g)}'">
-              ${esc(g)}
-            </span>`
-          ).join(', ')
+        ? (t.guests || []).map(g => {
+            const name = esc(g.name || '');
+            if (!g.video_id) {
+              return `<span class="guest-link" style="cursor:default;text-decoration:none">${name}</span>`;
+            }
+            const url = `https://www.youtube.com/watch?v=${encodeURIComponent(g.video_id)}`;
+            return `<a class="guest-link" href="${url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${name}</a>`;
+          }).join(', ')
         : '<span style="color:var(--text-light)">—</span>';
 
       const videoCount = (t.videos || []).length;

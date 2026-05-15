@@ -78,10 +78,15 @@ def _sentiment_score(text: str) -> float:
 
 
 def _build_tiles(rows: List[Dict], separator: str) -> List[Dict]:
-    """Aggregate raw answer rows into visualization tiles grouped by asset."""
+    """Aggregate raw answer rows into visualization tiles grouped by asset.
+
+    Each tile's ``guests`` is a list of ``{"name", "video_id"}`` pairs where
+    ``video_id`` is the most recent video featuring that guest within the
+    tile's asset — so the frontend can deep-link to a real YouTube video.
+    """
     agg = defaultdict(lambda: {
         "scores": [], "sentiments": [], "quotes": set(),
-        "videos": set(), "guests": set(), "last_ts": None,
+        "videos": set(), "guests": {}, "last_ts": None,
     })
 
     for r in rows:
@@ -93,20 +98,27 @@ def _build_tiles(rows: List[Dict], separator: str) -> List[Dict]:
             if q:
                 a["quotes"].add(q)
         a["videos"].add(r["video_id"])
-        if r.get("guest"):
-            a["guests"].add(r["guest"])
+        guest = r.get("guest")
+        if guest:
+            existing = a["guests"].get(guest)
+            if existing is None or (r["ts"] or "") > (existing["ts"] or ""):
+                a["guests"][guest] = {"video_id": r["video_id"], "ts": r["ts"]}
         a["last_ts"] = max(a["last_ts"], r["ts"]) if a["last_ts"] else r["ts"]
 
     tiles = []
     for asset, a in agg.items():
         avg = round(sum(a["scores"]) / len(a["scores"]), 2) if a["scores"] else 0
+        guests = sorted(
+            ({"name": name, "video_id": info["video_id"]} for name, info in a["guests"].items()),
+            key=lambda g: g["name"].lower(),
+        )
         tiles.append({
             "asset": asset,
             "avg_score": avg,
             "sentiments": sorted(set(a["sentiments"])),
             "quotes": sorted(a["quotes"]),
             "videos": sorted(a["videos"]),
-            "guests": sorted(a["guests"]),
+            "guests": guests,
             "last_ts": a["last_ts"],
         })
 

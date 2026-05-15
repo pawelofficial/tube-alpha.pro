@@ -109,6 +109,10 @@ class VideoPipeline:
 
         if not is_valid:
             logger.info("Video %s is not about investing, skipping", video_id)
+            # Make the "not investing" decision sticky: mark parsed so the
+            # scheduler's backfill loop doesn't keep re-validating this row
+            # on every tick.
+            self._youtube.mark_transcript_parsed(video_id)
             return VideoProcessResponse(
                 success=False, video_id=video_id, standard_url=standard_url,
                 summary="This video is not about investing",
@@ -202,18 +206,19 @@ class VideoPipeline:
 
         # Process any leftover transcripts that have been downloaded but not parsed
         # (e.g. records inserted by the old scheduler flow before this refactor).
+        # Route through process_video so they go through the same validation step
+        # as the user-submission path — otherwise their channels.name stays as the
+        # channel handle and guest/description_summary/valid stay NULL.
         unprocessed = self._youtube._db.fetch_scalars(
             "SELECT video_id FROM channels WHERE transcript_downloaded = 1 AND transcript_parsed = 0"
         )
         for vid in unprocessed:
             try:
-                text = self._youtube.get_transcript_text(vid)
-                if text:
-                    self._sentiment.process_video_transcript(vid, text)
-                    self._youtube.mark_transcript_parsed(vid)
-                    logger.info("Processed leftover transcript for %s", vid)
+                url = f"https://www.youtube.com/watch?v={vid}"
+                self.process_video(url, video_id=vid)
+                logger.info("Backfilled leftover %s via process_video", vid)
             except Exception as e:
-                logger.error("Failed to process leftover %s: %s", vid, e)
+                logger.error("Failed to backfill leftover %s: %s", vid, e)
 
         logger.info("Channel %s complete: %s", channel_name, stats)
         return stats

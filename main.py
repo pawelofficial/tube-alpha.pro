@@ -52,6 +52,13 @@ async def lifespan(app: FastAPI):
     Database(settings.data_db_path).init_schema(schema_file)
     Database(settings.admin_db_path).init_schema(schema_file)
 
+    # Dev mode: seed dev@example.com as a free (non-pro) user so the app
+    # has a usable identity matching AuthService's mock email.
+    if os.getenv("ENVIRONMENT", "development").lower() == "development":
+        from tube_alpha.services.users import UserService
+        UserService(settings)._ensure_user("dev@example.com")
+        logger.info("Dev mode: ensured dev@example.com exists as free user")
+
     # Startup: optionally auto-start the scheduler
     sched = get_scheduler()
     auto_scrape = os.getenv("AUTO_SCRAPE_ENABLED", "").lower() in ("1", "true", "yes")

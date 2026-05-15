@@ -105,6 +105,20 @@
       ]
     },
     {
+      "name": "scheduler_state",
+      "db_type": "data",
+      "drop_backup": "drop table if exists scheduler_state_bu_;",
+      "create_backup": "create table scheduler_state_bu_ as select * from scheduler_state;",
+      "drop_table": "drop table if exists scheduler_state;",
+      "create_table": "create table scheduler_state(key varchar primary key, value varchar);",
+      "columns": [
+        {"name": "key", "type": "varchar"},
+        {"name": "value", "type": "varchar"}
+      ],
+      "primary_key": ["key"],
+      "foreign_keys": []
+    },
+    {
       "name": "transcripts",
       "db_type":"data",
       "drop_backup": "drop table if exists transcripts_bu_;",

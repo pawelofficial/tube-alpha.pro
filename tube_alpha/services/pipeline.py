@@ -20,6 +20,7 @@ Usage:
 """
 
 import logging
+import time
 from typing import Dict, List, Optional
 
 from tube_alpha.config import Settings
@@ -108,18 +109,27 @@ class VideoPipeline:
 
         if not is_valid:
             logger.info("Video %s is not about investing, skipping", video_id)
+            # Make the "not investing" decision sticky: mark parsed so the
+            # scheduler's backfill loop doesn't keep re-validating this row
+            # on every tick.
+            self._youtube.mark_transcript_parsed(video_id)
             return VideoProcessResponse(
                 success=False, video_id=video_id, standard_url=standard_url,
                 summary="This video is not about investing",
                 message="Video content is not investment-related",
             )
 
-        # Step 6: Fetch and save transcript
-        logger.info("Step 4/6: Fetching transcript for %s", video_id)
-        transcript = self._youtube.fetch_transcript_with_rotation(video_id)
+        # Step 6: Fetch and save transcript (skip if already downloaded — e.g. legacy
+        # rows from the old scheduler flow that pre-downloaded transcripts without
+        # populating metadata. Re-saving would violate the transcripts PK.)
+        if self._youtube.has_transcript_downloaded(video_id):
+            logger.info("Step 4-5/6: Transcript already downloaded for %s, skipping fetch", video_id)
+        else:
+            logger.info("Step 4/6: Fetching transcript for %s", video_id)
+            transcript = self._youtube.fetch_transcript_with_rotation(video_id)
 
-        logger.info("Step 5/6: Saving transcript for %s", video_id)
-        self._youtube.save_transcript_to_db(video_id, transcript)
+            logger.info("Step 5/6: Saving transcript for %s", video_id)
+            self._youtube.save_transcript_to_db(video_id, transcript)
 
         # Step 7: Extract sentiments
         logger.info("Step 6/6: Extracting sentiments for %s", video_id)
@@ -156,26 +166,59 @@ class VideoPipeline:
     def scrape_and_process_channel(
         self, channel_name: str, max_videos: Optional[int] = None
     ) -> Dict[str, int]:
-        """Scrape a channel's videos and process transcripts through sentiment analysis.
+        """Scrape a channel's videos and process each through the full pipeline.
+
+        Each video flows through ``process_video`` so the channels table is
+        populated identically to the user-submission path: ``name`` = video
+        title, ``guest`` / ``description_summary`` / ``valid`` filled by AI
+        validation, transcript fetched, sentiments extracted.
 
         Args:
             channel_name: YouTube channel handle.
             max_videos: Number of recent videos to scrape. Defaults to config value.
-        """
-        stats = self._youtube.scrape_channel(channel_name, max_videos=max_videos)
 
-        # Process any unprocessed transcripts
+        Returns dict with ``success`` (sentiments extracted), ``skipped``
+        (cached or marked invalid by AI), and ``failed`` counts.
+        """
+        videos = self._youtube.list_channel_videos(channel_name, max_videos=max_videos)
+        stats = {"success": 0, "skipped": 0, "failed": 0}
+
+        for video in videos:
+            video_id = video["id"]
+            url = f"https://www.youtube.com/watch?v={video_id}"
+
+            if self._youtube.is_video_processed(video_id):
+                logger.info("Skipping %s — already processed", video_id)
+                stats["skipped"] += 1
+                continue
+
+            try:
+                response = self.process_video(url, video_id=video_id)
+                if response.success:
+                    stats["success"] += 1
+                else:
+                    stats["skipped"] += 1
+            except Exception as e:
+                logger.error("Failed to process %s from channel %s: %s", video_id, channel_name, e)
+                stats["failed"] += 1
+
+            time.sleep(3)  # be nice to YouTube/proxies
+
+        # Process any leftover transcripts that have been downloaded but not parsed
+        # (e.g. records inserted by the old scheduler flow before this refactor).
+        # Route through process_video so they go through the same validation step
+        # as the user-submission path — otherwise their channels.name stays as the
+        # channel handle and guest/description_summary/valid stay NULL.
         unprocessed = self._youtube._db.fetch_scalars(
             "SELECT video_id FROM channels WHERE transcript_downloaded = 1 AND transcript_parsed = 0"
         )
         for vid in unprocessed:
             try:
-                text = self._youtube.get_transcript_text(vid)
-                if text:
-                    self._sentiment.process_video_transcript(vid, text)
-                    self._youtube.mark_transcript_parsed(vid)
-                    logger.info("Processed transcript for %s", vid)
+                url = f"https://www.youtube.com/watch?v={vid}"
+                self.process_video(url, video_id=vid)
+                logger.info("Backfilled leftover %s via process_video", vid)
             except Exception as e:
-                logger.error("Failed to process %s: %s", vid, e)
+                logger.error("Failed to backfill leftover %s: %s", vid, e)
 
+        logger.info("Channel %s complete: %s", channel_name, stats)
         return stats

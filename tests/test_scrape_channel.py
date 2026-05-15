@@ -1,4 +1,4 @@
-"""Tests for YouTubeService.scrape_channel.
+"""Tests for the channel scraping flow.
 
 Run all tests (fast, no network):
     python -m pytest tests/test_scrape_channel.py -v
@@ -20,6 +20,8 @@ from unittest.mock import MagicMock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from tube_alpha.config import Settings
+from tube_alpha.models import VideoProcessResponse
+from tube_alpha.services.pipeline import VideoPipeline
 from tube_alpha.services.youtube import YouTubeService
 
 
@@ -37,7 +39,7 @@ def _make_settings(**overrides) -> Settings:
     return Settings(**defaults)
 
 
-def _make_service(settings: Settings) -> YouTubeService:
+def _make_youtube_service(settings: Settings) -> YouTubeService:
     """Build a YouTubeService without hitting the real DB."""
     svc = YouTubeService.__new__(YouTubeService)
     svc._settings = settings
@@ -45,13 +47,21 @@ def _make_service(settings: Settings) -> YouTubeService:
     from tube_alpha.services.proxy import ProxyService
     svc._proxy = ProxyService(settings)
 
-    # Stub the DB so execute/fetch calls are no-ops
     db = MagicMock()
     db.fetch_scalar.return_value = None   # is_video_processed → False
     db.execute.return_value = MagicMock(rowcount=1)
     svc._db = db
 
     return svc
+
+
+def _make_pipeline(settings: Settings) -> VideoPipeline:
+    """Build a VideoPipeline with stubbed YouTube + sentiment services."""
+    pipeline = VideoPipeline.__new__(VideoPipeline)
+    pipeline._settings = settings
+    pipeline._youtube = _make_youtube_service(settings)
+    pipeline._sentiment = MagicMock()
+    return pipeline
 
 
 def _fake_ydl_result(video_ids: list) -> dict:
@@ -63,12 +73,12 @@ def _fake_ydl_result(video_ids: list) -> dict:
     }
 
 
-class TestScrapeChannelOptions(unittest.TestCase):
-    """Verify yt-dlp options are built correctly."""
+class TestListChannelVideosOptions(unittest.TestCase):
+    """Verify yt-dlp options are built correctly when listing channel videos."""
 
     def test_playlistend_set_to_count(self):
         settings = _make_settings(yt_vids_count=5)
-        svc = _make_service(settings)
+        svc = _make_youtube_service(settings)
 
         captured_opts = {}
 
@@ -80,13 +90,13 @@ class TestScrapeChannelOptions(unittest.TestCase):
             return cm
 
         with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            svc.scrape_channel("TestChannel", max_videos=5)
+            svc.list_channel_videos("TestChannel", max_videos=5)
 
         self.assertEqual(captured_opts.get("playlistend"), 5)
 
     def test_no_proxy_when_not_configured(self):
         settings = _make_settings(proxy_username="", proxy_password="")
-        svc = _make_service(settings)
+        svc = _make_youtube_service(settings)
 
         captured_opts = {}
 
@@ -98,13 +108,13 @@ class TestScrapeChannelOptions(unittest.TestCase):
             return cm
 
         with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            svc.scrape_channel("TestChannel")
+            svc.list_channel_videos("TestChannel")
 
         self.assertNotIn("proxy", captured_opts)
 
     def test_proxy_included_when_configured(self):
         settings = _make_settings(proxy_username="user-2", proxy_password="secret")
-        svc = _make_service(settings)
+        svc = _make_youtube_service(settings)
 
         captured_opts = {}
 
@@ -116,14 +126,14 @@ class TestScrapeChannelOptions(unittest.TestCase):
             return cm
 
         with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            svc.scrape_channel("TestChannel")
+            svc.list_channel_videos("TestChannel")
 
         self.assertIn("proxy", captured_opts)
         self.assertIn("secret", captured_opts["proxy"])
 
     def test_channel_url_uses_at_handle(self):
         settings = _make_settings()
-        svc = _make_service(settings)
+        svc = _make_youtube_service(settings)
 
         captured_urls = []
 
@@ -139,78 +149,131 @@ class TestScrapeChannelOptions(unittest.TestCase):
             return cm
 
         with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            svc.scrape_channel("kitco")
+            svc.list_channel_videos("kitco")
 
         self.assertTrue(any("@kitco" in u for u in captured_urls),
                         f"Expected @kitco in URL, got: {captured_urls}")
 
-
-class TestScrapeChannelResults(unittest.TestCase):
-    """Verify result counting and early-exit behaviour."""
-
-    def _run_with_entries(self, video_ids, max_videos=3):
-        settings = _make_settings(yt_vids_count=max_videos)
-        svc = _make_service(settings)
-
-        # fetch_transcript → return minimal transcript so pipeline doesn't error
-        svc.fetch_transcript_with_rotation = MagicMock(
-            return_value=[{"text": "hello", "start": 0.0, "duration": 1.0}]
-        )
-        svc.save_transcript_to_db = MagicMock()
-        svc.get_video_upload_date_with_rotation = MagicMock(return_value=None)
+    def test_returns_video_ids_and_metadata(self):
+        settings = _make_settings()
+        svc = _make_youtube_service(settings)
 
         def fake_ydl(opts):
             cm = MagicMock()
             cm.__enter__ = lambda s: MagicMock(
-                extract_info=lambda url, **kw: _fake_ydl_result(video_ids)
+                extract_info=lambda url, **kw: _fake_ydl_result(["a1", "b2"])
             )
             cm.__exit__ = MagicMock(return_value=False)
             return cm
 
         with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            with patch("tube_alpha.services.youtube.time") as mock_time:
-                mock_time.sleep = MagicMock()
-                return svc.scrape_channel("TestChannel", max_videos=max_videos)
+            videos = svc.list_channel_videos("TestChannel", max_videos=5)
+
+        self.assertEqual(len(videos), 2)
+        self.assertEqual(videos[0]["id"], "a1")
+        self.assertEqual(videos[0]["title"], "Video a1")
+        self.assertEqual(videos[0]["upload_date"], "2025-01-01 00:00:00")
+
+
+class TestScrapeAndProcessChannel(unittest.TestCase):
+    """Verify the scheduler flow shares the user-submission pipeline."""
+
+    def _run(self, video_ids, max_videos=3, process_results=None, processed_ids=None):
+        settings = _make_settings(yt_vids_count=max_videos)
+        pipeline = _make_pipeline(settings)
+
+        processed_ids = set(processed_ids or [])
+        pipeline._youtube.is_video_processed = MagicMock(
+            side_effect=lambda vid: vid in processed_ids
+        )
+        pipeline._youtube._db.fetch_scalars = MagicMock(return_value=[])
+
+        # Default: every video succeeds
+        if process_results is None:
+            process_results = {
+                vid: VideoProcessResponse(
+                    success=True, video_id=vid, standard_url=f"u/{vid}",
+                    summary="ok", message="processed",
+                )
+                for vid in video_ids
+            }
+        pipeline.process_video = MagicMock(side_effect=lambda url, video_id: process_results[video_id])
+
+        with patch("tube_alpha.services.pipeline.time") as mock_time:
+            mock_time.sleep = MagicMock()
+            with patch.object(
+                pipeline._youtube, "list_channel_videos",
+                return_value=[{"id": v, "title": f"T {v}", "upload_date": None} for v in video_ids],
+            ):
+                stats = pipeline.scrape_and_process_channel("TestChannel", max_videos=max_videos)
+
+        return stats, pipeline
 
     def test_zero_entries_returns_zero_counts(self):
-        stats = self._run_with_entries([])
-        self.assertEqual(stats, {"success": 0, "failed": 0})
+        stats, _ = self._run([])
+        self.assertEqual(stats, {"success": 0, "skipped": 0, "failed": 0})
 
     def test_three_entries_all_succeed(self):
-        stats = self._run_with_entries(["aaa", "bbb", "ccc"], max_videos=3)
+        stats, _ = self._run(["aaa", "bbb", "ccc"])
         self.assertEqual(stats["success"], 3)
         self.assertEqual(stats["failed"], 0)
+        self.assertEqual(stats["skipped"], 0)
 
-    def test_max_videos_limits_processing(self):
-        # 5 videos available but max_videos=2 — only 2 should be processed
-        stats = self._run_with_entries(["a", "b", "c", "d", "e"], max_videos=2)
-        self.assertEqual(stats["success"], 2)
-
-    def test_transcript_failure_counts_as_failed(self):
-        settings = _make_settings(yt_vids_count=2)
-        svc = _make_service(settings)
-
-        svc.fetch_transcript_with_rotation = MagicMock(
-            side_effect=Exception("no transcript")
+    def test_already_processed_videos_are_skipped(self):
+        stats, pipeline = self._run(
+            ["a", "b", "c"],
+            processed_ids={"b"},
         )
-        svc.save_transcript_to_db = MagicMock()
-        svc.get_video_upload_date_with_rotation = MagicMock(return_value=None)
+        self.assertEqual(stats["success"], 2)
+        self.assertEqual(stats["skipped"], 1)
+        # process_video must NOT be called for the cached video
+        called_ids = [c.kwargs.get("video_id") for c in pipeline.process_video.call_args_list]
+        self.assertNotIn("b", called_ids)
 
-        def fake_ydl(opts):
-            cm = MagicMock()
-            cm.__enter__ = lambda s: MagicMock(
-                extract_info=lambda url, **kw: _fake_ydl_result(["x1", "x2"])
-            )
-            cm.__exit__ = MagicMock(return_value=False)
-            return cm
+    def test_invalid_video_counts_as_skipped(self):
+        # process_video returns success=False for non-investing content
+        results = {
+            "v1": VideoProcessResponse(
+                success=True, video_id="v1", standard_url="u/v1",
+                summary="ok", message="processed",
+            ),
+            "v2": VideoProcessResponse(
+                success=False, video_id="v2", standard_url="u/v2",
+                summary="not investing", message="rejected",
+            ),
+        }
+        stats, _ = self._run(["v1", "v2"], process_results=results)
+        self.assertEqual(stats["success"], 1)
+        self.assertEqual(stats["skipped"], 1)
+        self.assertEqual(stats["failed"], 0)
 
-        with patch("tube_alpha.services.youtube.YoutubeDL", side_effect=fake_ydl):
-            with patch("tube_alpha.services.youtube.time") as mock_time:
-                mock_time.sleep = MagicMock()
-                stats = svc.scrape_channel("TestChannel", max_videos=2)
+    def test_exception_counts_as_failed(self):
+        settings = _make_settings(yt_vids_count=2)
+        pipeline = _make_pipeline(settings)
+
+        pipeline._youtube.is_video_processed = MagicMock(return_value=False)
+        pipeline._youtube._db.fetch_scalars = MagicMock(return_value=[])
+        pipeline.process_video = MagicMock(side_effect=Exception("boom"))
+
+        with patch("tube_alpha.services.pipeline.time") as mock_time:
+            mock_time.sleep = MagicMock()
+            with patch.object(
+                pipeline._youtube, "list_channel_videos",
+                return_value=[{"id": "x1", "title": "T", "upload_date": None},
+                              {"id": "x2", "title": "T", "upload_date": None}],
+            ):
+                stats = pipeline.scrape_and_process_channel("TestChannel", max_videos=2)
 
         self.assertEqual(stats["failed"], 2)
         self.assertEqual(stats["success"], 0)
+
+    def test_video_processed_via_process_video_path(self):
+        """Regression: scheduler must call process_video so channels.name=title,
+        guest, description_summary, valid all get populated by AI validation."""
+        stats, pipeline = self._run(["abc"])
+        pipeline.process_video.assert_called_once()
+        call = pipeline.process_video.call_args
+        self.assertEqual(call.kwargs.get("video_id"), "abc")
 
 
 # ---------------------------------------------------------------------------

@@ -389,15 +389,18 @@ class YouTubeService:
 
     # --- Channel scraping ---
 
-    def scrape_channel(self, channel_name: str, max_videos: Optional[int] = None) -> Dict[str, int]:
-        """Scrape recent videos from a YouTube channel.
+    def list_channel_videos(
+        self, channel_name: str, max_videos: Optional[int] = None
+    ) -> List[Dict[str, Optional[str]]]:
+        """List recent videos for a channel via yt-dlp (no DB writes).
 
         Args:
             channel_name: YouTube channel handle (e.g. 'TheDavidLinReport').
-            max_videos: Number of recent videos to scrape. Defaults to
+            max_videos: Number of recent videos to enumerate. Defaults to
                         settings.yt_vids_count (from config.yaml VIDS_COUNT).
 
-        Returns dict with 'success' and 'failed' counts.
+        Returns a list of dicts with keys ``id``, ``title``, ``upload_date``
+        (UTC ``YYYY-MM-DD HH:MM:SS`` or None).
         """
         count = max_videos or self._settings.yt_vids_count
         url = f"https://www.youtube.com/@{channel_name}/videos"
@@ -412,65 +415,39 @@ class YouTubeService:
                 ydl_opts["proxy"] = proxy_url
                 logger.info("Using proxy for channel listing of %s", channel_name)
 
-        logger.info("Scraping channel %s for last %d videos (url=%s)", channel_name, count, url)
+        logger.info("Listing channel %s for last %d videos (url=%s)", channel_name, count, url)
 
         try:
             with YoutubeDL(ydl_opts) as ydl:
                 result = ydl.extract_info(url, download=False)
         except Exception as e:
             logger.error("yt-dlp failed to fetch channel listing for %s: %s", channel_name, e)
-            return {"success": 0, "failed": 0}
+            return []
 
         if not result or "entries" not in result:
             logger.error("yt-dlp returned no entries for %s — result=%s", channel_name, result)
-            return {"success": 0, "failed": 0}
+            return []
 
         entries = result["entries"] or []
-        logger.info("yt-dlp found %d total entries for %s, processing first %d", len(entries), channel_name, count)
+        logger.info("yt-dlp found %d total entries for %s, taking first %d", len(entries), channel_name, count)
 
-        stats = {"success": 0, "failed": 0}
-
+        videos: List[Dict[str, Optional[str]]] = []
         for entry in entries[:count]:
             video_id = entry.get("id")
-            title = entry.get("title", "unknown")
             if not video_id:
                 logger.warning("Entry missing video_id, skipping: %s", entry)
                 continue
+            videos.append({
+                "id": video_id,
+                "title": entry.get("title"),
+                "upload_date": _upload_iso_from_ytdlp_info(entry),
+            })
 
-            logger.info("Processing video %s (%s)", video_id, title)
+        return videos
 
-            if self.is_video_processed(video_id):
-                logger.info("Skipping %s — already processed", video_id)
-                continue
-
-            upload_iso = _upload_iso_from_ytdlp_info(entry)
-            if not upload_iso:
-                upload_iso = self.get_video_upload_date_with_rotation(video_id)
-
-            try:
-                self._db.execute(
-                    """INSERT INTO channels (name, video_id, transcript_downloaded,
-                                             transcript_parsed, video_date)
-                       VALUES (?, ?, 0, 0, ?)
-                       ON CONFLICT(video_id) DO UPDATE SET
-                         video_date = COALESCE(channels.video_date, excluded.video_date)""",
-                    (channel_name, video_id, upload_iso),
-                )
-            except Exception as e:
-                logger.error("Failed to insert channel record for %s: %s", video_id, e)
-
-            try:
-                logger.info("Fetching transcript for %s", video_id)
-                transcript = self.fetch_transcript_with_rotation(video_id)
-                logger.info("Transcript fetched for %s (%d segments), saving", video_id, len(transcript))
-                self.save_transcript_to_db(video_id, transcript)
-                stats["success"] += 1
-                logger.info("Successfully scraped %s", video_id)
-            except Exception as e:
-                logger.error("Failed to scrape transcript for %s: %s", video_id, e)
-                stats["failed"] += 1
-
-            time.sleep(3)
-
-        logger.info("Channel scrape complete for %s: %s", channel_name, stats)
-        return stats
+    def has_transcript_downloaded(self, video_id: str) -> bool:
+        """True when channels.transcript_downloaded=1 for this video."""
+        return self._db.fetch_scalar(
+            "SELECT 1 FROM channels WHERE video_id = ? AND transcript_downloaded = 1",
+            (video_id,),
+        ) is not None

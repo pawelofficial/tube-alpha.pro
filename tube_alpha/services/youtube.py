@@ -28,7 +28,7 @@ from youtube_transcript_api._errors import (
     RequestBlocked,
     TranscriptsDisabled,
 )
-from youtube_transcript_api.proxies import WebshareProxyConfig
+from youtube_transcript_api.proxies import GenericProxyConfig
 from yt_dlp import YoutubeDL
 
 from tube_alpha.config import Settings
@@ -125,16 +125,11 @@ class YouTubeService:
             logger.info("Proxy not configured — fetching transcripts without proxy")
             return YouTubeTranscriptApi()
 
-        if proxy_user_index is not None:
-            username = f"{self._settings.proxy_base_username}-{proxy_user_index}"
-        else:
-            username = self._settings.proxy_username
-
+        # Same proxy URL as the metadata fetch. WebshareProxyConfig would append
+        # "-rotate" to the username (user-2-rotate), which Webshare rejects with 400.
+        proxy_url = self._proxy.get_proxy_url(proxy_user_index)
         return YouTubeTranscriptApi(
-            proxy_config=WebshareProxyConfig(
-                proxy_username=username,
-                proxy_password=self._settings.proxy_password,
-            )
+            proxy_config=GenericProxyConfig(http_url=proxy_url, https_url=proxy_url)
         )
 
     # --- Transcript fetching ---
